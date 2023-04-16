@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Globalization;
 using System.IO;
 using System.Text;
+using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
+using System.Collections.Generic;
 
 namespace Optimum
 {
@@ -30,7 +30,7 @@ namespace Optimum
         // Точка центрирования карты
         private Location _locationCenterMap = new Location();
         // Путь к картинке
-        private string path;
+        private string _path;
 
         private MapModel _mapModel;
         /// <summary>
@@ -48,7 +48,7 @@ namespace Optimum
         bool flagDrawComboBoxes = false;
         private void Settings_Load(object sender, EventArgs e)
         {
-            path = _mapModel.pathToIconObjectFacility;
+            _path = _mapModel.pathToIconObjectFacility;
 
             // Установить значок, загруженный ранее
             pictureIconFacility.Image = _mapModel.iconFacility;
@@ -64,17 +64,17 @@ namespace Optimum
             _fileValidator = new FileValidator();
 
             // Основной цвет интерфейса
-            BackColor = comboCountCriterion.BackColor = buttonHelpSetCriterion.BackColor = buttonHelpSetFileBoundary.BackColor = buttonHelpSetFilePolygons.BackColor =
-                buttonHelpSetIcon.BackColor = buttonHelpSetName.BackColor =
-                buttonHelpSetFileSocialFacilities.BackColor = buttonHelpSetFileNorma.BackColor = _mapModel.colorApplication;
+            BackColor = comboCountCriterion.BackColor = buttonHelpSetCriterion.BackColor = buttonHelpSetFileBoundary.BackColor =
+                buttonHelpSetFilePolygons.BackColor = buttonHelpSetIcon.BackColor = buttonHelpSetName.BackColor =
+                buttonHelpSetFileSocialFacilities.BackColor = buttonHelpSetFileNorma.BackColor = _mapModel.mainColor;
 
             // Основной цвет интерфейса для выпадающих списков
-            comboBox2.BackColor = comboBox3.BackColor = comboBox4.BackColor = comboBox5.BackColor = comboBox6.BackColor = comboBox7.BackColor =
-                comboBox8.BackColor = _mapModel.colorApplication;
+            comboBox2.BackColor = comboBox3.BackColor = comboBox4.BackColor = comboBox5.BackColor = comboBox6.BackColor =
+                comboBox7.BackColor = comboBox8.BackColor = _mapModel.secondaryColor;
 
             // Второстепенный цвет интерфейса
             buttonValidateAndSave.BackColor = buttonLoadIconFacility.BackColor = buttonLoadBorderTerritory.BackColor =
-                buttonLoadQuartets.BackColor = buttonLoadFacilities.BackColor = buttonLoadNorma.BackColor = _mapModel.colorElements;
+                buttonLoadQuartets.BackColor = buttonLoadFacilities.BackColor = buttonLoadNorma.BackColor = _mapModel.secondaryColor;
 
             // Отрисовка границ groupbox
             foreach (Control groupbox in Controls)
@@ -115,7 +115,7 @@ namespace Optimum
             comboBox7.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox8.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            // Настройка загрузки файлов
+            // Настройка кнопок для загрузки файлов
             buttonHelpSetFileBoundary.FlatAppearance.BorderSize = 0;
             buttonHelpSetFileBoundary.FlatStyle = FlatStyle.Flat;
             buttonHelpSetFilePolygons.FlatAppearance.BorderSize = 0;
@@ -374,7 +374,7 @@ namespace Optimum
                         // Если файл png формата
                         if (image.RawFormat.Equals(ImageFormat.Png))
                         {
-                            path = DialogLoadingIconFacility.FileName.ToString();
+                            _path = DialogLoadingIconFacility.FileName.ToString();
                             // Отобразить значок в pictureBox
                             pictureIconFacility.Image = image;
                         }
@@ -405,7 +405,7 @@ namespace Optimum
             // Если пустое поле
             if (!string.IsNullOrEmpty(textBoxNameFacility.Text) && !string.IsNullOrWhiteSpace(textBoxNameFacility.Text))
             {
-                // Если длина строки больше 2 и меньше 30
+                // Если длина строки больше 2 и меньше 20
                 if (textBoxNameFacility.TextLength >= 2 && textBoxNameFacility.TextLength <= 20)
                 {
                     // Название успешно задано
@@ -1046,7 +1046,7 @@ namespace Optimum
                                 // Если файл прошёл все проверки
                                 if (isValidDataFile == "Успешно")
                                 {
-                                    // Список кварталов
+                                    // Список полигонов
                                     List<Quar> _tempListQuartets = new List<Quar>();
                                     // Список точек для каждого полигона
                                     List<Location> tempListPoints = new List<Location>();
@@ -1135,6 +1135,7 @@ namespace Optimum
             // Если не загружены границы
             if (_IsLoadFileBorderTerritory)
             {
+                string resultValidateCriterion = CheckValidateCriterion();
                 // Проверить загруженные критерии
                 if (_IsLoadCriterion)
                 {
@@ -1160,7 +1161,7 @@ namespace Optimum
                                 // Если файл прошёл все проверки
                                 if (isValidDataFile == "Успешно")
                                 {
-                                    // Список кварталов
+                                    // Список полигонов
                                     List<Quar> _tempListQuartets = new List<Quar>();
                                     // Список точек для каждого полигона
                                     List<Location> tempListPoints = new List<Location>();
@@ -1230,23 +1231,7 @@ namespace Optimum
                     }
                 }
                 else
-                {
-                    string resultValidateCriterion = CheckValidateCriterion();
-                    if (_IsLoadCriterion)
-                    {
-                        // Если файл открыт в данный момент
-                        try
-                        {
-
-
-                        }
-                        catch (IOException)
-                        {
-                            MessageBox.Show("Закройте файл, из которого должны загрузиться данные", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                    }
                     MessageBox.Show(resultValidateCriterion, "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
             }
             else
                 MessageBox.Show("Сначала загрузите файл с граничными точками территории", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -1283,18 +1268,18 @@ namespace Optimum
 
                                 // Иконка
                                 _mapModel.iconFacility = pictureIconFacility.Image;
-                                _mapModel.sublayerFacility.iconOfOverlay = path;
-                                _mapModel.pathToIconObjectFacility = path;
+                                _mapModel.sublayerFacility.iconOfOverlay = _path;
+                                _mapModel.pathToIconObjectFacility = _path;
 
-                                // Название ОСИ
+                                // Название объекта инфраструктуры
                                 _mapModel.nameObjectFacility = _nameFacility;
                                 _mapModel.sublayerFacility.nameOfOverlay = _nameFacility;
 
-                                // ОСИ
+                                // Объект социальной инфраструктуры
                                 _mapModel.listUserFacilities = _listFacilitiesFromFile;
                                 _mapModel.sublayerFacility.listWithFacility = _listFacilitiesFromFile;
 
-                                // Границы
+                                // Территория
                                 _mapModel.listUserPointsBorderTerritory = _listPointsBorderTerritory;
                                 _mapModel.sublayerBorderPointsTerritory.listWithLocation = _listPointsBorderTerritory;
 
@@ -1304,6 +1289,7 @@ namespace Optimum
                                 _mapModel.sublayerQuarPolygon.listWithQuar = _listQuartetsFromFile;
                                 _mapModel.sublayerQuarCheck.listWithQuar = _listQuartetsFromFile;
 
+                                // Критерии
                                 _mapModel.listUserCriterion = _listCriteriaForSearch;
                                 Close();
                             }
@@ -1322,7 +1308,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Найти точку центрирования карты
+        /// Поиск точки центрирования карты
         /// </summary>
         private Location FindCenterPoint()
         {

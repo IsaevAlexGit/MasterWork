@@ -1,0 +1,31 @@
+.csv - пустое имя
+PharmaEmpty - пустой файл
+PharmaEmptyRow - в первой строке только ID
+PharmaEmptyWithSpaceCell - в некоторых ячейках пробелы стоят (файл не пустой)
+PharmaFirstRowEmpty - первая строка пустая
+PharmaHasEmptyString - в середине файла пустая строка
+PharmaIdText - в строке вместо ID слово
+PharmaLotPointOutsideCity - несколько точек вне Таганрога
+PharmaLotPoints - нормальный файл с 20 аптеками
+PharmaLotPointsWrongInfo - время неверное и пустые ячейки
+PharmaNewColumn - новая колонка добавилась
+PharmaOnePoints - файл с одной аптекой
+PharmaOneRowWithoutInfo - файл с одной аптекой без данных
+PharmaPointOutsideCity - одна точка вне Таганрога
+PharmaStandard - эталонный файл
+PharmaSwapXY - у одной из точек поменялись Х Y местами
+PharmaTimeClosing - время закрытия неверное
+PharmaTimeOpening - время открытия неверное
+PharmaTimeString - вместо времени текст
+PharmaTwoPoints - файл с двумя аптеками
+PharmaWithEmptyCell - пустые ячейки в файле
+PharmaWithoutID - файл без ID у аптек
+PharmaWithoutOneColumn - файл без одной колонки данных
+PharmaWithoutThreeColumn - файл без трех колонок данных
+PharmaWrongCityAndTime - неверные города и время работы
+PharmaWrongCoordinates - у точки нет координат
+PharmaWrongID - ID у аптек нелинейный
+PharmaWrongSite - у аптеки указан несуществующий сайт
+PharmaWrongTimeOC - время работы у точки
+PharmaByHand - данные заполнялись от руки
+PharmaByHandWithNewColumn - данные от руки и колонка ненужная

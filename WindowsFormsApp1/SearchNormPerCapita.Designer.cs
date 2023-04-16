@@ -33,8 +33,6 @@
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.directorySearcher2 = new System.DirectoryServices.DirectorySearcher();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonLoadPriority = new System.Windows.Forms.Button();
-            this.buttonInputRadius = new System.Windows.Forms.Button();
             this.buttonInputNorm = new System.Windows.Forms.Button();
             this.buttonFindBest = new System.Windows.Forms.Button();
             this.buttonSaveMap = new System.Windows.Forms.Button();
@@ -49,19 +47,12 @@
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.gmapNorm = new GMap.NET.WindowsForms.GMapControl();
-            this.textBoxWeightPharmacy = new System.Windows.Forms.TextBox();
-            this.labelPharma = new System.Windows.Forms.Label();
-            this.textBoxWeightResidents = new System.Windows.Forms.TextBox();
-            this.labelRes = new System.Windows.Forms.Label();
-            this.textBoxWeightRetired = new System.Windows.Forms.TextBox();
-            this.labelRet = new System.Windows.Forms.Label();
             this.labelRadius = new System.Windows.Forms.Label();
             this.textBoxCountOSI = new System.Windows.Forms.TextBox();
             this.labelNorm = new System.Windows.Forms.Label();
             this.textBoxPeople = new System.Windows.Forms.TextBox();
             this.labelPeople = new System.Windows.Forms.Label();
             this.labelStateOfNormCity = new System.Windows.Forms.Label();
-            this.groupBoxWeights = new System.Windows.Forms.GroupBox();
             this.groupBoxRadius = new System.Windows.Forms.GroupBox();
             this.labelRadiusLong = new System.Windows.Forms.Label();
             this.groupBoxNorm = new System.Windows.Forms.GroupBox();
@@ -71,7 +62,6 @@
             this.panelLegend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPharmacy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAuto)).BeginInit();
-            this.groupBoxWeights.SuspendLayout();
             this.groupBoxRadius.SuspendLayout();
             this.groupBoxNorm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarRadius)).BeginInit();
@@ -97,40 +87,6 @@
             this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip.ToolTipTitle = "Подсказка";
             // 
-            // buttonLoadPriority
-            // 
-            this.buttonLoadPriority.BackColor = System.Drawing.Color.PeachPuff;
-            this.buttonLoadPriority.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLoadPriority.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonLoadPriority.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLoadPriority.Image = ((System.Drawing.Image)(resources.GetObject("buttonLoadPriority.Image")));
-            this.buttonLoadPriority.Location = new System.Drawing.Point(15, 142);
-            this.buttonLoadPriority.Name = "buttonLoadPriority";
-            this.buttonLoadPriority.Size = new System.Drawing.Size(221, 54);
-            this.buttonLoadPriority.TabIndex = 89;
-            this.buttonLoadPriority.Text = "Задать веса критериев";
-            this.buttonLoadPriority.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip.SetToolTip(this.buttonLoadPriority, "Задать веса важности для каждого из критериев.");
-            this.buttonLoadPriority.UseVisualStyleBackColor = false;
-            this.buttonLoadPriority.Click += new System.EventHandler(this.LoadPriority_Click);
-            // 
-            // buttonInputRadius
-            // 
-            this.buttonInputRadius.BackColor = System.Drawing.Color.PeachPuff;
-            this.buttonInputRadius.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonInputRadius.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonInputRadius.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInputRadius.Image = ((System.Drawing.Image)(resources.GetObject("buttonInputRadius.Image")));
-            this.buttonInputRadius.Location = new System.Drawing.Point(15, 73);
-            this.buttonInputRadius.Name = "buttonInputRadius";
-            this.buttonInputRadius.Size = new System.Drawing.Size(173, 56);
-            this.buttonInputRadius.TabIndex = 90;
-            this.buttonInputRadius.Text = "Задать радиус";
-            this.buttonInputRadius.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip.SetToolTip(this.buttonInputRadius, "Задать радиус буферной зоны для поиска.");
-            this.buttonInputRadius.UseVisualStyleBackColor = false;
-            this.buttonInputRadius.Click += new System.EventHandler(this.InputRadius_Click);
-            // 
             // buttonInputNorm
             // 
             this.buttonInputNorm.BackColor = System.Drawing.Color.PeachPuff;
@@ -155,7 +111,7 @@
             this.buttonFindBest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonFindBest.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonFindBest.Image = ((System.Drawing.Image)(resources.GetObject("buttonFindBest.Image")));
-            this.buttonFindBest.Location = new System.Drawing.Point(12, 530);
+            this.buttonFindBest.Location = new System.Drawing.Point(13, 376);
             this.buttonFindBest.Name = "buttonFindBest";
             this.buttonFindBest.Size = new System.Drawing.Size(131, 62);
             this.buttonFindBest.TabIndex = 92;
@@ -172,7 +128,7 @@
             this.buttonSaveMap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSaveMap.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSaveMap.Image = ((System.Drawing.Image)(resources.GetObject("buttonSaveMap.Image")));
-            this.buttonSaveMap.Location = new System.Drawing.Point(150, 601);
+            this.buttonSaveMap.Location = new System.Drawing.Point(12, 606);
             this.buttonSaveMap.Name = "buttonSaveMap";
             this.buttonSaveMap.Size = new System.Drawing.Size(116, 91);
             this.buttonSaveMap.TabIndex = 93;
@@ -189,7 +145,7 @@
             this.buttonOpenWebManual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOpenWebManual.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOpenWebManual.Image = global::Optimum.Properties.Resources.iconPDF;
-            this.buttonOpenWebManual.Location = new System.Drawing.Point(27, 601);
+            this.buttonOpenWebManual.Location = new System.Drawing.Point(12, 512);
             this.buttonOpenWebManual.Name = "buttonOpenWebManual";
             this.buttonOpenWebManual.Size = new System.Drawing.Size(116, 91);
             this.buttonOpenWebManual.TabIndex = 94;
@@ -206,7 +162,7 @@
             this.buttonHideBest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHideBest.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonHideBest.Image = ((System.Drawing.Image)(resources.GetObject("buttonHideBest.Image")));
-            this.buttonHideBest.Location = new System.Drawing.Point(146, 530);
+            this.buttonHideBest.Location = new System.Drawing.Point(12, 444);
             this.buttonHideBest.Name = "buttonHideBest";
             this.buttonHideBest.Size = new System.Drawing.Size(130, 62);
             this.buttonHideBest.TabIndex = 101;
@@ -311,69 +267,12 @@
             this.gmapNorm.Zoom = 0D;
             this.gmapNorm.Load += new System.EventHandler(this.gmap_Load);
             // 
-            // textBoxWeightPharmacy
-            // 
-            this.textBoxWeightPharmacy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxWeightPharmacy.Location = new System.Drawing.Point(173, 28);
-            this.textBoxWeightPharmacy.Name = "textBoxWeightPharmacy";
-            this.textBoxWeightPharmacy.Size = new System.Drawing.Size(63, 29);
-            this.textBoxWeightPharmacy.TabIndex = 78;
-            // 
-            // labelPharma
-            // 
-            this.labelPharma.AutoSize = true;
-            this.labelPharma.BackColor = System.Drawing.Color.PeachPuff;
-            this.labelPharma.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPharma.Location = new System.Drawing.Point(15, 30);
-            this.labelPharma.Name = "labelPharma";
-            this.labelPharma.Size = new System.Drawing.Size(119, 17);
-            this.labelPharma.TabIndex = 77;
-            this.labelPharma.Text = "Критерий \"Аптеки\"";
-            // 
-            // textBoxWeightResidents
-            // 
-            this.textBoxWeightResidents.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxWeightResidents.Location = new System.Drawing.Point(173, 68);
-            this.textBoxWeightResidents.Name = "textBoxWeightResidents";
-            this.textBoxWeightResidents.Size = new System.Drawing.Size(63, 29);
-            this.textBoxWeightResidents.TabIndex = 80;
-            // 
-            // labelRes
-            // 
-            this.labelRes.AutoSize = true;
-            this.labelRes.BackColor = System.Drawing.Color.PeachPuff;
-            this.labelRes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRes.Location = new System.Drawing.Point(15, 70);
-            this.labelRes.Name = "labelRes";
-            this.labelRes.Size = new System.Drawing.Size(123, 17);
-            this.labelRes.TabIndex = 79;
-            this.labelRes.Text = "Критерий \"Жители\"";
-            // 
-            // textBoxWeightRetired
-            // 
-            this.textBoxWeightRetired.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxWeightRetired.Location = new System.Drawing.Point(173, 108);
-            this.textBoxWeightRetired.Name = "textBoxWeightRetired";
-            this.textBoxWeightRetired.Size = new System.Drawing.Size(63, 29);
-            this.textBoxWeightRetired.TabIndex = 82;
-            // 
-            // labelRet
-            // 
-            this.labelRet.AutoSize = true;
-            this.labelRet.BackColor = System.Drawing.Color.PeachPuff;
-            this.labelRet.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRet.Location = new System.Drawing.Point(15, 110);
-            this.labelRet.Name = "labelRet";
-            this.labelRet.Size = new System.Drawing.Size(154, 17);
-            this.labelRet.TabIndex = 81;
-            this.labelRet.Text = "Критерий \"Пенсионеры\"";
-            // 
             // labelRadius
             // 
             this.labelRadius.AutoSize = true;
             this.labelRadius.BackColor = System.Drawing.Color.PeachPuff;
             this.labelRadius.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRadius.Location = new System.Drawing.Point(15, 34);
+            this.labelRadius.Location = new System.Drawing.Point(12, 73);
             this.labelRadius.Name = "labelRadius";
             this.labelRadius.Size = new System.Drawing.Size(48, 17);
             this.labelRadius.TabIndex = 83;
@@ -428,32 +327,15 @@
             this.labelStateOfNormCity.TabIndex = 95;
             this.labelStateOfNormCity.Text = "Состояние нормы ОСИ на душу населения";
             // 
-            // groupBoxWeights
-            // 
-            this.groupBoxWeights.Controls.Add(this.textBoxWeightRetired);
-            this.groupBoxWeights.Controls.Add(this.labelPharma);
-            this.groupBoxWeights.Controls.Add(this.textBoxWeightPharmacy);
-            this.groupBoxWeights.Controls.Add(this.labelRes);
-            this.groupBoxWeights.Controls.Add(this.textBoxWeightResidents);
-            this.groupBoxWeights.Controls.Add(this.labelRet);
-            this.groupBoxWeights.Controls.Add(this.buttonLoadPriority);
-            this.groupBoxWeights.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBoxWeights.Location = new System.Drawing.Point(12, 9);
-            this.groupBoxWeights.Name = "groupBoxWeights";
-            this.groupBoxWeights.Size = new System.Drawing.Size(264, 207);
-            this.groupBoxWeights.TabIndex = 96;
-            this.groupBoxWeights.TabStop = false;
-            this.groupBoxWeights.Text = "Установка весовых коэффицинетов";
-            // 
             // groupBoxRadius
             // 
             this.groupBoxRadius.Controls.Add(this.labelRadiusLong);
-            this.groupBoxRadius.Controls.Add(this.buttonInputRadius);
+            this.groupBoxRadius.Controls.Add(this.trackBarRadius);
             this.groupBoxRadius.Controls.Add(this.labelRadius);
             this.groupBoxRadius.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBoxRadius.Location = new System.Drawing.Point(12, 222);
+            this.groupBoxRadius.Location = new System.Drawing.Point(13, 92);
             this.groupBoxRadius.Name = "groupBoxRadius";
-            this.groupBoxRadius.Size = new System.Drawing.Size(264, 141);
+            this.groupBoxRadius.Size = new System.Drawing.Size(264, 108);
             this.groupBoxRadius.TabIndex = 97;
             this.groupBoxRadius.TabStop = false;
             this.groupBoxRadius.Text = "Установка радиуса";
@@ -463,7 +345,7 @@
             this.labelRadiusLong.AutoSize = true;
             this.labelRadiusLong.BackColor = System.Drawing.Color.PeachPuff;
             this.labelRadiusLong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRadiusLong.Location = new System.Drawing.Point(188, 73);
+            this.labelRadiusLong.Location = new System.Drawing.Point(66, 72);
             this.labelRadiusLong.Name = "labelRadiusLong";
             this.labelRadiusLong.Size = new System.Drawing.Size(55, 21);
             this.labelRadiusLong.TabIndex = 91;
@@ -477,7 +359,7 @@
             this.groupBoxNorm.Controls.Add(this.textBoxPeople);
             this.groupBoxNorm.Controls.Add(this.buttonInputNorm);
             this.groupBoxNorm.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBoxNorm.Location = new System.Drawing.Point(12, 369);
+            this.groupBoxNorm.Location = new System.Drawing.Point(13, 215);
             this.groupBoxNorm.Name = "groupBoxNorm";
             this.groupBoxNorm.Size = new System.Drawing.Size(264, 155);
             this.groupBoxNorm.TabIndex = 98;
@@ -490,7 +372,7 @@
             this.radioButtonShowOSI.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonShowOSI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonShowOSI.Font = new System.Drawing.Font("Segoe UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonShowOSI.Location = new System.Drawing.Point(291, 37);
+            this.radioButtonShowOSI.Location = new System.Drawing.Point(13, 22);
             this.radioButtonShowOSI.Name = "radioButtonShowOSI";
             this.radioButtonShowOSI.Size = new System.Drawing.Size(138, 24);
             this.radioButtonShowOSI.TabIndex = 99;
@@ -505,7 +387,7 @@
             this.radioButtonHideOSI.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonHideOSI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonHideOSI.Font = new System.Drawing.Font("Segoe UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonHideOSI.Location = new System.Drawing.Point(291, 61);
+            this.radioButtonHideOSI.Location = new System.Drawing.Point(13, 52);
             this.radioButtonHideOSI.Name = "radioButtonHideOSI";
             this.radioButtonHideOSI.Size = new System.Drawing.Size(109, 24);
             this.radioButtonHideOSI.TabIndex = 100;
@@ -518,9 +400,9 @@
             // 
             this.trackBarRadius.BackColor = System.Drawing.Color.PeachPuff;
             this.trackBarRadius.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBarRadius.Location = new System.Drawing.Point(81, 246);
+            this.trackBarRadius.Location = new System.Drawing.Point(15, 24);
             this.trackBarRadius.Name = "trackBarRadius";
-            this.trackBarRadius.Size = new System.Drawing.Size(185, 45);
+            this.trackBarRadius.Size = new System.Drawing.Size(239, 45);
             this.trackBarRadius.TabIndex = 91;
             this.trackBarRadius.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.trackBarRadius.Scroll += new System.EventHandler(this.trackBarTransparent_Scroll);
@@ -531,13 +413,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1370, 712);
-            this.Controls.Add(this.trackBarRadius);
             this.Controls.Add(this.buttonHideBest);
             this.Controls.Add(this.radioButtonHideOSI);
             this.Controls.Add(this.radioButtonShowOSI);
             this.Controls.Add(this.groupBoxNorm);
             this.Controls.Add(this.groupBoxRadius);
-            this.Controls.Add(this.groupBoxWeights);
             this.Controls.Add(this.labelStateOfNormCity);
             this.Controls.Add(this.buttonOpenWebManual);
             this.Controls.Add(this.panelLegend);
@@ -554,8 +434,6 @@
             this.panelLegend.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPharmacy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAuto)).EndInit();
-            this.groupBoxWeights.ResumeLayout(false);
-            this.groupBoxWeights.PerformLayout();
             this.groupBoxRadius.ResumeLayout(false);
             this.groupBoxRadius.PerformLayout();
             this.groupBoxNorm.ResumeLayout(false);
@@ -576,19 +454,11 @@
         private System.Windows.Forms.ContextMenuStrip contextMenu;
         private System.Windows.Forms.FontDialog fontDialog1;
         private GMap.NET.WindowsForms.GMapControl gmapNorm;
-        private System.Windows.Forms.TextBox textBoxWeightPharmacy;
-        private System.Windows.Forms.Label labelPharma;
-        private System.Windows.Forms.TextBox textBoxWeightResidents;
-        private System.Windows.Forms.Label labelRes;
-        private System.Windows.Forms.TextBox textBoxWeightRetired;
-        private System.Windows.Forms.Label labelRet;
         private System.Windows.Forms.Label labelRadius;
         private System.Windows.Forms.TextBox textBoxCountOSI;
         private System.Windows.Forms.Label labelNorm;
         private System.Windows.Forms.TextBox textBoxPeople;
         private System.Windows.Forms.Label labelPeople;
-        private System.Windows.Forms.Button buttonLoadPriority;
-        private System.Windows.Forms.Button buttonInputRadius;
         private System.Windows.Forms.Button buttonInputNorm;
         private System.Windows.Forms.Button buttonFindBest;
         private System.Windows.Forms.Button buttonSaveMap;
@@ -596,7 +466,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBoxAuto;
         private System.Windows.Forms.Label labelStateOfNormCity;
-        private System.Windows.Forms.GroupBox groupBoxWeights;
         private System.Windows.Forms.GroupBox groupBoxRadius;
         private System.Windows.Forms.GroupBox groupBoxNorm;
         private System.Windows.Forms.RadioButton radioButtonShowOSI;

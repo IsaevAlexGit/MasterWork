@@ -12,8 +12,8 @@ namespace Optimum
         /// <summary>
         /// Конструктор
         /// </summary>
-        /// <param name="bz">Оптимальная точка</param>
-        /// <param name="names">Названия сверток, которые проголосовали за эту оптимальную точку</param>
+        /// <param name="optimalZone">Оптимальная точка</param>
+        /// <param name="convolutiones">Названия сверток, которые проголосовали за эту оптимальную точку</param>
         public OptimalZone(BufferZone optimalZone, List<string> convolutiones)
         {
             optimal = optimalZone;

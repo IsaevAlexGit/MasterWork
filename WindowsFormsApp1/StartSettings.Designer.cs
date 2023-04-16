@@ -43,7 +43,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelDirection = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -55,11 +55,11 @@
             this.buttonHelpSetCriterion = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboCountCriterion = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelCountCriterion = new System.Windows.Forms.Label();
+            this.labelWeight = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelNameCriterion = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -74,7 +74,7 @@
             this.pictureIconFacility = new System.Windows.Forms.PictureBox();
             this.buttonLoadIconFacility = new System.Windows.Forms.Button();
             this.buttonValidateAndSave = new System.Windows.Forms.Button();
-            this.labelInfo = new System.Windows.Forms.Label();
+            this.labelAboutWeights = new System.Windows.Forms.Label();
             this.groupBoxLoadFiles.SuspendLayout();
             this.groupBoxCriterion.SuspendLayout();
             this.groupBoxNameFacility.SuspendLayout();
@@ -199,7 +199,7 @@
             this.groupBoxCriterion.Controls.Add(this.comboBox5);
             this.groupBoxCriterion.Controls.Add(this.comboBox4);
             this.groupBoxCriterion.Controls.Add(this.comboBox3);
-            this.groupBoxCriterion.Controls.Add(this.label3);
+            this.groupBoxCriterion.Controls.Add(this.labelDirection);
             this.groupBoxCriterion.Controls.Add(this.textBox13);
             this.groupBoxCriterion.Controls.Add(this.textBox14);
             this.groupBoxCriterion.Controls.Add(this.textBox7);
@@ -211,11 +211,11 @@
             this.groupBoxCriterion.Controls.Add(this.buttonHelpSetCriterion);
             this.groupBoxCriterion.Controls.Add(this.comboBox2);
             this.groupBoxCriterion.Controls.Add(this.comboCountCriterion);
-            this.groupBoxCriterion.Controls.Add(this.label4);
-            this.groupBoxCriterion.Controls.Add(this.label6);
+            this.groupBoxCriterion.Controls.Add(this.labelCountCriterion);
+            this.groupBoxCriterion.Controls.Add(this.labelWeight);
             this.groupBoxCriterion.Controls.Add(this.textBox1);
             this.groupBoxCriterion.Controls.Add(this.textBox6);
-            this.groupBoxCriterion.Controls.Add(this.label5);
+            this.groupBoxCriterion.Controls.Add(this.labelNameCriterion);
             this.groupBoxCriterion.Controls.Add(this.textBox5);
             this.groupBoxCriterion.Controls.Add(this.textBox2);
             this.groupBoxCriterion.Controls.Add(this.textBox4);
@@ -292,7 +292,6 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(82, 29);
             this.comboBox4.TabIndex = 9;
-            this.comboBox4.Text = "max";
             // 
             // comboBox3
             // 
@@ -306,17 +305,16 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(82, 29);
             this.comboBox3.TabIndex = 6;
-            this.comboBox3.Text = "max";
             // 
-            // label3
+            // labelDirection
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(294, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 17);
-            this.label3.TabIndex = 107;
-            this.label3.Text = "Направление:";
+            this.labelDirection.AutoSize = true;
+            this.labelDirection.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDirection.Location = new System.Drawing.Point(294, 86);
+            this.labelDirection.Name = "labelDirection";
+            this.labelDirection.Size = new System.Drawing.Size(91, 17);
+            this.labelDirection.TabIndex = 107;
+            this.labelDirection.Text = "Направление:";
             // 
             // textBox13
             // 
@@ -409,7 +407,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(82, 29);
             this.comboBox2.TabIndex = 3;
-            this.comboBox2.Text = "min";
             // 
             // comboCountCriterion
             // 
@@ -430,25 +427,25 @@
             this.comboCountCriterion.TabIndex = 1;
             this.comboCountCriterion.SelectedIndexChanged += new System.EventHandler(this.comboCountCriterion_SelectedIndexChanged);
             // 
-            // label4
+            // labelCountCriterion
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(10, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 17);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Количество критериев:";
+            this.labelCountCriterion.AutoSize = true;
+            this.labelCountCriterion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountCriterion.Location = new System.Drawing.Point(10, 24);
+            this.labelCountCriterion.Name = "labelCountCriterion";
+            this.labelCountCriterion.Size = new System.Drawing.Size(147, 17);
+            this.labelCountCriterion.TabIndex = 0;
+            this.labelCountCriterion.Text = "Количество критериев:";
             // 
-            // label6
+            // labelWeight
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(396, 86);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 17);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Вес:";
+            this.labelWeight.AutoSize = true;
+            this.labelWeight.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWeight.Location = new System.Drawing.Point(396, 86);
+            this.labelWeight.Name = "labelWeight";
+            this.labelWeight.Size = new System.Drawing.Size(31, 17);
+            this.labelWeight.TabIndex = 25;
+            this.labelWeight.Text = "Вес:";
             // 
             // textBox1
             // 
@@ -457,7 +454,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(274, 29);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Аптеки";
             // 
             // textBox6
             // 
@@ -466,17 +462,16 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(91, 29);
             this.textBox6.TabIndex = 10;
-            this.textBox6.Text = "0,2";
             // 
-            // label5
+            // labelNameCriterion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(10, 86);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 17);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Название критерия:";
+            this.labelNameCriterion.AutoSize = true;
+            this.labelNameCriterion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNameCriterion.Location = new System.Drawing.Point(10, 86);
+            this.labelNameCriterion.Name = "labelNameCriterion";
+            this.labelNameCriterion.Size = new System.Drawing.Size(127, 17);
+            this.labelNameCriterion.TabIndex = 16;
+            this.labelNameCriterion.Text = "Название критерия:";
             // 
             // textBox5
             // 
@@ -485,7 +480,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(91, 29);
             this.textBox5.TabIndex = 7;
-            this.textBox5.Text = "0,2";
             // 
             // textBox2
             // 
@@ -494,7 +488,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(274, 29);
             this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "Жители";
             // 
             // textBox4
             // 
@@ -503,7 +496,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(91, 29);
             this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "0,6";
             // 
             // textBox3
             // 
@@ -512,7 +504,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(274, 29);
             this.textBox3.TabIndex = 8;
-            this.textBox3.Text = "Пенсионеры";
             // 
             // groupBoxNameFacility
             // 
@@ -559,7 +550,6 @@
             this.textBoxNameFacility.Name = "textBoxNameFacility";
             this.textBoxNameFacility.Size = new System.Drawing.Size(298, 29);
             this.textBoxNameFacility.TabIndex = 1;
-            this.textBoxNameFacility.Text = "Бочки";
             // 
             // groupBoxIconFacility
             // 
@@ -638,15 +628,15 @@
             this.buttonValidateAndSave.UseVisualStyleBackColor = false;
             this.buttonValidateAndSave.Click += new System.EventHandler(this.buttonValidateAndSave_Click);
             // 
-            // labelInfo
+            // labelAboutWeights
             // 
-            this.labelInfo.AutoSize = true;
-            this.labelInfo.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelInfo.Location = new System.Drawing.Point(21, 140);
-            this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(695, 69);
-            this.labelInfo.TabIndex = 94;
-            this.labelInfo.Text = resources.GetString("labelInfo.Text");
+            this.labelAboutWeights.AutoSize = true;
+            this.labelAboutWeights.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAboutWeights.Location = new System.Drawing.Point(21, 140);
+            this.labelAboutWeights.Name = "labelAboutWeights";
+            this.labelAboutWeights.Size = new System.Drawing.Size(695, 69);
+            this.labelAboutWeights.TabIndex = 94;
+            this.labelAboutWeights.Text = resources.GetString("labelAboutWeights.Text");
             // 
             // StartSettings
             // 
@@ -654,7 +644,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(832, 599);
-            this.Controls.Add(this.labelInfo);
+            this.Controls.Add(this.labelAboutWeights);
             this.Controls.Add(this.buttonValidateAndSave);
             this.Controls.Add(this.groupBoxLoadFiles);
             this.Controls.Add(this.groupBoxCriterion);
@@ -687,11 +677,11 @@
         private System.Windows.Forms.GroupBox groupBoxCriterion;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboCountCriterion;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelCountCriterion;
+        private System.Windows.Forms.Label labelWeight;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelNameCriterion;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox4;
@@ -712,7 +702,7 @@
         private System.Windows.Forms.Button buttonHelpSetFilePolygons;
         private System.Windows.Forms.Button buttonHelpSetCriterion;
         private System.Windows.Forms.Button buttonHelpSetName;
-        private System.Windows.Forms.Label labelInfo;
+        private System.Windows.Forms.Label labelAboutWeights;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox7;
@@ -721,7 +711,7 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelDirection;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.ComboBox comboBox6;

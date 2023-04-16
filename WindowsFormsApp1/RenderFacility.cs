@@ -13,21 +13,20 @@ namespace Optimum
         // Слой с объектами инфраструктуры
         private SublayerFacility _sublayerFacility = new SublayerFacility();
 
+        // Режим выводящейся информации об объекте инфраструктуры
+        // 1 - Название объекта инфраструктуры
+        // 2 - Вся информация
+        private int _modeInfoFacility = 1;
+
         /// <summary>
         /// Конструктор
         /// </summary>
         /// <param name="gmap">Карта</param>
-        /// <param name="sublayerFacil">Слой для объектов инфраструктуры</param>
-        public RenderFacility(GMapControl gmap, SublayerFacility sublayerFacil)
+        /// <param name="sublayerFacility">Слой для объектов инфраструктуры</param>
+        public RenderFacility(GMapControl gmap, SublayerFacility sublayerFacility)
         {
-            _sublayerFacility = sublayerFacil;
+            _sublayerFacility = sublayerFacility;
         }
-
-        // Режим выводящейся информации об объекте инфраструктуры
-        // 1 - название ОСИ
-        // 2 - Вся информация
-        // 3 - Убрать подписи
-        private int _modeInfoFacility = 1;
 
         /// <summary>
         /// Установка режима выводящейся информации об объекте инфраструктуры
@@ -86,11 +85,10 @@ namespace Optimum
             // Конечная подпись объекта
             string TextInfo = "";
 
-            // Если 1 - Название ОСИ
+            // Если 1 - Название объекта инфраструктуры
             if (mode == 1)
                 TextInfo = _sublayerFacility.nameOfOverlay;
-
-            // Если 2 - вся информация об ОСИ
+            // Иначе вся информация об объекте инфраструктуры
             else
             {
                 for (int i = 0; i < point.infoAboutFacility.Count; i++)

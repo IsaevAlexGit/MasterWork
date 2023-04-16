@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
-using System.IO;
-using System.Drawing;
 
 namespace Optimum
 {
@@ -13,6 +11,14 @@ namespace Optimum
     {
         private MapModel _mapModel;
         private GMapControl _gmap = new GMapControl();
+
+        // Отрисовщики каждого слоя
+        private RenderFacility _renderFacility;
+        private RenderTerritory _renderTerritory;
+        private RenderQuar _renderQuar;
+        private RenderUserMarker _renderUserCandidate;
+        private RenderAutoPoints _renderAutoPoints;
+        private RenderNorma _renderNorma;
 
         /// <summary>
         /// Конструктор
@@ -25,15 +31,6 @@ namespace Optimum
             _InitializationRenderers();
         }
 
-        // Отрисовщики каждого слоя
-        private RenderFacility _renderFacility;
-        private RenderTerritory _renderTerritory;
-        private RenderQuar _renderQuar;
-        private RenderUserMarker _renderUserCandidate;
-        private RenderAutoPoints _renderAutoPoints;
-
-        private RenderNorma _renderNorma;
-
         /// <summary>
         /// Инициализация всех отрисовщиков
         /// </summary>
@@ -44,8 +41,6 @@ namespace Optimum
             _renderQuar = new RenderQuar(_gmap, _mapModel.GetSublayerQuarIcon());
             _renderUserCandidate = new RenderUserMarker(_gmap, _mapModel.GetSublayerUserPoints());
             _renderAutoPoints = new RenderAutoPoints(_gmap, _mapModel.GetSublayerAutoUserPoints());
-
-
             _renderNorma = new RenderNorma(_gmap, _mapModel.GetSublayerNorma());
         }
 
@@ -75,7 +70,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Отображение города
+        /// Отображение территории
         /// </summary>
         public void DrawTerritory()
         {
@@ -83,7 +78,7 @@ namespace Optimum
         }
         
         /// <summary>
-        /// Очистка карты от города и районов
+        /// Очистка карты от территории
         /// </summary>
         public void ClearTerritory()
         {
@@ -93,7 +88,7 @@ namespace Optimum
         /// <summary>
         /// Очистка карты от площадной раскраски
         /// </summary>
-        /// <param name="subQuartet"></param>
+        /// <param name="subPolygon"></param>
         public void ClearPolygonQuar(SublayerQuar subPolygon)
         {
             subPolygon.overlay.Polygons.Clear();
@@ -113,7 +108,8 @@ namespace Optimum
         /// <param name="nameCriterion">Названия критерия</param>
         public void ShowIconColoring(double maxSelectedCriterion, double minSelectedCriterion, int shadesColor, int indexSelectedCriterion, string nameCriterion)
         {
-            _renderQuar.ShowIconCriterion(_gmap, maxSelectedCriterion, minSelectedCriterion, shadesColor, indexSelectedCriterion, _mapModel.array_icons, nameCriterion);
+            _renderQuar.ShowIconCriterion(_gmap, maxSelectedCriterion, minSelectedCriterion, shadesColor, 
+                indexSelectedCriterion, _mapModel.array_icons, nameCriterion);
         }
 
         /// <summary>
@@ -121,17 +117,17 @@ namespace Optimum
         /// </summary>
         public void ClearIconColoring()
         {
-            _renderQuar.ClearIconQuartet(_gmap);
+            _renderQuar.ClearIconPolygon(_gmap);
         }
 
         /// <summary>
-        /// Проверка принадлежности точки городу
+        /// Проверка принадлежности точки территории
         /// </summary>
         /// <param name="point">Точка</param>
-        /// <returns>Флаг принадлежности городу</returns>
+        /// <returns>Флаг принадлежности территории</returns>
         public bool CheckInsidePointTerritory(PointLatLng point)
         {
-            // Принадлежность точки городу
+            // Принадлежность точки территории
             bool isInsydeTerritory = false;
 
             // Список граничных точек территории
@@ -161,10 +157,10 @@ namespace Optimum
             // Слой для проверки
             SublayerQuar sublayer = _mapModel.GetSublayerQuarCheck();
             List<PointLatLng> listTemp;
-            // Принадлежность точки любому кварталу
+            // Принадлежность точки любому полигону
             bool isInsydePolygon = false;
 
-            // Заполнение таблицы данными из списка с кварталами
+            // Заполнение таблицы данными из списка с полигонами
             DataTable dataquartets = _mapModel.CreateTableFromQuartets();
             int countOfPolygons = dataquartets.Rows.Count;
 
@@ -206,7 +202,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Отрисовка маркера и окружности пользователя
+        /// Отрисовка кандидата и его буферной зоны
         /// </summary>
         /// <param name="_radiusForSearch">Радиус буферной зоны</param>
         public void DrawPointBufferZone()
@@ -215,7 +211,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Отрисовка автомаркера и окружности
+        /// Отрисовка буферных зон кандидатов авто-поиска
         /// </summary>
         /// <param name="_radiusForSearch">Радиус буферной зоны</param>
         public void DrawAutoPointBufferZone(int _radiusForSearch)
@@ -223,7 +219,7 @@ namespace Optimum
             _renderAutoPoints.InitializationPoint(_gmap, _radiusForSearch);
         }
         /// <summary>
-        /// Отрисовка автомаркера и окружности
+        /// Отрисовка буферных зон авто-оптимумов
         /// </summary>
         /// <param name="_radiusForSearch">Радиус буферной зоны</param>
         public void DrawAutoIdealPointBufferZone(List<BufferZone> _list)
@@ -232,16 +228,15 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Убрать авто-кандидаты
+        /// Убрать авто-оптимумы
         /// </summary>
-        /// <param name="renderQuartet">Слой с кварталами</param>
+        /// <param name="sublayer">Слой с полигонами</param>
         public void ClearIdealPoints(SublayerLocation sublayer)
         {
             sublayer.listWithLocation.Clear();
             sublayer.overlay.Polygons.Clear();
             sublayer.overlay.Markers.Clear();
             sublayer.overlay.Clear();
-
             sublayer.overlay.IsVisibile = false;
             _gmap.Overlays.Remove(sublayer.overlay);
         }
@@ -250,24 +245,8 @@ namespace Optimum
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         /// <summary>
-        /// Отрисовка нормы
+        /// Отрисовка буферных зон кандидатов нормы
         /// </summary>
         /// <param name="_radiusForSearch">Радиус буферной зоны</param>
         public void DrawNormaBufferZone(int _radiusForSearch)
@@ -276,7 +255,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Отрисовка нормы
+        /// Отрисовка буферных зон оптимумов нормы
         /// </summary>
         /// <param name="_radiusForSearch">Радиус буферной зоны</param>
         public void DrawNormaIdealPointBufferZone(List<BufferZone> _list)
@@ -284,21 +263,19 @@ namespace Optimum
             _renderNorma.InitializationIdealPoints(_gmap, _list);
         }
 
+        /// <summary>
+        /// Очистка карты от нормы на душу населения
+        /// </summary>
+        /// <param name="sub"></param>
         public void ClearNormaPoints(SublayerLocation sub)
         {
             sub.listWithLocation.Clear();
             sub.overlay.Polygons.Clear();
             sub.overlay.Markers.Clear();
             sub.overlay.Clear();
-
             sub.overlay.IsVisibile = false;
             _gmap.Overlays.Remove(sub.overlay);
         }
-
-
-
-
-
 
         /// <summary>
         /// Центрирование карты

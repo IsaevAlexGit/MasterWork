@@ -1,16 +1,13 @@
 ﻿using System;
+using System.Text;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.Windows.Forms;
+using System.Device.Location;
 using System.Collections.Generic;
 using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
-using GMap.NET.WindowsForms.Markers;
-using GMap.NET.WindowsForms.ToolTips;
-using System.Device.Location;
-using System.Text;
 
 namespace Optimum
 {
@@ -33,7 +30,7 @@ namespace Optimum
         // Список объектов инфраструктуры из файла
         private List<Facility> _listFacilitiesFromFile;
         // Точка центрирования карты
-        Location _locationCenterMap;
+        private Location _locationCenterMap;
 
         /// <summary>
         /// Создание окна
@@ -44,7 +41,6 @@ namespace Optimum
             _languageOfMap = language;
             _colorForApplication = colorApp;
             _colorForElem = colorElem;
-            // В условных обозначениях измнеить значок объекта инфраструктуры
             _pathToIconFacility = pathToIcon;
             _nameFacility = nameFacility;
             _listCriteriaForSearch = listCriterion;
@@ -76,8 +72,8 @@ namespace Optimum
             _mapModel.centerMap = _locationCenterMap;
 
             // Настройка цвета интерфейса
-            _mapModel.colorApplication = _colorForApplication;
-            _mapModel.colorElements = _colorForElem;
+            _mapModel.mainColor = _colorForApplication;
+            _mapModel.secondaryColor = _colorForElem;
 
             // Настройка значка и названия объекта инфраструктуры
             _mapModel.pathToIconObjectFacility = _pathToIconFacility;
@@ -97,7 +93,7 @@ namespace Optimum
 
         // Отрисовка границ groupbox
         private PaintGroupBoxBorder _paintGroupBoxBorder = new PaintGroupBoxBorder();
-        // Слой для кварталов
+        // Слой для полигонов
         private SublayerQuar _sublayerQuar;
         // Слой для маркеров пользователя
         private SublayerLocation _sublayerUserFacilityCandidate;
@@ -105,7 +101,7 @@ namespace Optimum
         private SublayerLocation _sublayerAuto;
         // Работа с файлом
         private FileValidator _fileValidator;
-        // Цвет раскраски кварталов
+        // Цвет раскраски полигонов
         private Color _colorForColoring;
 
         // Ползунок для изменения прозрачности полигонов
@@ -150,8 +146,8 @@ namespace Optimum
         private void Map_Load(object sender, EventArgs e)
         {
             // Установка цвета интерфейса и меню
-            BackColor = _mapModel.colorApplication;
-            menuStrip.BackColor = _mapModel.colorElements;
+            BackColor = _mapModel.mainColor;
+            menuStrip.BackColor = _mapModel.secondaryColor;
 
             // Размеры главного окна
             ClientSize = new Size(1374, 751);
@@ -160,7 +156,7 @@ namespace Optimum
             _sublayerQuar = _mapModel.sublayerQuarPolygon;
 
             _sublayerUserFacilityCandidate = _mapModel.sublayerUserFacility;
-            _sublayerAuto = _mapModel.sublayerAutoUserPharmacy;
+            _sublayerAuto = _mapModel.sublayerAutoPoints;
             _fileValidator = new FileValidator();
 
             // Создать обе выдвигающиеся панели
@@ -237,20 +233,15 @@ namespace Optimum
             if (_languageOfMap == LanguageType.English)
             {
                 // Английский язык
-                comboBoxProvidersMap.Items.Add("Yandex");
                 comboBoxProvidersMap.Items.Add("Google");
                 comboBoxProvidersMap.Items.Add("BingHybridMap");
-                comboBoxProvidersMap.Items.Add("YandexHybridMap");
                 comboBoxProvidersMap.Items.Add("ArcGIS");
                 comboBoxProvidersMap.Items.Add("WikiMapiaMap");
             }
             else
             {
                 // Русский язык
-                comboBoxProvidersMap.Items.Add("Yandex");
                 comboBoxProvidersMap.Items.Add("Google");
-                comboBoxProvidersMap.Items.Add("OpenCycleMap");
-                comboBoxProvidersMap.Items.Add("YandexHybridMap");
             }
             // Настройка выпадающего списка
             comboBoxProvidersMap.SelectedItem = "Google";
@@ -263,14 +254,14 @@ namespace Optimum
             pictureBoxFacility.Image = iconFacility;
 
             // Цвет фона у картинок
-            pictureBoxMarker.BackColor = _mapModel.colorApplication;
-            pictureBoxFacility.BackColor = _mapModel.colorApplication;
-            pictureBoxAuto.BackColor = _mapModel.colorApplication;
+            pictureBoxMarker.BackColor = _mapModel.mainColor;
+            pictureBoxFacility.BackColor = _mapModel.mainColor;
+            pictureBoxAuto.BackColor = _mapModel.mainColor;
             // Цвет фона у надписей
-            labelUserMarker.BackColor = _mapModel.colorApplication;
-            labelFacility.BackColor = _mapModel.colorApplication;
-            labelAutoSearch.BackColor = _mapModel.colorApplication;
-            labelLegendForMap.BackColor = _mapModel.colorApplication;
+            labelUserMarker.BackColor = _mapModel.mainColor;
+            labelFacility.BackColor = _mapModel.mainColor;
+            labelAutoSearch.BackColor = _mapModel.mainColor;
+            labelLegendForMap.BackColor = _mapModel.mainColor;
 
             // Начальный цвет раскраски (зеленый)
             _colorForColoring = Color.FromArgb(255, 0, 255, 0);
@@ -320,7 +311,7 @@ namespace Optimum
         private void SettingsAnimationPanels()
         {
             // Создание левой панели
-            AnimatedLeftPanel LeftPanel = new AnimatedLeftPanel(new Size(312, 490), 70, Color.Gold, AnimatedLeftPanel.stateEnum.open);
+            AnimatedLeftPanel LeftPanel = new AnimatedLeftPanel(new Size(312, 490), 70, _colorForApplication, AnimatedLeftPanel.stateEnum.open);
             {
                 // Прозрачный фон и не показывать границы панели
                 LeftPanel.BackColor = Color.Transparent;
@@ -451,7 +442,7 @@ namespace Optimum
                     comboBoxColoringPolygon.Top = 285;
                     comboBoxColoringPolygon.Width = 250;
                     comboBoxColoringPolygon.SelectedIndexChanged += comboBoxColoringPolygon_SelectedIndexChanged;
-                    comboBoxColoringPolygon.BackColor = _mapModel.colorApplication;
+                    comboBoxColoringPolygon.BackColor = _mapModel.mainColor;
                     comboBoxColoringPolygon.Cursor = Cursors.Hand;
                 }
                 LeftPanel.Controls.Add(labelPolygonColoring);
@@ -475,7 +466,7 @@ namespace Optimum
                     comboBoxColoringIcons.Top = 345;
                     comboBoxColoringIcons.Width = 250;
                     comboBoxColoringIcons.SelectedIndexChanged += comboBoxColoringIcons_SelectedIndexChanged;
-                    comboBoxColoringIcons.BackColor = _mapModel.colorApplication;
+                    comboBoxColoringIcons.BackColor = _mapModel.mainColor;
                     comboBoxColoringIcons.Cursor = Cursors.Hand;
                 }
                 LeftPanel.Controls.Add(labelIconColoring);
@@ -498,7 +489,7 @@ namespace Optimum
                     comboBoxAuto.Left = 200;
                     comboBoxAuto.Top = 380;
                     comboBoxAuto.Width = 60;
-                    comboBoxAuto.BackColor = _mapModel.colorApplication;
+                    comboBoxAuto.BackColor = _mapModel.mainColor;
                     comboBoxAuto.Cursor = Cursors.Hand;
                 }
 
@@ -523,7 +514,7 @@ namespace Optimum
                     comboBoxProvidersMap.Top = 437;
                     comboBoxProvidersMap.Width = 150;
                     comboBoxProvidersMap.SelectedIndexChanged += comboBoxProvidersMap_SelectedIndexChanged;
-                    comboBoxProvidersMap.BackColor = _mapModel.colorApplication;
+                    comboBoxProvidersMap.BackColor = _mapModel.mainColor;
                     comboBoxProvidersMap.Cursor = Cursors.Hand;
                 }
                 LeftPanel.Controls.Add(labelProviderMap);
@@ -534,7 +525,7 @@ namespace Optimum
             gmap.SendToBack();
 
             // Создание нижней панели
-            BottomPanel = new AnimatedBottomPanel(new Size(1182, 150), 540, Color.White, AnimatedBottomPanel.stateEnum.open, _mapModel);
+            BottomPanel = new AnimatedBottomPanel(new Size(1182, 150), 540, _colorForApplication, AnimatedBottomPanel.stateEnum.open, _mapModel);
             {
                 // Прозрачный фон и не показывать границы панели
                 BottomPanel.BorderStyle = BorderStyle.None;
@@ -548,7 +539,7 @@ namespace Optimum
                     panelLegendOfMap.Left = 10;
                     panelLegendOfMap.Top = 25;
                     panelLegendOfMap.Click += panelLegendOfMap_Click;
-                    panelLegendOfMap.BackColor = _mapModel.colorApplication;
+                    panelLegendOfMap.BackColor = _mapModel.mainColor;
                     panelLegendOfMap.Size = new Size(505, 60);
                     panelLegendOfMap.Cursor = Cursors.Hand;
                 }
@@ -578,7 +569,7 @@ namespace Optimum
                 trackBarTransparent = new TrackBar();
                 {
                     trackBarTransparent.Location = new Point(550, 75);
-                    trackBarTransparent.BackColor = _mapModel.colorElements;
+                    trackBarTransparent.BackColor = _mapModel.secondaryColor;
                     trackBarTransparent.Cursor = Cursors.Hand;
                     trackBarTransparent.Orientation = Orientation.Horizontal;
                     trackBarTransparent.Size = new Size(200, 45);
@@ -602,7 +593,7 @@ namespace Optimum
                 trackBarIntensity = new TrackBar();
                 {
                     trackBarIntensity.Location = new Point(770, 75);
-                    trackBarIntensity.BackColor = _mapModel.colorElements;
+                    trackBarIntensity.BackColor = _mapModel.secondaryColor;
                     trackBarIntensity.Cursor = Cursors.Hand;
                     trackBarIntensity.Orientation = Orientation.Horizontal;
                     trackBarIntensity.Size = new Size(180, 45);
@@ -627,7 +618,7 @@ namespace Optimum
                 trackBarShades = new TrackBar();
                 {
                     trackBarShades.Location = new Point(970, 75);
-                    trackBarShades.BackColor = _mapModel.colorElements;
+                    trackBarShades.BackColor = _mapModel.secondaryColor;
                     trackBarShades.Cursor = Cursors.Hand;
                     trackBarShades.Orientation = Orientation.Horizontal;
                     trackBarShades.Size = new Size(200, 45);
@@ -653,7 +644,6 @@ namespace Optimum
             _mapView.DrawFacility();
             _mapView.DrawPointBufferZone();
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
         }
 
@@ -724,12 +714,8 @@ namespace Optimum
             // Если нажали правой кнопкой мыши для удаления маркера
             if (e.Button == MouseButtons.Right)
             {
-
-                // Подтвердить удаление маркера
-                // if (MessageBox.Show("Удалить маркер?", "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                // {
-
                 List<OptimalZone> _optimalZones = _mapModel._optimalZones;
+                // Округлить все оптимумы до 7 знаков после запятой
                 for (int i = 0; i < _optimalZones.Count; i++)
                 {
                     _optimalZones[i].optimal.x = Math.Round(_optimalZones[i].optimal.x, 6);
@@ -746,10 +732,10 @@ namespace Optimum
                         double roundX_Location = Math.Round(item.Position.Lat, 6);
                         double roundY_Location = Math.Round(item.Position.Lng, 6);
 
-                        bool flag = false;
+                        bool flagDeleteOneOfTheOptimums = false;
                         for (int j = 0; j < _optimalZones.Count; j++)
                         {
-                            // Удаление маркера, который был оптимальным
+                            // Удаление одного из оптимумов
                             if (_optimalZones[j].optimal.x == roundX_Location && _optimalZones[j].optimal.y == roundY_Location)
                             {
                                 // Убрать данный маркер с карты
@@ -757,16 +743,14 @@ namespace Optimum
                                 _mapModel._optimalZones.Remove(_optimalZones[j]);
                                 // Перерисовать все маркеры на карте
                                 _mapView.DrawPointBufferZone();
-                                flag = true;
+                                flagDeleteOneOfTheOptimums = true;
                                 if (_mapModel._optimalZones.Count == 0)
-                                {
-                                    // Обнулить флаг поиска оптимума
+                                    // Обнулить флаг найденных оптимумов, если последний оптимум был удален
                                     _searchOptimum = false;
-                                }
                             }
                         }
                         // Удаление неоптимальной точки
-                        if (!flag)
+                        if (!flagDeleteOneOfTheOptimums)
                         {
                             // Убрать данный маркер с карты
                             _sublayerUserFacilityCandidate.listWithLocation.Remove(_sublayerUserFacilityCandidate.listWithLocation[i]);
@@ -774,12 +758,9 @@ namespace Optimum
                             _mapView.DrawPointBufferZone();
                         }
                         if (IsAutoShow && !IsShadowAuto)
-                            // Перерисовать с новым радиусом авто-кандидатов
                             _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
                     }
-                    // }
                 }
-
             }
         }
 
@@ -797,7 +778,6 @@ namespace Optimum
             _CheckSelectedRadioButtonFacility(sender, e);
             _mapView.DrawPointBufferZone();
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
         }
 
@@ -812,7 +792,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Перерисовать слой с маркерами объектов инфраструктуры
+        /// Перерисовать территорию
         /// </summary>
         private void _CheckSelectedRadioButtonTerritory(object sender, EventArgs e)
         {
@@ -836,7 +816,7 @@ namespace Optimum
             // Перерисовать буферные зоны
             _mapView.DrawPointBufferZone();
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
+                // Перерисовать авто-кандидатов
                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
         }
 
@@ -864,11 +844,7 @@ namespace Optimum
             {
                 // Получить поставщика карты
                 string _selectedProvider = comboBoxProvidersMap.Text;
-                if (_selectedProvider == "Yandex")
-                {
-                    gmap.MapProvider = GMapProviders.YandexMap;
-                    _RedrawMap(sender, e);
-                }
+
                 // Если выбран Google
                 if (_selectedProvider == "Google")
                 {
@@ -892,16 +868,6 @@ namespace Optimum
                     gmap.MapProvider = GMapProviders.BingHybridMap;
                     _RedrawMap(sender, e);
                 }
-                if (_selectedProvider == "OpenCycleMap")
-                {
-                    gmap.MapProvider = GMapProviders.OpenCycleMap;
-                    _RedrawMap(sender, e);
-                }
-                if (_selectedProvider == "YandexHybridMap")
-                {
-                    gmap.MapProvider = GMapProviders.YandexHybridMap;
-                    _RedrawMap(sender, e);
-                }
                 if (_selectedProvider == "WikiMapiaMap")
                 {
                     gmap.MapProvider = GMapProviders.WikiMapiaMap;
@@ -910,8 +876,8 @@ namespace Optimum
             }
         }
 
-        // Номер критерия, по которому раскрашивает полигоны
-        int indexOfSelectedCriterion = -1;
+        // Номер критерия, по которому делать площадную раскраску
+        private int indexOfSelectedCriterion = -1;
         /// <summary>
         /// Изменение критерия в площадной раскраски
         /// </summary>
@@ -950,7 +916,7 @@ namespace Optimum
                 // Перерисовать буферные зоны
                 _mapView.DrawPointBufferZone();
                 if (IsAutoShow && !IsShadowAuto)
-                    // Перерисовать с новым радиусом авто-кандидатов
+                    // Перерисовать авто-кандидатов
                     _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
             }
         }
@@ -977,7 +943,7 @@ namespace Optimum
         // Начальная прозрачность полигонов
         private int _transparent = 255;
         /// <summary>
-        /// Отрисовка кварталов
+        /// Отрисовка полигонов
         /// </summary>
         private void _DrawPolygonForQuartet()
         {
@@ -993,11 +959,11 @@ namespace Optimum
             gmap.Overlays.Remove(_sublayerQuar.overlay);
             _sublayerQuar.overlay.Clear();
 
-            // Заполнение таблицы данными из списка с кварталами
+            // Заполнение таблицы данными из списка с полигонами
             DataTable dataquartets = _mapModel.CreateTableFromQuartets();
             int countOfQuartets = dataquartets.Rows.Count;
 
-            // Для каждого квартала создается список граничных точек этого квартала
+            // Для каждого полигона создается список граничных точек этого полигона
             List<PointLatLng>[] listBoundaryForEveryQuartet = new List<PointLatLng>[countOfQuartets];
             for (int i = 0; i < listBoundaryForEveryQuartet.Length; i++)
                 listBoundaryForEveryQuartet[i] = new List<PointLatLng>();
@@ -1020,18 +986,18 @@ namespace Optimum
 
             for (int j = 0; j < countOfQuartets; j++)
             {
-                // Создание полигона для квартала
+                // Создание полигона
                 var mapPolygon = new GMapPolygon(listBoundaryForEveryQuartet[j], "Quartet" + j.ToString());
-                // Установка толщины границ у квартала
+                // Установка толщины границ у полигона
                 mapPolygon.Stroke = _penBoundary;
 
-                // Определение оттенка, в который необходимо окрасить квартал
+                // Определение оттенка, в который необходимо окрасить полигон
                 int ShadeNumber = 0;
                 ShadeNumber = _mapModel.GetnumberShade(Convert.ToDouble(dataquartets.Rows[j][5 + indexOfSelectedCriterion]), min, max, grids, step);
 
                 // Заливка полигона определенным цветом
                 mapPolygon.Fill = new SolidBrush(colorPolygon[ShadeNumber]);
-                // Добавление на слой квартала
+                // Добавление на слой полигона
                 _sublayerQuar.overlay.Polygons.Add(mapPolygon);
             }
             // Добавление слоя на карту
@@ -1051,7 +1017,7 @@ namespace Optimum
             out double maxValueColoring, out int countOfGrids, out double countOfSteps)
         {
             Graphics graphics = panelLegendOfMap.CreateGraphics();
-            graphics.Clear(_mapModel.colorApplication);
+            graphics.Clear(_mapModel.mainColor);
 
             // Временные переменные для работы с цветом
             int red, green, blue;
@@ -1141,12 +1107,12 @@ namespace Optimum
             // Перерисовать буферные зоны
             _mapView.DrawPointBufferZone();
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
+                // Перерисовать авто-кандидатов
                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
         }
 
         /// <summary>
-        /// Обработка изменения жирности границ для кварталов
+        /// Обработка изменения жирности границ для полигонов
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -1163,12 +1129,12 @@ namespace Optimum
             // Перерисовать буферные зоны
             _mapView.DrawPointBufferZone();
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
+                // Перерисовать авто-кандидатов
                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
         }
 
         /// <summary>
-        /// Обработка изменения жирности границ для кварталов
+        /// Обработка изменения жирности границ для полигонов
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -1185,7 +1151,7 @@ namespace Optimum
             // Перерисовать буферные зоны
             _mapView.DrawPointBufferZone();
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
+                // Перерисовать авто-кандидатов
                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
         }
 
@@ -1213,13 +1179,13 @@ namespace Optimum
                 comboBoxColoringIcons_SelectedIndexChanged(sender, e);
                 _mapView.DrawPointBufferZone();
                 if (IsAutoShow && !IsShadowAuto)
-                    // Перерисовать с новым радиусом авто-кандидатов
+                    // Перерисовать авто-кандидатов
                     _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
             }
         }
 
         // Индекс критерия для точечной раскраски
-        int indexOfSelectedCriterionIcon = -1;
+        private int indexOfSelectedCriterionIcon = -1;
         /// <summary>
         /// Изменение критерия в точечной раскраски
         /// </summary>
@@ -1255,7 +1221,7 @@ namespace Optimum
                 _CheckSelectedRadioButtonFacility(sender, e);
                 _mapView.DrawPointBufferZone();
                 if (IsAutoShow && !IsShadowAuto)
-                    // Перерисовать с новым радиусом авто-кандидатов
+                    // Перерисовать авто-кандидатов
                     _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
             }
         }
@@ -1273,7 +1239,7 @@ namespace Optimum
                 comboBoxColoringIcons_SelectedIndexChanged(sender, e);
                 _mapView.DrawPointBufferZone();
                 if (IsAutoShow && !IsShadowAuto)
-                    // Перерисовать с новым радиусом авто-кандидатов
+                    // Перерисовать авто-кандидатов
                     _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
             }
         }
@@ -1306,8 +1272,8 @@ namespace Optimum
                                     fileName += ".png";
                                 image.Save(fileName);
                                 // Уведомление о том, что сохранение успешно
-                                MessageBox.Show("Карта успешно сохранена в директории: " + Environment.NewLine + SaveMapDialog.FileName,
-                                    "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                                //MessageBox.Show("Карта успешно сохранена в директории: " + Environment.NewLine + SaveMapDialog.FileName,
+                                //    "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                             }
                         }
                     }
@@ -1339,23 +1305,26 @@ namespace Optimum
                     {
                         if (_sublayerUserFacilityCandidate.listWithLocation.Count >= 1)
                         {
-                            bool fff = false;
+                            // Новая точка не близко поставлена к уже стоящим (не ближе 25 метров)
+                            bool flagNewPointBeyondTheOthers = false;
                             for (int i = 0; i < _sublayerUserFacilityCandidate.listWithLocation.Count; i++)
                             {
                                 GeoCoordinate newPoint = new GeoCoordinate(x, y);
                                 GeoCoordinate everyPoint = new GeoCoordinate(_sublayerUserFacilityCandidate.listWithLocation[i].x,
                                     _sublayerUserFacilityCandidate.listWithLocation[i].y);
-                                int dlina = Convert.ToInt32(newPoint.GetDistanceTo(everyPoint));
-                                if (dlina < 25)
-                                    fff = true;
+                                int distanceBetweenPoints = Convert.ToInt32(newPoint.GetDistanceTo(everyPoint));
+                                // Если новая точка ближе, чем 25 метров к одной из уже поставленных
+                                if (distanceBetweenPoints < 25)
+                                    flagNewPointBeyondTheOthers = true;
                             }
 
-                            if (!fff)
+                            // Если точка близко расположена
+                            if (!flagNewPointBeyondTheOthers)
                             {
                                 // Если точка не принадлежит никакому полигону
                                 if (_mapView.CheckInsidePointPolygon(pointLatLng) == false)
                                 {
-                                    // Ситуация, когда маркер в городе, но находится не в квартале (Дубки, набережная, заводы)
+                                    // Ситуация, когда маркер в территории, но находится не в полигонах
                                     if (MessageBox.Show("Точка не принадлежит полигонам. Продолжить?", "Предупреждение",
                                         MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                                     {
@@ -1373,7 +1342,6 @@ namespace Optimum
                                     _mapView.DrawPointBufferZone();
                                 }
                                 if (IsAutoShow && !IsShadowAuto)
-                                    // Перерисовать с новым радиусом авто-кандидатов
                                     _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
                             }
                             else
@@ -1385,7 +1353,7 @@ namespace Optimum
                             // Если точка не принадлежит никакому полигону
                             if (_mapView.CheckInsidePointPolygon(pointLatLng) == false)
                             {
-                                // Ситуация, когда маркер в городе, но находится не в квартале (Дубки, набережная, заводы)
+                                // Ситуация, когда маркер в территории, но находится не в полигонах
                                 if (MessageBox.Show("Точка не принадлежит полигонам. Продолжить?", "Предупреждение",
                                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                                 {
@@ -1403,7 +1371,6 @@ namespace Optimum
                                 _mapView.DrawPointBufferZone();
                             }
                             if (IsAutoShow && !IsShadowAuto)
-                                // Перерисовать с новым радиусом авто-кандидатов
                                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
                         }
                     }
@@ -1417,8 +1384,6 @@ namespace Optimum
             }
         }
 
-
-
         /// <summary>
         /// Открытие формы для ввода радиуса
         /// </summary>
@@ -1426,19 +1391,15 @@ namespace Optimum
         {
             SettingRadius form = new SettingRadius(_mapModel);
             form.ShowDialog();
-            // Переотрисовать буферные зоны
+            // Переотрисовать буферные зоны с новым радиусом
             _mapView.DrawPointBufferZone();
+            // Если были найдены оптимумы, найти из заново
             if (_searchOptimum)
                 SearchOptimumToolStripMenuItem_Click(sender, e);
+            // Перерисовать с новым радиусом авто-кандидатов
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
                 FindAutoToolStripMenuItem_Click(sender, e);
         }
-
-
-
-
-
 
         /// <summary>
         /// Настройка загруженных данных
@@ -1450,7 +1411,7 @@ namespace Optimum
             Settings form = new Settings(_mapModel);
             form.ShowDialog();
 
-
+            // После закрытия формы
             if (_mapModel.nameObjectFacility.Length <= 12)
             {
                 // Название Группбокса - это название объекта инфраструктуры
@@ -1479,18 +1440,13 @@ namespace Optimum
                 labelFacility.Font = new Font("Segoe UI", 6);
             }
 
-
-
-
-
-
             // Выставить загруженную иконку
             pictureBoxFacility.Image = _mapModel.iconFacility;
 
-            // Если ввели новую территорию 
+            // Если ввели новую территорию
             if (_mapModel.flagChangeTerritory)
             {
-                // Оптимумы в любом случае удаляем
+                // Оптимумы удаляются
                 _mapModel._optimalZones.Clear();
                 _searchOptimum = false;
 
@@ -1512,7 +1468,7 @@ namespace Optimum
                 if (IsAutoShow && !IsShadowAuto)
                     DeleteAutoToolStripMenuItem_Click(sender, e);
 
-                // Если новая территория, то сбросить радиус, так как сохранился от прошлой территории и может быть гораздо больше, чем нужно
+                // Сбросить радиус, так как сохранился от прошлой территории и может быть гораздо больше, чем нужно
                 _mapModel.radiusBufferZone = 500;
 
                 // Перецентрировать карту
@@ -1520,20 +1476,19 @@ namespace Optimum
                 _mapModel.flagChangeTerritory = false;
             }
 
-            // если ввели новые полигоны сносим оптимумы
+            // Если ввели новые полигоны
             if (_mapModel.flagChangePolygon)
             {
-                // Если есть и были найдены оптимумы
+                // Если есть точки-кандидаты и были найдены оптимумы
                 if (_sublayerUserFacilityCandidate.listWithLocation.Count >= 2 && _mapModel._optimalZones.Count != 0)
                     SearchOptimumToolStripMenuItem_Click(sender, e);
-
+                // Если были найдены авто-оптимумы
                 if (IsAutoShow && !IsShadowAuto)
                     FindAutoToolStripMenuItem_Click(sender, e);
-
                 _mapModel.flagChangePolygon = false;
             }
 
-            // если ввели новые критерии и стояли оптимумы до этого то найти заново их
+            // Если ввели новые критерии
             if (_mapModel.flagChangeCriterion)
             {
                 comboBoxColoringIcons.Items.Clear();
@@ -1554,10 +1509,10 @@ namespace Optimum
                 comboBoxColoringPolygon.DropDownStyle = ComboBoxStyle.DropDownList;
                 comboBoxColoringPolygon.SelectedItem = "Очистить";
 
-                // Если есть кандидаты и были найдены оптимумы
+                // Если есть точки-кандидаты и были найдены оптимумы
                 if (_sublayerUserFacilityCandidate.listWithLocation.Count >= 2 && _mapModel._optimalZones.Count != 0)
                     SearchOptimumToolStripMenuItem_Click(sender, e);
-
+                // Если были найдены авто-оптимумы
                 if (IsAutoShow && !IsShadowAuto)
                     FindAutoToolStripMenuItem_Click(sender, e);
             }
@@ -1646,11 +1601,10 @@ namespace Optimum
                 _optimalPoints = _math.GetOptimum();
                 // Сохранить оптимальные зоны
                 _mapModel._optimalZones = _optimalPoints;
-                // MessageBox.Show(_mapModel._optimalZones.Count.ToString());
                 // После закрытия формы перерисовать точки, выделив оптимум зеленым цветом
                 _mapView.DrawPointBufferZone();
                 if (IsAutoShow && !IsShadowAuto)
-                    // Перерисовать с новым радиусом авто-кандидатов
+                    // Перерисовать авто-кандидатов
                     _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
                 _searchOptimum = true;
             }
@@ -1659,16 +1613,19 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Оставить на карте отображение только оптимальной точки
+        /// Оставить на карте только оптимальные точки
         /// </summary>
         private void LeaveOptimumToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Очистить точки-кандидаты
             _sublayerUserFacilityCandidate.listWithLocation.Clear();
+            // Добавить в кандидатов оптимальные точки
             for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 _sublayerUserFacilityCandidate.listWithLocation.Add(new Location(_mapModel._optimalZones[i].optimal.x, _mapModel._optimalZones[i].optimal.y));
+            // Отрисовать оптимумы
             _mapView.DrawPointBufferZone();
             if (IsAutoShow && !IsShadowAuto)
-                // Перерисовать с новым радиусом авто-кандидатов
+                // Перерисовать авто-кандидатов
                 _mapView.DrawAutoIdealPointBufferZone(_listOptimalPoint);
         }
 
@@ -1759,18 +1716,21 @@ namespace Optimum
         /// <param name="e"></param>
         private void GoogleToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Если на карте есть оптимумы
             if (_mapModel._optimalZones.Count != 0)
             {
-                int fff = 0;
+                int votes = 0;
                 int idBest = -1;
+                // Найти точку, за которую проголосовало большая часть сверток и узнать ее индекс
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
-                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > fff)
+                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > votes)
                     {
-                        fff = _mapModel._optimalZones[i].namesConvolutiones.Count;
+                        votes = _mapModel._optimalZones[i].namesConvolutiones.Count;
                         idBest = i;
                     }
                 }
+                // Самую популярную оптимальную точку открыть на выбранной карте в браузере
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
                     if (i == idBest)
@@ -1784,6 +1744,7 @@ namespace Optimum
                         str = y.Split(new char[] { ',' });
                         y = str[0] + "." + str[1];
 
+                        // Открыть самую оптимальную точку в Google
                         System.Diagnostics.Process.Start("https://www.google.com/maps/@" + x + "," + y + ",18z");
                     }
                 }
@@ -1799,18 +1760,21 @@ namespace Optimum
         /// <param name="e"></param>
         private void YandexToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Если на карте есть оптимумы
             if (_mapModel._optimalZones.Count != 0)
             {
-                int fff = 0;
+                int votes = 0;
                 int idBest = -1;
+                // Найти точку, за которую проголосовало большая часть сверток и узнать ее индекс
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
-                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > fff)
+                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > votes)
                     {
-                        fff = _mapModel._optimalZones[i].namesConvolutiones.Count;
+                        votes = _mapModel._optimalZones[i].namesConvolutiones.Count;
                         idBest = i;
                     }
                 }
+                // Самую популярную оптимальную точку открыть на выбранной карте в браузере
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
                     if (i == idBest)
@@ -1824,7 +1788,8 @@ namespace Optimum
                         str = y.Split(new char[] { ',' });
                         y = str[0] + "." + str[1];
 
-                        System.Diagnostics.Process.Start("https://yandex.ru/maps/971/taganrog/?ll=" + y + "%2C" + x + "&z=18");
+                        // Открыть самую оптимальную точку в Яндексе
+                        System.Diagnostics.Process.Start("https://yandex.ru/maps/?ll=" + y + "%2C" + x + "&z=18");
                     }
                 }
             }
@@ -1839,18 +1804,21 @@ namespace Optimum
         /// <param name="e"></param>
         private void TwoGISToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Если на карте есть оптимумы
             if (_mapModel._optimalZones.Count != 0)
             {
-                int fff = 0;
+                int votes = 0;
                 int idBest = -1;
+                // Найти точку, за которую проголосовало большая часть сверток и узнать ее индекс
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
-                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > fff)
+                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > votes)
                     {
-                        fff = _mapModel._optimalZones[i].namesConvolutiones.Count;
+                        votes = _mapModel._optimalZones[i].namesConvolutiones.Count;
                         idBest = i;
                     }
                 }
+                // Самую популярную оптимальную точку открыть на выбранной карте в браузере
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
                     if (i == idBest)
@@ -1864,7 +1832,8 @@ namespace Optimum
                         str = y.Split(new char[] { ',' });
                         y = str[0] + "." + str[1];
 
-                        System.Diagnostics.Process.Start("https://2gis.ru/taganrog/geo/16326171458235811/" + y + "%2C" + x + "?m=" + y + "%2C" + x + "%2F" + "17.84");
+                        // Открыть самую оптимальную точку в 2ГИС
+                        System.Diagnostics.Process.Start("https://2gis.ru/geo/" + y + "%2C" + x + "?m=" + y + "%2C" + x + "%2F" + "17.84");
                     }
                 }
             }
@@ -1879,18 +1848,21 @@ namespace Optimum
         /// <param name="e"></param>
         private void OpenStreetMapToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Если на карте есть оптимумы
             if (_mapModel._optimalZones.Count != 0)
             {
-                int fff = 0;
+                int votes = 0;
                 int idBest = -1;
+                // Найти точку, за которую проголосовало большая часть сверток и узнать ее индекс
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
-                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > fff)
+                    if (_mapModel._optimalZones[i].namesConvolutiones.Count > votes)
                     {
-                        fff = _mapModel._optimalZones[i].namesConvolutiones.Count;
+                        votes = _mapModel._optimalZones[i].namesConvolutiones.Count;
                         idBest = i;
                     }
                 }
+                // Самую популярную оптимальную точку открыть на выбранной карте в браузере
                 for (int i = 0; i < _mapModel._optimalZones.Count; i++)
                 {
                     if (i == idBest)
@@ -1904,6 +1876,7 @@ namespace Optimum
                         str = y.Split(new char[] { ',' });
                         y = str[0] + "." + str[1];
 
+                        // Открыть самую оптимальную точку в OSN
                         System.Diagnostics.Process.Start("https://www.openstreetmap.org/#map=19/" + x + "/" + y);
                     }
                 }
@@ -1913,8 +1886,8 @@ namespace Optimum
         }
 
         // Флаг показа авто-точек
-        bool IsAutoShow = false;
-        bool IsShadowAuto = false;
+        private bool IsAutoShow = false;
+        private bool IsShadowAuto = false;
         /// <summary>
         /// Показать авто-оптимумы
         /// </summary>
@@ -1984,7 +1957,7 @@ namespace Optimum
             return diagonalTerritory;
         }
 
-        List<BufferZone> _listOptimalPoint;
+        private List<BufferZone> _listOptimalPoint;
         /// <summary>
         /// Найти авто-оптимумы
         /// </summary>
@@ -2029,18 +2002,15 @@ namespace Optimum
             // Список всех точек с полным обходом карты
             List<PointLatLng> listWithFullPassTerritory = new List<PointLatLng>();
 
-            // minX = minX + 0.009; minY = minY + 0.007;
-            // minX = minX + 0.003; minY = minY + 0.005;
+            double stepX = Math.Round(FindDiagonalTerritory() / 5908666, 3); // примерно 0.003
+            double stepY = Math.Round(FindDiagonalTerritory() / 3545200, 3); // примерно 0.005
 
-            double stepX = Math.Round(FindDiagonalTerritory() / 5908666, 3); // 0.003
-            double stepY = Math.Round(FindDiagonalTerritory() / 3545200, 3); // 0.005
-
-            // Заполняем полигон города точками
+            // Заполняем полигон территории точками
             while (minY <= maxY)
             {
                 while (minX <= maxX)
                 {
-                    // Добавляем в список все точки прохода города
+                    // Добавляем в список все точки прохода территории
                     listWithFullPassTerritory.Add(new PointLatLng(minX, minY));
                     minX = minX + stepX;
                 }
@@ -2054,7 +2024,7 @@ namespace Optimum
             {
                 // Создаем точку
                 PointLatLng pointLatLng = new PointLatLng(listWithFullPassTerritory[i].Lat, listWithFullPassTerritory[i].Lng);
-                // Если точка принадлежит какому-то кварталу
+                // Если точка принадлежит одному из полигонов
                 if (_mapView.CheckInsidePointPolygon(pointLatLng) == true)
                 {
                     // Добавление точки в список авто-маркеров
@@ -2074,7 +2044,7 @@ namespace Optimum
             // Список буферных зон для поиска оптимума (среди которых нет 0, 0, 0)
             List<BufferZone> _listAutoBufferZones = _mapModel.listAutoPointsBufferZone;
 
-            // ситуация, когда все нули и авто найти нечего
+            // Ситуация, когда все авто-точки имеют нули в критериях, надо увеличить радиус
             if (_listAutoBufferZones.Count == 0)
             {
                 // Строка с ошибкой
@@ -2084,7 +2054,7 @@ namespace Optimum
                 MessageBox.Show(errorCriterion.ToString(), "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            // ситуация, когда можем дать меньше чем просят
+            // Ситуация, когда авто-точек нашлось меньше, чем требовалось
             if (_listAutoBufferZones.Count > 0 && _listAutoBufferZones.Count < countOfOptimum)
             {
                 // Строка с ошибкой
@@ -2132,7 +2102,7 @@ namespace Optimum
                     _sublayerAuto.overlay.IsVisibile = false;
                 else
                     _sublayerAuto.overlay.IsVisibile = true;
-            } 
+            }
         }
 
         /// <summary>
@@ -2164,6 +2134,8 @@ namespace Optimum
                 SearchNormPerCapita form = new SearchNormPerCapita(_languageOfMap);
                 form.ShowDialog();
             }
+            else
+                MessageBox.Show("Не загружен файл", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         /// <summary>

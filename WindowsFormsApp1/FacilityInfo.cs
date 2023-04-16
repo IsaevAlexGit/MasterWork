@@ -7,8 +7,12 @@ namespace Optimum
 {
     public partial class FacilityInfo : Form
     {
+        // Объект инфраструктуры, по которому кликнули
         private Facility _infoFacility = new Facility();
         private MapModel _mapModel;
+
+        // Отрисовка границ groupbox
+        private PaintGroupBoxBorder _paintGroupBoxBorder = new PaintGroupBoxBorder();
 
         /// <summary>
         /// Конструктор формы
@@ -22,16 +26,14 @@ namespace Optimum
             StartPosition = FormStartPosition.CenterScreen;
             KeyPreview = true;
         }
-
-        // Отрисовка границ groupbox
-        private PaintGroupBoxBorder _paintGroupBoxBorder = new PaintGroupBoxBorder();
-
+       
         /// <summary>
         /// Загрузка формы
         /// </summary>
         private void FacilityInfo_Load(object sender, EventArgs e)
         {
-            BackColor = _mapModel.colorApplication;
+            // Цвет фона формы
+            BackColor = _mapModel.mainColor;
             foreach (Control groupbox in Controls)
             {
                 GroupBox everyGroupBox = groupbox as GroupBox;
@@ -52,7 +54,7 @@ namespace Optimum
                     {
                         // Локация надписи, текст (значение столбца), шрифт и размер, курсор
                         Location = new Point(13, 45 + i * 30),
-                        BackColor = _mapModel.colorApplication,
+                        BackColor = _mapModel.mainColor,
                         Text = _infoFacility.infoAboutFacility[i],
                         AutoSize = true,
                         Font = new Font("Segoe UI", 12),
@@ -80,14 +82,14 @@ namespace Optimum
                     Controls.Add(label);
                 }
 
-                // Растянуть окно под динамиеческое количество надписей
+                // Растянуть окно под динамическое количество надписей
                 ClientSize = new Size(710, locationBottomLabal.Y + 30);
                 MinimumSize = MaximumSize = new Size(710, locationBottomLabal.Y + 70);
                 FormBorderStyle = FormBorderStyle.FixedSingle;
             }
             else
             {
-                // Если столбцов 0 у объектов инфраструктуры
+                // Если у объектов инфраструктуры нет информации никакой
                 Hide();
                 Close();
                 MessageBox.Show("Данные отстуствуют");

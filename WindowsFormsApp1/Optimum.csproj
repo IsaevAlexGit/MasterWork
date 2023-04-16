@@ -164,10 +164,6 @@
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagramMapModel.cd" />
-    <None Include="ClassDiagramMathOptimum.cd" />
-    <None Include="ClassDiagramMapView.cd" />
-    <None Include="ClassDiagramMainMap.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

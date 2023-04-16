@@ -2,7 +2,7 @@
 
 namespace Optimum
 {
-    // Класс Объект инфраструктуры
+    // Объект инфраструктуры
     public class Facility
     {
         public int idSocialFacility { get; set; }
@@ -19,12 +19,12 @@ namespace Optimum
         /// <param name="X">Координата Х объекта</param>
         /// <param name="Y">"Координата Y объекта</param>
         /// <param name="info">Перечень данных об объекте</param>
-        public Facility(int Id, double X, double Y, List<string> info)
+        public Facility(int Id, double X, double Y, List<string> Info)
         {
             idSocialFacility = Id;
             x = X;
             y = Y;
-            infoAboutFacility = info;
+            infoAboutFacility = Info;
         }
     }
 }

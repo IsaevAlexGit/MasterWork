@@ -11,16 +11,16 @@ namespace Optimum
     public class RenderQuar
     {
         // Слой для отображения точечной раскраски
-        private SublayerQuar _sublayerQuartetIcon = new SublayerQuar();
+        private SublayerQuar _sublayerPolygonIcon = new SublayerQuar();
 
         /// <summary>
         /// Конструктор
         /// </summary>
         /// <param name="gmap">Карта</param>
-        /// <param name="sublayerQuartet">Слой на карте</param>
-        public RenderQuar(GMapControl gmap, SublayerQuar sublayerQuartet)
+        /// <param name="sublayerPolygon">Слой на карте</param>
+        public RenderQuar(GMapControl gmap, SublayerQuar sublayerPolygon)
         {
-            _sublayerQuartetIcon = sublayerQuartet;
+            _sublayerPolygonIcon = sublayerPolygon;
         }
 
         // Максимум критерия
@@ -53,25 +53,25 @@ namespace Optimum
             indexSelectedCriterion = indexCriterion;
             nameSelectedCriterion = nameCriterion;
             // Очистить у слоя маркеры
-            _sublayerQuartetIcon.overlay.Markers.Clear();
+            _sublayerPolygonIcon.overlay.Markers.Clear();
             // Убрать слой с карты
-            gmap.Overlays.Remove(_sublayerQuartetIcon.overlay);
+            gmap.Overlays.Remove(_sublayerPolygonIcon.overlay);
             // Очистка слоя
-            _sublayerQuartetIcon.overlay.Clear();
+            _sublayerPolygonIcon.overlay.Clear();
             // Добавление слоя на карту
-            gmap.Overlays.Add(_sublayerQuartetIcon.overlay);
+            gmap.Overlays.Add(_sublayerPolygonIcon.overlay);
             // Инициализация маркеров
-            _InitializationMarkers(_sublayerQuartetIcon, iconsForColoring);
+            _InitializationMarkers(_sublayerPolygonIcon, iconsForColoring);
             // Делаем слой видимым
-            _sublayerQuartetIcon.overlay.IsVisibile = true;
+            _sublayerPolygonIcon.overlay.IsVisibile = true;
         }
 
         /// <summary>
         /// Инициализация маркеров
         /// </summary>
-        /// <param name="subQuartet">Слой</param>
+        /// <param name="subPolygon">Слой</param>
         /// <param name="icons">Массив значков</param>
-        private void _InitializationMarkers(SublayerQuar subQuartet, List<Image> icons)
+        private void _InitializationMarkers(SublayerQuar subPolygon, List<Image> icons)
         {
             GetIconsForSelectedCountShades(icons);
 
@@ -88,25 +88,22 @@ namespace Optimum
                 k = k + step;
             }
 
-            //System.Windows.Forms.MessageBox.Show(intervals.Count.ToString());
-            //for (int i = 0; i < intervals.Count; i++)
-            //    System.Windows.Forms.MessageBox.Show(intervals[i].ToString());
-
             // Определить в какой диапазон попадает полигон
-            for (int i = 0; i < subQuartet.listWithQuar.Count; i++)
+            for (int i = 0; i < subPolygon.listWithQuar.Count; i++)
             {
                 for (int j = 0; j < intervals.Count - 1; j++)
                 {
-                    if (subQuartet.listWithQuar[i].valuesEveryCriterionForQuartet[indexSelectedCriterion] >= intervals[j] &&
-                        subQuartet.listWithQuar[i].valuesEveryCriterionForQuartet[indexSelectedCriterion] <= intervals[j + 1])
+                    if (subPolygon.listWithQuar[i].valuesEveryCriterionForQuartet[indexSelectedCriterion] >= intervals[j] &&
+                        subPolygon.listWithQuar[i].valuesEveryCriterionForQuartet[indexSelectedCriterion] <= intervals[j + 1])
                     {
                         Bitmap icon = new Bitmap(usingArrayIcons[j]);
-                        GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(subQuartet.listWithQuar[i].xCentreOfQuartet,
-                            subQuartet.listWithQuar[i].yCentreOfQuartet), icon);
+                        GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(subPolygon.listWithQuar[i].xCentreOfQuartet,
+                            subPolygon.listWithQuar[i].yCentreOfQuartet), icon);
                         marker.ToolTip = new GMapRoundedToolTip(marker);
                         marker.Offset = new Point(-icon.Width / 2, -icon.Height / 2);
-                        marker.ToolTipText = nameSelectedCriterion + ": " + subQuartet.listWithQuar[i].valuesEveryCriterionForQuartet[indexSelectedCriterion].ToString();
-                        subQuartet.overlay.Markers.Add(marker);
+                        marker.ToolTipText = nameSelectedCriterion + ": " + 
+                            subPolygon.listWithQuar[i].valuesEveryCriterionForQuartet[indexSelectedCriterion].ToString();
+                        subPolygon.overlay.Markers.Add(marker);
                     }
                 }
             }
@@ -116,16 +113,16 @@ namespace Optimum
         /// Очистка раскраски иконками
         /// </summary>
         /// <param name="gmap"></param>
-        public void ClearIconQuartet(GMapControl gmap)
+        public void ClearIconPolygon(GMapControl gmap)
         {
             // Очистить у слоя маркеры
-            _sublayerQuartetIcon.overlay.Markers.Clear();
+            _sublayerPolygonIcon.overlay.Markers.Clear();
             // Убрать слой с карты
-            gmap.Overlays.Remove(_sublayerQuartetIcon.overlay);
+            gmap.Overlays.Remove(_sublayerPolygonIcon.overlay);
             // Убрать видимость слоя
-            _sublayerQuartetIcon.overlay.IsVisibile = false;
+            _sublayerPolygonIcon.overlay.IsVisibile = false;
             // Очистка слоя
-            _sublayerQuartetIcon.overlay.Clear();
+            _sublayerPolygonIcon.overlay.Clear();
         }
 
         // Массив используемых значков для раскраски

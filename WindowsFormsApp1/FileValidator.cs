@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Globalization;
 using System.Collections.Generic;
 using GMap.NET;
 using GMap.NET.WindowsForms;
-using System.Globalization;
 
 namespace Optimum
 {
@@ -28,9 +28,9 @@ namespace Optimum
         private const string COORDINATES_OUTSIDE_TERRITORY = "Координаты находятся за границами территории";
         private const string UNSUCCESSFUL_ATTEMPT_READ_DATA = "Неверный формат хранения данных";
 
-        // Константы для проверки кварталов из файла пользователя
+        // Константы для проверки полигонов из файла пользователя
         private const string NUMBER_OF_BOUNDARY_POINTS_LESS_TWO = "Количество граничных точек не может быть меньше двух";
-        private const string NUMBER_OF_CRITERION_LESS_THAN_ZERO = "Количество критерия не может быть меньше нуля";
+        private const string NUMBER_OF_CRITERION_LESS_THAN_ZERO = "Значение критерия не может быть меньше нуля";
 
         /// <summary>
         /// Конструктор
@@ -102,7 +102,7 @@ namespace Optimum
                         {
                             string OneString = filereader.ReadLine();
                             string[] SplitOneString = OneString.Split(new char[] { ';' });
-                            // Пытаем добавить координату в список
+                            // Добавить координату в список граничных точек
                             _listBorderPointsTerritory.Add(new Location(Convert.ToDouble(SplitOneString[0], _cultureInfo),
                                 Convert.ToDouble(SplitOneString[1], _cultureInfo)));
                         }
@@ -163,7 +163,6 @@ namespace Optimum
 
                             if (IsInsydeTerritory)
                             {
-                                // Попытка считать данные
                                 // Массив строк с информацией об объекте инфраструктуры
                                 List<string> info = new List<string>();
                                 for (int i = 3; i < SplitOneString.Length; i++)
@@ -200,7 +199,7 @@ namespace Optimum
         public string DataValidationUserQuar(string pathToFile, List<Location> listborder, int countCriterion)
         {
             // Список полигонов
-            List<Quar> _ListPointsQuartet = new List<Quar>();
+            List<Quar> _ListPointsPolygon = new List<Quar>();
 
             // Создаем полигон из граничных точек
             List<PointLatLng> _boundaryPointsTerritoryPolygon = new List<PointLatLng>();
@@ -253,16 +252,16 @@ namespace Optimum
                                     // Координаты центральной точки полигона
                                     double CentreX = Convert.ToDouble(SplitOneString[CountBoundaryPoints * 2 + 2]);
                                     double CentreY = Convert.ToDouble(SplitOneString[CountBoundaryPoints * 2 + 3]);
-                                    bool CentrePointOfQuartetIsInsydeTerritory = false;
+                                    bool CentrePointOfPolygonIsInsydeTerritory = false;
                                     PointLatLng point = new PointLatLng(CentreX, CentreY);
 
                                     // Проверка принадлежности центральной точки территории
                                     if (polygon.IsInside(point))
-                                        CentrePointOfQuartetIsInsydeTerritory = true;
+                                        CentrePointOfPolygonIsInsydeTerritory = true;
                                     else
-                                        CentrePointOfQuartetIsInsydeTerritory = false;
+                                        CentrePointOfPolygonIsInsydeTerritory = false;
 
-                                    if (CentrePointOfQuartetIsInsydeTerritory)
+                                    if (CentrePointOfPolygonIsInsydeTerritory)
                                     {
                                         // Список чисел значений каждого критерия у каждого полигона
                                         List<double> countOfEveryCriterion = new List<double>();
@@ -279,21 +278,18 @@ namespace Optimum
                                         int _lastCriterion = CountBoundaryPoints * 2 + 4 + countCriterion;
 
                                         for (int j = CountBoundaryPoints * 2 + 4; j < _lastCriterion; j++)
-                                        {
-                                            //System.Windows.Forms.MessageBox.Show(SplitOneString[j].ToString());
                                             countOfEveryCriterion.Add(Convert.ToDouble(SplitOneString[j]));
-                                        }
 
-                                        // Если все критерия больше или равны 0
+                                        // Все ли критерии >= 0
                                         bool flag = true;
-                                        for (int k = 0; k < countOfEveryCriterion.Count; k++)                                        
+                                        for (int k = 0; k < countOfEveryCriterion.Count; k++)
                                             if (countOfEveryCriterion[k] < 0)
                                                 flag = false;
-                                        
+
                                         // Если все критерии >= 0
                                         if (flag)
                                             // Добавить полигон в список
-                                            _ListPointsQuartet.Add(new Quar(ID, CountBoundaryPoints, tempListPoints, CentreX, CentreY, countOfEveryCriterion));
+                                            _ListPointsPolygon.Add(new Quar(ID, CountBoundaryPoints, tempListPoints, CentreX, CentreY, countOfEveryCriterion));
                                         else
                                             return NUMBER_OF_CRITERION_LESS_THAN_ZERO;
                                     }
@@ -394,7 +390,7 @@ namespace Optimum
         public string DataValidationNorma(string pathToFile, List<Location> listborder, int countCriterion)
         {
             // Список полигонов
-            List<Quar> _ListPointsQuartet = new List<Quar>();
+            List<Quar> _ListPointsPolygon = new List<Quar>();
 
             // Создаем полигон из граничных точек
             List<PointLatLng> _boundaryPointsTerritoryPolygon = new List<PointLatLng>();
@@ -447,16 +443,16 @@ namespace Optimum
                                     // Координаты центральной точки полигона
                                     double CentreX = Convert.ToDouble(SplitOneString[CountBoundaryPoints * 2 + 2]);
                                     double CentreY = Convert.ToDouble(SplitOneString[CountBoundaryPoints * 2 + 3]);
-                                    bool CentrePointOfQuartetIsInsydeTerritory = false;
+                                    bool CentrePointOfPolygonIsInsydeTerritory = false;
                                     PointLatLng point = new PointLatLng(CentreX, CentreY);
 
                                     // Проверка принадлежности центральной точки территории
                                     if (polygon.IsInside(point))
-                                        CentrePointOfQuartetIsInsydeTerritory = true;
+                                        CentrePointOfPolygonIsInsydeTerritory = true;
                                     else
-                                        CentrePointOfQuartetIsInsydeTerritory = false;
+                                        CentrePointOfPolygonIsInsydeTerritory = false;
 
-                                    if (CentrePointOfQuartetIsInsydeTerritory)
+                                    if (CentrePointOfPolygonIsInsydeTerritory)
                                     {
                                         // Список чисел значений каждого критерия у каждого полигона
                                         List<double> countOfEveryCriterion = new List<double>();
@@ -487,7 +483,7 @@ namespace Optimum
                                         // Если все критерии >= 0
                                         if (flag)
                                             // Добавить полигон в список
-                                            _ListPointsQuartet.Add(new Quar(ID, CountBoundaryPoints, tempListPoints, CentreX, CentreY, countOfEveryCriterion));
+                                            _ListPointsPolygon.Add(new Quar(ID, CountBoundaryPoints, tempListPoints, CentreX, CentreY, countOfEveryCriterion));
                                         else
                                             return NUMBER_OF_CRITERION_LESS_THAN_ZERO;
                                     }

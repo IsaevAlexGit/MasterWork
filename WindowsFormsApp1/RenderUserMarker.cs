@@ -32,7 +32,7 @@ namespace Optimum
         /// </summary>
         /// <param name="gmap">Карта</param>
         /// <param name="radius">Радиус</param>
-        /// <param name="optimum">Оптимальная точка</param>
+        /// <param name="optimalZones">Оптимальные точки</param>
         public void InitializationPoint(GMapControl gmap, int radius, List<OptimalZone> optimalZones)
         {
             _radiusSearch = radius;
@@ -123,7 +123,6 @@ namespace Optimum
                         // Подпись маркера
                         marker.ToolTipText = "Кандидат #" + IDcandidte;
                         IDcandidte++;
-                        // marker.ToolTipMode = MarkerTooltipMode.Always;
                         // Добавление маркера на слой
                         _subLocationCandidates.overlay.Markers.Add(marker);
                         // Отрисовка окружности у маркера
@@ -147,7 +146,6 @@ namespace Optimum
                     // Подпись маркера
                     marker.ToolTipText = "Кандидат #" + IDcandidte;
                     IDcandidte++;
-                    // marker.ToolTipMode = MarkerTooltipMode.Always;
                     // Добавление маркера на слой
                     _subLocationCandidates.overlay.Markers.Add(marker);
                     // Отрисовка окружности у маркера

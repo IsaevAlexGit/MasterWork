@@ -35,16 +35,16 @@
             this.labelNameProgram = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.buttonSelectColor = new System.Windows.Forms.Button();
-            this.buttonPDF = new System.Windows.Forms.Button();
+            this.buttonManual = new System.Windows.Forms.Button();
             this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelSelectLocal = new System.Windows.Forms.Label();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.labelStateConnetion = new System.Windows.Forms.Label();
             this.pictureBoxConnection = new System.Windows.Forms.PictureBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureLogoApplication = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConnection)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogoApplication)).BeginInit();
             this.SuspendLayout();
             // 
             // labelAboutProgram
@@ -110,22 +110,22 @@
             this.buttonSelectColor.UseVisualStyleBackColor = false;
             this.buttonSelectColor.Click += new System.EventHandler(this.buttonSelectColor_Click_1);
             // 
-            // buttonPDF
+            // buttonManual
             // 
-            this.buttonPDF.BackColor = System.Drawing.Color.PeachPuff;
-            this.buttonPDF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonPDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPDF.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPDF.Image = global::Optimum.Properties.Resources.iconPDF;
-            this.buttonPDF.Location = new System.Drawing.Point(666, 345);
-            this.buttonPDF.Name = "buttonPDF";
-            this.buttonPDF.Size = new System.Drawing.Size(116, 91);
-            this.buttonPDF.TabIndex = 2;
-            this.buttonPDF.Text = "Руководство пользователя";
-            this.buttonPDF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolTip.SetToolTip(this.buttonPDF, "Ознакомиться с руководством пользователя.");
-            this.buttonPDF.UseVisualStyleBackColor = false;
-            this.buttonPDF.Click += new System.EventHandler(this.buttonPDF_Click);
+            this.buttonManual.BackColor = System.Drawing.Color.PeachPuff;
+            this.buttonManual.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonManual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonManual.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonManual.Image = global::Optimum.Properties.Resources.iconPDF;
+            this.buttonManual.Location = new System.Drawing.Point(666, 345);
+            this.buttonManual.Name = "buttonManual";
+            this.buttonManual.Size = new System.Drawing.Size(116, 91);
+            this.buttonManual.TabIndex = 2;
+            this.buttonManual.Text = "Руководство пользователя";
+            this.buttonManual.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolTip.SetToolTip(this.buttonManual, "Ознакомиться с руководством пользователя.");
+            this.buttonManual.UseVisualStyleBackColor = false;
+            this.buttonManual.Click += new System.EventHandler(this.buttonPDF_Click);
             // 
             // comboBoxLanguage
             // 
@@ -141,15 +141,15 @@
             this.comboBoxLanguage.Size = new System.Drawing.Size(162, 29);
             this.comboBoxLanguage.TabIndex = 0;
             // 
-            // label7
+            // labelSelectLocal
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(307, 230);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 17);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Выберите локализацию карты:";
+            this.labelSelectLocal.AutoSize = true;
+            this.labelSelectLocal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSelectLocal.Location = new System.Drawing.Point(307, 230);
+            this.labelSelectLocal.Name = "labelSelectLocal";
+            this.labelSelectLocal.Size = new System.Drawing.Size(192, 17);
+            this.labelSelectLocal.TabIndex = 5;
+            this.labelSelectLocal.Text = "Выберите локализацию карты:";
             // 
             // labelStateConnetion
             // 
@@ -170,16 +170,16 @@
             this.pictureBoxConnection.TabIndex = 6;
             this.pictureBoxConnection.TabStop = false;
             // 
-            // pictureBox
+            // pictureLogoApplication
             // 
-            this.pictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox.Image = global::Optimum.Properties.Resources.iconApplication;
-            this.pictureBox.Location = new System.Drawing.Point(333, 12);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox.TabIndex = 4;
-            this.pictureBox.TabStop = false;
+            this.pictureLogoApplication.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureLogoApplication.Image = global::Optimum.Properties.Resources.iconApplication;
+            this.pictureLogoApplication.Location = new System.Drawing.Point(333, 12);
+            this.pictureLogoApplication.Name = "pictureLogoApplication";
+            this.pictureLogoApplication.Size = new System.Drawing.Size(128, 128);
+            this.pictureLogoApplication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureLogoApplication.TabIndex = 4;
+            this.pictureLogoApplication.TabStop = false;
             // 
             // timer
             // 
@@ -196,10 +196,10 @@
             this.Controls.Add(this.buttonSelectColor);
             this.Controls.Add(this.pictureBoxConnection);
             this.Controls.Add(this.comboBoxLanguage);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.buttonPDF);
+            this.Controls.Add(this.labelSelectLocal);
+            this.Controls.Add(this.buttonManual);
             this.Controls.Add(this.labelNameProgram);
-            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.pictureLogoApplication);
             this.Controls.Add(this.buttonProceed);
             this.Controls.Add(this.labelAboutProgram);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -210,7 +210,7 @@
             this.Load += new System.EventHandler(this.StartForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.StartForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConnection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogoApplication)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,12 +220,12 @@
 
         private System.Windows.Forms.Label labelAboutProgram;
         private System.Windows.Forms.Button buttonProceed;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox pictureLogoApplication;
         private System.Windows.Forms.Label labelNameProgram;
-        private System.Windows.Forms.Button buttonPDF;
+        private System.Windows.Forms.Button buttonManual;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ComboBox comboBoxLanguage;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelSelectLocal;
         private System.Windows.Forms.PictureBox pictureBoxConnection;
         private System.Windows.Forms.ColorDialog colorDialog;
         private System.Windows.Forms.Button buttonSelectColor;

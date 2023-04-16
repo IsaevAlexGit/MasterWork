@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Device.Location;
-using System.IO;
-using System.Windows.Forms;
 
 namespace Optimum
 {
     public class AutoBufferZone
     {
-        public BufferZone bf;
-        public double paramConvolution;
-        public int summPlace;
+        public BufferZone bufferZone;
+        public double parameterConvolution;
+        public int summaryPlace;
 
-        public AutoBufferZone(BufferZone lbf, double _param, int _summ)
+        public AutoBufferZone(BufferZone zone, double param, int summ)
         {
-            bf = lbf;
-            paramConvolution = _param;
-            summPlace = _summ;
+            bufferZone = zone;
+            parameterConvolution = param;
+            summaryPlace = summ;
         }
     }
 
@@ -40,27 +37,25 @@ namespace Optimum
         private List<BufferZone> _autoBestPoints = new List<BufferZone>();
 
         // Утопическая точка
-        private OptimalZone UtopiaPoint = new OptimalZone();
+        private OptimalZone _UtopiaPoint = new OptimalZone();
 
         /// <summary>
         /// Конструктор
         /// </summary>
-        /// <param name="_arrayBuffers">Список буферных зон</param>
-        /// <param name="_wPharma">Важность критерия "Аптеки"</param>
-        /// <param name="_wResidents">Важность критерия "Жители"</param>
-        /// <param name="_wRetired">Важность критерия "Пенсионеры"</param>
-        public MathAutoOptimumModel(List<BufferZone> _arrayBuffers, List<Criterion> criterion, int _cOptimums)
+        /// <param name="arrayBuffers">Массив буферных зон</param>
+        /// <param name="criterion">Список критериев</param>
+        /// <param name="countOptimums">Искомое число оптимумов (1-10)</param>
+        public MathAutoOptimumModel(List<BufferZone> arrayBuffers, List<Criterion> criterion, int countOptimums)
         {
-            for (int i = 0; i < _arrayBuffers.Count; i++)
+            for (int i = 0; i < arrayBuffers.Count; i++)
             {
-                AutoBufferZone spz = new AutoBufferZone(_arrayBuffers[i], 0, 0);
+                AutoBufferZone spz = new AutoBufferZone(arrayBuffers[i], 0, 0);
                 _SuperBestPoints.Add(spz);
             }
 
-            _listForNormalization = _arrayBuffers;
+            _listForNormalization = arrayBuffers;
             _listCriterion = criterion;
-            _countOptimums = _cOptimums;
-            // MessageBox.Show(_listForNormalization.Count.ToString());
+            _countOptimums = countOptimums;
         }
 
         /// <summary>
@@ -106,7 +101,7 @@ namespace Optimum
 
 
         /// <summary>
-        /// Максимизация параметра аптек
+        /// Максимизация всех параметров
         /// </summary>
         private void _MaximizationOfCriterion()
         {
@@ -124,9 +119,9 @@ namespace Optimum
         }
 
         // Для нормализации надо найти максимум и минимум по каждому критерию
-        // Тут хранится минимум для каждого из 5 критериев - 5 минимумов по каждому критерию 
+        // Тут хранится минимум для каждого из Х критериев - Х минимумов по каждому критерию 
         private List<double> minimums = new List<double>();
-        // Тут хранится максимум для каждого из 5 критериев - 5 максимумов по каждому критерию
+        // Тут хранится максимум для каждого из Х критериев - Х максимумов по каждому критерию
         private List<double> maximums = new List<double>();
 
         /// <summary>
@@ -203,16 +198,16 @@ namespace Optimum
                     temporaryVariable = temporaryVariable + (_listForNormalization[i].arrayValuesCriterionOnZone[j] * _listCriterion[j].weightOfCriterion);
 
                 // У каждой точки свой показатель Л. свертки
-                _SuperBestPoints[i].paramConvolution = temporaryVariable;
+                _SuperBestPoints[i].parameterConvolution = temporaryVariable;
             }
 
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
@@ -245,15 +240,15 @@ namespace Optimum
                 if (temporaryVariable == 1 && flag == false)
                     temporaryVariable = 0;
 
-                _SuperBestPoints[i].paramConvolution = temporaryVariable;
+                _SuperBestPoints[i].parameterConvolution = temporaryVariable;
             }
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
@@ -281,15 +276,15 @@ namespace Optimum
                 // Полученую сумму произведений возводим в степени 1/p
                 temporaryVariable = Math.Pow(temporaryVariable, div);
 
-                _SuperBestPoints[i].paramConvolution = temporaryVariable;
+                _SuperBestPoints[i].parameterConvolution = temporaryVariable;
             }
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
@@ -305,25 +300,21 @@ namespace Optimum
                 // В каждой зоне идем по каждому критерию
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
-                    // 1	0,429	0,613	0,9	      1/3           0,143	0,204333333  0,3
-                    // 2	0,714	0,622	0,6	      1/3           0,238	0,207333333	 0,2
                     double temp = _listForNormalization[i].arrayValuesCriterionOnZone[j] * _listCriterion[j].weightOfCriterion;
                     // Найти минимальное произведение из всех произведений критерия на вес у одной зоны
                     if (temp <= MinHermeier)
-                    {
                         MinHermeier = temp;
-                    }
                 }
-                _SuperBestPoints[i].paramConvolution = MinHermeier;
+                _SuperBestPoints[i].parameterConvolution = MinHermeier;
             }
 
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
@@ -335,9 +326,7 @@ namespace Optimum
         {
             // Если однокритериальный поиск
             if (_listCriterion.Count == 1)
-            {
                 return true;
-            }
             else
             {
                 // Пороговое значение, разница между двумя важными приоритетатми выше этого значения, то МГК используем
@@ -378,44 +367,34 @@ namespace Optimum
                     positionMaxCr = i;
                 }
             }
-            // Мы узнали самый важный критерий = 0.6, он 1 месте в массивe [0,4]
 
             // Идем по всем значениям
             for (int i = 0; i < _listForNormalization.Count; i++)
-            {
-                _SuperBestPoints[i].paramConvolution = _listForNormalization[i].arrayValuesCriterionOnZone[positionMaxCr];
-            }
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+                _SuperBestPoints[i].parameterConvolution = _listForNormalization[i].arrayValuesCriterionOnZone[positionMaxCr];
+
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
         // Создать идеальную точку
         private void _createUtopiaPoint()
         {
-            // -1 id
-            // 0,0 - x,y
-            // радиус как у всех точек
-            // все частные критерии которые максимизированы, то есть идеальны
-
-            // Сколько критериев столько и 1
+            // Сколько критериев столько и единиц
             List<double> odin = new List<double>();
             for (int i = 0; i < _listCriterion.Count; i++)
                 odin.Add(1);
 
-            
-
-            // Утопия это -1, 0-0, радиус, Х критериев со значением "1"
             BufferZone UtopiaBufferZone = new BufferZone(-1, 0, 0, _listForNormalization[0].lengthRadiusSearch, odin);
 
             // Утопия - идеальная точка, где частные критерии идеальны относительно каждого критерия относительно поставленных точек на карте
-            UtopiaPoint.namesConvolutiones = new List<string>();
-            UtopiaPoint.optimal = UtopiaBufferZone;
+            _UtopiaPoint.namesConvolutiones = new List<string>();
+            _UtopiaPoint.optimal = UtopiaBufferZone;
         }
 
         /// <summary>
@@ -431,25 +410,22 @@ namespace Optimum
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
                     // Модуль разности (Утопический критерий - частный текущий критерий)
-                    double diffUtopia = Math.Abs(UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
-                    //double diffUtopia2 = Math.Abs(1 - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
+                    double diffUtopia = Math.Abs(_UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
                     // Вес * модуль разности
                     double multi = diffUtopia * _listCriterion[j].weightOfCriterion;
 
                     if (multi >= MaxChebyshev)
-                    {
                         MaxChebyshev = multi;
-                    }
                 }
-                _SuperBestPoints[i].paramConvolution = MaxChebyshev;
+                _SuperBestPoints[i].parameterConvolution = MaxChebyshev;
             }
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
@@ -467,23 +443,20 @@ namespace Optimum
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
                     // Модуль разности (Утопический критерий - частный текущий критерий)
-                    double diffUtopia = Math.Abs(UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
-                    //double diffUtopia2 = Math.Abs(1 - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
+                    double diffUtopia = Math.Abs(_UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
                     // Вес * модуль разности
                     double multi = diffUtopia * _listCriterion[j].weightOfCriterion;
-                    // 0.190 + 0.129 + 0.033 = 0.353
-                    // 0 + 0.108 + 0.160 = 0.268
                     summ = summ + multi;
-                    _SuperBestPoints[i].paramConvolution = summ;
+                    _SuperBestPoints[i].parameterConvolution = summ;
                 }
             }
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
@@ -501,21 +474,20 @@ namespace Optimum
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
                     // Квадрат разности (Утопический критерий - частный текущий критерий)
-                    double diffUtopia = Math.Pow(UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j], 2);
-                    //double diffUtopia2 = Math.Pow(1 - _listForNormalization[i].arrayValuesCriterionOnZone[j], 2);
+                    double diffUtopia = Math.Pow(_UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j], 2);
                     // Вес * квадрат разности
                     double multi = diffUtopia * _listCriterion[j].weightOfCriterion;
                     summ = summ + multi;
-                    _SuperBestPoints[i].paramConvolution = summ;
+                    _SuperBestPoints[i].parameterConvolution = summ;
                 }
             }
-            _SuperBestPoints.Sort((a, b) => b.paramConvolution.CompareTo(a.paramConvolution));
+            _SuperBestPoints.Sort((a, b) => b.parameterConvolution.CompareTo(a.parameterConvolution));
 
             // добавляем к месту занятое место
             for (int i = 0; i < _SuperBestPoints.Count; i++)
             {
                 int place = i + 1;
-                _SuperBestPoints[i].summPlace += place;
+                _SuperBestPoints[i].summaryPlace += place;
             }
         }
 
@@ -524,16 +496,16 @@ namespace Optimum
         /// </summary>
         private List<BufferZone> _FinalSort()
         {
-            _SuperBestPoints.Sort((b, a) => b.summPlace.CompareTo(a.summPlace));
+            _SuperBestPoints.Sort((b, a) => b.summaryPlace.CompareTo(a.summaryPlace));
 
             //FileStream fileStream = new FileStream(Application.StartupPath + @"\Data\in.txt", FileMode.Create, FileAccess.Write);
             //StreamWriter streamWriter = new StreamWriter(fileStream);
             //for (int t = 0; t < _SuperBestPoints.Count; t++)
-            //    streamWriter.WriteLine(_SuperBestPoints[t].summPlace);
+            //    streamWriter.WriteLine(_SuperBestPoints[t].summaryPlace);
             //streamWriter.Close();
 
             for (int i = 0; i < _countOptimums; i++)
-                _autoBestPoints.Add(_SuperBestPoints[i].bf);
+                _autoBestPoints.Add(_SuperBestPoints[i].bufferZone);
 
             return _autoBestPoints;
 
@@ -545,7 +517,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Клонирование буферных зон в другой список
+        /// Клонирование буферных зон
         /// </summary>
         private void _CloneValuesFromListNormalizationToListStartZones()
         {

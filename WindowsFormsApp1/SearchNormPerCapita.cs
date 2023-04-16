@@ -94,26 +94,26 @@ namespace Optimum
         private void SearchNormPerCapita_Load(object sender, EventArgs e)
         {
             // Если на главном окне файл изменили, то и тут его изменить на новый
-            if (path != " ")
-                _mapModel.ChangeFileForQuartet(path);
+            //if (path != " ")
+            //    _mapModel.ChangeFileForQuartet(path);
 
             // ОСИ по умолчанию скрыть
             radioButtonHideOSI.Checked = true;
             radioButtonHideOSI_Click(sender, e);
 
-            _sublayerNorma = _mapModel.sublayerNormaPharmacy;
+            _sublayerNorma = _mapModel.sublayerNormaFacility;
 
             // Настройка кнопок
-            buttonLoadPriority.FlatAppearance.BorderSize = 0;
-            buttonInputRadius.FlatAppearance.BorderSize = 0;
+            //buttonLoadPriority.FlatAppearance.BorderSize = 0;
+            //buttonInputRadius.FlatAppearance.BorderSize = 0;
             buttonFindBest.FlatAppearance.BorderSize = 0;
             buttonOpenWebManual.FlatAppearance.BorderSize = 0;
             buttonSaveMap.FlatAppearance.BorderSize = 0;
             buttonInputNorm.FlatAppearance.BorderSize = 0;
             buttonHideBest.FlatAppearance.BorderSize = 0;
 
-            buttonLoadPriority.FlatStyle = FlatStyle.Flat;
-            buttonInputRadius.FlatStyle = FlatStyle.Flat;
+            //buttonLoadPriority.FlatStyle = FlatStyle.Flat;
+            //buttonInputRadius.FlatStyle = FlatStyle.Flat;
             buttonFindBest.FlatStyle = FlatStyle.Flat;
             buttonOpenWebManual.FlatStyle = FlatStyle.Flat;
             buttonSaveMap.FlatStyle = FlatStyle.Flat;
@@ -231,52 +231,52 @@ namespace Optimum
             _mapView.ClearNormaPoints(_sublayerNorma);
 
             // Если все поля введены
-            if (!string.IsNullOrEmpty(textBoxWeightResidents.Text) && !string.IsNullOrWhiteSpace(textBoxWeightResidents.Text) &&
-                !string.IsNullOrEmpty(textBoxWeightRetired.Text) && !string.IsNullOrWhiteSpace(textBoxWeightRetired.Text) &&
-                !string.IsNullOrEmpty(textBoxWeightPharmacy.Text) && !string.IsNullOrWhiteSpace(textBoxWeightPharmacy.Text))
-            {
-                double tempValue;
-                bool testForResidents = double.TryParse(textBoxWeightResidents.Text, out tempValue);
-                bool testForRetired = double.TryParse(textBoxWeightRetired.Text, out tempValue);
-                bool testForPharmacy = double.TryParse(textBoxWeightPharmacy.Text, out tempValue);
+            //if (!string.IsNullOrEmpty(textBoxWeightResidents.Text) && !string.IsNullOrWhiteSpace(textBoxWeightResidents.Text) &&
+            //    !string.IsNullOrEmpty(textBoxWeightRetired.Text) && !string.IsNullOrWhiteSpace(textBoxWeightRetired.Text) &&
+            //    !string.IsNullOrEmpty(textBoxWeightPharmacy.Text) && !string.IsNullOrWhiteSpace(textBoxWeightPharmacy.Text))
+            //{
+            //    double tempValue;
+            //    bool testForResidents = double.TryParse(textBoxWeightResidents.Text, out tempValue);
+            //    bool testForRetired = double.TryParse(textBoxWeightRetired.Text, out tempValue);
+            //    bool testForPharmacy = double.TryParse(textBoxWeightPharmacy.Text, out tempValue);
 
-                // Если во всех полях дробные числа
-                if (testForResidents == true && testForRetired == true && testForPharmacy == true)
-                {
-                    double weihgtResidents = Convert.ToDouble(textBoxWeightResidents.Text);
-                    double weihgtRetired = Convert.ToDouble(textBoxWeightRetired.Text);
-                    double weihgtPharma = Convert.ToDouble(textBoxWeightPharmacy.Text);
+            //    // Если во всех полях дробные числа
+            //    if (testForResidents == true && testForRetired == true && testForPharmacy == true)
+            //    {
+            //        double weihgtResidents = Convert.ToDouble(textBoxWeightResidents.Text);
+            //        double weihgtRetired = Convert.ToDouble(textBoxWeightRetired.Text);
+            //        double weihgtPharma = Convert.ToDouble(textBoxWeightPharmacy.Text);
 
-                    // Если все веса в интервале [0,1]
-                    if (weihgtResidents >= 0 && weihgtResidents <= 1
-                        && weihgtRetired >= 0 && weihgtRetired <= 1
-                        && weihgtPharma >= 0 && weihgtPharma <= 1)
-                    {
-                        // Если сумма весов равна 1
-                        if (weihgtResidents + weihgtRetired + weihgtPharma == 1)
-                        {
-                            // Задать веса в модель
-                            _mapModel.weightNormResidents = weihgtResidents;
-                            _mapModel.weightNormRetired = weihgtRetired;
-                            _mapModel.weightNormPharmacy = weihgtPharma;
-                            // Веса заданы успешно
-                            _flagConfirmationWeight = true;
-                            // Спрятать надпись и флаг поиска точки
-                            labelStateOfNormCity.Visible = false;
-                            _flagFindBestAutoNorm = false;
-                            // Очистить карту от всего
-                            _mapView.ClearNormaPoints(_sublayerNorma);
-                        }
-                        else
-                            MessageBox.Show("Сумма весов должна быть равна 1", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else
-                        MessageBox.Show("Все значения должны быть в пределах от 0 до 1", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                    MessageBox.Show("В поля должны быть введены только числа", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
+            //        // Если все веса в интервале [0,1]
+            //        if (weihgtResidents >= 0 && weihgtResidents <= 1
+            //            && weihgtRetired >= 0 && weihgtRetired <= 1
+            //            && weihgtPharma >= 0 && weihgtPharma <= 1)
+            //        {
+            //            // Если сумма весов равна 1
+            //            if (weihgtResidents + weihgtRetired + weihgtPharma == 1)
+            //            {
+            //                // Задать веса в модель
+            //                //_mapModel.weightNormResidents = weihgtResidents;
+            //                //_mapModel.weightNormRetired = weihgtRetired;
+            //                //_mapModel.weightNormPharmacy = weihgtPharma;
+            //                // Веса заданы успешно
+            //                _flagConfirmationWeight = true;
+            //                // Спрятать надпись и флаг поиска точки
+            //                labelStateOfNormCity.Visible = false;
+            //                _flagFindBestAutoNorm = false;
+            //                // Очистить карту от всего
+            //                _mapView.ClearNormaPoints(_sublayerNorma);
+            //            }
+            //            else
+            //                MessageBox.Show("Сумма весов должна быть равна 1", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //        }
+            //        else
+            //            MessageBox.Show("Все значения должны быть в пределах от 0 до 1", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    }
+            //    else
+            //        MessageBox.Show("В поля должны быть введены только числа", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+            //else
                 MessageBox.Show("Все поля в блоке \"Установка приоритетов\" должны быть заполнены", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 

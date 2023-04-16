@@ -11,7 +11,7 @@ namespace Optimum
     class RenderNorma
     {
         // Слой с маркерами пользователя
-        private SublayerLocation _subLocationAutoPoints = new SublayerLocation();
+        private SublayerLocation _subLocationNorma = new SublayerLocation();
         // Радиус поиска и оптимум
         private int _radiusSearch;
 
@@ -19,10 +19,10 @@ namespace Optimum
         /// Конструктор
         /// </summary>
         /// <param name="gmap">Карта</param>
-        /// <param name="subUser">Слой пользователя</param>
-        public RenderNorma(GMapControl gmap, SublayerLocation subUser)
+        /// <param name="sublayer">Слой пользователя</param>
+        public RenderNorma(GMapControl gmap, SublayerLocation sublayer)
         {
-            _subLocationAutoPoints = subUser;
+            _subLocationNorma = sublayer;
         }
 
         /// <summary>
@@ -33,35 +33,35 @@ namespace Optimum
         public void InitializationIdealPoints(GMapControl gmap, List<BufferZone> _list)
         {
             // Очистить у слоя маркеры
-            _subLocationAutoPoints.overlay.Markers.Clear();
+            _subLocationNorma.overlay.Markers.Clear();
             // Очистить у слоя полигоны
-            _subLocationAutoPoints.overlay.Polygons.Clear();
+            _subLocationNorma.overlay.Polygons.Clear();
             // Убрать слой с карты
-            gmap.Overlays.Remove(_subLocationAutoPoints.overlay);
+            gmap.Overlays.Remove(_subLocationNorma.overlay);
             // Очистка слоя
-            _subLocationAutoPoints.overlay.Clear();
+            _subLocationNorma.overlay.Clear();
 
             // Добавление слоя на карту
-            gmap.Overlays.Add(_subLocationAutoPoints.overlay);
+            gmap.Overlays.Add(_subLocationNorma.overlay);
 
             // Список с маркерами пользователя
             for (int i = 0; i < _list.Count; i++)
             {
                 // Значок маркера
-                Bitmap icon = new Bitmap(_subLocationAutoPoints.iconOfOverlay);
+                Bitmap icon = new Bitmap(_subLocationNorma.iconOfOverlay);
                 // Координаты маркера
                 PointLatLng point = new PointLatLng(_list[i].x, _list[i].y);
                 GMarkerGoogle marker = new GMarkerGoogle(point, icon);
                 marker.ToolTip = new GMapRoundedToolTip(marker);
                 marker.Offset = new Point(-icon.Width / 2, -icon.Height / 2);
                 // Подпись маркера
-                marker.ToolTipText = "Норма №" + (_subLocationAutoPoints.overlay.Markers.Count + 1);
+                marker.ToolTipText = "Норма №" + (_subLocationNorma.overlay.Markers.Count + 1);
                 // Добавление маркера на слой
-                _subLocationAutoPoints.overlay.Markers.Add(marker);
+                _subLocationNorma.overlay.Markers.Add(marker);
                 _InitializationZone(point);
             }
             // Делаем слой видимым
-            _subLocationAutoPoints.overlay.IsVisibile = true;
+            _subLocationNorma.overlay.IsVisibile = true;
         }
 
         /// <summary>
@@ -74,19 +74,19 @@ namespace Optimum
         {
             _radiusSearch = radius;
             // Очистить у слоя маркеры
-            _subLocationAutoPoints.overlay.Markers.Clear();
+            _subLocationNorma.overlay.Markers.Clear();
             // Очистить у слоя полигоны
-            _subLocationAutoPoints.overlay.Polygons.Clear();
+            _subLocationNorma.overlay.Polygons.Clear();
             // Убрать слой с карты
-            gmap.Overlays.Remove(_subLocationAutoPoints.overlay);
+            gmap.Overlays.Remove(_subLocationNorma.overlay);
             // Очистка слоя
-            _subLocationAutoPoints.overlay.Clear();
+            _subLocationNorma.overlay.Clear();
             // Добавление слоя на карту
-            gmap.Overlays.Add(_subLocationAutoPoints.overlay);
+            gmap.Overlays.Add(_subLocationNorma.overlay);
             // Инициализация маркеров
-            _InitializationMarkers(_subLocationAutoPoints);
+            _InitializationMarkers(_subLocationNorma);
             // Делаем слой видимым
-            _subLocationAutoPoints.overlay.IsVisibile = false;
+            _subLocationNorma.overlay.IsVisibile = false;
         }
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace Optimum
             // Отрисовка окружности
             _CreateCircle(point, _radiusSearch);
             // Добавление полигона на слой карты
-            _subLocationAutoPoints.overlay.Polygons.Add(_polygon);
+            _subLocationNorma.overlay.Polygons.Add(_polygon);
         }
 
         /// <summary>

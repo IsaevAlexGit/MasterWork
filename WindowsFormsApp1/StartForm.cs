@@ -7,6 +7,15 @@ namespace Optimum
 {
     public partial class StartForm : Form
     {
+        // Выбраный язык карты
+        private LanguageType _languageOfMap;
+        private string _selectedMapLanguage;
+        // Цвета интерфейса по умолчанию
+        private Color _colorForInterface = Color.FromArgb(138, 230, 145);
+        private Color _colorForElements = Color.FromArgb(174, 238, 180);
+        // Состояние Интернета
+        private bool _flagConnection = true;
+
         /// <summary>
         /// Конструктор формы
         /// </summary>
@@ -18,22 +27,13 @@ namespace Optimum
 
             // Расширеный выбор цвета и оттенков
             colorDialog.FullOpen = true;
-            colorDialog.Color = this.BackColor;
+            colorDialog.Color = BackColor;
 
             // Старт таймера
             timer.Enabled = true;
             timer.Start();
             timer.Interval = 1000;
-        }
-
-        // Выбраный язык карты
-        private LanguageType _languageOfMap;
-        private string _selectedMapLanguage;
-        // Цвета интерфейса по умолчанию
-        private Color _colorForInterface = Color.FromArgb(138, 230, 145);
-        private Color _colorForElements = Color.FromArgb(174, 238, 180);
-        // Состояние Интернета
-        private bool _flagConnection = true;
+        }        
 
         /// <summary>
         /// Загрузка формы
@@ -43,17 +43,17 @@ namespace Optimum
             ClientSize = new Size(810, 487);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             // Цвет интерфейса
-            BackColor = comboBoxLanguage.BackColor = buttonPDF.BackColor = buttonSelectColor.BackColor = _colorForInterface;
+            BackColor = comboBoxLanguage.BackColor = buttonManual.BackColor = buttonSelectColor.BackColor = _colorForInterface;
             // Цвет "Продолжить"
             buttonProceed.BackColor = _colorForElements;
 
             // Установка картинки
-            pictureBox.Image = Properties.Resources.iconApplication;
+            pictureLogoApplication.Image = Properties.Resources.iconApplication;
             // Выравнивание картинки по центру
-            pictureBox.Left = (this.ClientSize.Width - pictureBox.Width) / 2;
+            pictureLogoApplication.Left = (ClientSize.Width - pictureLogoApplication.Width) / 2;
             // Визуализация кнопки "Руководство пользователя"
-            buttonPDF.FlatAppearance.BorderSize = 0;
-            buttonPDF.FlatStyle = FlatStyle.Flat;
+            buttonManual.FlatAppearance.BorderSize = 0;
+            buttonManual.FlatStyle = FlatStyle.Flat;
             // Визуализация кнопки "Цвет интерфейса"
             buttonSelectColor.FlatAppearance.BorderSize = 0;
             buttonSelectColor.FlatStyle = FlatStyle.Flat;
@@ -85,7 +85,7 @@ namespace Optimum
                     _colorForInterface = colorDialog.Color;
 
                     // Установить цвет для данного окна и кнопок
-                    BackColor = comboBoxLanguage.BackColor = buttonPDF.BackColor = buttonSelectColor.BackColor = _colorForInterface;
+                    BackColor = comboBoxLanguage.BackColor = buttonManual.BackColor = buttonSelectColor.BackColor = _colorForInterface;
 
                     // Найти оттенок выбранного цвета
                     int R = BackColor.R + 15;

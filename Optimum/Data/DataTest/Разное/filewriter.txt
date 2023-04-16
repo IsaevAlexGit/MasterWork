@@ -1,0 +1,13 @@
+FileStream fileStream = new FileStream(Application.StartupPath + @"\Data\in.txt", FileMode.Append, FileAccess.Write);
+StreamWriter streamWriter = new StreamWriter(fileStream);
+streamWriter.WriteLine(string);
+streamWriter.Close();
+
+
+FileStream fileStream = new FileStream(Application.StartupPath + @"\Data\in.txt", FileMode.Create, FileAccess.Write);
+StreamWriter streamWriter = new StreamWriter(fileStream);
+for (int t = 0; t < _SuperBestPoints.Count; t++)
+      {
+          streamWriter.WriteLine(_SuperBestPoints[t].summPlace + " " + _SuperBestPoints[t].bf.idBufferZone);
+      }
+streamWriter.Close();

@@ -1,0 +1,47 @@
+.csv - файл без имени
+
+QuartetEmpty - пустой файл
+QuartetEmptyWithSpaceCell - не пустой файл, в ячейках пробелы стоят
+QuartetFirstRowEmpty - первая строка пустая
+QuartetHasEmptyString - в середине файла пустая строка
+QuartetOneRowWithoutInfo - квартал с пустыми ячейками
+QuartetLotPointsWrongInfo - в некоторых ячейках пустые строки
+QuartetWrongCentrePoint - пустые ячейки на месте координат центральной точки
+QuartetWrongCoordinates - пустые ячейки на месте координаты первой точки
+
+QuartetAllNegativeCriteries - количество аптек, жителей и пенсионеров отрицательные
+QuartetNegativePharmacy - отрицательное число аптек в квартале
+QuartetNegativeResidents - отрицательное число жителей в квартале
+QuartetNegativeRetired - отрицательное число пенсионеров в квартале
+QuartetNegativeValueCountBorderPoints - отрицательное число граничных точек в квартале
+
+QuartetIdText - вместо ID текст
+QuartetCountPointsText - вместо количества точек текст
+QuartetPharmaText - вместо числа аптек текст
+QuartetResidentsText - вместо числа жителей текст
+QuartetRetiredText - вместо числа пенсионеров текст
+
+QuartetNormalOneQuartet - нормальный файл с 1 кварталом
+QuartetNormalFourQuartet - нормальный файл с 4 кварталами
+QuartetNormalSevenQuartet - нормальный файл с 7 кварталами
+QuartetNormalLotQuartet - нормальный файл с 43 кварталами
+
+QuartetPointOutsideCity - одна точка за пределами города
+QuartetLotPointOutsideCity - несколько точек за границами города
+QuartetSwapXY - поменяли места Х и Y первой точки
+
+QuartetFirstRowOnlyID - в первой строке только ID
+QuartetFirstRowOnlyIDandCount - в первой строке ID и число точек
+
+QuartetBigCountBorderCount - количество граничных точек очень большое
+
+QuartetOneNewColumn - перед столбцом ID новый пустой столбец
+QuartetWithoutOneColumn - файл без колонки количества граничных точек
+QuartetWithoutID - у файла удален столбец с ID
+QuartetNewColumn - в конце строки лишний текст
+QuartetWrongID - у кварталов нелинейный порядок ID
+QuartetZeroCountBorderPoints - у квартала количество граничных точек 0
+QuartetWithoutLotColumn - файл без большого количества столбцов
+
+QuartetStandard - эталонный файл
+QuartetStandardWithNewValues - эталонный файл с другими значениями

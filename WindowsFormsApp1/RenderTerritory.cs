@@ -24,7 +24,7 @@ namespace Optimum
         private List<PointLatLng> _pointsPolygon = new List<PointLatLng>();
 
         /// <summary>
-        /// Отображение города
+        /// Отображение территории
         /// </summary>
         /// <param name="gmap">Карта</param>
         public void DrawTerritory(GMapControl gmap)
@@ -56,7 +56,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Очистка отображения районов или города
+        /// Очистка отображения районов или территории
         /// </summary>
         /// <param name="gmap">Карта</param>
         public void ClearTerritory(GMapControl gmap)

@@ -3,11 +3,10 @@
     // Критерий
     public class Criterion
     {
-        // Название критерия
         public string nameOfCriterion { get; set; }
-        // Направление критерия - false - минимизация, true - максимизация
+        // Направление критерия: false - минимизация, true - максимизация
         public bool direction { get; set; }
-        // Важность критерия - 0.3
+        // Вес критерия
         public double weightOfCriterion { get; set; }
 
         /// <summary>
@@ -24,8 +23,8 @@
         public Criterion(string Name, bool Direction, double Weight)
         {
             nameOfCriterion = Name;
-            weightOfCriterion = Weight;
             direction = Direction;
+            weightOfCriterion = Weight;            
         }
     }
 }

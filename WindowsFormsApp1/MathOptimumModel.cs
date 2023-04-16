@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Windows;
 
 namespace Optimum
 {
@@ -36,7 +35,7 @@ namespace Optimum
         private List<OptimalZone> _listAllOptimalZones = new List<OptimalZone>();
 
         // Утопическая точка
-        private OptimalZone UtopiaPoint = new OptimalZone();
+        private OptimalZone _UtopiaPoint = new OptimalZone();
 
         /// <summary>
         /// Конструктор
@@ -109,9 +108,9 @@ namespace Optimum
         }
 
         // Для нормализации надо найти максимум и минимум по каждому критерию
-        // Тут хранится минимум для каждого из 5 критериев - 5 минимумов по каждому критерию 
+        // Тут хранится минимум для каждого из Х критериев - Х минимумов по каждому критерию 
         private List<double> minimums = new List<double>();
-        // Тут хранится максимум для каждого из 5 критериев - 5 максимумов по каждому критерию
+        // Тут хранится максимум для каждого из Х критериев - Х максимумов по каждому критерию
         private List<double> maximums = new List<double>();
 
         /// <summary>
@@ -293,14 +292,10 @@ namespace Optimum
                 // В каждой зоне идем по каждому критерию
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
-                    // 1	0,429	0,613	0,9	      1/3           0,143	0,204333333  0,3
-                    // 2	0,714	0,622	0,6	      1/3           0,238	0,207333333	 0,2
                     double temp = _listForNormalization[i].arrayValuesCriterionOnZone[j] * _listCriterion[j].weightOfCriterion;
                     // Найти минимальное произведение из всех произведений критерия на вес у одной зоны
                     if (temp <= MinHermeier)
-                    {
                         MinHermeier = temp;
-                    }
                 }
                 // Найти максимальное произведение из всех самых минимальных
                 if (MinHermeier > MaxHermeier)
@@ -320,9 +315,7 @@ namespace Optimum
         {
             // Если однокритериальный поиск
             if (_listCriterion.Count == 1)
-            {
                 return true;
-            }
             else
             {
                 // Пороговое значение, разница между двумя важными приоритетатми выше этого значения, то МГК используем
@@ -365,8 +358,6 @@ namespace Optimum
                     positionMaxCr = i;
                 }
             }
-            // Мы узнали самый важный критерий = 0.6, он 1 месте в массивe [0,4]
-
             // Идем по всем значениям
             for (int i = 0; i < _listForNormalization.Count; i++)
             {
@@ -380,22 +371,16 @@ namespace Optimum
         // Создать идеальную точку
         private void _createUtopiaPoint()
         {
-            // -1 id
-            // 0,0 - x,y
-            // радиус как у всех точек
-            // все частные критерии которые максимизированы, то есть идеальны
-
             // Сколько критериев столько и 1
             List<double> odin = new List<double>();
             for (int i = 0; i < _listCriterion.Count; i++)
                 odin.Add(1);
 
-            // Утопия это -1, 0-0, радиус, Х критериев со значением "1"
             BufferZone UtopiaBufferZone = new BufferZone(-1, 0, 0, _listForNormalization[0].lengthRadiusSearch, odin);
 
             // Утопия - идеальная точка, где частные критерии идеальны относительно каждого критерия относительно поставленных точек на карте
-            UtopiaPoint.namesConvolutiones = new List<string>();
-            UtopiaPoint.optimal = UtopiaBufferZone;
+            _UtopiaPoint.namesConvolutiones = new List<string>();
+            _UtopiaPoint.optimal = UtopiaBufferZone;
         }
 
         /// <summary>
@@ -414,27 +399,15 @@ namespace Optimum
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
                     // Модуль разности (Утопический критерий - частный текущий критерий)
-                    double diffUtopia = Math.Abs(UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
+                    double diffUtopia = Math.Abs(_UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
                     //double diffUtopia2 = Math.Abs(1 - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
                     // Вес * модуль разности
                     double multi = diffUtopia * _listCriterion[j].weightOfCriterion;
 
-                    // Ищем максимум из 5 критериев
-                    // 0.190 больше -1
-                    // 0.129 меньше 0.190
-                    // 0.033 меньше 0.190
                     if (multi >= MaxChebyshev)
-                    {
                         MaxChebyshev = multi;
-                    }
-                    // У первой точки максимум по критериям 0.190
                 }
 
-                // Ищем из максимумов минимум - это и есть оптимум
-                // 0.190 меньше 10000 да - MinChebyshev = 0.190
-                // 0.160 меньше 0.190 да - MinChebyshev = 0.160
-                // 0.333 меньше 0.160 нет - MinChebyshev = 0.160
-                // 0.133 меньше 0.160 да - MinChebyshev = 0.133
                 if (MaxChebyshev < MinChebyshev)
                 {
                     MinChebyshev = MaxChebyshev;
@@ -461,17 +434,11 @@ namespace Optimum
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
                     // Модуль разности (Утопический критерий - частный текущий критерий)
-                    double diffUtopia = Math.Abs(UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
-                    //double diffUtopia2 = Math.Abs(1 - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
+                    double diffUtopia = Math.Abs(_UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j]);
                     // Вес * модуль разности
                     double multi = diffUtopia * _listCriterion[j].weightOfCriterion;
-                    // 0.190 + 0.129 + 0.033 = 0.353
-                    // 0 + 0.108 + 0.160 = 0.268
                     summ = summ + multi;
                 }
-
-                // 0.353 меньше 10000 да MinEHamming = 0.353
-                // 0.268 меньше 0.353 да MinEHamming = 0.268
                 if (summ < MinHamming)
                 {
                     MinHamming = summ;
@@ -498,15 +465,11 @@ namespace Optimum
                 for (int j = 0; j < _listForNormalization[i].arrayValuesCriterionOnZone.Count; j++)
                 {
                     // Квадрат разности (Утопический критерий - частный текущий критерий)
-                    double diffUtopia = Math.Pow(UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j], 2);
-                    //double diffUtopia2 = Math.Pow(1 - _listForNormalization[i].arrayValuesCriterionOnZone[j], 2);
+                    double diffUtopia = Math.Pow(_UtopiaPoint.optimal.arrayValuesCriterionOnZone[j] - _listForNormalization[i].arrayValuesCriterionOnZone[j], 2);
                     // Вес * квадрат разности
                     double multi = diffUtopia * _listCriterion[j].weightOfCriterion;
                     summ = summ + multi;
                 }
-
-                // 0.162 меньше 10000 да MinEuclidean - 0.165
-                // 0.112 меньше 0.165 да MinEuclidean - 0.112
                 if (summ < MinEuclidean)
                 {
                     MinEuclidean = summ;
@@ -519,38 +482,17 @@ namespace Optimum
         // Из списка уникальных ID оптимумов надо вернуть список оптимальных точек
         private List<OptimalZone> _getOptimalZonesDisionMaking()
         {
-            //_listAllOptimalZones.Clear();
-
-            // 1 - Линейная
-            // 4 - Мульти
-            // 3 - Агр
-            // 1 - Чеб
-            // 5 - Хем
-            // 1 - Евк
-            // 3 - МГК
-            // 4 - Гермейер
-
-            // 1 - Линейная, Чеб, Евк - 3
-            // 3 - Агр, МГК - 2 
-            // 4 - Гермейер, Мульти - 2
-            // 5 - Хем - 1
-
-            // Все ID всех оптимумов 1 4 3 1 5 1 3 4
+            // Все ID всех выбранных каждой сверткой оптимумов
             List<int> ID = new List<int>();
             for (int i = 0; i < _pairInfoOptimum.Count; i++)
                 ID.Add(_pairInfoOptimum[i].ID);
 
-            // Все уникальные ID 1 4 3 5
+            // Уникальные ID оптимумов
             var UniqueID = ID.Distinct();
 
             // Оптимальные уникальные зоны
             _listAllOptimalZones = new List<OptimalZone>();
 
-            // Список уникальных оптимумов
-            // 1 ""
-            // 4 ""
-            // 3 ""
-            // 5 ""
             // Идем по всему списку установленных точек
             for (int i = 0; i < _listWithStartZones.Count; i++)
             {
@@ -565,12 +507,6 @@ namespace Optimum
                 }
             }
 
-            // Список уникальных оптимумов
-            // 1 "Линейная Чеб Евк"
-            // 4 "Мульти Гермейер"
-            // 3 "Агр МГК"
-            // 5 "Хем"
-
             // Идем по всем оптимумам
             for (int i = 0; i < _listAllOptimalZones.Count; i++)
             {
@@ -578,9 +514,7 @@ namespace Optimum
                 {
                     // Если ID оптимума совпал с ID в парах
                     if (_listAllOptimalZones[i].optimal.idBufferZone == _pairInfoOptimum[j].ID)
-                    {
                         _listAllOptimalZones[i].namesConvolutiones.Add(_pairInfoOptimum[j].Convolution);
-                    }
                 }
             }
 
@@ -588,7 +522,7 @@ namespace Optimum
         }
 
         /// <summary>
-        /// Клонирование буферных зон в другой список
+        /// Клонирование буферных зон
         /// </summary>
         private void _CloneValuesFromListNormalizationToListStartZones()
         {

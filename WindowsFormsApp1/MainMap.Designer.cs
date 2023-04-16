@@ -39,8 +39,10 @@
             this.InputRadiusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SearchOptimumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AutoSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FindAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ShowAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HideAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LeaveOptimumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveOptimumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OptimumInBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,8 +66,6 @@
             this.pictureBoxMarker = new System.Windows.Forms.PictureBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.timerCheckPanel = new System.Windows.Forms.Timer(this.components);
-            this.FindAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeleteAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.panelLegend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAuto)).BeginInit();
@@ -191,13 +191,23 @@
             this.AutoSearchToolStripMenuItem.Text = "Автопоиск";
             this.AutoSearchToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // FindAutoToolStripMenuItem
+            // 
+            this.FindAutoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("FindAutoToolStripMenuItem.Image")));
+            this.FindAutoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.FindAutoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.FindAutoToolStripMenuItem.Name = "FindAutoToolStripMenuItem";
+            this.FindAutoToolStripMenuItem.Size = new System.Drawing.Size(135, 38);
+            this.FindAutoToolStripMenuItem.Text = "Найти";
+            this.FindAutoToolStripMenuItem.Click += new System.EventHandler(this.FindAutoToolStripMenuItem_Click);
+            // 
             // ShowAutoToolStripMenuItem
             // 
             this.ShowAutoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ShowAutoToolStripMenuItem.Image")));
             this.ShowAutoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ShowAutoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ShowAutoToolStripMenuItem.Name = "ShowAutoToolStripMenuItem";
-            this.ShowAutoToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.ShowAutoToolStripMenuItem.Size = new System.Drawing.Size(135, 38);
             this.ShowAutoToolStripMenuItem.Text = "Отобразить";
             this.ShowAutoToolStripMenuItem.Click += new System.EventHandler(this.ShowAutoToolStripMenuItem_Click);
             // 
@@ -207,9 +217,19 @@
             this.HideAutoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.HideAutoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.HideAutoToolStripMenuItem.Name = "HideAutoToolStripMenuItem";
-            this.HideAutoToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.HideAutoToolStripMenuItem.Size = new System.Drawing.Size(135, 38);
             this.HideAutoToolStripMenuItem.Text = "Скрыть";
             this.HideAutoToolStripMenuItem.Click += new System.EventHandler(this.HideAutoToolStripMenuItem_Click);
+            // 
+            // DeleteAutoToolStripMenuItem
+            // 
+            this.DeleteAutoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAutoToolStripMenuItem.Image")));
+            this.DeleteAutoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.DeleteAutoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DeleteAutoToolStripMenuItem.Name = "DeleteAutoToolStripMenuItem";
+            this.DeleteAutoToolStripMenuItem.Size = new System.Drawing.Size(135, 38);
+            this.DeleteAutoToolStripMenuItem.Text = "Удалить";
+            this.DeleteAutoToolStripMenuItem.Click += new System.EventHandler(this.DeleteAutoToolStripMenuItem_Click);
             // 
             // LeaveOptimumToolStripMenuItem
             // 
@@ -445,26 +465,6 @@
             // timerCheckPanel
             // 
             this.timerCheckPanel.Tick += new System.EventHandler(this.timerCheckPanel_Tick);
-            // 
-            // FindAutoToolStripMenuItem
-            // 
-            this.FindAutoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("FindAutoToolStripMenuItem.Image")));
-            this.FindAutoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.FindAutoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.FindAutoToolStripMenuItem.Name = "FindAutoToolStripMenuItem";
-            this.FindAutoToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.FindAutoToolStripMenuItem.Text = "Найти";
-            this.FindAutoToolStripMenuItem.Click += new System.EventHandler(this.FindAutoToolStripMenuItem_Click);
-            // 
-            // DeleteAutoToolStripMenuItem
-            // 
-            this.DeleteAutoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAutoToolStripMenuItem.Image")));
-            this.DeleteAutoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.DeleteAutoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.DeleteAutoToolStripMenuItem.Name = "DeleteAutoToolStripMenuItem";
-            this.DeleteAutoToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.DeleteAutoToolStripMenuItem.Text = "Удалить";
-            this.DeleteAutoToolStripMenuItem.Click += new System.EventHandler(this.DeleteAutoToolStripMenuItem_Click);
             // 
             // MainMap
             // 

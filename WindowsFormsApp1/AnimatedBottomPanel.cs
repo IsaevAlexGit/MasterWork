@@ -47,7 +47,7 @@ namespace Optimum
                 // Размер кнопки
                 actionButton.Size = new Size(25, 30);
                 // Цвет кнопки
-                actionButton.BackColor = Color.FromArgb(174, 238, 180);
+                actionButton.BackColor = _model.mainColor;
                 // Местонахождение кнопки лево и верх
                 actionButton.Left = ClientSize.Width / 2 - 5;
                 actionButton.Top = ClientSize.Height / 2 - ClientSize.Height / 2 + 5;

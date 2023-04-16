@@ -1,12 +1,12 @@
-﻿using GMap.NET;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Globalization;
+﻿using System;
 using System.IO;
 using System.Text;
+using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
+using System.Collections.Generic;
+using GMap.NET;
 
 namespace Optimum
 {
@@ -66,12 +66,13 @@ namespace Optimum
             _fileValidator = new FileValidator();
 
             // Основной цвет интерфейса
-            BackColor = comboCountCriterion.BackColor = buttonHelpSetCriterion.BackColor = buttonHelpSetFileBoundary.BackColor = buttonHelpSetFilePolygons.BackColor =
-                buttonHelpSetIcon.BackColor = buttonHelpSetName.BackColor = buttonHelpSetFileSocialFacilities.BackColor = _colorForApplication;
+            BackColor = comboCountCriterion.BackColor = buttonHelpSetCriterion.BackColor = buttonHelpSetFileBoundary.BackColor =
+                buttonHelpSetFilePolygons.BackColor = buttonHelpSetIcon.BackColor = buttonHelpSetName.BackColor = 
+                buttonHelpSetFileSocialFacilities.BackColor = _colorForApplication;
 
             // Основной цвет интерфейса для выпадающих списков
-            comboBox2.BackColor = comboBox3.BackColor = comboBox4.BackColor = comboBox5.BackColor = comboBox6.BackColor = comboBox7.BackColor =
-                comboBox8.BackColor = _colorForApplication;
+            comboBox2.BackColor = comboBox3.BackColor = comboBox4.BackColor = comboBox5.BackColor = comboBox6.BackColor = 
+                comboBox7.BackColor = comboBox8.BackColor = _colorForApplication;
 
             // Второстепенный цвет интерфейса
             buttonValidateAndSave.BackColor = buttonLoadIconFacility.BackColor = buttonLoadBorderTerritory.BackColor =
@@ -135,7 +136,7 @@ namespace Optimum
             buttonValidateAndSave.FlatAppearance.BorderSize = 0;
             buttonValidateAndSave.FlatStyle = FlatStyle.Flat;
 
-            buttonValidateAndSave_Click(sender, e);
+            //buttonValidateAndSave_Click(sender, e);
         }
 
         // Загруженный пользователем значок для отображения объекта на карте
@@ -163,8 +164,8 @@ namespace Optimum
                 if (DialogLoadingIconFacility.ShowDialog() == DialogResult.OK)
                 {
                     // Получение загруженной картинки
-                    _bitmapForLoadIconFacility = (Bitmap)Bitmap.FromFile(DialogLoadingIconFacility.FileName.ToString());
-                    Image image = (Image)_bitmapForLoadIconFacility;
+                    _bitmapForLoadIconFacility = (Bitmap)Image.FromFile(DialogLoadingIconFacility.FileName.ToString());
+                    Image image = _bitmapForLoadIconFacility;
 
                     // Если разрешение файла от 5х5 до 90x90 пикселов 
                     if (_bitmapForLoadIconFacility.Size.Height >= 5 && _bitmapForLoadIconFacility.Size.Height <= 90 &&
@@ -702,9 +703,6 @@ namespace Optimum
                             // При загрузке новых границ сбросить файлы с полигонами и объектами инфраструктуры
                             _IsLoadFileFacilities = false;
                             _IsLoadFileQuartets = false;
-
-                            //for (int i = 0; i < listPointsCity.Count; i++)
-                            //    MessageBox.Show(listPointsCity[i].x + " " + listPointsCity[i].y);
                         }
                         else
                             MessageBox.Show(isValidDataFile, "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -843,7 +841,7 @@ namespace Optimum
                                 // Если файл прошёл все проверки
                                 if (isValidDataFile == "Успешно")
                                 {
-                                    // Список кварталов
+                                    // Список полигонов
                                     List<Quar> _tempListQuartets = new List<Quar>();
                                     // Список точек для каждого полигона
                                     List<Location> tempListPoints = new List<Location>();
@@ -873,14 +871,6 @@ namespace Optimum
                                                 // Список чисел значений каждого критерия у каждого полигона
                                                 List<double> countValuesOfEveryCriterion = new List<double>();
 
-                                                // SplitOneString[0] = ID
-                                                // SplitOneString[1] = количество точек
-                                                // SplitOneString[CountBoundaryPoints * 2] = граничные точки
-                                                // SplitOneString[CountBoundaryPoints * 2 + 2] = х центра
-                                                // SplitOneString[CountBoundaryPoints * 2 + 3] = у центра
-                                                // SplitOneString[CountBoundaryPoints * 2 + 4] = 1 критерий
-                                                // fffff = последний критерий
-
                                                 // ID, CountBoundaryPoints, CountBoundaryPoints*2, xcenter, ycenter
                                                 int _lastCriterion = CountBoundaryPoints * 2 + 4 + criterion.Count;
 
@@ -888,7 +878,7 @@ namespace Optimum
                                                 for (int j = CountBoundaryPoints * 2 + 4; j < _lastCriterion; j++)
                                                     countValuesOfEveryCriterion.Add(Convert.ToDouble(SplitOneString[j]));
 
-                                                // Если все критерии больше или равны 0
+                                                // Проверка, что все критерии >= 0
                                                 bool flag = true;
                                                 for (int k = 0; k < countValuesOfEveryCriterion.Count; k++)
                                                 {
@@ -927,15 +917,14 @@ namespace Optimum
                 MessageBox.Show("Сначала загрузите файл с граничными точками территории", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public void ffunc(bool fdsafsdafsdf)
+        public void TEMPFUNC(bool olala)
         {
-            if (fdsafsdafsdf)
+            if (olala)
             {
                 _pathToIconFacility = Application.StartupPath + @"\Icon\iconOld.png";
                 string pathToFile1 = Application.StartupPath + @"\Data\!!!dataBorderCityForUser.csv";
                 string pathToFile2 = Application.StartupPath + @"\Data\!!dataQuartet.csv";
                 string pathToFile3 = Application.StartupPath + @"\Data\!dataPharmacy.csv";
-                // string pathToFile3 = Application.StartupPath + @"\Data\3123123.csv";
 
                 CheckVadidateNameFaicility();
                 CheckValidateCriterion();
@@ -969,7 +958,7 @@ namespace Optimum
 
 
 
-                // Список кварталов
+                // Список полигонов
                 List<Quar> _tempListQuartets = new List<Quar>();
                 // Список точек для каждого полигона
                 List<Location> tempListPoints = new List<Location>();
@@ -999,18 +988,8 @@ namespace Optimum
                             // Список чисел значений каждого критерия у каждого полигона
                             List<double> countValuesOfEveryCriterion = new List<double>();
 
-                            // SplitOneString[0] = ID
-                            // SplitOneString[1] = количество точек
-                            // SplitOneString[CountBoundaryPoints * 2] = граничные точки
-                            // SplitOneString[CountBoundaryPoints * 2 + 2] = х центра
-                            // SplitOneString[CountBoundaryPoints * 2 + 3] = у центра
-                            // SplitOneString[CountBoundaryPoints * 2 + 4] = 1 критерий
-                            // fffff = последний критерий
-
                             // ID, CountBoundaryPoints, CountBoundaryPoints*2, xcenter, ycenter
                             int _lastCriterion = CountBoundaryPoints * 2 + 4 + criterion.Count;
-
-                            //MessageBox.Show(criterion.Count.ToString());
 
                             // Все значения критериев полигона добавить в список
                             for (int j = CountBoundaryPoints * 2 + 4; j < _lastCriterion; j++)
@@ -1034,14 +1013,6 @@ namespace Optimum
                 // Сохранить список полигонов
                 _listQuartetsFromFile = _tempListQuartets;
 
-                //for (int i = 0; i < _listQuartetsFromFile.Count; i++)
-                //{
-                //    MessageBox.Show(_listQuartetsFromFile[i].valuesEveryCriterionForQuartet[0].ToString());
-                //    MessageBox.Show(_listQuartetsFromFile[i].valuesEveryCriterionForQuartet[1].ToString());
-                //    MessageBox.Show(_listQuartetsFromFile[i].valuesEveryCriterionForQuartet[2].ToString());
-
-                //}
-
                 // Флаг успешной загрузки файла
                 _IsLoadFileQuartets = true;
 
@@ -1049,15 +1020,8 @@ namespace Optimum
 
 
 
-
-
-
-
-
                 // Список с объектами инфраструктуры
                 List<Facility> _tempListPointsFacility = new List<Facility>();
-
-
                 using (StreamReader filereader = new StreamReader(pathToFile3, Encoding.GetEncoding(1251)))
                 {
                     while (!filereader.EndOfStream)
@@ -1156,8 +1120,8 @@ namespace Optimum
         private void buttonValidateAndSave_Click(object sender, EventArgs e)
         {
             // true - автоматом, false - вручную
-            //ffunc(false);
-            ffunc(true);
+            TEMPFUNC(false);
+            // TEMPFUNC(true);
         }
 
         /// <summary>

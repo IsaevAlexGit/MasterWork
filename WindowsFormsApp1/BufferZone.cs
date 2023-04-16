@@ -3,15 +3,13 @@ using System.Collections.Generic;
 
 namespace Optimum
 {
-    // ICloneable - позволяет копировать список объектов
+    // ICloneable позволяет копировать список объектов
     public class BufferZone : ICloneable
     {
         public int idBufferZone { get; set; }
         public double x { get; set; }
         public double y { get; set; }
         public int lengthRadiusSearch { get; set; }
-
-        // Список чисел - которых столько же сколько критериев, и тут хранится их значение подсуммированное в каждой буферной зоне
         public List<double> arrayValuesCriterionOnZone { get; set; }
 
         public BufferZone() { }
@@ -24,13 +22,13 @@ namespace Optimum
         /// <param name="Y">Координата Y буферной зоны</param>
         /// <param name="LengthRadius">Радиус буферной зоны</param>
         /// <param name="listValues">Список значений всех критериев</param>
-        public BufferZone(int Id, double X, double Y, int LengthRadius, List<double> listValues)
+        public BufferZone(int Id, double X, double Y, int LengthRadius, List<double> ListValues)
         {
             idBufferZone = Id;
             x = X;
             y = Y;
             lengthRadiusSearch = LengthRadius;
-            arrayValuesCriterionOnZone = listValues;
+            arrayValuesCriterionOnZone = ListValues;
         }
 
         /// <summary>

@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Device.Location;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Device.Location;
 
 namespace Optimum
 {
@@ -26,11 +26,12 @@ namespace Optimum
         /// </summary>
         private void SettingRadius_Load(object sender, EventArgs e)
         {
-            BackColor = labelRadiusLong.BackColor = labelRadius.BackColor = _mapModel.colorApplication;
-            menuStrip.BackColor = _mapModel.colorElements;
-            trackBarRadius.BackColor = _mapModel.colorElements;
+            // Цвет формы, меню, ползунка
+            BackColor = labelRadiusLong.BackColor = labelRadius.BackColor = _mapModel.mainColor;
+            menuStrip.BackColor = _mapModel.secondaryColor;
+            trackBarRadius.BackColor = _mapModel.secondaryColor;
 
-            ClientSize = new Size(520, 240);
+            ClientSize = new Size(696, 215);
             FormBorderStyle = FormBorderStyle.FixedSingle;
 
             // Ползунок от 6 до Х, текущее значение 6
@@ -98,8 +99,18 @@ namespace Optimum
             int radiusZone = trackBarRadius.Value * 50;
             _mapModel.radiusBufferZone = radiusZone;
             _flagSaveRadius = true;
-            // MessageBox.Show("Радиус поиска успешно сохранен", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Close();
+        }
+
+        /// <summary>
+        /// Прокрутка ползунка
+        /// </summary>
+        private void trackBarRadius_Scroll(object sender, EventArgs e)
+        {
+            // Если хоть раз сдвинули ползунок, значит уже изменения внеслись
+            _flagSaveRadius = false;
+            // Переписать текст в надписи на текущее значение радиуса в метрах
+            labelRadiusLong.Text = (trackBarRadius.Value * 50).ToString() + " м.";
         }
 
         /// <summary>
@@ -127,17 +138,6 @@ namespace Optimum
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
-        }
-
-        /// <summary>
-        /// Прокрутка ползунка
-        /// </summary>
-        private void trackBarRadius_Scroll(object sender, EventArgs e)
-        {
-            // Если хоть раз сдвинули ползунок, значит уже изменения внеслись
-            _flagSaveRadius = false;
-            // Переписать текст в надписи на текущее значение радиуса в метрах
-            labelRadiusLong.Text = (trackBarRadius.Value * 50).ToString() + " м.";
         }
     }
 }

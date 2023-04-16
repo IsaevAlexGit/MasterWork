@@ -1,0 +1,24 @@
+<style>
+            /*Задний фон*/
+            body
+            {
+                /*Цвет фона*/
+                background-color: #FDDAB8;
+            }
+            /*Заголовок H1*/
+            h1
+            {
+                /*Цвет текста в заголовке*/
+                color: red;
+                /*Цвет заднего фона текста*/
+                background-color: #00b33c;
+            }
+            /*Простой текст*/
+            p
+            {
+                /*Цвет текста*/
+                color: darkblue;
+                /*Цвет заднего фона текста*/
+                background-color: #FFFFFF;
+            }
+        </style>

@@ -407,7 +407,7 @@
         AFdpaejtRJJrAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="labelInfo.Text" xml:space="preserve">
+  <data name="labelAboutWeights.Text" xml:space="preserve">
     <value>Для вычисления оптимальных точек Вам необходимо задать критери оптимальности,
 весовые коэффициенты и направление критериев. Значения критериев находятся на
 интервале [0,1] и сумма всех весов должна быть равна единице.</value>
