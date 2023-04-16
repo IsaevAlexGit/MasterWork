@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OptimumPharmacy.MapView">
+    <Position X="4.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgEQAFAABAABCAUCAAAEABAAAQQAABAAQQiAAAACGA=</HashCode>
+      <FileName>MapView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_mapModel" />
+      <Field Name="_renderPharmacy" />
+      <Field Name="_renderDistrict" />
+      <Field Name="_renderQuartet" />
+      <Field Name="_renderUserPoints" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OptimumPharmacy.MapModel" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BWiQUxkMQAIGAIwAZCIBFiAIQBWkgKAgCEkEEBCADBA=</HashCode>
+      <FileName>MapModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimumPharmacy.RenderDistrict" Collapsed="true">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAADAACAAAAAAAAAEAAAAAAAAAACAA=</HashCode>
+      <FileName>RenderDistrict.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_sublayerDistrict" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OptimumPharmacy.RenderPharmacy" Collapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEAAAABAAAggAQAAAAEBCAAAAAAABAAAAgAAAAAAA=</HashCode>
+      <FileName>RenderPharmacy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_sublayerPharmacy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OptimumPharmacy.RenderQuartet" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEBAAQAAAAEAAUQEACAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RenderQuartet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_sublayerQuartetIcon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OptimumPharmacy.RenderUserMarker" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAACAQACAAAAAgABAAAAQAAAMAAGAAAAAAAQAAAA=</HashCode>
+      <FileName>RenderUserMarker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_subLocationPharmaUsers" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OptimumPharmacy.SublayerDistrict" Collapsed="true">
+    <Position X="11.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAEAABIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sublayers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimumPharmacy.SublayerPharmacy" Collapsed="true">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAIAAAABIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sublayers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimumPharmacy.SublayerQuartet" Collapsed="true">
+    <Position X="11.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAIAAAABIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sublayers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OptimumPharmacy.SublayerLocation" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACIAAAABIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sublayers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
