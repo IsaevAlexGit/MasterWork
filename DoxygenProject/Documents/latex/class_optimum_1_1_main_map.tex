@@ -1,0 +1,2243 @@
+\doxysection{Класс Optimum.\+Main\+Map}
+\label{class_optimum_1_1_main_map}\index{Optimum.MainMap@{Optimum.MainMap}}
+
+
+Класс для главного окна  
+
+
+
+
+Граф наследования\+:Optimum.\+Main\+Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_optimum_1_1_main_map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Optimum.\+Main\+Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Main\+Map} (Language\+Type language, Color color\+App, Color color\+Elem, string path\+To\+Icon, string name\+Facility, List$<$ \textbf{ Criterion} $>$ list\+Criterion, List$<$ \textbf{ Polygon} $>$ list\+Polygons, string path\+File\+Polygons, List$<$ \textbf{ Facility} $>$ list\+Facilities, List$<$ \textbf{ Location} $>$ list\+Border\+Points, \textbf{ Location} center)
+\begin{DoxyCompactList}\small\item\em Конструктор формы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Windows.\+Forms.\+Timer \textbf{ timer\+Check\+Panel}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+override void \textbf{ Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Освободить все используемые ресурсы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ g\+Map\+Control\+\_\+\+Load} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка карты при открытии окна \end{DoxyCompactList}\item 
+void \textbf{ Map\+\_\+\+Load} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка формы \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Display\+Legend\+Elements} (bool mode\+Display)
+\begin{DoxyCompactList}\small\item\em Изменение отображения выдвигающейся нижней панели \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Settings\+Animation\+Panels} ()
+\begin{DoxyCompactList}\small\item\em Создание анимированных панелей на главном окне \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Combo\+Box\+Mouse\+Wheel} (object sender, Mouse\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Отключение скрола для выпадающего списка на колесо мыши \end{DoxyCompactList}\item 
+void \textbf{ radio\+Button\+Show\+Facility\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Отобразить на карте объекты социальной инфраструктуры \end{DoxyCompactList}\item 
+void \textbf{ radio\+Button\+Clear\+Facility\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Скрыть на карте объекты социальной инфраструктуры \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Check\+Selected\+Radio\+Button\+Facility} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Проверить, отображены ли на карте объекты социальной инфраструктуры \end{DoxyCompactList}\item 
+void \textbf{ radio\+Button\+Clear\+Show\+Name\+Info\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Показать только название объектов социальной инфраструктуры при наведении на маркер \end{DoxyCompactList}\item 
+void \textbf{ radio\+Button\+Show\+All\+Info\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Показать всю информацию об объектах социальной инфраструктуры при наведении на маркер \end{DoxyCompactList}\item 
+void \textbf{ gmap\+\_\+\+On\+Marker\+Click} (GMap\+Marker item, Mouse\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка клика по маркеру \end{DoxyCompactList}\item 
+void \textbf{ radio\+Button\+Show\+Territory\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Отобразить зону анализа \end{DoxyCompactList}\item 
+void \textbf{ radio\+Button\+Clear\+Territory\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Скрыть зону анализа \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Check\+Selected\+Radio\+Button\+Territory} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Проверить, отображена ли на карте зона анализа \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Redraw\+Map} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Перерисовать все слои на карте \end{DoxyCompactList}\item 
+void \textbf{ Centering\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Центрирование карты \end{DoxyCompactList}\item 
+void \textbf{ combo\+Box\+Providers\+Map\+\_\+\+Selected\+Index\+Changed} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка выбора поставщика карты \end{DoxyCompactList}\item 
+void \textbf{ combo\+Box\+Coloring\+Polygon\+\_\+\+Selected\+Index\+Changed} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Изменение критерия в площадной раскраске \end{DoxyCompactList}\item 
+void \textbf{ timer\+Check\+Panel\+\_\+\+Tick} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка тика таймера \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Draw\+Polygon\+Coloring} ()
+\begin{DoxyCompactList}\small\item\em Отрисовка полигонов \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Legend\+Polygon} (out Color[$\,$] color\+Polygon, out double min\+Value\+Coloring, out double max\+Value\+Coloring, out int count\+Of\+Grids, out double count\+Of\+Steps)
+\begin{DoxyCompactList}\small\item\em Легенда карты \end{DoxyCompactList}\item 
+void \textbf{ track\+Bar\+Transparent\+\_\+\+Scroll} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка изменения прозрачности цвета заливки полигона \end{DoxyCompactList}\item 
+void \textbf{ track\+Bar\+Intensity\+\_\+\+Scroll} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка изменения жирности границ для полигонов \end{DoxyCompactList}\item 
+void \textbf{ track\+Bar\+Shades\+\_\+\+Scroll} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка изменения количества оттенков раскраски \end{DoxyCompactList}\item 
+void \textbf{ panel\+Legend\+Of\+Map\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка щелчка по легенде карты \end{DoxyCompactList}\item 
+void \textbf{ combo\+Box\+Coloring\+Icons\+\_\+\+Selected\+Index\+Changed} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Изменение критерия в точечной раскраски \end{DoxyCompactList}\item 
+void \textbf{ Main\+Map\+\_\+\+Size\+Changed} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка сворачивания формы \end{DoxyCompactList}\item 
+void \textbf{ Save\+Map\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Сохранение карты в виде изображения \end{DoxyCompactList}\item 
+void \textbf{ gmap\+\_\+\+Mouse\+Double\+Click} (object sender, Mouse\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Установка точки-\/кандидата на карте \end{DoxyCompactList}\item 
+void \textbf{ Input\+Radius\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Ввод радиуса поиска буферной зоны \end{DoxyCompactList}\item 
+void \textbf{ Settings\+Tool\+Strip\+Menu\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Модификация загруженных данных \end{DoxyCompactList}\item 
+void \textbf{ Search\+Optimum\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Поиск оптимальных точек \end{DoxyCompactList}\item 
+void \textbf{ Leave\+Optimum\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Оставить на карте только оптимальные точки \end{DoxyCompactList}\item 
+void \textbf{ Save\+Optimum\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Сохранение оптимальных точек в CSV-\/файл \end{DoxyCompactList}\item 
+void \textbf{ Map\+\_\+\+Form\+Closing} (object sender, Form\+Closing\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Закрытие формы на красный крестик \end{DoxyCompactList}\item 
+void \textbf{ Main\+Map\+\_\+\+Key\+Down} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Закрыть форму через ESC. \end{DoxyCompactList}\item 
+void \textbf{ Google\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Отобразить наилучший оптимум на карте Google в браузере \end{DoxyCompactList}\item 
+void \textbf{ Yandex\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Отобразить наилучший оптимум на карте Яндекс в браузере \end{DoxyCompactList}\item 
+void \textbf{ Two\+GISTool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Отобразить наилучший оптимум на карте 2ГИС в браузере \end{DoxyCompactList}\item 
+void \textbf{ Open\+Street\+Map\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Отобразить наилучший оптимум на карте Open\+Street\+Map в браузере \end{DoxyCompactList}\item 
+void \textbf{ Show\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Включить отображение авто-\/оптимумов \end{DoxyCompactList}\item 
+void \textbf{ Hide\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Выключить отображение авто-\/оптимумов \end{DoxyCompactList}\item 
+double \textbf{ \+\_\+\+Find\+Diagonal\+Territory} ()
+\begin{DoxyCompactList}\small\item\em Найти динамиечески максимальную длину для радиуса поиска \end{DoxyCompactList}\item 
+void \textbf{ Find\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Поиск заданного количества авто-\/оптимумов \end{DoxyCompactList}\item 
+void \textbf{ Delete\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Удаление авто-\/оптимумов \end{DoxyCompactList}\item 
+void \textbf{ Norm\+People\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Норма на душу населения \end{DoxyCompactList}\item 
+void \textbf{ Help\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Открытие руководства пользователя в HTML. \end{DoxyCompactList}\item 
+void \textbf{ Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора кода. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Language\+Type \textbf{ \+\_\+language\+Of\+Map}
+\begin{DoxyCompactList}\small\item\em Локализация карты \end{DoxyCompactList}\item 
+Color \textbf{ \+\_\+color\+For\+Application}
+\begin{DoxyCompactList}\small\item\em Цвет интерфейса и дополнительных элементов \end{DoxyCompactList}\item 
+Color \textbf{ \+\_\+color\+For\+Elements}
+\item 
+string \textbf{ \+\_\+path\+To\+Icon\+Facility}
+\begin{DoxyCompactList}\small\item\em Путь к значку объекта социальной инфраструктуры \end{DoxyCompactList}\item 
+string \textbf{ \+\_\+name\+Facility}
+\begin{DoxyCompactList}\small\item\em Название объекта социальной инфраструктуры \end{DoxyCompactList}\item 
+List$<$ \textbf{ Criterion} $>$ \textbf{ \+\_\+list\+Criteria\+For\+Search}
+\begin{DoxyCompactList}\small\item\em Список критериев оптимальности \end{DoxyCompactList}\item 
+List$<$ \textbf{ Location} $>$ \textbf{ \+\_\+list\+Points\+Border\+Territory}
+\begin{DoxyCompactList}\small\item\em Список граничных точек зоны анализа \end{DoxyCompactList}\item 
+List$<$ \textbf{ Polygon} $>$ \textbf{ \+\_\+list\+Polygons\+From\+File}
+\begin{DoxyCompactList}\small\item\em Список полигонов \end{DoxyCompactList}\item 
+List$<$ \textbf{ Facility} $>$ \textbf{ \+\_\+list\+Facilities\+From\+File}
+\begin{DoxyCompactList}\small\item\em Список объектов социальной инфраструктуры \end{DoxyCompactList}\item 
+\textbf{ Location} \textbf{ \+\_\+location\+Center\+Map}
+\begin{DoxyCompactList}\small\item\em Точка центрирования карты \end{DoxyCompactList}\item 
+string \textbf{ \+\_\+path\+File\+Polygons}
+\begin{DoxyCompactList}\small\item\em Путь к файлу с полигонами \end{DoxyCompactList}\item 
+\textbf{ Map\+Model} \textbf{ \+\_\+map\+Model}
+\item 
+\textbf{ Map\+View} \textbf{ \+\_\+map\+View}
+\item 
+\textbf{ Paint\+Group\+Box\+Border} \textbf{ \+\_\+paint\+Group\+Box\+Border} = new \textbf{ Paint\+Group\+Box\+Border}()
+\begin{DoxyCompactList}\small\item\em Отрисовка границ groupbox. \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Polygon} \textbf{ \+\_\+sublayer\+Polygon}
+\begin{DoxyCompactList}\small\item\em Слой для полигонов \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ \+\_\+sublayer\+User\+Facility\+Candidate}
+\begin{DoxyCompactList}\small\item\em Слой для пользовательских точек-\/кандидатов \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ \+\_\+sublayer\+Auto}
+\begin{DoxyCompactList}\small\item\em Слой для авто-\/оптимумов \end{DoxyCompactList}\item 
+\textbf{ File\+Validator} \textbf{ \+\_\+file\+Validator}
+\begin{DoxyCompactList}\small\item\em Валидация файлов \end{DoxyCompactList}\item 
+Color \textbf{ \+\_\+color\+For\+Square\+Coloring}
+\begin{DoxyCompactList}\small\item\em Цвет раскраски полигонов \end{DoxyCompactList}\item 
+Track\+Bar \textbf{ track\+Bar\+Transparent}
+\begin{DoxyCompactList}\small\item\em Ползунок для изменения прозрачности полигонов \end{DoxyCompactList}\item 
+Track\+Bar \textbf{ track\+Bar\+Intensity}
+\begin{DoxyCompactList}\small\item\em Ползунок для изменения толщины границ полигонов \end{DoxyCompactList}\item 
+Track\+Bar \textbf{ track\+Bar\+Shades}
+\begin{DoxyCompactList}\small\item\em Ползунок для изменения количества градаций оттенков \end{DoxyCompactList}\item 
+Combo\+Box \textbf{ combo\+Box\+Coloring\+Polygon}
+\begin{DoxyCompactList}\small\item\em Выпадающий список с критериями для площадной раскраски \end{DoxyCompactList}\item 
+Combo\+Box \textbf{ combo\+Box\+Providers\+Map}
+\begin{DoxyCompactList}\small\item\em Выпадающий список с поставщиками карт \end{DoxyCompactList}\item 
+Combo\+Box \textbf{ combo\+Box\+Auto}
+\begin{DoxyCompactList}\small\item\em Выпадающий список с количеством авто-\/оптимумов \end{DoxyCompactList}\item 
+Panel \textbf{ panel\+Legend\+Of\+Map}
+\begin{DoxyCompactList}\small\item\em Панель с легендой карты \end{DoxyCompactList}\item 
+Label \textbf{ label\+Change\+Intensity}
+\begin{DoxyCompactList}\small\item\em Надписи для ползунков \end{DoxyCompactList}\item 
+Label \textbf{ label\+Change\+Transparent}
+\item 
+\textbf{ Animated\+Bottom\+Panel} \textbf{ bottom\+Panel}
+\begin{DoxyCompactList}\small\item\em Нижняя выдвигающаяся панель \end{DoxyCompactList}\item 
+Radio\+Button \textbf{ radio\+Button\+Show\+Facility}
+\begin{DoxyCompactList}\small\item\em Радио-\/кнопки для объектов социальной инфраструктуры \end{DoxyCompactList}\item 
+Radio\+Button \textbf{ radio\+Button\+Clear\+Facility}
+\begin{DoxyCompactList}\small\item\em Радио-\/кнопки для объектов социальной инфраструктуры \end{DoxyCompactList}\item 
+Radio\+Button \textbf{ radio\+Button\+Show\+All\+Info}
+\begin{DoxyCompactList}\small\item\em Радио-\/кнопки для отображения информации об объектах социальной инфраструктуры \end{DoxyCompactList}\item 
+Radio\+Button \textbf{ radio\+Button\+Show\+Name\+Info}
+\begin{DoxyCompactList}\small\item\em Радио-\/кнопки для отображения информации об объектах социальной инфраструктуры \end{DoxyCompactList}\item 
+Radio\+Button \textbf{ radio\+Button\+Show\+Territory}
+\begin{DoxyCompactList}\small\item\em Радио-\/кнопки для отображения зоны анализа \end{DoxyCompactList}\item 
+Radio\+Button \textbf{ radio\+Button\+Clear\+Territory}
+\begin{DoxyCompactList}\small\item\em Радио-\/кнопки для отображения зоны анализа \end{DoxyCompactList}\item 
+Group\+Box \textbf{ group\+Box\+Facility}
+\item 
+Group\+Box \textbf{ group\+Box\+Info\+Facility}
+\item 
+Group\+Box \textbf{ group\+Box\+Territory}
+\item 
+Group\+Box \textbf{ group\+Box\+Panel\+Legend}
+\item 
+bool \textbf{ \+\_\+flag\+Start\+Application} = true
+\begin{DoxyCompactList}\small\item\em Флаг входа в приложение \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+index\+Of\+Selected\+Criterion} = -\/1
+\begin{DoxyCompactList}\small\item\em Номер критерия, по которому отображают площадную раскраску \end{DoxyCompactList}\item 
+Pen \textbf{ \+\_\+pen\+Boundary}
+\begin{DoxyCompactList}\small\item\em Отрисовка границ \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+intensity\+Polygons} = 1
+\begin{DoxyCompactList}\small\item\em Начальная толщина границ \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+transparent\+Polygons} = 255
+\begin{DoxyCompactList}\small\item\em Начальная прозрачность полигонов \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+index\+Of\+Selected\+Criterion\+Icon} = -\/1
+\begin{DoxyCompactList}\small\item\em Индекс критерия для точечной раскраски \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+search\+Optimum} = false
+\begin{DoxyCompactList}\small\item\em Флаг поиска оптимальных точек \end{DoxyCompactList}\item 
+List$<$ \textbf{ Optimal\+Zone} $>$ \textbf{ \+\_\+optimal\+Points}
+\begin{DoxyCompactList}\small\item\em Оптимальные точки \end{DoxyCompactList}\item 
+\textbf{ Math\+Optimum\+Model} \textbf{ \+\_\+math}
+\begin{DoxyCompactList}\small\item\em Объект Math\+Optimum\+Model. \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+flag\+Save\+Optimum} = false
+\begin{DoxyCompactList}\small\item\em Флаг сохранения оптимума \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+is\+Find\+Auto\+Candidates} = false
+\begin{DoxyCompactList}\small\item\em Флаг найденных авто-\/оптимумов \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+is\+Auto\+Hide} = false
+\begin{DoxyCompactList}\small\item\em Флаг спрятанных авто-\/оптимумов \end{DoxyCompactList}\item 
+List$<$ \textbf{ Buffer\+Zone} $>$ \textbf{ \+\_\+list\+Auto\+Optimal\+Point}
+\begin{DoxyCompactList}\small\item\em Список буферных зон авто-\/оптимумов \end{DoxyCompactList}\item 
+System.\+Component\+Model.\+IContainer \textbf{ components} = null
+\begin{DoxyCompactList}\small\item\em Обязательная переменная конструктора. \end{DoxyCompactList}\item 
+GMap.\+NET.\+Windows\+Forms.\+GMap\+Control \textbf{ gmap}
+\item 
+System.\+Windows.\+Forms.\+Font\+Dialog \textbf{ font\+Dialog1}
+\item 
+System.\+Windows.\+Forms.\+Context\+Menu\+Strip \textbf{ context\+Menu}
+\item 
+System.\+Windows.\+Forms.\+Menu\+Strip \textbf{ menu\+Strip}
+\item 
+System.\+Directory\+Services.\+Directory\+Searcher \textbf{ directory\+Searcher1}
+\item 
+System.\+Directory\+Services.\+Directory\+Searcher \textbf{ directory\+Searcher2}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Search\+Optimum\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Leave\+Optimum\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Save\+Map\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Input\+Radius\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Panel \textbf{ panel\+Legend\+Map}
+\item 
+System.\+Windows.\+Forms.\+Picture\+Box \textbf{ picture\+Box\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Picture\+Box \textbf{ picture\+Box\+Marker}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Help\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Panel \textbf{ panel\+Legend}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Legend\+For\+Map}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+User\+Marker}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Save\+Optimum\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Tip \textbf{ tool\+Tip}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Optimum\+In\+Browser\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Auto\+Search\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Google\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Yandex\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Two\+GISTool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Open\+Street\+Map\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Show\+Auto\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Hide\+Auto\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Norm\+People\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Auto\+Search}
+\item 
+System.\+Windows.\+Forms.\+Picture\+Box \textbf{ picture\+Box\+Auto}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Settings\+Tool\+Strip\+Menu}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box\+Coloring\+Icons}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Centering\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Find\+Auto\+Tool\+Strip\+Menu\+Item}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Delete\+Auto\+Tool\+Strip\+Menu\+Item}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для главного окна 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_main_map_a161dacb58dc5f2c71dc6e2fdf0a0eddd}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!MainMap@{MainMap}}
+\index{MainMap@{MainMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{MainMap()}
+{\footnotesize\ttfamily Optimum.\+Main\+Map.\+Main\+Map (\begin{DoxyParamCaption}\item[{Language\+Type}]{language,  }\item[{Color}]{color\+App,  }\item[{Color}]{color\+Elem,  }\item[{string}]{path\+To\+Icon,  }\item[{string}]{name\+Facility,  }\item[{List$<$ \textbf{ Criterion} $>$}]{list\+Criterion,  }\item[{List$<$ \textbf{ Polygon} $>$}]{list\+Polygons,  }\item[{string}]{path\+File\+Polygons,  }\item[{List$<$ \textbf{ Facility} $>$}]{list\+Facilities,  }\item[{List$<$ \textbf{ Location} $>$}]{list\+Border\+Points,  }\item[{\textbf{ Location}}]{center }\end{DoxyParamCaption})}
+
+
+
+Конструктор формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em language} & Локализация карты\\
+\hline
+{\em color\+App} & Цвет интерфейса\\
+\hline
+{\em color\+Elem} & Цвет дополнительных элементов\\
+\hline
+{\em path\+To\+Icon} & Путь к значку объекта социальной инфраструктуры\\
+\hline
+{\em name\+Facility} & Название объекта социальной инфраструктуры\\
+\hline
+{\em list\+Criterion} & Список критериев оптимальности\\
+\hline
+{\em list\+Polygons} & Список полигонов\\
+\hline
+{\em path\+File\+Polygons} & Путь к файлу с полигонами\\
+\hline
+{\em list\+Facilities} & Список объектов социальной инфраструктуры\\
+\hline
+{\em list\+Border\+Points} & Список граничных точек зоны анализа\\
+\hline
+{\em center} & Точка центрирования карты\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a161dacb58dc5f2c71dc6e2fdf0a0eddd_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_main_map_a3c5d3e9d46f06a778378e42afcab3080}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_CheckSelectedRadioButtonFacility@{\_CheckSelectedRadioButtonFacility}}
+\index{\_CheckSelectedRadioButtonFacility@{\_CheckSelectedRadioButtonFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_CheckSelectedRadioButtonFacility()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Check\+Selected\+Radio\+Button\+Facility (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверить, отображены ли на карте объекты социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a3c5d3e9d46f06a778378e42afcab3080_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a3c5d3e9d46f06a778378e42afcab3080_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_afcf6000fdb20fd616d799987eb609a0f}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_CheckSelectedRadioButtonTerritory@{\_CheckSelectedRadioButtonTerritory}}
+\index{\_CheckSelectedRadioButtonTerritory@{\_CheckSelectedRadioButtonTerritory}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_CheckSelectedRadioButtonTerritory()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Check\+Selected\+Radio\+Button\+Territory (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверить, отображена ли на карте зона анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_afcf6000fdb20fd616d799987eb609a0f_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_afcf6000fdb20fd616d799987eb609a0f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ae3a61408b3afbfcccafe60111b222fc7}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_ComboBoxMouseWheel@{\_ComboBoxMouseWheel}}
+\index{\_ComboBoxMouseWheel@{\_ComboBoxMouseWheel}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_ComboBoxMouseWheel()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Combo\+Box\+Mouse\+Wheel (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Mouse\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отключение скрола для выпадающего списка на колесо мыши 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ae3a61408b3afbfcccafe60111b222fc7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a2e64eacf93f83ba89658eb013aa582cd}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_DisplayLegendElements@{\_DisplayLegendElements}}
+\index{\_DisplayLegendElements@{\_DisplayLegendElements}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_DisplayLegendElements()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Display\+Legend\+Elements (\begin{DoxyParamCaption}\item[{bool}]{mode\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изменение отображения выдвигающейся нижней панели 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em mode\+Display} & Флаг отображения\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a2e64eacf93f83ba89658eb013aa582cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a299f8afdddc52866a61ed87fe171ef6d}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_DrawPolygonColoring@{\_DrawPolygonColoring}}
+\index{\_DrawPolygonColoring@{\_DrawPolygonColoring}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_DrawPolygonColoring()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Draw\+Polygon\+Coloring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка полигонов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a299f8afdddc52866a61ed87fe171ef6d_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a299f8afdddc52866a61ed87fe171ef6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_aa720d7fd5aae9a1c9afcb570ab2e6917}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_FindDiagonalTerritory@{\_FindDiagonalTerritory}}
+\index{\_FindDiagonalTerritory@{\_FindDiagonalTerritory}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_FindDiagonalTerritory()}
+{\footnotesize\ttfamily double Optimum.\+Main\+Map.\+\_\+\+Find\+Diagonal\+Territory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Найти динамиечески максимальную длину для радиуса поиска 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Радиус в метрах
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_aa720d7fd5aae9a1c9afcb570ab2e6917_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_aa720d7fd5aae9a1c9afcb570ab2e6917_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_aac028a05422d1a5780bfee7290822343}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_LegendPolygon@{\_LegendPolygon}}
+\index{\_LegendPolygon@{\_LegendPolygon}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_LegendPolygon()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Legend\+Polygon (\begin{DoxyParamCaption}\item[{out Color[$\,$]}]{color\+Polygon,  }\item[{out double}]{min\+Value\+Coloring,  }\item[{out double}]{max\+Value\+Coloring,  }\item[{out int}]{count\+Of\+Grids,  }\item[{out double}]{count\+Of\+Steps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Легенда карты 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em color\+Polygon} & Массив оттенков определенного цвета\\
+\hline
+{\em min\+Value\+Coloring} & Минимум для раскраски\\
+\hline
+{\em max\+Value\+Coloring} & Максимум для раскраски\\
+\hline
+{\em count\+Of\+Grids} & Количество оттенков\\
+\hline
+{\em count\+Of\+Steps} & Интервал каждого оттенка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_aac028a05422d1a5780bfee7290822343_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_aac028a05422d1a5780bfee7290822343_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a0483d8cbe84a105d3f4b67807a3450c9}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_RedrawMap@{\_RedrawMap}}
+\index{\_RedrawMap@{\_RedrawMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_RedrawMap()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Redraw\+Map (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Перерисовать все слои на карте 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a0483d8cbe84a105d3f4b67807a3450c9_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a0483d8cbe84a105d3f4b67807a3450c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a145af077f4cd03a7bb4017e4b02fdaa6}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_SettingsAnimationPanels@{\_SettingsAnimationPanels}}
+\index{\_SettingsAnimationPanels@{\_SettingsAnimationPanels}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_SettingsAnimationPanels()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+\_\+\+Settings\+Animation\+Panels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Создание анимированных панелей на главном окне 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a145af077f4cd03a7bb4017e4b02fdaa6_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a145af077f4cd03a7bb4017e4b02fdaa6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_afd44aeded73ceb609dace20b269d3c0e}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!CenteringToolStripMenuItem\_Click@{CenteringToolStripMenuItem\_Click}}
+\index{CenteringToolStripMenuItem\_Click@{CenteringToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{CenteringToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Centering\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Центрирование карты 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_afd44aeded73ceb609dace20b269d3c0e_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_afd44aeded73ceb609dace20b269d3c0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a62bd3b8c93d05cdf33e4ee4dc29ed455}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!comboBoxColoringIcons\_SelectedIndexChanged@{comboBoxColoringIcons\_SelectedIndexChanged}}
+\index{comboBoxColoringIcons\_SelectedIndexChanged@{comboBoxColoringIcons\_SelectedIndexChanged}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{comboBoxColoringIcons\_SelectedIndexChanged()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+combo\+Box\+Coloring\+Icons\+\_\+\+Selected\+Index\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изменение критерия в точечной раскраски 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a62bd3b8c93d05cdf33e4ee4dc29ed455_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a62bd3b8c93d05cdf33e4ee4dc29ed455_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a0cbab48090f2eb5cc72f72b067d3e262}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!comboBoxColoringPolygon\_SelectedIndexChanged@{comboBoxColoringPolygon\_SelectedIndexChanged}}
+\index{comboBoxColoringPolygon\_SelectedIndexChanged@{comboBoxColoringPolygon\_SelectedIndexChanged}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{comboBoxColoringPolygon\_SelectedIndexChanged()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+combo\+Box\+Coloring\+Polygon\+\_\+\+Selected\+Index\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Изменение критерия в площадной раскраске 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a0cbab48090f2eb5cc72f72b067d3e262_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a0cbab48090f2eb5cc72f72b067d3e262_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a20ddbfb2c1a7ee96909926eaca90d23b}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!comboBoxProvidersMap\_SelectedIndexChanged@{comboBoxProvidersMap\_SelectedIndexChanged}}
+\index{comboBoxProvidersMap\_SelectedIndexChanged@{comboBoxProvidersMap\_SelectedIndexChanged}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{comboBoxProvidersMap\_SelectedIndexChanged()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+combo\+Box\+Providers\+Map\+\_\+\+Selected\+Index\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка выбора поставщика карты 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a20ddbfb2c1a7ee96909926eaca90d23b_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a20ddbfb2c1a7ee96909926eaca90d23b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a38be0b9d9a34fb21ef78a084aa61074e}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!DeleteAutoToolStripMenuItem\_Click@{DeleteAutoToolStripMenuItem\_Click}}
+\index{DeleteAutoToolStripMenuItem\_Click@{DeleteAutoToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{DeleteAutoToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Delete\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Удаление авто-\/оптимумов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a38be0b9d9a34fb21ef78a084aa61074e_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a38be0b9d9a34fb21ef78a084aa61074e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a1ed07e320bc9bf61345a3423d5ba1030}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{Dispose()}
+{\footnotesize\ttfamily override void Optimum.\+Main\+Map.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Освободить все используемые ресурсы. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em disposing} & истинно, если управляемый ресурс должен быть удален; иначе ложно.\\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_optimum_1_1_main_map_ada44232650028245ed70c1e39916d7b1}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!FindAutoToolStripMenuItem\_Click@{FindAutoToolStripMenuItem\_Click}}
+\index{FindAutoToolStripMenuItem\_Click@{FindAutoToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{FindAutoToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Find\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Поиск заданного количества авто-\/оптимумов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ada44232650028245ed70c1e39916d7b1_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ada44232650028245ed70c1e39916d7b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ae76b3bd55dd7168683b0098857a36cf6}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!gmap\_MouseDoubleClick@{gmap\_MouseDoubleClick}}
+\index{gmap\_MouseDoubleClick@{gmap\_MouseDoubleClick}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{gmap\_MouseDoubleClick()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+gmap\+\_\+\+Mouse\+Double\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Mouse\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Установка точки-\/кандидата на карте 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ae76b3bd55dd7168683b0098857a36cf6_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ae76b3bd55dd7168683b0098857a36cf6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a90ee00e96fd1c80f80dd89c64d6fef54}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!gmap\_OnMarkerClick@{gmap\_OnMarkerClick}}
+\index{gmap\_OnMarkerClick@{gmap\_OnMarkerClick}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{gmap\_OnMarkerClick()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+gmap\+\_\+\+On\+Marker\+Click (\begin{DoxyParamCaption}\item[{GMap\+Marker}]{item,  }\item[{Mouse\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка клика по маркеру 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em item} & Маркер на карте\\
+\hline
+{\em e} & Кнопка, которой сделали щелчок по маркеру\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a90ee00e96fd1c80f80dd89c64d6fef54_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a90ee00e96fd1c80f80dd89c64d6fef54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ab3f69716f9ac60541ed6997622d79dbd}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!gMapControl\_Load@{gMapControl\_Load}}
+\index{gMapControl\_Load@{gMapControl\_Load}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{gMapControl\_Load()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+g\+Map\+Control\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка карты при открытии окна 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ab3f69716f9ac60541ed6997622d79dbd_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ab3f69716f9ac60541ed6997622d79dbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ab8d91eec99aef1514f235fbf9681e9d6}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!GoogleToolStripMenuItem\_Click@{GoogleToolStripMenuItem\_Click}}
+\index{GoogleToolStripMenuItem\_Click@{GoogleToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{GoogleToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Google\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отобразить наилучший оптимум на карте Google в браузере 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_a3f2c13f4933a432b23136f25e075ab9d}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!HelpToolStripMenuItem\_Click@{HelpToolStripMenuItem\_Click}}
+\index{HelpToolStripMenuItem\_Click@{HelpToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{HelpToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Help\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Открытие руководства пользователя в HTML. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_ac70fe28042b9be3430ed089eaeb84438}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!HideAutoToolStripMenuItem\_Click@{HideAutoToolStripMenuItem\_Click}}
+\index{HideAutoToolStripMenuItem\_Click@{HideAutoToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{HideAutoToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Hide\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Выключить отображение авто-\/оптимумов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_a9bf681819801a98b6a89230f201c8312}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{InitializeComponent()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора кода. 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a9bf681819801a98b6a89230f201c8312_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a9bf681819801a98b6a89230f201c8312_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_af93dd050774139b5981c488d25983bad}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!InputRadiusToolStripMenuItem\_Click@{InputRadiusToolStripMenuItem\_Click}}
+\index{InputRadiusToolStripMenuItem\_Click@{InputRadiusToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{InputRadiusToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Input\+Radius\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ввод радиуса поиска буферной зоны 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_optimum_1_1_main_map_af93dd050774139b5981c488d25983bad_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_af93dd050774139b5981c488d25983bad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ae5783a9df10fa0b6b790363208f44415}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!LeaveOptimumToolStripMenuItem\_Click@{LeaveOptimumToolStripMenuItem\_Click}}
+\index{LeaveOptimumToolStripMenuItem\_Click@{LeaveOptimumToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{LeaveOptimumToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Leave\+Optimum\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Оставить на карте только оптимальные точки 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ae5783a9df10fa0b6b790363208f44415_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ae62e75fca0b41bd80073125f0cb07b91}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!MainMap\_KeyDown@{MainMap\_KeyDown}}
+\index{MainMap\_KeyDown@{MainMap\_KeyDown}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{MainMap\_KeyDown()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Main\+Map\+\_\+\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Закрыть форму через ESC. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_ab62fd6ba9bf7524c6fe92c9e57f0d99a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!MainMap\_SizeChanged@{MainMap\_SizeChanged}}
+\index{MainMap\_SizeChanged@{MainMap\_SizeChanged}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{MainMap\_SizeChanged()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Main\+Map\+\_\+\+Size\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка сворачивания формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ab62fd6ba9bf7524c6fe92c9e57f0d99a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a3167b028d23626ca8048c08338e2d442}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!Map\_FormClosing@{Map\_FormClosing}}
+\index{Map\_FormClosing@{Map\_FormClosing}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{Map\_FormClosing()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Map\+\_\+\+Form\+Closing (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Form\+Closing\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Закрытие формы на красный крестик 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_a5ed89720e0af0732939a388bc8093b9f}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!Map\_Load@{Map\_Load}}
+\index{Map\_Load@{Map\_Load}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{Map\_Load()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Map\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a5ed89720e0af0732939a388bc8093b9f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ac886bc8c95fb6484526b0e759be87891}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!NormPeopleToolStripMenuItem\_Click@{NormPeopleToolStripMenuItem\_Click}}
+\index{NormPeopleToolStripMenuItem\_Click@{NormPeopleToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{NormPeopleToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Norm\+People\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Норма на душу населения 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ac886bc8c95fb6484526b0e759be87891_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a108cf94d18c3efe3b10c9587eff63537}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!OpenStreetMapToolStripMenuItem\_Click@{OpenStreetMapToolStripMenuItem\_Click}}
+\index{OpenStreetMapToolStripMenuItem\_Click@{OpenStreetMapToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{OpenStreetMapToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Open\+Street\+Map\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отобразить наилучший оптимум на карте Open\+Street\+Map в браузере 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_aa433666039584e6ba36f6f0d0f08cb6a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!panelLegendOfMap\_Click@{panelLegendOfMap\_Click}}
+\index{panelLegendOfMap\_Click@{panelLegendOfMap\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{panelLegendOfMap\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+panel\+Legend\+Of\+Map\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка щелчка по легенде карты 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_aa433666039584e6ba36f6f0d0f08cb6a_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_aa433666039584e6ba36f6f0d0f08cb6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a1684caabe5cd903639548d235d2285f4}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonClearFacility\_Click@{radioButtonClearFacility\_Click}}
+\index{radioButtonClearFacility\_Click@{radioButtonClearFacility\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonClearFacility\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+radio\+Button\+Clear\+Facility\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Скрыть на карте объекты социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a1684caabe5cd903639548d235d2285f4_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a1684caabe5cd903639548d235d2285f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a18ba7ca5b5fa9d2004206760d833d5d4}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonClearShowNameInfo\_Click@{radioButtonClearShowNameInfo\_Click}}
+\index{radioButtonClearShowNameInfo\_Click@{radioButtonClearShowNameInfo\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonClearShowNameInfo\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+radio\+Button\+Clear\+Show\+Name\+Info\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Показать только название объектов социальной инфраструктуры при наведении на маркер 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a18ba7ca5b5fa9d2004206760d833d5d4_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a18ba7ca5b5fa9d2004206760d833d5d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a4d5990d083038f6a7026c7b80ce73aa1}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonClearTerritory\_Click@{radioButtonClearTerritory\_Click}}
+\index{radioButtonClearTerritory\_Click@{radioButtonClearTerritory\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonClearTerritory\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+radio\+Button\+Clear\+Territory\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Скрыть зону анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a4d5990d083038f6a7026c7b80ce73aa1_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a4d5990d083038f6a7026c7b80ce73aa1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ab555e6c20a158d8a425bbdd8cd140c69}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonShowAllInfo\_Click@{radioButtonShowAllInfo\_Click}}
+\index{radioButtonShowAllInfo\_Click@{radioButtonShowAllInfo\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonShowAllInfo\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+radio\+Button\+Show\+All\+Info\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Показать всю информацию об объектах социальной инфраструктуры при наведении на маркер 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ab555e6c20a158d8a425bbdd8cd140c69_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ab555e6c20a158d8a425bbdd8cd140c69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a751e6bb1fc9fa56e623b9dc188c76743}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonShowFacility\_Click@{radioButtonShowFacility\_Click}}
+\index{radioButtonShowFacility\_Click@{radioButtonShowFacility\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonShowFacility\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+radio\+Button\+Show\+Facility\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отобразить на карте объекты социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a751e6bb1fc9fa56e623b9dc188c76743_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a751e6bb1fc9fa56e623b9dc188c76743_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a29785299f72f132c2ee4fe2a39c72ab1}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonShowTerritory\_Click@{radioButtonShowTerritory\_Click}}
+\index{radioButtonShowTerritory\_Click@{radioButtonShowTerritory\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonShowTerritory\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+radio\+Button\+Show\+Territory\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отобразить зону анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a29785299f72f132c2ee4fe2a39c72ab1_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a29785299f72f132c2ee4fe2a39c72ab1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ad37e7c5fd29f2aedbe01565ca4ee17aa}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SaveMapToolStripMenuItem\_Click@{SaveMapToolStripMenuItem\_Click}}
+\index{SaveMapToolStripMenuItem\_Click@{SaveMapToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SaveMapToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Save\+Map\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Сохранение карты в виде изображения 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_a564f4febef1c4ff8cd5fc1ff065aaf45}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SaveOptimumToolStripMenuItem\_Click@{SaveOptimumToolStripMenuItem\_Click}}
+\index{SaveOptimumToolStripMenuItem\_Click@{SaveOptimumToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SaveOptimumToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Save\+Optimum\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Сохранение оптимальных точек в CSV-\/файл 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a564f4febef1c4ff8cd5fc1ff065aaf45_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a11e7f6cdf04729832a0c88070ffffd0d}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SearchOptimumToolStripMenuItem\_Click@{SearchOptimumToolStripMenuItem\_Click}}
+\index{SearchOptimumToolStripMenuItem\_Click@{SearchOptimumToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SearchOptimumToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Search\+Optimum\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Поиск оптимальных точек 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a11e7f6cdf04729832a0c88070ffffd0d_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a11e7f6cdf04729832a0c88070ffffd0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ae6488565b5ffe923e69a4a317bac5583}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SettingsToolStripMenu\_Click@{SettingsToolStripMenu\_Click}}
+\index{SettingsToolStripMenu\_Click@{SettingsToolStripMenu\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SettingsToolStripMenu\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Settings\+Tool\+Strip\+Menu\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Модификация загруженных данных 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ae6488565b5ffe923e69a4a317bac5583_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ae6488565b5ffe923e69a4a317bac5583_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a4858b73f80fb7b15c1f46db67cc93d19}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!ShowAutoToolStripMenuItem\_Click@{ShowAutoToolStripMenuItem\_Click}}
+\index{ShowAutoToolStripMenuItem\_Click@{ShowAutoToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{ShowAutoToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Show\+Auto\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Включить отображение авто-\/оптимумов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_a232bbc3f7f4f1cccf6440cf46ce960e8}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!timerCheckPanel\_Tick@{timerCheckPanel\_Tick}}
+\index{timerCheckPanel\_Tick@{timerCheckPanel\_Tick}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{timerCheckPanel\_Tick()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+timer\+Check\+Panel\+\_\+\+Tick (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка тика таймера 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a232bbc3f7f4f1cccf6440cf46ce960e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a288f96d6a3515421d5632d2df58fa192}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!trackBarIntensity\_Scroll@{trackBarIntensity\_Scroll}}
+\index{trackBarIntensity\_Scroll@{trackBarIntensity\_Scroll}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{trackBarIntensity\_Scroll()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+track\+Bar\+Intensity\+\_\+\+Scroll (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка изменения жирности границ для полигонов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a288f96d6a3515421d5632d2df58fa192_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a288f96d6a3515421d5632d2df58fa192_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_ac5c5b33d965ca83ac8c9d71e6368d643}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!trackBarShades\_Scroll@{trackBarShades\_Scroll}}
+\index{trackBarShades\_Scroll@{trackBarShades\_Scroll}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{trackBarShades\_Scroll()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+track\+Bar\+Shades\+\_\+\+Scroll (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка изменения количества оттенков раскраски 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ac5c5b33d965ca83ac8c9d71e6368d643_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_ac5c5b33d965ca83ac8c9d71e6368d643_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a87cfd18f832cf6e1c775ca644cfd1d61}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!trackBarTransparent\_Scroll@{trackBarTransparent\_Scroll}}
+\index{trackBarTransparent\_Scroll@{trackBarTransparent\_Scroll}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{trackBarTransparent\_Scroll()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+track\+Bar\+Transparent\+\_\+\+Scroll (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка изменения прозрачности цвета заливки полигона 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a87cfd18f832cf6e1c775ca644cfd1d61_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_main_map_a87cfd18f832cf6e1c775ca644cfd1d61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_main_map_a590f2096e93f3423e89106572a290b7a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!TwoGISToolStripMenuItem\_Click@{TwoGISToolStripMenuItem\_Click}}
+\index{TwoGISToolStripMenuItem\_Click@{TwoGISToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{TwoGISToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Two\+GISTool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отобразить наилучший оптимум на карте 2ГИС в браузере 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \mbox{\label{class_optimum_1_1_main_map_a144cde29794386746fef4816f1e1eac0}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!YandexToolStripMenuItem\_Click@{YandexToolStripMenuItem\_Click}}
+\index{YandexToolStripMenuItem\_Click@{YandexToolStripMenuItem\_Click}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{YandexToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Main\+Map.\+Yandex\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отобразить наилучший оптимум на карте Яндекс в браузере 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private 
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_main_map_a9f786bf46cb0bcbe7f92b9bbf5a615fa}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_colorForApplication@{\_colorForApplication}}
+\index{\_colorForApplication@{\_colorForApplication}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_colorForApplication}
+{\footnotesize\ttfamily Color Optimum.\+Main\+Map.\+\_\+color\+For\+Application\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Цвет интерфейса и дополнительных элементов 
+
+\mbox{\label{class_optimum_1_1_main_map_a3a4d655b863e2be6524cf93d121cf043}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_colorForElements@{\_colorForElements}}
+\index{\_colorForElements@{\_colorForElements}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_colorForElements}
+{\footnotesize\ttfamily Color Optimum.\+Main\+Map.\+\_\+color\+For\+Elements\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_aa47a1b852c84c06d6a6d36d04c289245}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_colorForSquareColoring@{\_colorForSquareColoring}}
+\index{\_colorForSquareColoring@{\_colorForSquareColoring}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_colorForSquareColoring}
+{\footnotesize\ttfamily Color Optimum.\+Main\+Map.\+\_\+color\+For\+Square\+Coloring\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Цвет раскраски полигонов 
+
+\mbox{\label{class_optimum_1_1_main_map_ada50b093498d1185086ddd4004af7174}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_fileValidator@{\_fileValidator}}
+\index{\_fileValidator@{\_fileValidator}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_fileValidator}
+{\footnotesize\ttfamily \textbf{ File\+Validator} Optimum.\+Main\+Map.\+\_\+file\+Validator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Валидация файлов 
+
+\mbox{\label{class_optimum_1_1_main_map_a903a5528f0c738c47100c572214412c1}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_flagSaveOptimum@{\_flagSaveOptimum}}
+\index{\_flagSaveOptimum@{\_flagSaveOptimum}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_flagSaveOptimum}
+{\footnotesize\ttfamily bool Optimum.\+Main\+Map.\+\_\+flag\+Save\+Optimum = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг сохранения оптимума 
+
+\mbox{\label{class_optimum_1_1_main_map_a6588f824c5aa89d64462bf14819baeee}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_flagStartApplication@{\_flagStartApplication}}
+\index{\_flagStartApplication@{\_flagStartApplication}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_flagStartApplication}
+{\footnotesize\ttfamily bool Optimum.\+Main\+Map.\+\_\+flag\+Start\+Application = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг входа в приложение 
+
+\mbox{\label{class_optimum_1_1_main_map_a295167d6a5273b8f57f7f641b042e59b}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_indexOfSelectedCriterion@{\_indexOfSelectedCriterion}}
+\index{\_indexOfSelectedCriterion@{\_indexOfSelectedCriterion}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_indexOfSelectedCriterion}
+{\footnotesize\ttfamily int Optimum.\+Main\+Map.\+\_\+index\+Of\+Selected\+Criterion = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Номер критерия, по которому отображают площадную раскраску 
+
+\mbox{\label{class_optimum_1_1_main_map_ab1559e1e9bd8a857b10be627d446a76e}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_indexOfSelectedCriterionIcon@{\_indexOfSelectedCriterionIcon}}
+\index{\_indexOfSelectedCriterionIcon@{\_indexOfSelectedCriterionIcon}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_indexOfSelectedCriterionIcon}
+{\footnotesize\ttfamily int Optimum.\+Main\+Map.\+\_\+index\+Of\+Selected\+Criterion\+Icon = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Индекс критерия для точечной раскраски 
+
+\mbox{\label{class_optimum_1_1_main_map_a037d50a593a8a034f9449f410e5c2c0c}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_intensityPolygons@{\_intensityPolygons}}
+\index{\_intensityPolygons@{\_intensityPolygons}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_intensityPolygons}
+{\footnotesize\ttfamily int Optimum.\+Main\+Map.\+\_\+intensity\+Polygons = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Начальная толщина границ 
+
+\mbox{\label{class_optimum_1_1_main_map_a8c2a673396e91058559d374cbcdb5bb0}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_isAutoHide@{\_isAutoHide}}
+\index{\_isAutoHide@{\_isAutoHide}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_isAutoHide}
+{\footnotesize\ttfamily bool Optimum.\+Main\+Map.\+\_\+is\+Auto\+Hide = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг спрятанных авто-\/оптимумов 
+
+\mbox{\label{class_optimum_1_1_main_map_a9f8deaddbeb226dd18028d9d7a74def6}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_isFindAutoCandidates@{\_isFindAutoCandidates}}
+\index{\_isFindAutoCandidates@{\_isFindAutoCandidates}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_isFindAutoCandidates}
+{\footnotesize\ttfamily bool Optimum.\+Main\+Map.\+\_\+is\+Find\+Auto\+Candidates = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг найденных авто-\/оптимумов 
+
+\mbox{\label{class_optimum_1_1_main_map_a888a5e67258e8ef50ca68f7c61c812da}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_languageOfMap@{\_languageOfMap}}
+\index{\_languageOfMap@{\_languageOfMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_languageOfMap}
+{\footnotesize\ttfamily Language\+Type Optimum.\+Main\+Map.\+\_\+language\+Of\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Локализация карты 
+
+\mbox{\label{class_optimum_1_1_main_map_a185fee29931b287e9ee104a3c0bdf67a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_listAutoOptimalPoint@{\_listAutoOptimalPoint}}
+\index{\_listAutoOptimalPoint@{\_listAutoOptimalPoint}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_listAutoOptimalPoint}
+{\footnotesize\ttfamily List$<$\textbf{ Buffer\+Zone}$>$ Optimum.\+Main\+Map.\+\_\+list\+Auto\+Optimal\+Point\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список буферных зон авто-\/оптимумов 
+
+\mbox{\label{class_optimum_1_1_main_map_a84ba6f4fab1fd401985e8bbcd0782e8f}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_listCriteriaForSearch@{\_listCriteriaForSearch}}
+\index{\_listCriteriaForSearch@{\_listCriteriaForSearch}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_listCriteriaForSearch}
+{\footnotesize\ttfamily List$<$\textbf{ Criterion}$>$ Optimum.\+Main\+Map.\+\_\+list\+Criteria\+For\+Search\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список критериев оптимальности 
+
+\mbox{\label{class_optimum_1_1_main_map_ad13c96fd58086cb687349c4cf7f00792}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_listFacilitiesFromFile@{\_listFacilitiesFromFile}}
+\index{\_listFacilitiesFromFile@{\_listFacilitiesFromFile}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_listFacilitiesFromFile}
+{\footnotesize\ttfamily List$<$\textbf{ Facility}$>$ Optimum.\+Main\+Map.\+\_\+list\+Facilities\+From\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список объектов социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_main_map_a22a28d8dda0a1f4d199f0d5daa6950f8}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_listPointsBorderTerritory@{\_listPointsBorderTerritory}}
+\index{\_listPointsBorderTerritory@{\_listPointsBorderTerritory}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_listPointsBorderTerritory}
+{\footnotesize\ttfamily List$<$\textbf{ Location}$>$ Optimum.\+Main\+Map.\+\_\+list\+Points\+Border\+Territory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список граничных точек зоны анализа 
+
+\mbox{\label{class_optimum_1_1_main_map_a82ac58ce6db283cf25c9b841adcffd8a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_listPolygonsFromFile@{\_listPolygonsFromFile}}
+\index{\_listPolygonsFromFile@{\_listPolygonsFromFile}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_listPolygonsFromFile}
+{\footnotesize\ttfamily List$<$\textbf{ Polygon}$>$ Optimum.\+Main\+Map.\+\_\+list\+Polygons\+From\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список полигонов 
+
+\mbox{\label{class_optimum_1_1_main_map_af8d2545638c68cd81bc0d911bc599dc0}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_locationCenterMap@{\_locationCenterMap}}
+\index{\_locationCenterMap@{\_locationCenterMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_locationCenterMap}
+{\footnotesize\ttfamily \textbf{ Location} Optimum.\+Main\+Map.\+\_\+location\+Center\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Точка центрирования карты 
+
+\mbox{\label{class_optimum_1_1_main_map_a5eabe4e63736631af6fa4df6862a46af}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_mapModel@{\_mapModel}}
+\index{\_mapModel@{\_mapModel}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_mapModel}
+{\footnotesize\ttfamily \textbf{ Map\+Model} Optimum.\+Main\+Map.\+\_\+map\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ac8f34fcc20ed3f5af23ee0b2c65b5967}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_mapView@{\_mapView}}
+\index{\_mapView@{\_mapView}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_mapView}
+{\footnotesize\ttfamily \textbf{ Map\+View} Optimum.\+Main\+Map.\+\_\+map\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a330e0b8bb532784842dee96e43fb4d88}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_math@{\_math}}
+\index{\_math@{\_math}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_math}
+{\footnotesize\ttfamily \textbf{ Math\+Optimum\+Model} Optimum.\+Main\+Map.\+\_\+math\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объект Math\+Optimum\+Model. 
+
+\mbox{\label{class_optimum_1_1_main_map_ae9c00933ec0539196fded46c338edc55}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_nameFacility@{\_nameFacility}}
+\index{\_nameFacility@{\_nameFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_nameFacility}
+{\footnotesize\ttfamily string Optimum.\+Main\+Map.\+\_\+name\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Название объекта социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_main_map_a5cad6cd7b53d353b7f48ee0c2067e359}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_optimalPoints@{\_optimalPoints}}
+\index{\_optimalPoints@{\_optimalPoints}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_optimalPoints}
+{\footnotesize\ttfamily List$<$\textbf{ Optimal\+Zone}$>$ Optimum.\+Main\+Map.\+\_\+optimal\+Points\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Оптимальные точки 
+
+\mbox{\label{class_optimum_1_1_main_map_a16b40710eb3c0e35e5363b0b53c6de10}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_paintGroupBoxBorder@{\_paintGroupBoxBorder}}
+\index{\_paintGroupBoxBorder@{\_paintGroupBoxBorder}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_paintGroupBoxBorder}
+{\footnotesize\ttfamily \textbf{ Paint\+Group\+Box\+Border} Optimum.\+Main\+Map.\+\_\+paint\+Group\+Box\+Border = new \textbf{ Paint\+Group\+Box\+Border}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка границ groupbox. 
+
+\mbox{\label{class_optimum_1_1_main_map_ace287e1db557499412bdec21955d340a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_pathFilePolygons@{\_pathFilePolygons}}
+\index{\_pathFilePolygons@{\_pathFilePolygons}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_pathFilePolygons}
+{\footnotesize\ttfamily string Optimum.\+Main\+Map.\+\_\+path\+File\+Polygons\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Путь к файлу с полигонами 
+
+\mbox{\label{class_optimum_1_1_main_map_a6f587d918aee6dd1403d84ad0db6ffbf}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_pathToIconFacility@{\_pathToIconFacility}}
+\index{\_pathToIconFacility@{\_pathToIconFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_pathToIconFacility}
+{\footnotesize\ttfamily string Optimum.\+Main\+Map.\+\_\+path\+To\+Icon\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Путь к значку объекта социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_main_map_a922ff79ace2d2c17e0c31e3312ed27bb}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_penBoundary@{\_penBoundary}}
+\index{\_penBoundary@{\_penBoundary}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_penBoundary}
+{\footnotesize\ttfamily Pen Optimum.\+Main\+Map.\+\_\+pen\+Boundary\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка границ 
+
+\mbox{\label{class_optimum_1_1_main_map_a0e69082b9110e8098f16b69493c0653c}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_searchOptimum@{\_searchOptimum}}
+\index{\_searchOptimum@{\_searchOptimum}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_searchOptimum}
+{\footnotesize\ttfamily bool Optimum.\+Main\+Map.\+\_\+search\+Optimum = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг поиска оптимальных точек 
+
+\mbox{\label{class_optimum_1_1_main_map_a0de4a9285026b4659a0f388d599dda08}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_sublayerAuto@{\_sublayerAuto}}
+\index{\_sublayerAuto@{\_sublayerAuto}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_sublayerAuto}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Main\+Map.\+\_\+sublayer\+Auto\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой для авто-\/оптимумов 
+
+\mbox{\label{class_optimum_1_1_main_map_ad3dd101ef573a9a6a3b0e50c0ab4a944}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_sublayerPolygon@{\_sublayerPolygon}}
+\index{\_sublayerPolygon@{\_sublayerPolygon}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_sublayerPolygon}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Polygon} Optimum.\+Main\+Map.\+\_\+sublayer\+Polygon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой для полигонов 
+
+\mbox{\label{class_optimum_1_1_main_map_a5734df2f8da93a7280b61af4f1e34ae6}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_sublayerUserFacilityCandidate@{\_sublayerUserFacilityCandidate}}
+\index{\_sublayerUserFacilityCandidate@{\_sublayerUserFacilityCandidate}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_sublayerUserFacilityCandidate}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Main\+Map.\+\_\+sublayer\+User\+Facility\+Candidate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой для пользовательских точек-\/кандидатов 
+
+\mbox{\label{class_optimum_1_1_main_map_a6334de68ba88d35286c4c6edbb19c77f}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!\_transparentPolygons@{\_transparentPolygons}}
+\index{\_transparentPolygons@{\_transparentPolygons}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{\_transparentPolygons}
+{\footnotesize\ttfamily int Optimum.\+Main\+Map.\+\_\+transparent\+Polygons = 255\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Начальная прозрачность полигонов 
+
+\mbox{\label{class_optimum_1_1_main_map_a181cac8cd1022530899337a566f3cdbd}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!AutoSearchToolStripMenuItem@{AutoSearchToolStripMenuItem}}
+\index{AutoSearchToolStripMenuItem@{AutoSearchToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{AutoSearchToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Auto\+Search\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a5faaef5ba6396f093f3ae615b32cc1e5}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!bottomPanel@{bottomPanel}}
+\index{bottomPanel@{bottomPanel}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{bottomPanel}
+{\footnotesize\ttfamily \textbf{ Animated\+Bottom\+Panel} Optimum.\+Main\+Map.\+bottom\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Нижняя выдвигающаяся панель 
+
+\mbox{\label{class_optimum_1_1_main_map_a3f84d046f3782c675eb35c924b00889f}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!CenteringToolStripMenuItem@{CenteringToolStripMenuItem}}
+\index{CenteringToolStripMenuItem@{CenteringToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{CenteringToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Centering\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a6bbfb22d30673e50a6467cf357b57323}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!comboBoxAuto@{comboBoxAuto}}
+\index{comboBoxAuto@{comboBoxAuto}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{comboBoxAuto}
+{\footnotesize\ttfamily Combo\+Box Optimum.\+Main\+Map.\+combo\+Box\+Auto\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Выпадающий список с количеством авто-\/оптимумов 
+
+\mbox{\label{class_optimum_1_1_main_map_a85fef986958bb99e397f84e193184b87}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!comboBoxColoringIcons@{comboBoxColoringIcons}}
+\index{comboBoxColoringIcons@{comboBoxColoringIcons}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{comboBoxColoringIcons}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Main\+Map.\+combo\+Box\+Coloring\+Icons\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a64aab9a28d2faac73a33605959648e61}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!comboBoxColoringPolygon@{comboBoxColoringPolygon}}
+\index{comboBoxColoringPolygon@{comboBoxColoringPolygon}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{comboBoxColoringPolygon}
+{\footnotesize\ttfamily Combo\+Box Optimum.\+Main\+Map.\+combo\+Box\+Coloring\+Polygon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Выпадающий список с критериями для площадной раскраски 
+
+\mbox{\label{class_optimum_1_1_main_map_a00c394740cee1750dd9a8e66bd4c84a8}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!comboBoxProvidersMap@{comboBoxProvidersMap}}
+\index{comboBoxProvidersMap@{comboBoxProvidersMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{comboBoxProvidersMap}
+{\footnotesize\ttfamily Combo\+Box Optimum.\+Main\+Map.\+combo\+Box\+Providers\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Выпадающий список с поставщиками карт 
+
+\mbox{\label{class_optimum_1_1_main_map_a944506d6a788d7ff8a22554f961f4de3}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!components@{components}}
+\index{components@{components}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{components}
+{\footnotesize\ttfamily System.\+Component\+Model.\+IContainer Optimum.\+Main\+Map.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обязательная переменная конструктора. 
+
+\mbox{\label{class_optimum_1_1_main_map_ac0b69251bd71090577f4cd3c182f4607}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!contextMenu@{contextMenu}}
+\index{contextMenu@{contextMenu}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{contextMenu}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Context\+Menu\+Strip Optimum.\+Main\+Map.\+context\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a498878437e0fdfd89924f6baadf12aa8}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!DeleteAutoToolStripMenuItem@{DeleteAutoToolStripMenuItem}}
+\index{DeleteAutoToolStripMenuItem@{DeleteAutoToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{DeleteAutoToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Delete\+Auto\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a04c88b4ffd807f92b7b5cceaf9aed3fb}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!directorySearcher1@{directorySearcher1}}
+\index{directorySearcher1@{directorySearcher1}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{directorySearcher1}
+{\footnotesize\ttfamily System.\+Directory\+Services.\+Directory\+Searcher Optimum.\+Main\+Map.\+directory\+Searcher1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a819466dc28552b3c3d7f2757f68301df}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!directorySearcher2@{directorySearcher2}}
+\index{directorySearcher2@{directorySearcher2}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{directorySearcher2}
+{\footnotesize\ttfamily System.\+Directory\+Services.\+Directory\+Searcher Optimum.\+Main\+Map.\+directory\+Searcher2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_afef9422472c746dd336dad04262793dd}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!FindAutoToolStripMenuItem@{FindAutoToolStripMenuItem}}
+\index{FindAutoToolStripMenuItem@{FindAutoToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{FindAutoToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Find\+Auto\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a72f0c246b84488885f2aa2a9e9031d4c}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!fontDialog1@{fontDialog1}}
+\index{fontDialog1@{fontDialog1}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{fontDialog1}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Font\+Dialog Optimum.\+Main\+Map.\+font\+Dialog1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a363e2f8578d48a0fa364766ee1440054}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!gmap@{gmap}}
+\index{gmap@{gmap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{gmap}
+{\footnotesize\ttfamily GMap.\+NET.\+Windows\+Forms.\+GMap\+Control Optimum.\+Main\+Map.\+gmap\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a107628314a3cf32491fd5e9f836fbc45}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!GoogleToolStripMenuItem@{GoogleToolStripMenuItem}}
+\index{GoogleToolStripMenuItem@{GoogleToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{GoogleToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Google\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_adfcd77a007370dcea68d014042592a23}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!groupBoxFacility@{groupBoxFacility}}
+\index{groupBoxFacility@{groupBoxFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{groupBoxFacility}
+{\footnotesize\ttfamily Group\+Box Optimum.\+Main\+Map.\+group\+Box\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_aa5a0ea7c0da5b54b171c728e1132db54}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!groupBoxInfoFacility@{groupBoxInfoFacility}}
+\index{groupBoxInfoFacility@{groupBoxInfoFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{groupBoxInfoFacility}
+{\footnotesize\ttfamily Group\+Box Optimum.\+Main\+Map.\+group\+Box\+Info\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a6e666f275ee48f219047ac447c24ba9e}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!groupBoxPanelLegend@{groupBoxPanelLegend}}
+\index{groupBoxPanelLegend@{groupBoxPanelLegend}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{groupBoxPanelLegend}
+{\footnotesize\ttfamily Group\+Box Optimum.\+Main\+Map.\+group\+Box\+Panel\+Legend\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ac791c0062693ba44325dd99a3594489e}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!groupBoxTerritory@{groupBoxTerritory}}
+\index{groupBoxTerritory@{groupBoxTerritory}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{groupBoxTerritory}
+{\footnotesize\ttfamily Group\+Box Optimum.\+Main\+Map.\+group\+Box\+Territory\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a80b391fc0e067988da18acff664bac3e}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!HelpToolStripMenuItem@{HelpToolStripMenuItem}}
+\index{HelpToolStripMenuItem@{HelpToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{HelpToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Help\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_aef668c25ddae99fed13b072d5b4debf8}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!HideAutoToolStripMenuItem@{HideAutoToolStripMenuItem}}
+\index{HideAutoToolStripMenuItem@{HideAutoToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{HideAutoToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Hide\+Auto\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a956db94af3ae2540bacb4b2d8f143fe1}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!InputRadiusToolStripMenuItem@{InputRadiusToolStripMenuItem}}
+\index{InputRadiusToolStripMenuItem@{InputRadiusToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{InputRadiusToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Input\+Radius\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ad595846bdd62e549da70ab78dcbe9ec1}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!labelAutoSearch@{labelAutoSearch}}
+\index{labelAutoSearch@{labelAutoSearch}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{labelAutoSearch}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Main\+Map.\+label\+Auto\+Search\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ac4302bcf2472341c0183c65da729fd51}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!labelChangeIntensity@{labelChangeIntensity}}
+\index{labelChangeIntensity@{labelChangeIntensity}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{labelChangeIntensity}
+{\footnotesize\ttfamily Label Optimum.\+Main\+Map.\+label\+Change\+Intensity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Надписи для ползунков 
+
+\mbox{\label{class_optimum_1_1_main_map_aed60076761e4293be6b99a9658143f4f}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!labelChangeTransparent@{labelChangeTransparent}}
+\index{labelChangeTransparent@{labelChangeTransparent}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{labelChangeTransparent}
+{\footnotesize\ttfamily Label Optimum.\+Main\+Map.\+label\+Change\+Transparent\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a37374f1fff879355a9432ad91f8a2c89}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!labelFacility@{labelFacility}}
+\index{labelFacility@{labelFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{labelFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Main\+Map.\+label\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ada5942b4c2e735b0c41b0246bd889c5d}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!labelLegendForMap@{labelLegendForMap}}
+\index{labelLegendForMap@{labelLegendForMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{labelLegendForMap}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Main\+Map.\+label\+Legend\+For\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a4793dce5965665098514e30bb635e33a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!labelUserMarker@{labelUserMarker}}
+\index{labelUserMarker@{labelUserMarker}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{labelUserMarker}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Main\+Map.\+label\+User\+Marker\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ae1955ff83ba7840feaeac3d05af97594}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!LeaveOptimumToolStripMenuItem@{LeaveOptimumToolStripMenuItem}}
+\index{LeaveOptimumToolStripMenuItem@{LeaveOptimumToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{LeaveOptimumToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Leave\+Optimum\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ae3af8eca5dd92ce22a82bc9685774739}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!menuStrip@{menuStrip}}
+\index{menuStrip@{menuStrip}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{menuStrip}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Menu\+Strip Optimum.\+Main\+Map.\+menu\+Strip\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_aa6bc2402a46652cdca008b77b5a5d84b}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!NormPeopleToolStripMenuItem@{NormPeopleToolStripMenuItem}}
+\index{NormPeopleToolStripMenuItem@{NormPeopleToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{NormPeopleToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Norm\+People\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_add8fc7184abecec30f4d6bf0a6839323}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!OpenStreetMapToolStripMenuItem@{OpenStreetMapToolStripMenuItem}}
+\index{OpenStreetMapToolStripMenuItem@{OpenStreetMapToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{OpenStreetMapToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Open\+Street\+Map\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a4feaa125690902fb90fc21b7794e081e}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!OptimumInBrowserToolStripMenuItem@{OptimumInBrowserToolStripMenuItem}}
+\index{OptimumInBrowserToolStripMenuItem@{OptimumInBrowserToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{OptimumInBrowserToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Optimum\+In\+Browser\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a94293311f9f78dedf7129e535e6777f4}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!panelLegend@{panelLegend}}
+\index{panelLegend@{panelLegend}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{panelLegend}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Optimum.\+Main\+Map.\+panel\+Legend\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ad239442d3b1d9d9885a0077d95f6c78d}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!panelLegendMap@{panelLegendMap}}
+\index{panelLegendMap@{panelLegendMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{panelLegendMap}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Optimum.\+Main\+Map.\+panel\+Legend\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a8e36337dafa73cae88583193c6aac272}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!panelLegendOfMap@{panelLegendOfMap}}
+\index{panelLegendOfMap@{panelLegendOfMap}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{panelLegendOfMap}
+{\footnotesize\ttfamily Panel Optimum.\+Main\+Map.\+panel\+Legend\+Of\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Панель с легендой карты 
+
+\mbox{\label{class_optimum_1_1_main_map_a4560cb71d49f13d65fab70c76e63bfbb}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!pictureBoxAuto@{pictureBoxAuto}}
+\index{pictureBoxAuto@{pictureBoxAuto}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{pictureBoxAuto}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Picture\+Box Optimum.\+Main\+Map.\+picture\+Box\+Auto\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_ade0a854c9e34249245bcdd08f037c263}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!pictureBoxFacility@{pictureBoxFacility}}
+\index{pictureBoxFacility@{pictureBoxFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{pictureBoxFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Picture\+Box Optimum.\+Main\+Map.\+picture\+Box\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a4a8b11c6b80718cdf747e4b9aea652db}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!pictureBoxMarker@{pictureBoxMarker}}
+\index{pictureBoxMarker@{pictureBoxMarker}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{pictureBoxMarker}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Picture\+Box Optimum.\+Main\+Map.\+picture\+Box\+Marker\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_aa16593d08cc6baef3b413956f57b0c3a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonClearFacility@{radioButtonClearFacility}}
+\index{radioButtonClearFacility@{radioButtonClearFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonClearFacility}
+{\footnotesize\ttfamily Radio\+Button Optimum.\+Main\+Map.\+radio\+Button\+Clear\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радио-\/кнопки для объектов социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_main_map_a3b0200a09ac0effaa0b5ff62bd564dd9}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonClearTerritory@{radioButtonClearTerritory}}
+\index{radioButtonClearTerritory@{radioButtonClearTerritory}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonClearTerritory}
+{\footnotesize\ttfamily Radio\+Button Optimum.\+Main\+Map.\+radio\+Button\+Clear\+Territory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радио-\/кнопки для отображения зоны анализа 
+
+\mbox{\label{class_optimum_1_1_main_map_aab1142f74bb8dad8392f0a5badede1c1}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonShowAllInfo@{radioButtonShowAllInfo}}
+\index{radioButtonShowAllInfo@{radioButtonShowAllInfo}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonShowAllInfo}
+{\footnotesize\ttfamily Radio\+Button Optimum.\+Main\+Map.\+radio\+Button\+Show\+All\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радио-\/кнопки для отображения информации об объектах социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_main_map_ae9695fef767525876baf0cb289cfec93}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonShowFacility@{radioButtonShowFacility}}
+\index{radioButtonShowFacility@{radioButtonShowFacility}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonShowFacility}
+{\footnotesize\ttfamily Radio\+Button Optimum.\+Main\+Map.\+radio\+Button\+Show\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радио-\/кнопки для объектов социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_main_map_afe86647b33abe038a3b3080068f51187}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonShowNameInfo@{radioButtonShowNameInfo}}
+\index{radioButtonShowNameInfo@{radioButtonShowNameInfo}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonShowNameInfo}
+{\footnotesize\ttfamily Radio\+Button Optimum.\+Main\+Map.\+radio\+Button\+Show\+Name\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радио-\/кнопки для отображения информации об объектах социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_main_map_a815b2f8a0b2231c8691ff8c384d44bbf}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!radioButtonShowTerritory@{radioButtonShowTerritory}}
+\index{radioButtonShowTerritory@{radioButtonShowTerritory}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{radioButtonShowTerritory}
+{\footnotesize\ttfamily Radio\+Button Optimum.\+Main\+Map.\+radio\+Button\+Show\+Territory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радио-\/кнопки для отображения зоны анализа 
+
+\mbox{\label{class_optimum_1_1_main_map_afde5e5e01440f9f905549ea16572d8bb}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SaveMapToolStripMenuItem@{SaveMapToolStripMenuItem}}
+\index{SaveMapToolStripMenuItem@{SaveMapToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SaveMapToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Save\+Map\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a41d2ad996759365a35b7a974a8cfd179}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SaveOptimumToolStripMenuItem@{SaveOptimumToolStripMenuItem}}
+\index{SaveOptimumToolStripMenuItem@{SaveOptimumToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SaveOptimumToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Save\+Optimum\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a1721fef892c90a32e9058d7be26d20f0}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SearchOptimumToolStripMenuItem@{SearchOptimumToolStripMenuItem}}
+\index{SearchOptimumToolStripMenuItem@{SearchOptimumToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SearchOptimumToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Search\+Optimum\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a7eef863d91a9621952e7a67a522f7d18}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!SettingsToolStripMenu@{SettingsToolStripMenu}}
+\index{SettingsToolStripMenu@{SettingsToolStripMenu}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{SettingsToolStripMenu}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Settings\+Tool\+Strip\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_af24e9ff2775f6eb23df33c7c8af4a36c}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!ShowAutoToolStripMenuItem@{ShowAutoToolStripMenuItem}}
+\index{ShowAutoToolStripMenuItem@{ShowAutoToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{ShowAutoToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Show\+Auto\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_aba297dc70f4c066cc8fe01c743e377d6}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!timerCheckPanel@{timerCheckPanel}}
+\index{timerCheckPanel@{timerCheckPanel}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{timerCheckPanel}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Timer Optimum.\+Main\+Map.\+timer\+Check\+Panel}
+
+\mbox{\label{class_optimum_1_1_main_map_ac720a09fc3184252ee426fc3c807442c}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!toolTip@{toolTip}}
+\index{toolTip@{toolTip}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{toolTip}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Tip Optimum.\+Main\+Map.\+tool\+Tip\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a525944427e7930bb58593c1ed9ce189d}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!trackBarIntensity@{trackBarIntensity}}
+\index{trackBarIntensity@{trackBarIntensity}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{trackBarIntensity}
+{\footnotesize\ttfamily Track\+Bar Optimum.\+Main\+Map.\+track\+Bar\+Intensity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ползунок для изменения толщины границ полигонов 
+
+\mbox{\label{class_optimum_1_1_main_map_aaccdfca8edf556d9edabbebad59dee38}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!trackBarShades@{trackBarShades}}
+\index{trackBarShades@{trackBarShades}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{trackBarShades}
+{\footnotesize\ttfamily Track\+Bar Optimum.\+Main\+Map.\+track\+Bar\+Shades\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ползунок для изменения количества градаций оттенков 
+
+\mbox{\label{class_optimum_1_1_main_map_a8af112a7244ea94a6d8c7e9a472c3b8a}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!trackBarTransparent@{trackBarTransparent}}
+\index{trackBarTransparent@{trackBarTransparent}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{trackBarTransparent}
+{\footnotesize\ttfamily Track\+Bar Optimum.\+Main\+Map.\+track\+Bar\+Transparent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ползунок для изменения прозрачности полигонов 
+
+\mbox{\label{class_optimum_1_1_main_map_a03afb8fdcfc6871da3c50c3ee22b3ec9}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!TwoGISToolStripMenuItem@{TwoGISToolStripMenuItem}}
+\index{TwoGISToolStripMenuItem@{TwoGISToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{TwoGISToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Two\+GISTool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_main_map_a4e41d9ec19ad1b858e14abce3c227315}} 
+\index{Optimum.MainMap@{Optimum.MainMap}!YandexToolStripMenuItem@{YandexToolStripMenuItem}}
+\index{YandexToolStripMenuItem@{YandexToolStripMenuItem}!Optimum.MainMap@{Optimum.MainMap}}
+\doxysubsubsection{YandexToolStripMenuItem}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Main\+Map.\+Yandex\+Tool\+Strip\+Menu\+Item\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Main\+Map.\+cs}\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Main\+Map.\+Designer.\+cs}\end{DoxyCompactItemize}

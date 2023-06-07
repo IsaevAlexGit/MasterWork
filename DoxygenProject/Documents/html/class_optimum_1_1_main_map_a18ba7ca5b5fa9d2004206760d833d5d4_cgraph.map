@@ -1,0 +1,26 @@
+<map id="Optimum.MainMap.radioButtonClearShowNameInfo_Click" name="Optimum.MainMap.radioButtonClearShowNameInfo_Click">
+<area shape="rect" id="node1" title="Показать только название объектов социальной инфраструктуры при наведении на маркер" alt="" coords="5,148,208,188"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a3c5d3e9d46f06a778378e42afcab3080" title="Проверить, отображены ли на карте объекты социальной инфраструктуры" alt="" coords="256,116,487,156"/>
+<area shape="rect" id="node23" href="$class_optimum_1_1_map_view.html#a8c4872770638b5d59d5dbdaec66c27e0" title="Обработка выводящейся информации при наведении на объект социальной инфраструктуры" alt="" coords="277,180,465,220"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a1684caabe5cd903639548d235d2285f4" title="Скрыть на карте объекты социальной инфраструктуры" alt="" coords="543,31,745,71"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#a751e6bb1fc9fa56e623b9dc188c76743" title="Отобразить на карте объекты социальной инфраструктуры" alt="" coords="543,120,745,160"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_view.html#a38fecfd2ea617ebd810bb539b1931012" title="Скрыть все объекты социальной инфраструктуры" alt="" coords="801,17,1009,42"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_facility.html#a04b3e0f63090407a5d2da1ee49281510" title="Скрыть все объектов социальной инфраструктуры" alt="" coords="1057,5,1253,45"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_map_view.html#a0da028c2a83375bed6dec781650ac938" title="Отрисовка оптимальных зон авто&#45;оптимумов" alt="" coords="809,72,1001,112"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_map_view.html#ac4d080061783d40d8bcacb1586c5e09a" title="Отобразить все объекты социальной инфраструктуры" alt="" coords="802,139,1009,165"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_map_view.html#ad5bf24fdb0af958a7fa446e61d648a03" title="Отрисовка буферной зоны около точки&#45;кандидата и оптимальных точек" alt="" coords="808,193,1003,233"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_render_auto_points.html#a95feaa1777a3b8f407d414ccad4727d6" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="1061,69,1249,109"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_facility.html#ad3d23761623bb01e47cf86e59c770a47" title="Отображение всех объектов социальной инфраструктуры" alt="" coords="1058,133,1253,173"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_render_facility.html#a08d4dde0aefbaa71e6f0811649001196" title="Инициализация маркеров объектов социальной инфраструктуры" alt="" coords="1303,133,1490,173"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_facility.html#abd1fc541205dee429c529f103e30b116" title="Изменение выводимой информации об объекте социальной инфраструктуры" alt="" coords="1559,117,1726,157"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_render_user_marker.html#a0cc2eead2c65b35689f894956dee684f" title="Инициализация точек на карте" alt="" coords="1060,197,1251,237"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_render_user_marker.html#abcb8ce8339cc1a94b58fa93e272ca864" title="Инициализация маркеров" alt="" coords="1301,229,1492,269"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_render_user_marker.html#a054f1162380e8fa1e1d4d8301cd4d5d4" title="Инициализация самой оптимальной буферной зоны" alt="" coords="1540,181,1745,221"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_render_user_marker.html#a4f0b3b027276dcae897c650e4f2d3442" title="Инициализация буферной зоны" alt="" coords="1547,245,1738,285"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_render_user_marker.html#a14b702406e7dbb14622485d825ba923d" title="Инициализация оптимальной буферной зоны" alt="" coords="1547,309,1738,349"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_render_user_marker.html#af1cf9510eca60f8331ca71a87abc774c" title="Отрисовка окружности самых оптимальных точек" alt="" coords="1793,181,1984,221"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_render_user_marker.html#a45088fec0a28d25206a65cb8a1c65a9e" title="Вычисление каждой точки окружности" alt="" coords="2032,245,2223,285"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_render_user_marker.html#ae376832310e232295909aaafa189ca16" title="Отрисовка окружности" alt="" coords="1793,245,1984,285"/>
+<area shape="rect" id="node22" href="$class_optimum_1_1_render_user_marker.html#af91b105e52de261864a9c68575fbd0eb" title="Отрисовка окружности оптимальной точки" alt="" coords="1793,309,1984,349"/>
+<area shape="rect" id="node24" href="$class_optimum_1_1_render_facility.html#a323722574bff6213196b811ad27ea92f" title="Установка режима выводящейся информации об объекте социальной инфраструктуры" alt="" coords="535,187,753,213"/>
+</map>

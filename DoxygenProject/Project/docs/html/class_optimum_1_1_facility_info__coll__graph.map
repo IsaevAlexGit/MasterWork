@@ -1,0 +1,12 @@
+<map id="Optimum.FacilityInfo" name="Optimum.FacilityInfo">
+<area shape="rect" id="node1" title="Класс для окна &quot;Объект социальной инфраструктуры&quot;." alt="" coords="256,872,457,1023"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,483,57,560"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_facility.html" title="Класс &quot;Объект социальной инфраструктуры&quot;." alt="" coords="82,453,213,589"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_model.html" title="Класс с данными" alt="" coords="237,248,477,795"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_location.html" title="Класс &quot;Точка на карте&quot;." alt="" coords="21,20,149,127"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_sublayer_facility.html" title="Класс &quot;Слой для объектов социальной инфраструктуры&quot;." alt="" coords="173,5,345,141"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_sublayer_location.html" title="Класс &quot;Слой для точек&quot;." alt="" coords="370,5,549,141"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_sublayer_polygon.html" title="Класс &quot;Слой для полигонов&quot;." alt="" coords="577,5,755,141"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_paint_group_box_border.html" title="Класс &quot;Отрисовка границ рамки у GroupBox&quot;." alt="" coords="501,475,706,567"/>
+<area shape="rect" id="node10" title=" " alt="" coords="735,483,802,560"/>
+</map>

@@ -1,0 +1,1075 @@
+\doxysection{Класс Optimum.\+Map\+Model}
+\label{class_optimum_1_1_map_model}\index{Optimum.MapModel@{Optimum.MapModel}}
+
+
+Класс с данными  
+
+
+
+
+Граф связей класса Optimum.\+Map\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Map\+Model} ()
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+void \textbf{ Initialization\+Sublayers\+And\+Lists} ()
+\begin{DoxyCompactList}\small\item\em Инициализация слоев и списков данными \end{DoxyCompactList}\item 
+Data\+Table \textbf{ Create\+Table\+From\+Polygons} ()
+\begin{DoxyCompactList}\small\item\em Создание таблицы из полигонов \end{DoxyCompactList}\item 
+int \textbf{ Getnumber\+Shade} (double value\+For\+Coloring, double min\+Value\+Coloring, double max\+Value\+Coloring, int count\+Of\+Grids, double count\+Of\+Steps)
+\begin{DoxyCompactList}\small\item\em Определение цвета, в который будет окрашен полигон \end{DoxyCompactList}\item 
+void \textbf{ Create\+List\+Buffer\+Zones} ()
+\begin{DoxyCompactList}\small\item\em Вычисление для каждого полигона у слоя sublayer\+User\+Points количества вошедших в него критериев \end{DoxyCompactList}\item 
+void \textbf{ Create\+List\+Auto\+Buffer\+Zones} ()
+\begin{DoxyCompactList}\small\item\em Вычисление для каждого полигона у слоя sublayer\+Auto\+Points количества вошедших в него критериев \end{DoxyCompactList}\item 
+void \textbf{ Set\+Maximum\+And\+Minum\+For\+Criterion\+Square\+Coloring} (int index\+Of\+Selected\+Criterion)
+\begin{DoxyCompactList}\small\item\em Найти максимум и минимум по выбранному критерию для площадной раскраски \end{DoxyCompactList}\item 
+void \textbf{ Set\+Maximum\+And\+Minum\+For\+Criterion\+Icon\+Coloring} (int index\+Of\+Selected\+Criterion)
+\begin{DoxyCompactList}\small\item\em Найти максимум и минимум по выбранному критерию для точечной раскраски \end{DoxyCompactList}\item 
+long \textbf{ Calculate\+Count\+Population} ()
+\begin{DoxyCompactList}\small\item\em Найти суммарное значение населения в файле \end{DoxyCompactList}\item 
+int \textbf{ Calculate\+Count\+Facility} ()
+\begin{DoxyCompactList}\small\item\em Найти суммарное значение объектов социальной инфраструктуры в файле \end{DoxyCompactList}\item 
+void \textbf{ Create\+List\+Norma\+Buffer\+Zones} ()
+\begin{DoxyCompactList}\small\item\em Вычисление для каждого полигона у слоя sublayer\+Norma\+Facility количества вошедших в него критериев \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ Get\+Sublayer\+Border\+Points\+Territory} ()
+\begin{DoxyCompactList}\small\item\em Вернуть слой граничных точек зоны анализа \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Facility} \textbf{ Get\+Sublayer\+Facility} ()
+\begin{DoxyCompactList}\small\item\em Вернуть слой объектов социальной инфраструктуры \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Polygon} \textbf{ Get\+Sublayer\+Polygon\+Icon} ()
+\begin{DoxyCompactList}\small\item\em Вернуть слой полигонов \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Polygon} \textbf{ Get\+Sublayer\+Polygon\+Check} ()
+\begin{DoxyCompactList}\small\item\em Вернуть слой полигонов \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ Get\+Sublayer\+User\+Points} ()
+\begin{DoxyCompactList}\small\item\em Вернуть слой пользовательских кандидатов \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ Get\+Sublayer\+Auto\+User\+Points} ()
+\begin{DoxyCompactList}\small\item\em Вернуть слой авто-\/оптимумов \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ Get\+Sublayer\+Norma} ()
+\begin{DoxyCompactList}\small\item\em Вернуть слой нормы на душу населения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+Color \textbf{ main\+Color}
+\begin{DoxyCompactList}\small\item\em Основной и дополнительный цвет интерфейса \end{DoxyCompactList}\item 
+Color \textbf{ secondary\+Color}
+\item 
+\textbf{ Location} \textbf{ center\+Map} = new \textbf{ Location}()
+\begin{DoxyCompactList}\small\item\em Точка центрирования карты \end{DoxyCompactList}\item 
+string \textbf{ name\+Object\+Facility}
+\begin{DoxyCompactList}\small\item\em Название объекта социальной инфраструктуры \end{DoxyCompactList}\item 
+string \textbf{ path\+To\+Icon\+Object\+Facility}
+\begin{DoxyCompactList}\small\item\em Загруженный пользователем значок для отображения объектов социальной инфраструктуры \end{DoxyCompactList}\item 
+Image \textbf{ icon\+Facility}
+\item 
+List$<$ \textbf{ Criterion} $>$ \textbf{ list\+User\+Criterion} = new List$<$\textbf{ Criterion}$>$()
+\begin{DoxyCompactList}\small\item\em Список критериев оптимальности \end{DoxyCompactList}\item 
+bool \textbf{ flag\+Change\+Polygon} = false
+\begin{DoxyCompactList}\small\item\em Флаги изменения файлов в настройках \end{DoxyCompactList}\item 
+bool \textbf{ flag\+Change\+Territory} = false
+\item 
+bool \textbf{ flag\+Change\+Criterion} = false
+\item 
+bool \textbf{ flag\+Load\+File\+Norma} = false
+\item 
+List$<$ Image $>$ \textbf{ array\+Icons} = new List$<$Image$>$()
+\begin{DoxyCompactList}\small\item\em Массив значков для точечной раскраски \end{DoxyCompactList}\item 
+string \textbf{ state\+Of\+Bottom\+Panel} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Состояние нижней панели \char`\"{}\+Open\char`\"{}/\char`\"{}\+Close\char`\"{}. \end{DoxyCompactList}\item 
+List$<$ \textbf{ Optimal\+Zone} $>$ \textbf{ optimal\+Zones} = new List$<$\textbf{ Optimal\+Zone}$>$()
+\begin{DoxyCompactList}\small\item\em Список оптимальных точек \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Facility} \textbf{ sublayer\+Facility} = new \textbf{ Sublayer\+Facility}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой со всеми объектами социальной инфраструктуры \end{DoxyCompactList}\item 
+List$<$ \textbf{ Facility} $>$ \textbf{ list\+User\+Facilities}
+\begin{DoxyCompactList}\small\item\em Список объектов социальной инфраструктуры из файла \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ sublayer\+Border\+Points\+Territory} = new \textbf{ Sublayer\+Location}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой с граничными зоны анализа \end{DoxyCompactList}\item 
+List$<$ \textbf{ Location} $>$ \textbf{ list\+User\+Points\+Border\+Territory}
+\begin{DoxyCompactList}\small\item\em Список граничных точек зоны анализа \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Polygon} \textbf{ sublayer\+Polygon\+Square} = new \textbf{ Sublayer\+Polygon}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой со всеми полигонами \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Polygon} \textbf{ sublayer\+Polygonr\+Icon} = new \textbf{ Sublayer\+Polygon}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой со всеми полигонами для точечной раскраски \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Polygon} \textbf{ sublayer\+Polygon\+Check} = new \textbf{ Sublayer\+Polygon}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой для проверки вхождения точки в полигоны \end{DoxyCompactList}\item 
+List$<$ \textbf{ Polygon} $>$ \textbf{ list\+User\+Polygons}
+\begin{DoxyCompactList}\small\item\em Список полигонов из файла \end{DoxyCompactList}\item 
+List$<$ Point\+Lat\+Lng $>$ \textbf{ temp\+List\+For\+Polygons}
+\begin{DoxyCompactList}\small\item\em Временный список для граничных точек полигонов \end{DoxyCompactList}\item 
+int \textbf{ number\+Of\+Shades\+Criterion} = 8
+\begin{DoxyCompactList}\small\item\em Количество оттенков для раскраски полигонов по критериям \end{DoxyCompactList}\item 
+double \textbf{ max\+Criterion\+Polygon\+Coloring}
+\begin{DoxyCompactList}\small\item\em Минимум и максимум для точечной и площадной раскраски \end{DoxyCompactList}\item 
+double \textbf{ min\+Criterion\+Polygon\+Coloring}
+\item 
+double \textbf{ max\+Criterion\+Icon\+Coloring}
+\item 
+double \textbf{ min\+Criterion\+Icon\+Coloring}
+\item 
+string \textbf{ path\+To\+File\+Polygon\+User}
+\begin{DoxyCompactList}\small\item\em Путь к файлу с полигонами \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ sublayer\+User\+Points} = new \textbf{ Sublayer\+Location}(\char`\"{}\char`\"{}, @\char`\"{}Icon/icon\+User\+Facility.\+png\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой с маркерами пользователя \end{DoxyCompactList}\item 
+List$<$ \textbf{ Location} $>$ \textbf{ list\+Points\+User} = new List$<$\textbf{ Location}$>$()
+\begin{DoxyCompactList}\small\item\em Список точек-\/кандидатов пользователя \end{DoxyCompactList}\item 
+List$<$ \textbf{ Buffer\+Zone} $>$ \textbf{ list\+Points\+Buffer\+Zone} = new List$<$\textbf{ Buffer\+Zone}$>$()
+\begin{DoxyCompactList}\small\item\em Список буферных зон пользователя \end{DoxyCompactList}\item 
+int \textbf{ radius\+Buffer\+Zone} = 500
+\begin{DoxyCompactList}\small\item\em Радиус буферных зон по умолчанию \end{DoxyCompactList}\item 
+readonly int \textbf{ LIMIT\+\_\+\+USER\+\_\+\+POINTS\+\_\+\+ON\+\_\+\+MAP} = 30
+\begin{DoxyCompactList}\small\item\em Ограничение на установку пользовательских маркеров на карте \end{DoxyCompactList}\item 
+readonly int \textbf{ DISTANCE\+\_\+\+BETWEEN\+\_\+\+USER\+\_\+\+POINTS} = 25
+\begin{DoxyCompactList}\small\item\em Ограничение на расстояние между пользовательскими маркерами \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ sublayer\+Auto\+Points} = new \textbf{ Sublayer\+Location}(\char`\"{}Авто-\/оптимумы\char`\"{}, @\char`\"{}Icon/icon\+Best\+Optimum.\+png\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой с авто-\/оптимумами \end{DoxyCompactList}\item 
+List$<$ \textbf{ Location} $>$ \textbf{ list\+Auto\+Points} = new List$<$\textbf{ Location}$>$()
+\begin{DoxyCompactList}\small\item\em Список авто-\/точек \end{DoxyCompactList}\item 
+List$<$ \textbf{ Buffer\+Zone} $>$ \textbf{ list\+Auto\+Points\+Buffer\+Zone} = new List$<$\textbf{ Buffer\+Zone}$>$()
+\begin{DoxyCompactList}\small\item\em Список авто-\/буферных зон \end{DoxyCompactList}\item 
+\textbf{ Sublayer\+Location} \textbf{ sublayer\+Norma\+Facility} = new \textbf{ Sublayer\+Location}(\char`\"{}Норма\char`\"{}, @\char`\"{}Icon/icon\+Best\+Optimum.\+png\char`\"{})
+\begin{DoxyCompactList}\small\item\em Слой для нормы на душу населения \end{DoxyCompactList}\item 
+List$<$ \textbf{ Location} $>$ \textbf{ list\+Norma} = new List$<$\textbf{ Location}$>$()
+\begin{DoxyCompactList}\small\item\em Список авто-\/точек для нормы на душу населения \end{DoxyCompactList}\item 
+List$<$ \textbf{ Buffer\+Zone} $>$ \textbf{ list\+Norma\+Points\+Buffer\+Zone} = new List$<$\textbf{ Buffer\+Zone}$>$()
+\begin{DoxyCompactList}\small\item\em Список буферных зон для нормы на душу населения \end{DoxyCompactList}\item 
+int \textbf{ radius\+Norma\+Buffer\+Zone} = 500
+\begin{DoxyCompactList}\small\item\em Радиус буферных зон по умолчанию для нормы на душу населения \end{DoxyCompactList}\item 
+int \textbf{ implemented\+Rate\+Of\+Facility} = 1
+\begin{DoxyCompactList}\small\item\em Норма объекта социальной инфраструктуры и населения \end{DoxyCompactList}\item 
+int \textbf{ implemented\+Rate\+Of\+Population} = 1000
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+Facility} = new GMap\+Overlay(\char`\"{}Объекты социальной инфраструктуры\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой со всеми объектами социальной инфраструктуры \end{DoxyCompactList}\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+With\+Border\+Points\+Territory\+For\+User} = new GMap\+Overlay(\char`\"{}Граничные точки зоны анализа\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой с граничными точками зоны анализа \end{DoxyCompactList}\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+Polygon} = new GMap\+Overlay(\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой с полигонами \end{DoxyCompactList}\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+Polygon\+Icon} = new GMap\+Overlay(\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой с полигонами для точечной раскраски \end{DoxyCompactList}\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+Polygon\+Check} = new GMap\+Overlay(\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой для проверки вхождения точки в полигоны \end{DoxyCompactList}\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+User\+Points} = new GMap\+Overlay(\char`\"{}Точки-\/кандидаты пользователя\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой с маркерами пользователя \end{DoxyCompactList}\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+Auto\+Points} = new GMap\+Overlay(\char`\"{}Авто-\/поиск\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой с авто-\/оптимумами \end{DoxyCompactList}\item 
+readonly GMap\+Overlay \textbf{ \+\_\+overlay\+Norma} = new GMap\+Overlay(\char`\"{}Норма\char`\"{})
+\begin{DoxyCompactList}\small\item\em Библиотечный слой для нормы на душу населения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс с данными 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_map_model_aa61775d5cfba56c9764de92efad8eebb}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!MapModel@{MapModel}}
+\index{MapModel@{MapModel}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{MapModel()}
+{\footnotesize\ttfamily Optimum.\+Map\+Model.\+Map\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public 
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_map_model_a538e9bfb371a6c6f80c91a940a1a583e}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!CalculateCountFacility@{CalculateCountFacility}}
+\index{CalculateCountFacility@{CalculateCountFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{CalculateCountFacility()}
+{\footnotesize\ttfamily int Optimum.\+Map\+Model.\+Calculate\+Count\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Найти суммарное значение объектов социальной инфраструктуры в файле 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Общее количество объектов социальной инфраструктуры в файле
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a538e9bfb371a6c6f80c91a940a1a583e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_a90e279bcfc5374aff4790ca6228be3bd}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!CalculateCountPopulation@{CalculateCountPopulation}}
+\index{CalculateCountPopulation@{CalculateCountPopulation}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{CalculateCountPopulation()}
+{\footnotesize\ttfamily long Optimum.\+Map\+Model.\+Calculate\+Count\+Population (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Найти суммарное значение населения в файле 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Общее количество населения в файле
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a90e279bcfc5374aff4790ca6228be3bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_a9d96ad73cafd0682df8e013542bc0908}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!CreateListAutoBufferZones@{CreateListAutoBufferZones}}
+\index{CreateListAutoBufferZones@{CreateListAutoBufferZones}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{CreateListAutoBufferZones()}
+{\footnotesize\ttfamily void Optimum.\+Map\+Model.\+Create\+List\+Auto\+Buffer\+Zones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вычисление для каждого полигона у слоя sublayer\+Auto\+Points количества вошедших в него критериев 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a9d96ad73cafd0682df8e013542bc0908_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_a806d6493027f5c74f07a19b7a222d18b}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!CreateListBufferZones@{CreateListBufferZones}}
+\index{CreateListBufferZones@{CreateListBufferZones}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{CreateListBufferZones()}
+{\footnotesize\ttfamily void Optimum.\+Map\+Model.\+Create\+List\+Buffer\+Zones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вычисление для каждого полигона у слоя sublayer\+User\+Points количества вошедших в него критериев 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a806d6493027f5c74f07a19b7a222d18b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_a2c8ff1f3a8f324eccee7165788fd31a5}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!CreateListNormaBufferZones@{CreateListNormaBufferZones}}
+\index{CreateListNormaBufferZones@{CreateListNormaBufferZones}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{CreateListNormaBufferZones()}
+{\footnotesize\ttfamily void Optimum.\+Map\+Model.\+Create\+List\+Norma\+Buffer\+Zones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вычисление для каждого полигона у слоя sublayer\+Norma\+Facility количества вошедших в него критериев 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a2c8ff1f3a8f324eccee7165788fd31a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_abf60594b0d6b87d2cc03d5b65d9e8f3d}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!CreateTableFromPolygons@{CreateTableFromPolygons}}
+\index{CreateTableFromPolygons@{CreateTableFromPolygons}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{CreateTableFromPolygons()}
+{\footnotesize\ttfamily Data\+Table Optimum.\+Map\+Model.\+Create\+Table\+From\+Polygons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Создание таблицы из полигонов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Таблица, заполненная данными из списка полигонов
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_abf60594b0d6b87d2cc03d5b65d9e8f3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_aa8ad00f983ffb9fd9f2f5c128bd4fcb9}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetnumberShade@{GetnumberShade}}
+\index{GetnumberShade@{GetnumberShade}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetnumberShade()}
+{\footnotesize\ttfamily int Optimum.\+Map\+Model.\+Getnumber\+Shade (\begin{DoxyParamCaption}\item[{double}]{value\+For\+Coloring,  }\item[{double}]{min\+Value\+Coloring,  }\item[{double}]{max\+Value\+Coloring,  }\item[{int}]{count\+Of\+Grids,  }\item[{double}]{count\+Of\+Steps }\end{DoxyParamCaption})}
+
+
+
+Определение цвета, в который будет окрашен полигон 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em value\+For\+Coloring} & Число для раскраски\\
+\hline
+{\em min\+Value\+Coloring} & Минимум раскраски\\
+\hline
+{\em max\+Value\+Coloring} & Максимум раскраски\\
+\hline
+{\em count\+Of\+Grids} & Количество оттенков\\
+\hline
+{\em count\+Of\+Steps} & Количество шагов\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Номер оттенка
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_aa8ad00f983ffb9fd9f2f5c128bd4fcb9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_aa133896d6d8c263b0dd5dc1b445b2631}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetSublayerAutoUserPoints@{GetSublayerAutoUserPoints}}
+\index{GetSublayerAutoUserPoints@{GetSublayerAutoUserPoints}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetSublayerAutoUserPoints()}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+Get\+Sublayer\+Auto\+User\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вернуть слой авто-\/оптимумов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Слой с авто-\/оптимумами
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_aa133896d6d8c263b0dd5dc1b445b2631_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_ab406b19494b665762817dd7a80bd0b8d}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetSublayerBorderPointsTerritory@{GetSublayerBorderPointsTerritory}}
+\index{GetSublayerBorderPointsTerritory@{GetSublayerBorderPointsTerritory}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetSublayerBorderPointsTerritory()}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+Get\+Sublayer\+Border\+Points\+Territory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вернуть слой граничных точек зоны анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Слой с зоной анализа
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_ab406b19494b665762817dd7a80bd0b8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_aed074d7211f4b2f01d11dc78d72f2d70}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetSublayerFacility@{GetSublayerFacility}}
+\index{GetSublayerFacility@{GetSublayerFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetSublayerFacility()}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Facility} Optimum.\+Map\+Model.\+Get\+Sublayer\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вернуть слой объектов социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Слой с объектами социальной инфраструктуры
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_aed074d7211f4b2f01d11dc78d72f2d70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_aed518720e6d1ed53d4ebb305d8e50d9d}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetSublayerNorma@{GetSublayerNorma}}
+\index{GetSublayerNorma@{GetSublayerNorma}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetSublayerNorma()}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+Get\+Sublayer\+Norma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вернуть слой нормы на душу населения 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Слой с нормой
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_aed518720e6d1ed53d4ebb305d8e50d9d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_ab5378a26d6b01e2724179d3730a99190}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetSublayerPolygonCheck@{GetSublayerPolygonCheck}}
+\index{GetSublayerPolygonCheck@{GetSublayerPolygonCheck}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetSublayerPolygonCheck()}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Polygon} Optimum.\+Map\+Model.\+Get\+Sublayer\+Polygon\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вернуть слой полигонов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Слой с полигонами
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_ab5378a26d6b01e2724179d3730a99190_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_a9474979a314931368df24f329efe02a2}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetSublayerPolygonIcon@{GetSublayerPolygonIcon}}
+\index{GetSublayerPolygonIcon@{GetSublayerPolygonIcon}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetSublayerPolygonIcon()}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Polygon} Optimum.\+Map\+Model.\+Get\+Sublayer\+Polygon\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вернуть слой полигонов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Слой с полигонами
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a9474979a314931368df24f329efe02a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_acfe51b973d608d3838d047d3d1d403a2}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!GetSublayerUserPoints@{GetSublayerUserPoints}}
+\index{GetSublayerUserPoints@{GetSublayerUserPoints}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{GetSublayerUserPoints()}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+Get\+Sublayer\+User\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вернуть слой пользовательских кандидатов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Слой с пользовательскими кандидатами
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_acfe51b973d608d3838d047d3d1d403a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_a281c9822e288363a3d1cab7ded19a7c4}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!InitializationSublayersAndLists@{InitializationSublayersAndLists}}
+\index{InitializationSublayersAndLists@{InitializationSublayersAndLists}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{InitializationSublayersAndLists()}
+{\footnotesize\ttfamily void Optimum.\+Map\+Model.\+Initialization\+Sublayers\+And\+Lists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Инициализация слоев и списков данными 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a281c9822e288363a3d1cab7ded19a7c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_aa634a884579916f323e24ad03a37ea7d}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!SetMaximumAndMinumForCriterionIconColoring@{SetMaximumAndMinumForCriterionIconColoring}}
+\index{SetMaximumAndMinumForCriterionIconColoring@{SetMaximumAndMinumForCriterionIconColoring}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{SetMaximumAndMinumForCriterionIconColoring()}
+{\footnotesize\ttfamily void Optimum.\+Map\+Model.\+Set\+Maximum\+And\+Minum\+For\+Criterion\+Icon\+Coloring (\begin{DoxyParamCaption}\item[{int}]{index\+Of\+Selected\+Criterion }\end{DoxyParamCaption})}
+
+
+
+Найти максимум и минимум по выбранному критерию для точечной раскраски 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em index\+Of\+Selected\+Criterion} & \\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_aa634a884579916f323e24ad03a37ea7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_model_a2a18615cd118dd620b7201b1c21a602f}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!SetMaximumAndMinumForCriterionSquareColoring@{SetMaximumAndMinumForCriterionSquareColoring}}
+\index{SetMaximumAndMinumForCriterionSquareColoring@{SetMaximumAndMinumForCriterionSquareColoring}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{SetMaximumAndMinumForCriterionSquareColoring()}
+{\footnotesize\ttfamily void Optimum.\+Map\+Model.\+Set\+Maximum\+And\+Minum\+For\+Criterion\+Square\+Coloring (\begin{DoxyParamCaption}\item[{int}]{index\+Of\+Selected\+Criterion }\end{DoxyParamCaption})}
+
+
+
+Найти максимум и минимум по выбранному критерию для площадной раскраски 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em index\+Of\+Selected\+Criterion} & \\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_model_a2a18615cd118dd620b7201b1c21a602f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_map_model_a7d18a78e968099e1c414b9763795a04a}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayAutoPoints@{\_overlayAutoPoints}}
+\index{\_overlayAutoPoints@{\_overlayAutoPoints}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayAutoPoints}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+Auto\+Points = new GMap\+Overlay(\char`\"{}Авто-\/поиск\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой с авто-\/оптимумами 
+
+\mbox{\label{class_optimum_1_1_map_model_a0c71e6718d00d4b46594aa613e74b6bb}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayFacility@{\_overlayFacility}}
+\index{\_overlayFacility@{\_overlayFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayFacility}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+Facility = new GMap\+Overlay(\char`\"{}Объекты социальной инфраструктуры\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой со всеми объектами социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_map_model_a870bbe9f0ff53ff0319fe195ed9c3448}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayNorma@{\_overlayNorma}}
+\index{\_overlayNorma@{\_overlayNorma}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayNorma}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+Norma = new GMap\+Overlay(\char`\"{}Норма\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой для нормы на душу населения 
+
+\mbox{\label{class_optimum_1_1_map_model_a1a42a2b936b39b5959ad71eeb48e71a0}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayPolygon@{\_overlayPolygon}}
+\index{\_overlayPolygon@{\_overlayPolygon}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayPolygon}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+Polygon = new GMap\+Overlay(\char`\"{}\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой с полигонами 
+
+\mbox{\label{class_optimum_1_1_map_model_a6b6d89ceddd99381dd88f889cb0274c9}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayPolygonCheck@{\_overlayPolygonCheck}}
+\index{\_overlayPolygonCheck@{\_overlayPolygonCheck}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayPolygonCheck}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+Polygon\+Check = new GMap\+Overlay(\char`\"{}\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой для проверки вхождения точки в полигоны 
+
+\mbox{\label{class_optimum_1_1_map_model_a583841a751e87035693bb1e613870525}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayPolygonIcon@{\_overlayPolygonIcon}}
+\index{\_overlayPolygonIcon@{\_overlayPolygonIcon}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayPolygonIcon}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+Polygon\+Icon = new GMap\+Overlay(\char`\"{}\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой с полигонами для точечной раскраски 
+
+\mbox{\label{class_optimum_1_1_map_model_ab35b67662fcd8d23560032031eb3c86d}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayUserPoints@{\_overlayUserPoints}}
+\index{\_overlayUserPoints@{\_overlayUserPoints}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayUserPoints}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+User\+Points = new GMap\+Overlay(\char`\"{}Точки-\/кандидаты пользователя\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой с маркерами пользователя 
+
+\mbox{\label{class_optimum_1_1_map_model_a7b7a733c974bd60d1db3992963b731e8}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!\_overlayWithBorderPointsTerritoryForUser@{\_overlayWithBorderPointsTerritoryForUser}}
+\index{\_overlayWithBorderPointsTerritoryForUser@{\_overlayWithBorderPointsTerritoryForUser}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{\_overlayWithBorderPointsTerritoryForUser}
+{\footnotesize\ttfamily readonly GMap\+Overlay Optimum.\+Map\+Model.\+\_\+overlay\+With\+Border\+Points\+Territory\+For\+User = new GMap\+Overlay(\char`\"{}Граничные точки зоны анализа\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Библиотечный слой с граничными точками зоны анализа 
+
+\mbox{\label{class_optimum_1_1_map_model_afe974ba7b190be4b39426681c6343aca}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!arrayIcons@{arrayIcons}}
+\index{arrayIcons@{arrayIcons}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{arrayIcons}
+{\footnotesize\ttfamily List$<$Image$>$ Optimum.\+Map\+Model.\+array\+Icons = new List$<$Image$>$()}
+
+
+
+Массив значков для точечной раскраски 
+
+\mbox{\label{class_optimum_1_1_map_model_ac99790627cdcae73248acbe8b866546f}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!centerMap@{centerMap}}
+\index{centerMap@{centerMap}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{centerMap}
+{\footnotesize\ttfamily \textbf{ Location} Optimum.\+Map\+Model.\+center\+Map = new \textbf{ Location}()}
+
+
+
+Точка центрирования карты 
+
+\mbox{\label{class_optimum_1_1_map_model_a1911c95db0d6292940800c98a683ceb2}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!DISTANCE\_BETWEEN\_USER\_POINTS@{DISTANCE\_BETWEEN\_USER\_POINTS}}
+\index{DISTANCE\_BETWEEN\_USER\_POINTS@{DISTANCE\_BETWEEN\_USER\_POINTS}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{DISTANCE\_BETWEEN\_USER\_POINTS}
+{\footnotesize\ttfamily readonly int Optimum.\+Map\+Model.\+DISTANCE\+\_\+\+BETWEEN\+\_\+\+USER\+\_\+\+POINTS = 25}
+
+
+
+Ограничение на расстояние между пользовательскими маркерами 
+
+\mbox{\label{class_optimum_1_1_map_model_af5a608285b31d94e49da1efdbf0a8a38}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!flagChangeCriterion@{flagChangeCriterion}}
+\index{flagChangeCriterion@{flagChangeCriterion}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{flagChangeCriterion}
+{\footnotesize\ttfamily bool Optimum.\+Map\+Model.\+flag\+Change\+Criterion = false}
+
+\mbox{\label{class_optimum_1_1_map_model_a99ab2e4ac8aef7312f37cc7ce372c64f}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!flagChangePolygon@{flagChangePolygon}}
+\index{flagChangePolygon@{flagChangePolygon}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{flagChangePolygon}
+{\footnotesize\ttfamily bool Optimum.\+Map\+Model.\+flag\+Change\+Polygon = false}
+
+
+
+Флаги изменения файлов в настройках 
+
+\mbox{\label{class_optimum_1_1_map_model_a2ad9dfad2127c76dd602c6529972eb90}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!flagChangeTerritory@{flagChangeTerritory}}
+\index{flagChangeTerritory@{flagChangeTerritory}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{flagChangeTerritory}
+{\footnotesize\ttfamily bool Optimum.\+Map\+Model.\+flag\+Change\+Territory = false}
+
+\mbox{\label{class_optimum_1_1_map_model_a44562475b7ccb62c3428f13ff0dc78ec}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!flagLoadFileNorma@{flagLoadFileNorma}}
+\index{flagLoadFileNorma@{flagLoadFileNorma}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{flagLoadFileNorma}
+{\footnotesize\ttfamily bool Optimum.\+Map\+Model.\+flag\+Load\+File\+Norma = false}
+
+\mbox{\label{class_optimum_1_1_map_model_aa5c101d32e70fef9ec34ed2132987591}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!iconFacility@{iconFacility}}
+\index{iconFacility@{iconFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{iconFacility}
+{\footnotesize\ttfamily Image Optimum.\+Map\+Model.\+icon\+Facility}
+
+\mbox{\label{class_optimum_1_1_map_model_ad4b8dcb0ad51892b775a024e7f143c11}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!implementedRateOfFacility@{implementedRateOfFacility}}
+\index{implementedRateOfFacility@{implementedRateOfFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{implementedRateOfFacility}
+{\footnotesize\ttfamily int Optimum.\+Map\+Model.\+implemented\+Rate\+Of\+Facility = 1}
+
+
+
+Норма объекта социальной инфраструктуры и населения 
+
+\mbox{\label{class_optimum_1_1_map_model_ae1a86a31bb603e6d7501785865fa671c}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!implementedRateOfPopulation@{implementedRateOfPopulation}}
+\index{implementedRateOfPopulation@{implementedRateOfPopulation}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{implementedRateOfPopulation}
+{\footnotesize\ttfamily int Optimum.\+Map\+Model.\+implemented\+Rate\+Of\+Population = 1000}
+
+\mbox{\label{class_optimum_1_1_map_model_ac428e238fbe1188c6afcd124bf1cc8b4}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!LIMIT\_USER\_POINTS\_ON\_MAP@{LIMIT\_USER\_POINTS\_ON\_MAP}}
+\index{LIMIT\_USER\_POINTS\_ON\_MAP@{LIMIT\_USER\_POINTS\_ON\_MAP}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{LIMIT\_USER\_POINTS\_ON\_MAP}
+{\footnotesize\ttfamily readonly int Optimum.\+Map\+Model.\+LIMIT\+\_\+\+USER\+\_\+\+POINTS\+\_\+\+ON\+\_\+\+MAP = 30}
+
+
+
+Ограничение на установку пользовательских маркеров на карте 
+
+\mbox{\label{class_optimum_1_1_map_model_acb5db9f4aec85f41ba177b6a3ada94d7}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listAutoPoints@{listAutoPoints}}
+\index{listAutoPoints@{listAutoPoints}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listAutoPoints}
+{\footnotesize\ttfamily List$<$\textbf{ Location}$>$ Optimum.\+Map\+Model.\+list\+Auto\+Points = new List$<$\textbf{ Location}$>$()}
+
+
+
+Список авто-\/точек 
+
+\mbox{\label{class_optimum_1_1_map_model_a6f5dad35c4c7e4912b59136f7de7d514}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listAutoPointsBufferZone@{listAutoPointsBufferZone}}
+\index{listAutoPointsBufferZone@{listAutoPointsBufferZone}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listAutoPointsBufferZone}
+{\footnotesize\ttfamily List$<$\textbf{ Buffer\+Zone}$>$ Optimum.\+Map\+Model.\+list\+Auto\+Points\+Buffer\+Zone = new List$<$\textbf{ Buffer\+Zone}$>$()}
+
+
+
+Список авто-\/буферных зон 
+
+\mbox{\label{class_optimum_1_1_map_model_ab44adc7f5be49727b3d9a48ccb883f28}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listNorma@{listNorma}}
+\index{listNorma@{listNorma}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listNorma}
+{\footnotesize\ttfamily List$<$\textbf{ Location}$>$ Optimum.\+Map\+Model.\+list\+Norma = new List$<$\textbf{ Location}$>$()}
+
+
+
+Список авто-\/точек для нормы на душу населения 
+
+\mbox{\label{class_optimum_1_1_map_model_a41ce7eddbdc42269b29343cfd5f55490}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listNormaPointsBufferZone@{listNormaPointsBufferZone}}
+\index{listNormaPointsBufferZone@{listNormaPointsBufferZone}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listNormaPointsBufferZone}
+{\footnotesize\ttfamily List$<$\textbf{ Buffer\+Zone}$>$ Optimum.\+Map\+Model.\+list\+Norma\+Points\+Buffer\+Zone = new List$<$\textbf{ Buffer\+Zone}$>$()}
+
+
+
+Список буферных зон для нормы на душу населения 
+
+\mbox{\label{class_optimum_1_1_map_model_a9f285e4a99e299ee56d789b3315ae184}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listPointsBufferZone@{listPointsBufferZone}}
+\index{listPointsBufferZone@{listPointsBufferZone}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listPointsBufferZone}
+{\footnotesize\ttfamily List$<$\textbf{ Buffer\+Zone}$>$ Optimum.\+Map\+Model.\+list\+Points\+Buffer\+Zone = new List$<$\textbf{ Buffer\+Zone}$>$()}
+
+
+
+Список буферных зон пользователя 
+
+\mbox{\label{class_optimum_1_1_map_model_a3d4996ee669b6f1caced5c0989a7a6b0}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listPointsUser@{listPointsUser}}
+\index{listPointsUser@{listPointsUser}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listPointsUser}
+{\footnotesize\ttfamily List$<$\textbf{ Location}$>$ Optimum.\+Map\+Model.\+list\+Points\+User = new List$<$\textbf{ Location}$>$()}
+
+
+
+Список точек-\/кандидатов пользователя 
+
+\mbox{\label{class_optimum_1_1_map_model_a2bbf7765e1f2750c4130fab01cc745bb}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listUserCriterion@{listUserCriterion}}
+\index{listUserCriterion@{listUserCriterion}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listUserCriterion}
+{\footnotesize\ttfamily List$<$\textbf{ Criterion}$>$ Optimum.\+Map\+Model.\+list\+User\+Criterion = new List$<$\textbf{ Criterion}$>$()}
+
+
+
+Список критериев оптимальности 
+
+\mbox{\label{class_optimum_1_1_map_model_a26a379da980d3598b8aa82a7e57dafc5}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listUserFacilities@{listUserFacilities}}
+\index{listUserFacilities@{listUserFacilities}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listUserFacilities}
+{\footnotesize\ttfamily List$<$\textbf{ Facility}$>$ Optimum.\+Map\+Model.\+list\+User\+Facilities}
+
+
+
+Список объектов социальной инфраструктуры из файла 
+
+\mbox{\label{class_optimum_1_1_map_model_a613ad1b58cae6bf18933a2d1d123ef77}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listUserPointsBorderTerritory@{listUserPointsBorderTerritory}}
+\index{listUserPointsBorderTerritory@{listUserPointsBorderTerritory}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listUserPointsBorderTerritory}
+{\footnotesize\ttfamily List$<$\textbf{ Location}$>$ Optimum.\+Map\+Model.\+list\+User\+Points\+Border\+Territory}
+
+
+
+Список граничных точек зоны анализа 
+
+\mbox{\label{class_optimum_1_1_map_model_aa790ea2dd3072001f8dcd4a2f4486683}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!listUserPolygons@{listUserPolygons}}
+\index{listUserPolygons@{listUserPolygons}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{listUserPolygons}
+{\footnotesize\ttfamily List$<$\textbf{ Polygon}$>$ Optimum.\+Map\+Model.\+list\+User\+Polygons}
+
+
+
+Список полигонов из файла 
+
+\mbox{\label{class_optimum_1_1_map_model_ab6cb67134a1bd14970cd08255534c23b}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!mainColor@{mainColor}}
+\index{mainColor@{mainColor}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{mainColor}
+{\footnotesize\ttfamily Color Optimum.\+Map\+Model.\+main\+Color}
+
+
+
+Основной и дополнительный цвет интерфейса 
+
+\mbox{\label{class_optimum_1_1_map_model_a9fe03dccc04eb3e9a2c0f344608909b7}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!maxCriterionIconColoring@{maxCriterionIconColoring}}
+\index{maxCriterionIconColoring@{maxCriterionIconColoring}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{maxCriterionIconColoring}
+{\footnotesize\ttfamily double Optimum.\+Map\+Model.\+max\+Criterion\+Icon\+Coloring}
+
+\mbox{\label{class_optimum_1_1_map_model_ae51b6cf4d1ca848acf10f462ba891ad3}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!maxCriterionPolygonColoring@{maxCriterionPolygonColoring}}
+\index{maxCriterionPolygonColoring@{maxCriterionPolygonColoring}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{maxCriterionPolygonColoring}
+{\footnotesize\ttfamily double Optimum.\+Map\+Model.\+max\+Criterion\+Polygon\+Coloring}
+
+
+
+Минимум и максимум для точечной и площадной раскраски 
+
+\mbox{\label{class_optimum_1_1_map_model_a26034ea37e14e181d8652a8f8c5aa0c1}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!minCriterionIconColoring@{minCriterionIconColoring}}
+\index{minCriterionIconColoring@{minCriterionIconColoring}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{minCriterionIconColoring}
+{\footnotesize\ttfamily double Optimum.\+Map\+Model.\+min\+Criterion\+Icon\+Coloring}
+
+\mbox{\label{class_optimum_1_1_map_model_af4547e7035a14de492d2da431ab01b79}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!minCriterionPolygonColoring@{minCriterionPolygonColoring}}
+\index{minCriterionPolygonColoring@{minCriterionPolygonColoring}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{minCriterionPolygonColoring}
+{\footnotesize\ttfamily double Optimum.\+Map\+Model.\+min\+Criterion\+Polygon\+Coloring}
+
+\mbox{\label{class_optimum_1_1_map_model_af4acce3257dee23f971f73750aa26842}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!nameObjectFacility@{nameObjectFacility}}
+\index{nameObjectFacility@{nameObjectFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{nameObjectFacility}
+{\footnotesize\ttfamily string Optimum.\+Map\+Model.\+name\+Object\+Facility}
+
+
+
+Название объекта социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_map_model_aa5e909e99c6a02eecdb9b82ce80af806}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!numberOfShadesCriterion@{numberOfShadesCriterion}}
+\index{numberOfShadesCriterion@{numberOfShadesCriterion}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{numberOfShadesCriterion}
+{\footnotesize\ttfamily int Optimum.\+Map\+Model.\+number\+Of\+Shades\+Criterion = 8}
+
+
+
+Количество оттенков для раскраски полигонов по критериям 
+
+\mbox{\label{class_optimum_1_1_map_model_a36d3dcfa3bc2dcca7be7b8b45173d9d3}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!optimalZones@{optimalZones}}
+\index{optimalZones@{optimalZones}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{optimalZones}
+{\footnotesize\ttfamily List$<$\textbf{ Optimal\+Zone}$>$ Optimum.\+Map\+Model.\+optimal\+Zones = new List$<$\textbf{ Optimal\+Zone}$>$()}
+
+
+
+Список оптимальных точек 
+
+\mbox{\label{class_optimum_1_1_map_model_a7df66edaf1968b809cd7f3a85ccbe821}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!pathToFilePolygonUser@{pathToFilePolygonUser}}
+\index{pathToFilePolygonUser@{pathToFilePolygonUser}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{pathToFilePolygonUser}
+{\footnotesize\ttfamily string Optimum.\+Map\+Model.\+path\+To\+File\+Polygon\+User}
+
+
+
+Путь к файлу с полигонами 
+
+\mbox{\label{class_optimum_1_1_map_model_a6d374c63daa68f9cd31099b489d3f928}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!pathToIconObjectFacility@{pathToIconObjectFacility}}
+\index{pathToIconObjectFacility@{pathToIconObjectFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{pathToIconObjectFacility}
+{\footnotesize\ttfamily string Optimum.\+Map\+Model.\+path\+To\+Icon\+Object\+Facility}
+
+
+
+Загруженный пользователем значок для отображения объектов социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_map_model_a0b58d07189c3388c6d89b19ab177d185}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!radiusBufferZone@{radiusBufferZone}}
+\index{radiusBufferZone@{radiusBufferZone}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{radiusBufferZone}
+{\footnotesize\ttfamily int Optimum.\+Map\+Model.\+radius\+Buffer\+Zone = 500}
+
+
+
+Радиус буферных зон по умолчанию 
+
+\mbox{\label{class_optimum_1_1_map_model_a9817b32e116c258dbf74a42d27c01bcd}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!radiusNormaBufferZone@{radiusNormaBufferZone}}
+\index{radiusNormaBufferZone@{radiusNormaBufferZone}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{radiusNormaBufferZone}
+{\footnotesize\ttfamily int Optimum.\+Map\+Model.\+radius\+Norma\+Buffer\+Zone = 500}
+
+
+
+Радиус буферных зон по умолчанию для нормы на душу населения 
+
+\mbox{\label{class_optimum_1_1_map_model_a1b721d4d5c4c6c3b4e712cea99ed64d1}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!secondaryColor@{secondaryColor}}
+\index{secondaryColor@{secondaryColor}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{secondaryColor}
+{\footnotesize\ttfamily Color Optimum.\+Map\+Model.\+secondary\+Color}
+
+\mbox{\label{class_optimum_1_1_map_model_ad9eacb69149225eab946cf989ad69d68}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!stateOfBottomPanel@{stateOfBottomPanel}}
+\index{stateOfBottomPanel@{stateOfBottomPanel}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{stateOfBottomPanel}
+{\footnotesize\ttfamily string Optimum.\+Map\+Model.\+state\+Of\+Bottom\+Panel = \char`\"{}\char`\"{}}
+
+
+
+Состояние нижней панели \char`\"{}\+Open\char`\"{}/\char`\"{}\+Close\char`\"{}. 
+
+\mbox{\label{class_optimum_1_1_map_model_a4ef659a2b5981c2f70cc5e835a19f553}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerAutoPoints@{sublayerAutoPoints}}
+\index{sublayerAutoPoints@{sublayerAutoPoints}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerAutoPoints}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+sublayer\+Auto\+Points = new \textbf{ Sublayer\+Location}(\char`\"{}Авто-\/оптимумы\char`\"{}, @\char`\"{}Icon/icon\+Best\+Optimum.\+png\char`\"{})}
+
+
+
+Слой с авто-\/оптимумами 
+
+\mbox{\label{class_optimum_1_1_map_model_a4ae6f8653d02c34fc41e4af19a5e4620}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerBorderPointsTerritory@{sublayerBorderPointsTerritory}}
+\index{sublayerBorderPointsTerritory@{sublayerBorderPointsTerritory}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerBorderPointsTerritory}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+sublayer\+Border\+Points\+Territory = new \textbf{ Sublayer\+Location}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})}
+
+
+
+Слой с граничными зоны анализа 
+
+\mbox{\label{class_optimum_1_1_map_model_a8f6779da9d3617e39a68097395c018ca}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerFacility@{sublayerFacility}}
+\index{sublayerFacility@{sublayerFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerFacility}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Facility} Optimum.\+Map\+Model.\+sublayer\+Facility = new \textbf{ Sublayer\+Facility}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})}
+
+
+
+Слой со всеми объектами социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_map_model_a66f1cd8ec68863dcc2138687f90d49a0}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerNormaFacility@{sublayerNormaFacility}}
+\index{sublayerNormaFacility@{sublayerNormaFacility}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerNormaFacility}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+sublayer\+Norma\+Facility = new \textbf{ Sublayer\+Location}(\char`\"{}Норма\char`\"{}, @\char`\"{}Icon/icon\+Best\+Optimum.\+png\char`\"{})}
+
+
+
+Слой для нормы на душу населения 
+
+\mbox{\label{class_optimum_1_1_map_model_a0df58c8716b57b9dbe06740dfab53eb8}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerPolygonCheck@{sublayerPolygonCheck}}
+\index{sublayerPolygonCheck@{sublayerPolygonCheck}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerPolygonCheck}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Polygon} Optimum.\+Map\+Model.\+sublayer\+Polygon\+Check = new \textbf{ Sublayer\+Polygon}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})}
+
+
+
+Слой для проверки вхождения точки в полигоны 
+
+\mbox{\label{class_optimum_1_1_map_model_a8c15ede8d71194ab549d7ed573c4b2f9}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerPolygonrIcon@{sublayerPolygonrIcon}}
+\index{sublayerPolygonrIcon@{sublayerPolygonrIcon}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerPolygonrIcon}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Polygon} Optimum.\+Map\+Model.\+sublayer\+Polygonr\+Icon = new \textbf{ Sublayer\+Polygon}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})}
+
+
+
+Слой со всеми полигонами для точечной раскраски 
+
+\mbox{\label{class_optimum_1_1_map_model_a172a57b37ae4698f68f50ea71b342ddc}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerPolygonSquare@{sublayerPolygonSquare}}
+\index{sublayerPolygonSquare@{sublayerPolygonSquare}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerPolygonSquare}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Polygon} Optimum.\+Map\+Model.\+sublayer\+Polygon\+Square = new \textbf{ Sublayer\+Polygon}(\char`\"{}\char`\"{}, \char`\"{}\char`\"{})}
+
+
+
+Слой со всеми полигонами 
+
+\mbox{\label{class_optimum_1_1_map_model_a64aab078d500645f730a07ea26db7c0b}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!sublayerUserPoints@{sublayerUserPoints}}
+\index{sublayerUserPoints@{sublayerUserPoints}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{sublayerUserPoints}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Map\+Model.\+sublayer\+User\+Points = new \textbf{ Sublayer\+Location}(\char`\"{}\char`\"{}, @\char`\"{}Icon/icon\+User\+Facility.\+png\char`\"{})}
+
+
+
+Слой с маркерами пользователя 
+
+\mbox{\label{class_optimum_1_1_map_model_ac1ae331ae3fedc07b5827df8ae9168ba}} 
+\index{Optimum.MapModel@{Optimum.MapModel}!tempListForPolygons@{tempListForPolygons}}
+\index{tempListForPolygons@{tempListForPolygons}!Optimum.MapModel@{Optimum.MapModel}}
+\doxysubsubsection{tempListForPolygons}
+{\footnotesize\ttfamily List$<$Point\+Lat\+Lng$>$ Optimum.\+Map\+Model.\+temp\+List\+For\+Polygons}
+
+
+
+Временный список для граничных точек полигонов 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Map\+Model.\+cs}\end{DoxyCompactItemize}

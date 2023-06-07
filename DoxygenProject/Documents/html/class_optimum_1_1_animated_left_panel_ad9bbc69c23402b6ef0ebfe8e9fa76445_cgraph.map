@@ -1,0 +1,5 @@
+<map id="Optimum.AnimatedLeftPanel.AnimatedLeftPanel" name="Optimum.AnimatedLeftPanel.AnimatedLeftPanel">
+<area shape="rect" id="node1" title="Конструктор панели" alt="" coords="5,37,197,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_animated_left_panel.html#a16c070597bf9c0b0fa24f215bd09025b" title="Обработка клика по кнопке" alt="" coords="245,5,437,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_animated_left_panel.html#a8796846898aa98337bcb04bfd49f585f" title="Обработка тика таймера" alt="" coords="245,69,437,109"/>
+</map>

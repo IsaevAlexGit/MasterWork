@@ -1,0 +1,9 @@
+<map id="Optimum.MapView.ClearIdealPoints" name="Optimum.MapView.ClearIdealPoints">
+<area shape="rect" id="node1" title="Очистить авто&#45;оптимумы" alt="" coords="973,37,1167,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a38be0b9d9a34fb21ef78a084aa61074e" title="Удаление авто&#45;оптимумов" alt="" coords="725,5,925,45"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="731,69,919,109"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,5,667,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,69,677,109"/>
+</map>

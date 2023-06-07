@@ -1,0 +1,10 @@
+<map id="Optimum.MapView.MapView" name="Optimum.MapView.MapView">
+<area shape="rect" id="node1" title="Конструктор" alt="" coords="5,173,195,198"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="243,165,453,205"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html#aa133896d6d8c263b0dd5dc1b445b2631" title="Вернуть слой авто&#45;оптимумов" alt="" coords="501,5,716,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="501,69,716,109"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_map_model.html#aed074d7211f4b2f01d11dc78d72f2d70" title="Вернуть слой объектов социальной инфраструктуры" alt="" coords="501,133,716,173"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_map_model.html#aed518720e6d1ed53d4ebb305d8e50d9d" title="Вернуть слой нормы на душу населения" alt="" coords="501,197,716,237"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_map_model.html#a9474979a314931368df24f329efe02a2" title="Вернуть слой полигонов" alt="" coords="501,261,716,301"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_map_model.html#acfe51b973d608d3838d047d3d1d403a2" title="Вернуть слой пользовательских кандидатов" alt="" coords="501,325,716,365"/>
+</map>

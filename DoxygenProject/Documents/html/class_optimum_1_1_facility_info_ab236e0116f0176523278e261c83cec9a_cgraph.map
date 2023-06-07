@@ -1,0 +1,8 @@
+<map id="Optimum.FacilityInfo.InitializeComponent" name="Optimum.FacilityInfo.InitializeComponent">
+<area shape="rect" id="node1" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="5,37,197,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_facility_info.html#aa9d0a91f756bd778fae6386e90a79ef7" title="Закрыть форму через ESC." alt="" coords="245,5,432,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_facility_info.html#a8a83c3809387b43284e36bdf85ede1ee" title="Загрузка формы" alt="" coords="245,69,432,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_facility_info.html#afe7f84d348f47ba4010c8d8262d712e8" title="Проверка: является ли строка веб&#45;адресом" alt="" coords="509,37,692,77"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="480,101,721,141"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="769,101,979,141"/>
+</map>

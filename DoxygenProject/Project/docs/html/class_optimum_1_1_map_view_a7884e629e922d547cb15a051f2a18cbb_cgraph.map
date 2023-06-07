@@ -1,0 +1,7 @@
+<map id="Optimum.MapView.DrawNormaIdealPointBufferZone" name="Optimum.MapView.DrawNormaIdealPointBufferZone">
+<area shape="rect" id="node1" title="Отрисовка буферных зон оптимумов нормы" alt="" coords="5,5,208,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_norma.html#a248224c00210ad03a761969fda08744f" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="256,5,487,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_norma.html#af2b3a0348f37e3de059204c408edb5cb" title="Инициализация буферной зоны" alt="" coords="535,5,697,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_norma.html#ad9597f1226de047475458c330a17db29" title="Отрисовка окружности" alt="" coords="745,5,908,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_norma.html#a03b7db9ec605b27fbe1fdbb3bda9da78" title="Вычисление каждой точки окружности" alt="" coords="956,5,1135,45"/>
+</map>

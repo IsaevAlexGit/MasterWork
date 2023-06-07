@@ -1,0 +1,8 @@
+<map id="Optimum.Internet.PingServer" name="Optimum.Internet.PingServer">
+<area shape="rect" id="node1" title="Пингануть сервера, при первом получении ответа от любого сервера возвращает true." alt="" coords="1239,42,1427,67"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_internet.html#a72bcf82df64a794b3733fe5819d39fd7" title="Проверка, есть ли соединение с интернетом" alt="" coords="963,42,1191,67"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_start_form.html#a09dd50e8ffb7612c6014d805ee77f379" title="Обработка таймера каждую секунду для проверки наличие Интернета" alt="" coords="713,42,915,67"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_start_form.html#a571359f2935677757ac3990bf7d4abcf" title="Переход на главный экран" alt="" coords="488,5,665,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_start_form.html#a690b8d74ee46e890ba4a4d613017e76e" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="252,35,440,75"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_start_form.html#a9cc06a02e74be3cf330ef63bafaedc4e" title="Конструктор формы" alt="" coords="5,42,204,67"/>
+</map>

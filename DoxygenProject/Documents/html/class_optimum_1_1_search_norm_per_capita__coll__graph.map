@@ -1,0 +1,19 @@
+<map id="Optimum.SearchNormPerCapita" name="Optimum.SearchNormPerCapita">
+<area shape="rect" id="node1" title="Класс для окна с нормой на душу населения" alt="" coords="1026,1305,1234,1793"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,938,57,1015"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_paint_group_box_border.html" title="Класс &quot;Отрисовка границ рамки у GroupBox&quot;." alt="" coords="82,931,287,1023"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_sublayer_location.html" title="Класс &quot;Слой для точек&quot;." alt="" coords="722,5,901,141"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_map_model.html" title="Класс с данными" alt="" coords="1559,248,1799,795"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_render_territory.html" title="Класс &quot;Отрисовщик зоны анализа&quot;." alt="" coords="1151,468,1317,575"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_render_user_marker.html" title="Класс &quot;Отрисовщик точек&#45;кандидатов&quot;." alt="" coords="382,343,614,699"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_render_auto_points.html" title="Класс &quot;Отрисовщик авто&#45;оптимумов&quot;." alt="" coords="638,373,870,670"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_render_norma.html" title="Класс &quot;Отрисовщик нормы&quot;." alt="" coords="894,373,1126,670"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_map_view.html" title="Класс для визуализации" alt="" coords="1035,857,1225,1096"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_location.html" title="Класс &quot;Точка на карте&quot;." alt="" coords="1775,20,1903,127"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_sublayer_facility.html" title="Класс &quot;Слой для объектов социальной инфраструктуры&quot;." alt="" coords="1960,5,2132,141"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_facility.html" title="Класс &quot;Отрисовщик объектов социальной инфраструктуры&quot;." alt="" coords="1899,446,2102,597"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_sublayer_polygon.html" title="Класс &quot;Слой для полигонов&quot;." alt="" coords="1491,5,1668,141"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_polygon.html" title="Класс &quot;Отрисовщик точечной раскраски&quot;." alt="" coords="1341,409,1535,633"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1585,938,1651,1015"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1721,938,1768,1015"/>
+</map>

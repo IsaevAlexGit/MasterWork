@@ -1,0 +1,10 @@
+<map id="Optimum.StartSettings.buttonValidateAndSave_Click" name="Optimum.StartSettings.buttonValidateAndSave_Click">
+<area shape="rect" id="node1" title="Кнопка &quot;Сохранить&quot;." alt="" coords="5,101,200,141"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_start_settings.html#aed0752e868365ce8f11418a4f4f05fb2" title="Проверка уникальности названия критериев" alt="" coords="255,5,437,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_start_settings.html#a80aef5d9e0e6ca26318735ffcf959c2b" title="Проверка корректности названия объекта социальной инфраструктуры" alt="" coords="248,69,444,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="265,133,427,173"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_start_settings.html#a460be301f996fd4673890addb6fb1298" title="Поиск точки центрирования карты" alt="" coords="267,197,425,237"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="492,69,657,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="495,133,654,173"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="495,197,654,237"/>
+</map>

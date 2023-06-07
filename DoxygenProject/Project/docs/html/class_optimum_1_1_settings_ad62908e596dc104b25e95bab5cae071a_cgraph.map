@@ -1,0 +1,12 @@
+<map id="Optimum.Settings.buttonLoadBorderTerritory_Click" name="Optimum.Settings.buttonLoadBorderTerritory_Click">
+<area shape="rect" id="node1" title="Загрузка файла с границами" alt="" coords="5,331,200,371"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_settings.html#aecd11cf9e23129621c10df4ae2a26ed9" title="Проверить, подходит ли файл с полигонами на новое измененное количеств критериев" alt="" coords="256,216,443,256"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="1044,280,1247,320"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_file_validator.html#aa616dbd607869ba5f43c0067e99ce345" title="Проверка корректности файла с граничными точками зоны анализа" alt="" coords="248,388,451,428"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_settings.html#a8796cdb3ba8f82b80b695fef0d93483f" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="499,159,721,199"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="1044,35,1247,75"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_settings.html#afd2b050fe4f4593265579da38b8eb5a1" title="Проверка корректности направления" alt="" coords="769,159,996,199"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_settings.html#a73a9ec906ed47a70ae121393ee6f5027" title="Проверка корректности названия критериея" alt="" coords="778,223,987,263"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_settings.html#a437259db652807a405a6d7ccaefc9e63" title="Проверка корректности весового коэффициента" alt="" coords="775,31,991,71"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_settings.html#a296e6bcde5a8b584b92cc8daa135d3a6" title="Проверить, подходит ли файл с полигонами на неизменяющееся количество критериев" alt="" coords="790,95,975,135"/>
+</map>

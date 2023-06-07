@@ -1,0 +1,373 @@
+\doxysection{Класс Optimum.\+Setting\+Radius}
+\label{class_optimum_1_1_setting_radius}\index{Optimum.SettingRadius@{Optimum.SettingRadius}}
+
+
+Класс для окна с установкой радиуса буферной зоны  
+
+
+
+
+Граф наследования\+:Optimum.\+Setting\+Radius\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_optimum_1_1_setting_radius__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Optimum.\+Setting\+Radius\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Setting\+Radius} (\textbf{ Map\+Model} map\+Model)
+\begin{DoxyCompactList}\small\item\em Конструктор формы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+override void \textbf{ Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Setting\+Radius\+\_\+\+Load} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка формы \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+\+Find\+Radius} ()
+\begin{DoxyCompactList}\small\item\em Найти динамиечески максимальную длину для радиуса \end{DoxyCompactList}\item 
+void \textbf{ Input\+Radius\+Tool\+Strip\+Menu\+Item\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Установка радиуса буферной зоны и возврат на главное окно \end{DoxyCompactList}\item 
+void \textbf{ track\+Bar\+Radius\+\_\+\+Scroll} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Прокрутка ползунка \end{DoxyCompactList}\item 
+void \textbf{ Setting\+Radius\+\_\+\+Form\+Closing} (object sender, Form\+Closing\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Закрытие формы \end{DoxyCompactList}\item 
+void \textbf{ Setting\+Radius\+\_\+\+Key\+Down} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Закрыть форму через ESC. \end{DoxyCompactList}\item 
+void \textbf{ Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Map\+Model} \textbf{ \+\_\+map\+Model}
+\begin{DoxyCompactList}\small\item\em Объект Map\+Model. \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+flag\+Save\+Radius} = true
+\begin{DoxyCompactList}\small\item\em Флаг сохранения радиуса \end{DoxyCompactList}\item 
+System.\+Component\+Model.\+IContainer \textbf{ components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Menu\+Strip \textbf{ menu\+Strip}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item \textbf{ Input\+Radius}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Info}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Radius\+Long}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Radius}
+\item 
+System.\+Windows.\+Forms.\+Track\+Bar \textbf{ track\+Bar\+Radius}
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+const int \textbf{ STEP\+\_\+\+TRACK\+\_\+\+BAR} = 50
+\begin{DoxyCompactList}\small\item\em Шаг ползунка \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для окна с установкой радиуса буферной зоны 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_setting_radius_a4ffa4c995cffde50fef469583c04bfc7}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!SettingRadius@{SettingRadius}}
+\index{SettingRadius@{SettingRadius}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{SettingRadius()}
+{\footnotesize\ttfamily Optimum.\+Setting\+Radius.\+Setting\+Radius (\begin{DoxyParamCaption}\item[{\textbf{ Map\+Model}}]{map\+Model }\end{DoxyParamCaption})}
+
+
+
+Конструктор формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em map\+Model} & Объект Map\+Model\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a4ffa4c995cffde50fef469583c04bfc7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_setting_radius_a44542fc4de95c83cc3b633ac02a9c24c}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!\_FindRadius@{\_FindRadius}}
+\index{\_FindRadius@{\_FindRadius}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{\_FindRadius()}
+{\footnotesize\ttfamily int Optimum.\+Setting\+Radius.\+\_\+\+Find\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Найти динамиечески максимальную длину для радиуса 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Радиус в метрах
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a44542fc4de95c83cc3b633ac02a9c24c_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a44542fc4de95c83cc3b633ac02a9c24c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_setting_radius_a9946917d51d5aa9cf5d4e428fa8c720d}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{Dispose()}
+{\footnotesize\ttfamily override void Optimum.\+Setting\+Radius.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_optimum_1_1_setting_radius_ac596fbc43eed4cb2f18d4b62f7ea1eeb}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{InitializeComponent()}
+{\footnotesize\ttfamily void Optimum.\+Setting\+Radius.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_ac596fbc43eed4cb2f18d4b62f7ea1eeb_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_ac596fbc43eed4cb2f18d4b62f7ea1eeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_setting_radius_a093d1f1af470935a01084f68640579fb}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!InputRadiusToolStripMenuItem\_Click@{InputRadiusToolStripMenuItem\_Click}}
+\index{InputRadiusToolStripMenuItem\_Click@{InputRadiusToolStripMenuItem\_Click}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{InputRadiusToolStripMenuItem\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Setting\+Radius.\+Input\+Radius\+Tool\+Strip\+Menu\+Item\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Установка радиуса буферной зоны и возврат на главное окно 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a093d1f1af470935a01084f68640579fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_setting_radius_aefacec3e01da54cba081b6bf7e8fbbec}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!SettingRadius\_FormClosing@{SettingRadius\_FormClosing}}
+\index{SettingRadius\_FormClosing@{SettingRadius\_FormClosing}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{SettingRadius\_FormClosing()}
+{\footnotesize\ttfamily void Optimum.\+Setting\+Radius.\+Setting\+Radius\+\_\+\+Form\+Closing (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Form\+Closing\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Закрытие формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_aefacec3e01da54cba081b6bf7e8fbbec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_setting_radius_a8f7653d8dc72361e5c8a616bd47fe6e9}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!SettingRadius\_KeyDown@{SettingRadius\_KeyDown}}
+\index{SettingRadius\_KeyDown@{SettingRadius\_KeyDown}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{SettingRadius\_KeyDown()}
+{\footnotesize\ttfamily void Optimum.\+Setting\+Radius.\+Setting\+Radius\+\_\+\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Закрыть форму через ESC. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a8f7653d8dc72361e5c8a616bd47fe6e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_setting_radius_a36ecc925d6f5cbce6fdc2e63f101c396}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!SettingRadius\_Load@{SettingRadius\_Load}}
+\index{SettingRadius\_Load@{SettingRadius\_Load}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{SettingRadius\_Load()}
+{\footnotesize\ttfamily void Optimum.\+Setting\+Radius.\+Setting\+Radius\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a36ecc925d6f5cbce6fdc2e63f101c396_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a36ecc925d6f5cbce6fdc2e63f101c396_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_setting_radius_a1b0d4e39d3a87820343b106235bfc15e}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!trackBarRadius\_Scroll@{trackBarRadius\_Scroll}}
+\index{trackBarRadius\_Scroll@{trackBarRadius\_Scroll}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{trackBarRadius\_Scroll()}
+{\footnotesize\ttfamily void Optimum.\+Setting\+Radius.\+track\+Bar\+Radius\+\_\+\+Scroll (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Прокрутка ползунка 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_setting_radius_a1b0d4e39d3a87820343b106235bfc15e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_setting_radius_a1847ce027a7eefd0dd8f899a23093baf}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!\_flagSaveRadius@{\_flagSaveRadius}}
+\index{\_flagSaveRadius@{\_flagSaveRadius}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{\_flagSaveRadius}
+{\footnotesize\ttfamily bool Optimum.\+Setting\+Radius.\+\_\+flag\+Save\+Radius = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг сохранения радиуса 
+
+\mbox{\label{class_optimum_1_1_setting_radius_aa5e3e253478590fb539f855a70acd765}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!\_mapModel@{\_mapModel}}
+\index{\_mapModel@{\_mapModel}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{\_mapModel}
+{\footnotesize\ttfamily \textbf{ Map\+Model} Optimum.\+Setting\+Radius.\+\_\+map\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объект Map\+Model. 
+
+\mbox{\label{class_optimum_1_1_setting_radius_a761277832d016363dc53dbcfd73d0cf1}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!components@{components}}
+\index{components@{components}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{components}
+{\footnotesize\ttfamily System.\+Component\+Model.\+IContainer Optimum.\+Setting\+Radius.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\label{class_optimum_1_1_setting_radius_a3a6823fedce17aeedb5d81d18fb5898e}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!InputRadius@{InputRadius}}
+\index{InputRadius@{InputRadius}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{InputRadius}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip\+Menu\+Item Optimum.\+Setting\+Radius.\+Input\+Radius\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_setting_radius_ad93f9fffa9deb8dd5d9bd63643fd9989}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!labelInfo@{labelInfo}}
+\index{labelInfo@{labelInfo}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{labelInfo}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Setting\+Radius.\+label\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_setting_radius_a71e381ba5350fa4e1bddbcbf94bf1423}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!labelRadius@{labelRadius}}
+\index{labelRadius@{labelRadius}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{labelRadius}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Setting\+Radius.\+label\+Radius\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_setting_radius_a05254aa647a31b43578352863c182829}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!labelRadiusLong@{labelRadiusLong}}
+\index{labelRadiusLong@{labelRadiusLong}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{labelRadiusLong}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Setting\+Radius.\+label\+Radius\+Long\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_setting_radius_aba110d3cdd3afcef19cbdc70bfa82fde}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!menuStrip@{menuStrip}}
+\index{menuStrip@{menuStrip}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{menuStrip}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Menu\+Strip Optimum.\+Setting\+Radius.\+menu\+Strip\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_setting_radius_a7fe6cebb08dadfe46f9eb09f829fbbb3}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!STEP\_TRACK\_BAR@{STEP\_TRACK\_BAR}}
+\index{STEP\_TRACK\_BAR@{STEP\_TRACK\_BAR}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{STEP\_TRACK\_BAR}
+{\footnotesize\ttfamily const int Optimum.\+Setting\+Radius.\+STEP\+\_\+\+TRACK\+\_\+\+BAR = 50\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Шаг ползунка 
+
+\mbox{\label{class_optimum_1_1_setting_radius_af3faeed518c9296c9bec1d35175147d2}} 
+\index{Optimum.SettingRadius@{Optimum.SettingRadius}!trackBarRadius@{trackBarRadius}}
+\index{trackBarRadius@{trackBarRadius}!Optimum.SettingRadius@{Optimum.SettingRadius}}
+\doxysubsubsection{trackBarRadius}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Track\+Bar Optimum.\+Setting\+Radius.\+track\+Bar\+Radius\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Setting\+Radius.\+cs}\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Setting\+Radius.\+Designer.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="Optimum.StartSettings.buttonLoadPolygons_Click" name="Optimum.StartSettings.buttonLoadPolygons_Click">
+<area shape="rect" id="node1" title="Загрузка файла с полигонами" alt="" coords="5,133,200,173"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="269,69,430,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="248,133,451,173"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="248,197,451,237"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="499,5,664,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="502,69,661,109"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="502,133,661,173"/>
+</map>

@@ -1,0 +1,18 @@
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\bin\Release\MyCalcLib.dll
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\bin\Release\MyCalcLib.pdb
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Release\MyCalcLib.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Release\MyCalcLib.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Release\MyCalcLib.dll
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Release\MyCalcLib.pdb
+C:\Users\PC\Desktop\Оптимум. Аптеки\UnitTests\MyCalcLib\bin\Release\MyCalcLib.dll
+C:\Users\PC\Desktop\Оптимум. Аптеки\UnitTests\MyCalcLib\bin\Release\MyCalcLib.pdb
+C:\Users\PC\Desktop\Оптимум. Аптеки\UnitTests\MyCalcLib\obj\Release\MyCalcLib.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Оптимум. Аптеки\UnitTests\MyCalcLib\obj\Release\MyCalcLib.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Оптимум. Аптеки\UnitTests\MyCalcLib\obj\Release\MyCalcLib.dll
+C:\Users\PC\Desktop\Оптимум. Аптеки\UnitTests\MyCalcLib\obj\Release\MyCalcLib.pdb
+C:\Users\PC\Desktop\UnitTests\MyCalcLib\bin\Release\MyCalcLib.dll
+C:\Users\PC\Desktop\UnitTests\MyCalcLib\bin\Release\MyCalcLib.pdb
+C:\Users\PC\Desktop\UnitTests\MyCalcLib\obj\Release\MyCalcLib.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\UnitTests\MyCalcLib\obj\Release\MyCalcLib.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\UnitTests\MyCalcLib\obj\Release\MyCalcLib.dll
+C:\Users\PC\Desktop\UnitTests\MyCalcLib\obj\Release\MyCalcLib.pdb

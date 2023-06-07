@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Optimum.BufferZone" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQBQAAAAAAAAAAAAAAAAAAAAABgAAAAABA=</HashCode>
+      <FileName>BufferZone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Optimum.Criterion" Collapsed="true">
+    <Position X="2" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAgAAAAAAgAAAAAAAABA=</HashCode>
+      <FileName>Criterion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.Facility" Collapsed="true">
+    <Position X="11" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABiAAAAAAA=</HashCode>
+      <FileName>Facility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.FileValidator" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAABYAAARAIAAAIQAAAAoAgAkCQAAAAAAEBAACEAQ=</HashCode>
+      <FileName>FileValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.Location" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.MapModel" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <AssociationLine Name="sublayerFacility" Type="Optimum.SublayerFacility">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.652" Y="-6.624" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="sublayerBorderPointsTerritory" Type="Optimum.SublayerLocation" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.875" Y="2.062" />
+        <Point X="7.875" Y="2.531" />
+        <Point X="9" Y="2.531" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-6.89" Y="-5.773" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="sublayerPolygonCheck" Type="Optimum.SublayerPolygon">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.438" Y="-6.227" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>GQooIKAUxAhgIEiASAgF0EioDSRgwWQAAQiAhQwDQEo=</HashCode>
+      <FileName>MapModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sublayerFacility" />
+      <Field Name="sublayerBorderPointsTerritory" />
+      <Field Name="sublayerPolygonCheck" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Optimum.MapView" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_mapModel" Type="Optimum.MapModel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="3.25" />
+        <Point X="6" Y="2.939" />
+        <Point X="7.625" Y="2.939" />
+        <Point X="7.625" Y="2.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-9.203" Y="4.464" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_renderFacility" Type="Optimum.RenderFacility" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="3.5" />
+        <Point X="4" Y="3.5" />
+        <Point X="4" Y="3.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-13.295" Y="-4.256" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_renderTerritory" Type="Optimum.RenderTerritory" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.688" Y="3.812" />
+        <Point X="5.688" Y="5.5" />
+        <Point X="4.75" Y="5.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="10.371" Y="-2.117" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_renderAutoPoints" Type="Optimum.RenderAutoPoints" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="3.5" />
+        <Point X="7.625" Y="3.5" />
+        <Point X="7.625" Y="3.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.175" Y="-4.755" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_renderNorma" Type="Optimum.RenderNorma" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="3.812" />
+        <Point X="6.25" Y="4.812" />
+        <Point X="6.75" Y="4.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.608" Y="-3.092" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_renderPolygon" Type="Optimum.RenderPolygon" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.313" Y="3.812" />
+        <Point X="5.313" Y="4.812" />
+        <Point X="4.75" Y="4.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="7.96" Y="-3.446" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_renderUserPoints" Type="Optimum.RenderUserMarker" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.969" Y="3.812" />
+        <Point X="5.969" Y="5.5" />
+        <Point X="6.75" Y="5.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-6.121" Y="-1.594" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAoAQABEEIhQIiABAAmYAgBQAAAAAAAAQBAAAAAACAw=</HashCode>
+      <FileName>MapView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_mapModel" />
+      <Field Name="_renderFacility" />
+      <Field Name="_renderTerritory" />
+      <Field Name="_renderAutoPoints" />
+      <Field Name="_renderNorma" />
+      <Field Name="_renderPolygon" />
+      <Field Name="_renderUserPoints" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Optimum.MathOptimumModel" Collapsed="true">
+    <Position X="2" Y="1.5" Width="1.75" />
+    <AssociationLine Name="_listCriterion" Type="Optimum.Criterion">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-11.01" Y="-5.108" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_listAllOptimalZones" Type="Optimum.OptimalZone">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-11.029" Y="7.338" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAFAAACAAgCAEAwIgEAAQEkAgAEGAAoAgIAgAA=</HashCode>
+      <FileName>MathOptimumModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_listCriterion" />
+      <Field Name="_listAllOptimalZones" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Optimum.OptimalZone" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="optimalZone" Type="Optimum.BufferZone">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="7.825" Y="-7.778" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OptimalZone.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="optimalZone" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Optimum.RenderAutoPoints" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIBAACAQACAAAAAgABAAAAAAABMAAGAAgAAAAQAAAA=</HashCode>
+      <FileName>RenderAutoPoints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.RenderFacility" Collapsed="true">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAEgIBAAEBAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RenderFacility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.RenderNorma" Collapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIBAACAQACAAAAAoABAAAAAAABMAAGAAAAAAAQAAAA=</HashCode>
+      <FileName>RenderNorma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.RenderTerritory" Collapsed="true">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAIAAAAAAAAABAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>RenderTerritory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.RenderUserMarker" Collapsed="true">
+    <Position X="6.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIBAQCAYAGAIQAAgABAAAAAAAAMAAGAAAAAAAQAgAA=</HashCode>
+      <FileName>RenderUserMarker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.SublayerLocation" Collapsed="true">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <AssociationLine Name="listWithLocation" Type="Optimum.Location">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-5.184" Y="-4.853" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACIAAAABIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sublayers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="listWithLocation" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Optimum.SublayerFacility" Collapsed="true">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <AssociationLine Name="listWithFacility" Type="Optimum.Facility">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.194" Y="-5.958" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEIAAAABIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sublayers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="listWithFacility" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Optimum.MainMap" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_mapModel" Type="Optimum.MapModel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-5.869" Y="-6.674" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_mapView" Type="Optimum.MapView" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="2.191" />
+        <Point X="5.75" Y="3.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-8.609" Y="-3.909" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_fileValidator" Type="Optimum.FileValidator" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="1.5" />
+        <Point X="5.75" Y="1.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-8.584" Y="6.25" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_math" Type="Optimum.MathOptimumModel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-5.133" Y="11.351" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>xOfMC/JGsjDCTRH8udefMiaKDwlgls6HNHSAlXQMICs=</HashCode>
+      <FileName>MainMap.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_mapModel" />
+      <Field Name="_mapView" />
+      <Field Name="_fileValidator" />
+      <Field Name="_math" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Optimum.SublayerPolygon" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <AssociationLine Name="listWithPolygons" Type="Optimum.Polygon">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.672" Y="-5.857" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAABYAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sublayers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="listWithPolygons" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Optimum.Polygon" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACGABAAAAAAAAAAAAABAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Polygon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Optimum.RenderPolygon" Collapsed="true">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACgAAAAAABAAAAhAAAAAAKAAAAABAAIAAA=</HashCode>
+      <FileName>RenderPolygon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

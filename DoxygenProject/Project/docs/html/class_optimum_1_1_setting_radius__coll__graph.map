@@ -1,0 +1,10 @@
+<map id="Optimum.SettingRadius" name="Optimum.SettingRadius">
+<area shape="rect" id="node1" title="Класс для окна с установкой радиуса буферной зоны" alt="" coords="242,945,441,1169"/>
+<area shape="rect" id="node2" title=" " alt="" coords="145,483,197,560"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html" title="Класс с данными" alt="" coords="221,248,461,795"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_location.html" title="Класс &quot;Точка на карте&quot;." alt="" coords="5,20,133,127"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_sublayer_facility.html" title="Класс &quot;Слой для объектов социальной инфраструктуры&quot;." alt="" coords="158,5,330,141"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_sublayer_location.html" title="Класс &quot;Слой для точек&quot;." alt="" coords="355,5,533,141"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_sublayer_polygon.html" title="Класс &quot;Слой для полигонов&quot;." alt="" coords="562,5,739,141"/>
+<area shape="rect" id="node8" title=" " alt="" coords="485,483,552,560"/>
+</map>

@@ -1,0 +1,450 @@
+\doxysection{Класс Optimum.\+File\+Validator}
+\label{class_optimum_1_1_file_validator}\index{Optimum.FileValidator@{Optimum.FileValidator}}
+
+
+Класс \char`\"{}Валидация загружаемых и обрабатываемых файлов\char`\"{}.  
+
+
+
+
+Граф связей класса Optimum.\+File\+Validator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_optimum_1_1_file_validator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ File\+Validator} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \end{DoxyCompactList}\item 
+string \textbf{ Validate\+User\+File\+CSV} (string path\+To\+File)
+\begin{DoxyCompactList}\small\item\em Проверка CSV-\/файла, из которого загружаются данные \end{DoxyCompactList}\item 
+string \textbf{ Validate\+User\+File\+Territory} (string path\+To\+File)
+\begin{DoxyCompactList}\small\item\em Проверка корректности файла с граничными точками зоны анализа \end{DoxyCompactList}\item 
+string \textbf{ Validate\+User\+File\+Facility} (string path\+To\+File, List$<$ \textbf{ Location} $>$ list\+Border\+Points\+Territory)
+\begin{DoxyCompactList}\small\item\em Проверка корректности файла с объектами социальной инфраструктуры на целостность данных \end{DoxyCompactList}\item 
+string \textbf{ Validate\+User\+File\+Polygons} (string path\+To\+File, List$<$ \textbf{ Location} $>$ list\+Border\+Points\+Territory, int count\+Criterion)
+\begin{DoxyCompactList}\small\item\em Проверка корректности файла с полигонами на целостность данных \end{DoxyCompactList}\item 
+string \textbf{ File\+Validation\+Create\+CSV} (string path\+To\+File)
+\begin{DoxyCompactList}\small\item\em Проверка CSV-\/файла, в который записывают оптимальные точки, создавая файл \end{DoxyCompactList}\item 
+void \textbf{ Write\+To\+File\+Info\+Optimum\+Zones} (string path\+File, List$<$ \textbf{ Optimal\+Zone} $>$ optimal\+Zones, List$<$ \textbf{ Criterion} $>$ criterion)
+\begin{DoxyCompactList}\small\item\em Запись в CSV-\/файл информации обо всех найденных оптимальных точках \end{DoxyCompactList}\item 
+string \textbf{ Validate\+User\+File\+Norma} (string path\+To\+File, List$<$ \textbf{ Location} $>$ list\+Border\+Points\+Territory, int count\+Criterion)
+\begin{DoxyCompactList}\small\item\em Проверка корректности файла с нормой на душу населения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Sublayer\+Location} \textbf{ \+\_\+sublayer\+Border\+Points\+Territory} = new \textbf{ Sublayer\+Location}()
+\begin{DoxyCompactList}\small\item\em Слой для проверки принадлежности точек зоне анализа \end{DoxyCompactList}\item 
+readonly Culture\+Info \textbf{ \+\_\+culture\+Info} = new Culture\+Info(\char`\"{}ru-\/RU\char`\"{})
+\begin{DoxyCompactList}\small\item\em Настройка для того, чтобы программа работала на английской версии Windows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+const string \textbf{ NOT\+\_\+\+EXTST\+\_\+\+FILE} = \char`\"{}Такого файла не существует\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для ошибок чтения любого CSV-\/файла \end{DoxyCompactList}\item 
+const string \textbf{ NOT\+\_\+\+CSV\+\_\+\+FILE} = \char`\"{}Выберите файл .csv расширения\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для ошибок чтения любого CSV-\/файла \end{DoxyCompactList}\item 
+const string \textbf{ NULL\+\_\+\+NAME\+\_\+\+FILE} = \char`\"{}Имя файла отсутствует\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для ошибок чтения любого CSV-\/файла \end{DoxyCompactList}\item 
+const string \textbf{ FILE\+\_\+\+READ\+\_\+\+ONLY} = \char`\"{}Данный файл доступен только для чтения\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для ошибок чтения любого CSV-\/файла \end{DoxyCompactList}\item 
+const string \textbf{ FILE\+\_\+\+EMPTY} = \char`\"{}Данный файл не содержит данных\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для ошибок чтения любого CSV-\/файла \end{DoxyCompactList}\item 
+const string \textbf{ FILE\+\_\+\+HAS\+\_\+\+BIG\+\_\+\+SIZE} = \char`\"{}Данный файл слишком большого размера\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для ошибок чтения любого CSV-\/файла \end{DoxyCompactList}\item 
+const string \textbf{ SUCCESSFUL\+\_\+\+LOAD} = \char`\"{}Успешно\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для ошибок чтения любого CSV-\/файла \end{DoxyCompactList}\item 
+const string \textbf{ COORDINATES\+\_\+\+OUTSIDE\+\_\+\+TERRITORY} = \char`\"{}Координаты находятся за границами зоны анализа\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для проверки объектов социальной инфраструктуры из файла пользователя \end{DoxyCompactList}\item 
+const string \textbf{ UNSUCCESSFUL\+\_\+\+ATTEMPT\+\_\+\+READ\+\_\+\+DATA} = \char`\"{}Неверный формат хранения данных\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для проверки объектов социальной инфраструктуры из файла пользователя \end{DoxyCompactList}\item 
+const string \textbf{ COUNT\+\_\+\+OF\+\_\+\+BOUNDARY\+\_\+\+POINTS\+\_\+\+LESS\+\_\+\+THREE} = \char`\"{}Количество граничных точек не может быть меньше трех\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для проверки полигонов из файла пользователя \end{DoxyCompactList}\item 
+const string \textbf{ VALUE\+\_\+\+OF\+\_\+\+CRITERION\+\_\+\+LESS\+\_\+\+THAN\+\_\+\+ZERO} = \char`\"{}Значение критерия не может быть меньше нуля\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для проверки полигонов из файла пользователя \end{DoxyCompactList}\item 
+const string \textbf{ COUNT\+\_\+\+OF\+\_\+\+CRITERION\+\_\+\+LESS\+\_\+\+THAN\+\_\+\+TWO} = \char`\"{}Должно быть минимум два критерия\+: Население и Объекты инфраструктуры\char`\"{}
+\begin{DoxyCompactList}\small\item\em Константа для проверки файла для поиска нормы на душу населения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \char`\"{}Валидация загружаемых и обрабатываемых файлов\char`\"{}. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_file_validator_abc173a55c6c0c1b6a91beee50b7a5d65}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!FileValidator@{FileValidator}}
+\index{FileValidator@{FileValidator}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{FileValidator()}
+{\footnotesize\ttfamily Optimum.\+File\+Validator.\+File\+Validator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public 
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_file_validator_a6e3b7b63c3b007fc7c0208bb73f48466}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!FileValidationCreateCSV@{FileValidationCreateCSV}}
+\index{FileValidationCreateCSV@{FileValidationCreateCSV}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{FileValidationCreateCSV()}
+{\footnotesize\ttfamily string Optimum.\+File\+Validator.\+File\+Validation\+Create\+CSV (\begin{DoxyParamCaption}\item[{string}]{path\+To\+File }\end{DoxyParamCaption})}
+
+
+
+Проверка CSV-\/файла, в который записывают оптимальные точки, создавая файл 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Результат проверки файла
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_file_validator_a6e3b7b63c3b007fc7c0208bb73f48466_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_file_validator_a8dd7862063cf94253112932b6bea6d82}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!ValidateUserFileCSV@{ValidateUserFileCSV}}
+\index{ValidateUserFileCSV@{ValidateUserFileCSV}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{ValidateUserFileCSV()}
+{\footnotesize\ttfamily string Optimum.\+File\+Validator.\+Validate\+User\+File\+CSV (\begin{DoxyParamCaption}\item[{string}]{path\+To\+File }\end{DoxyParamCaption})}
+
+
+
+Проверка CSV-\/файла, из которого загружаются данные 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public 
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу\\
+\hline
+\end{DoxyParams}
+
+
+Функция проверяет файл на соответствие бизнес-\/требованиям 
+
+\begin{DoxyReturn}{Возвращает}
+Результат проверки файла
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_file_validator_a8dd7862063cf94253112932b6bea6d82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_file_validator_a6f550a9c2633358e90f1a13a3868216c}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!ValidateUserFileFacility@{ValidateUserFileFacility}}
+\index{ValidateUserFileFacility@{ValidateUserFileFacility}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{ValidateUserFileFacility()}
+{\footnotesize\ttfamily string Optimum.\+File\+Validator.\+Validate\+User\+File\+Facility (\begin{DoxyParamCaption}\item[{string}]{path\+To\+File,  }\item[{List$<$ \textbf{ Location} $>$}]{list\+Border\+Points\+Territory }\end{DoxyParamCaption})}
+
+
+
+Проверка корректности файла с объектами социальной инфраструктуры на целостность данных 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу с объектами социальной инфраструктуры\\
+\hline
+{\em list\+Border\+Points\+Territory} & Список граничных точек зоны анализа\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Результат проверки файла
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_file_validator_a6f550a9c2633358e90f1a13a3868216c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_file_validator_a5df84646fe657e7756b5e5320ee1faca}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!ValidateUserFileNorma@{ValidateUserFileNorma}}
+\index{ValidateUserFileNorma@{ValidateUserFileNorma}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{ValidateUserFileNorma()}
+{\footnotesize\ttfamily string Optimum.\+File\+Validator.\+Validate\+User\+File\+Norma (\begin{DoxyParamCaption}\item[{string}]{path\+To\+File,  }\item[{List$<$ \textbf{ Location} $>$}]{list\+Border\+Points\+Territory,  }\item[{int}]{count\+Criterion }\end{DoxyParamCaption})}
+
+
+
+Проверка корректности файла с нормой на душу населения 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу\\
+\hline
+{\em list\+Border\+Points\+Territory} & Граничные точки зоны анализа\\
+\hline
+{\em count\+Criterion} & Количество критериев оптимальности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_file_validator_a5df84646fe657e7756b5e5320ee1faca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_file_validator_aa322bbc4dc0f18a25168a79a42c80c5d}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!ValidateUserFilePolygons@{ValidateUserFilePolygons}}
+\index{ValidateUserFilePolygons@{ValidateUserFilePolygons}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{ValidateUserFilePolygons()}
+{\footnotesize\ttfamily string Optimum.\+File\+Validator.\+Validate\+User\+File\+Polygons (\begin{DoxyParamCaption}\item[{string}]{path\+To\+File,  }\item[{List$<$ \textbf{ Location} $>$}]{list\+Border\+Points\+Territory,  }\item[{int}]{count\+Criterion }\end{DoxyParamCaption})}
+
+
+
+Проверка корректности файла с полигонами на целостность данных 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу с полигонами\\
+\hline
+{\em list\+Border\+Points\+Territory} & Список граничных точек зоны анализа\\
+\hline
+{\em count\+Criterion} & Количество критериев оптимальности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Результат проверки файла
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_file_validator_aa322bbc4dc0f18a25168a79a42c80c5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_file_validator_aa616dbd607869ba5f43c0067e99ce345}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!ValidateUserFileTerritory@{ValidateUserFileTerritory}}
+\index{ValidateUserFileTerritory@{ValidateUserFileTerritory}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{ValidateUserFileTerritory()}
+{\footnotesize\ttfamily string Optimum.\+File\+Validator.\+Validate\+User\+File\+Territory (\begin{DoxyParamCaption}\item[{string}]{path\+To\+File }\end{DoxyParamCaption})}
+
+
+
+Проверка корректности файла с граничными точками зоны анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу с граничными точками\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Результат проверки файла
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_file_validator_aa616dbd607869ba5f43c0067e99ce345_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_file_validator_aa7b996e6e533b49cc8320995ce3ab71d}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!WriteToFileInfoOptimumZones@{WriteToFileInfoOptimumZones}}
+\index{WriteToFileInfoOptimumZones@{WriteToFileInfoOptimumZones}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{WriteToFileInfoOptimumZones()}
+{\footnotesize\ttfamily void Optimum.\+File\+Validator.\+Write\+To\+File\+Info\+Optimum\+Zones (\begin{DoxyParamCaption}\item[{string}]{path\+File,  }\item[{List$<$ \textbf{ Optimal\+Zone} $>$}]{optimal\+Zones,  }\item[{List$<$ \textbf{ Criterion} $>$}]{criterion }\end{DoxyParamCaption})}
+
+
+
+Запись в CSV-\/файл информации обо всех найденных оптимальных точках 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+File} & Путь к файлу для записи\\
+\hline
+{\em optimal\+Zones} & Оптимальные точки\\
+\hline
+{\em criterion} & Список критериев\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_file_validator_aa7b996e6e533b49cc8320995ce3ab71d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_file_validator_aebe2a73d45e0e83dea987b4d84bf566f}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!\_cultureInfo@{\_cultureInfo}}
+\index{\_cultureInfo@{\_cultureInfo}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{\_cultureInfo}
+{\footnotesize\ttfamily readonly Culture\+Info Optimum.\+File\+Validator.\+\_\+culture\+Info = new Culture\+Info(\char`\"{}ru-\/RU\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Настройка для того, чтобы программа работала на английской версии Windows. 
+
+\mbox{\label{class_optimum_1_1_file_validator_a9800d0ba5c8e51a298d4368bbdd96128}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!\_sublayerBorderPointsTerritory@{\_sublayerBorderPointsTerritory}}
+\index{\_sublayerBorderPointsTerritory@{\_sublayerBorderPointsTerritory}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{\_sublayerBorderPointsTerritory}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+File\+Validator.\+\_\+sublayer\+Border\+Points\+Territory = new \textbf{ Sublayer\+Location}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой для проверки принадлежности точек зоне анализа 
+
+\mbox{\label{class_optimum_1_1_file_validator_a89748b56c346f7f5ba46efe66d127113}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!COORDINATES\_OUTSIDE\_TERRITORY@{COORDINATES\_OUTSIDE\_TERRITORY}}
+\index{COORDINATES\_OUTSIDE\_TERRITORY@{COORDINATES\_OUTSIDE\_TERRITORY}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{COORDINATES\_OUTSIDE\_TERRITORY}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+COORDINATES\+\_\+\+OUTSIDE\+\_\+\+TERRITORY = \char`\"{}Координаты находятся за границами зоны анализа\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для проверки объектов социальной инфраструктуры из файла пользователя 
+
+\mbox{\label{class_optimum_1_1_file_validator_ae1d5e07a60c1249a88f0de88d5122b43}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!COUNT\_OF\_BOUNDARY\_POINTS\_LESS\_THREE@{COUNT\_OF\_BOUNDARY\_POINTS\_LESS\_THREE}}
+\index{COUNT\_OF\_BOUNDARY\_POINTS\_LESS\_THREE@{COUNT\_OF\_BOUNDARY\_POINTS\_LESS\_THREE}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{COUNT\_OF\_BOUNDARY\_POINTS\_LESS\_THREE}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+COUNT\+\_\+\+OF\+\_\+\+BOUNDARY\+\_\+\+POINTS\+\_\+\+LESS\+\_\+\+THREE = \char`\"{}Количество граничных точек не может быть меньше трех\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для проверки полигонов из файла пользователя 
+
+\mbox{\label{class_optimum_1_1_file_validator_a2840305615f6623e05272495aac5ccd8}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!COUNT\_OF\_CRITERION\_LESS\_THAN\_TWO@{COUNT\_OF\_CRITERION\_LESS\_THAN\_TWO}}
+\index{COUNT\_OF\_CRITERION\_LESS\_THAN\_TWO@{COUNT\_OF\_CRITERION\_LESS\_THAN\_TWO}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{COUNT\_OF\_CRITERION\_LESS\_THAN\_TWO}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+COUNT\+\_\+\+OF\+\_\+\+CRITERION\+\_\+\+LESS\+\_\+\+THAN\+\_\+\+TWO = \char`\"{}Должно быть минимум два критерия\+: Население и Объекты инфраструктуры\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для проверки файла для поиска нормы на душу населения 
+
+\mbox{\label{class_optimum_1_1_file_validator_a6c35275be809e484fc880e7711e745b6}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!FILE\_EMPTY@{FILE\_EMPTY}}
+\index{FILE\_EMPTY@{FILE\_EMPTY}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{FILE\_EMPTY}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+FILE\+\_\+\+EMPTY = \char`\"{}Данный файл не содержит данных\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для ошибок чтения любого CSV-\/файла 
+
+\mbox{\label{class_optimum_1_1_file_validator_a53da0a54ec386235b12b19fc6140b4bf}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!FILE\_HAS\_BIG\_SIZE@{FILE\_HAS\_BIG\_SIZE}}
+\index{FILE\_HAS\_BIG\_SIZE@{FILE\_HAS\_BIG\_SIZE}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{FILE\_HAS\_BIG\_SIZE}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+FILE\+\_\+\+HAS\+\_\+\+BIG\+\_\+\+SIZE = \char`\"{}Данный файл слишком большого размера\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для ошибок чтения любого CSV-\/файла 
+
+\mbox{\label{class_optimum_1_1_file_validator_a5e1a0df48bd93b9c66e212fa5a79a3a3}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!FILE\_READ\_ONLY@{FILE\_READ\_ONLY}}
+\index{FILE\_READ\_ONLY@{FILE\_READ\_ONLY}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{FILE\_READ\_ONLY}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+FILE\+\_\+\+READ\+\_\+\+ONLY = \char`\"{}Данный файл доступен только для чтения\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для ошибок чтения любого CSV-\/файла 
+
+\mbox{\label{class_optimum_1_1_file_validator_aa4c299fa66e62bb9fdc6921798d58d01}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!NOT\_CSV\_FILE@{NOT\_CSV\_FILE}}
+\index{NOT\_CSV\_FILE@{NOT\_CSV\_FILE}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{NOT\_CSV\_FILE}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+NOT\+\_\+\+CSV\+\_\+\+FILE = \char`\"{}Выберите файл .csv расширения\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для ошибок чтения любого CSV-\/файла 
+
+\mbox{\label{class_optimum_1_1_file_validator_ab11ca6d7049a7f1f268a121231b4b748}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!NOT\_EXTST\_FILE@{NOT\_EXTST\_FILE}}
+\index{NOT\_EXTST\_FILE@{NOT\_EXTST\_FILE}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{NOT\_EXTST\_FILE}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+NOT\+\_\+\+EXTST\+\_\+\+FILE = \char`\"{}Такого файла не существует\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для ошибок чтения любого CSV-\/файла 
+
+\mbox{\label{class_optimum_1_1_file_validator_a0a9436b319592504d9378271cfa9f41f}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!NULL\_NAME\_FILE@{NULL\_NAME\_FILE}}
+\index{NULL\_NAME\_FILE@{NULL\_NAME\_FILE}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{NULL\_NAME\_FILE}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+NULL\+\_\+\+NAME\+\_\+\+FILE = \char`\"{}Имя файла отсутствует\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для ошибок чтения любого CSV-\/файла 
+
+\mbox{\label{class_optimum_1_1_file_validator_a667718cd51640022566a35ff75da500f}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!SUCCESSFUL\_LOAD@{SUCCESSFUL\_LOAD}}
+\index{SUCCESSFUL\_LOAD@{SUCCESSFUL\_LOAD}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{SUCCESSFUL\_LOAD}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+SUCCESSFUL\+\_\+\+LOAD = \char`\"{}Успешно\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для ошибок чтения любого CSV-\/файла 
+
+\mbox{\label{class_optimum_1_1_file_validator_a819667f1dfad8e6f64af521b4b2cfd7e}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!UNSUCCESSFUL\_ATTEMPT\_READ\_DATA@{UNSUCCESSFUL\_ATTEMPT\_READ\_DATA}}
+\index{UNSUCCESSFUL\_ATTEMPT\_READ\_DATA@{UNSUCCESSFUL\_ATTEMPT\_READ\_DATA}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{UNSUCCESSFUL\_ATTEMPT\_READ\_DATA}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+UNSUCCESSFUL\+\_\+\+ATTEMPT\+\_\+\+READ\+\_\+\+DATA = \char`\"{}Неверный формат хранения данных\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для проверки объектов социальной инфраструктуры из файла пользователя 
+
+\mbox{\label{class_optimum_1_1_file_validator_a1a920d50fc27d33b5cec35dca794da43}} 
+\index{Optimum.FileValidator@{Optimum.FileValidator}!VALUE\_OF\_CRITERION\_LESS\_THAN\_ZERO@{VALUE\_OF\_CRITERION\_LESS\_THAN\_ZERO}}
+\index{VALUE\_OF\_CRITERION\_LESS\_THAN\_ZERO@{VALUE\_OF\_CRITERION\_LESS\_THAN\_ZERO}!Optimum.FileValidator@{Optimum.FileValidator}}
+\doxysubsubsection{VALUE\_OF\_CRITERION\_LESS\_THAN\_ZERO}
+{\footnotesize\ttfamily const string Optimum.\+File\+Validator.\+VALUE\+\_\+\+OF\+\_\+\+CRITERION\+\_\+\+LESS\+\_\+\+THAN\+\_\+\+ZERO = \char`\"{}Значение критерия не может быть меньше нуля\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Константа для проверки полигонов из файла пользователя 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ File\+Validator.\+cs}\end{DoxyCompactItemize}

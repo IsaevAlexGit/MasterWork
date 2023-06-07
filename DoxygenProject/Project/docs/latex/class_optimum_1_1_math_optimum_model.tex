@@ -1,0 +1,560 @@
+\doxysection{Класс Optimum.\+Math\+Optimum\+Model}
+\label{class_optimum_1_1_math_optimum_model}\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+
+
+Класс \char`\"{}Математика\char`\"{}.  
+
+
+
+
+Граф связей класса Optimum.\+Math\+Optimum\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_optimum_1_1_math_optimum_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Pair}
+\begin{DoxyCompactList}\small\item\em Класс \char`\"{}Пара\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Math\+Optimum\+Model} (List$<$ \textbf{ Buffer\+Zone} $>$ array\+Buffers, List$<$ \textbf{ Criterion} $>$ criterion)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+List$<$ \textbf{ Optimal\+Zone} $>$ \textbf{ Get\+Optimum} ()
+\begin{DoxyCompactList}\small\item\em Получение оптимальной точки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ \+\_\+\+Maximization\+Of\+Criterion} ()
+\begin{DoxyCompactList}\small\item\em Максимизация всех параметров \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Search\+Max\+Min\+For\+Each\+Criterion} ()
+\begin{DoxyCompactList}\small\item\em Поиск максимума и минимума для каждого критерия \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Normalization} ()
+\begin{DoxyCompactList}\small\item\em Нормализация всех критериев \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Linear\+Convolution} ()
+\begin{DoxyCompactList}\small\item\em Линейная свертка \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Multiplicative\+Convolution} ()
+\begin{DoxyCompactList}\small\item\em Мультипликативная свертка \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Aggregation\+Convolution} ()
+\begin{DoxyCompactList}\small\item\em Свертка агрегирования \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Hermeier\+Convolution} ()
+\begin{DoxyCompactList}\small\item\em Свертка Гермейера \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+\+Check\+Is\+Main\+Method} ()
+\begin{DoxyCompactList}\small\item\em Проверка использования метода главного критерия \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Main\+Criterion\+Method} ()
+\begin{DoxyCompactList}\small\item\em Метод главного критерия \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Create\+Utopia\+Point} ()
+\begin{DoxyCompactList}\small\item\em Создать идеальную точку \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Ideal\+Point\+Chebyshev\+Metric\+Convolution} ()
+\begin{DoxyCompactList}\small\item\em Свертка на основе идеальной точки по метрике Чебышева \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Ideal\+Point\+Hamming\+Metric\+Convolution} ()
+\begin{DoxyCompactList}\small\item\em Свертка на основе идеальной точки по метрике Хемминг \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Ideal\+Point\+Euclidean\+Metric\+Convolution} ()
+\begin{DoxyCompactList}\small\item\em Свертка на основе идеальной точки по метрике Евклида \end{DoxyCompactList}\item 
+List$<$ \textbf{ Optimal\+Zone} $>$ \textbf{ \+\_\+\+Get\+Optimal\+Zones\+Dision\+Making} ()
+\begin{DoxyCompactList}\small\item\em Вернуть список оптимальных точек \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Clone\+Values\+From\+List\+Normalization\+To\+List\+Start\+Zones} ()
+\begin{DoxyCompactList}\small\item\em Клонирование буферных зон \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Pair} $>$ \textbf{ \+\_\+pair\+Info\+Optimum} = new List$<$\textbf{ Pair}$>$()
+\begin{DoxyCompactList}\small\item\em Пара, которую возвращает каждая свертка -\/ ID оптимума и название свертки \end{DoxyCompactList}\item 
+List$<$ \textbf{ Buffer\+Zone} $>$ \textbf{ \+\_\+list\+For\+Normalization} = new List$<$\textbf{ Buffer\+Zone}$>$()
+\begin{DoxyCompactList}\small\item\em Список буферных зон, который нормализуется (для изменения) \end{DoxyCompactList}\item 
+List$<$ \textbf{ Buffer\+Zone} $>$ \textbf{ \+\_\+list\+With\+Start\+Zones} = new List$<$\textbf{ Buffer\+Zone}$>$()
+\begin{DoxyCompactList}\small\item\em Список буферных зон с карты (без изменения) \end{DoxyCompactList}\item 
+readonly List$<$ \textbf{ Criterion} $>$ \textbf{ \+\_\+list\+Criterion} = new List$<$\textbf{ Criterion}$>$()
+\begin{DoxyCompactList}\small\item\em Список критериев оптимальности \end{DoxyCompactList}\item 
+List$<$ \textbf{ Optimal\+Zone} $>$ \textbf{ \+\_\+list\+All\+Optimal\+Zones} = new List$<$\textbf{ Optimal\+Zone}$>$()
+\begin{DoxyCompactList}\small\item\em Список всех уникальных оптимумов \end{DoxyCompactList}\item 
+\textbf{ Optimal\+Zone} \textbf{ \+\_\+utopia\+Point} = new \textbf{ Optimal\+Zone}()
+\begin{DoxyCompactList}\small\item\em Утопическая точка \end{DoxyCompactList}\item 
+List$<$ double $>$ \textbf{ \+\_\+minimums} = new List$<$double$>$()
+\begin{DoxyCompactList}\small\item\em Тут хранится минимум для каждого из Х критериев -\/ Х минимумов по каждому критерию \end{DoxyCompactList}\item 
+List$<$ double $>$ \textbf{ \+\_\+maximums} = new List$<$double$>$()
+\begin{DoxyCompactList}\small\item\em Тут хранится максимум для каждого из Х критериев -\/ Х максимумов по каждому критерию \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+const double \textbf{ AGGREGATION\+\_\+\+COEFFICIENT} = 2
+\begin{DoxyCompactList}\small\item\em Коэффициент агрегирования, 0 -\/ нельзя, p-\/$>$0 -\/ мультипликативная, p=1 -\/ линайная \end{DoxyCompactList}\item 
+const double \textbf{ THRESHOLD} = 0.\+3999
+\begin{DoxyCompactList}\small\item\em Пороговое значение, разница между двумя важными приоритетатми выше этого значения, то метод главного критерия используется \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \char`\"{}Математика\char`\"{}. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a5ce793da787b108bcf30d4ecda18d6a4}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!MathOptimumModel@{MathOptimumModel}}
+\index{MathOptimumModel@{MathOptimumModel}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{MathOptimumModel()}
+{\footnotesize\ttfamily Optimum.\+Math\+Optimum\+Model.\+Math\+Optimum\+Model (\begin{DoxyParamCaption}\item[{List$<$ \textbf{ Buffer\+Zone} $>$}]{array\+Buffers,  }\item[{List$<$ \textbf{ Criterion} $>$}]{criterion }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em array\+Buffers} & Все буферные зоны на карте\\
+\hline
+{\em criterion} & Критерии оптимальности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public 
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a1de922b18d4bbc474dcc1c3e482259aa}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_AggregationConvolution@{\_AggregationConvolution}}
+\index{\_AggregationConvolution@{\_AggregationConvolution}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_AggregationConvolution()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Aggregation\+Convolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Свертка агрегирования 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a1de922b18d4bbc474dcc1c3e482259aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a149243ecc0aecf0d5771bff83559be17}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_CheckIsMainMethod@{\_CheckIsMainMethod}}
+\index{\_CheckIsMainMethod@{\_CheckIsMainMethod}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_CheckIsMainMethod()}
+{\footnotesize\ttfamily bool Optimum.\+Math\+Optimum\+Model.\+\_\+\+Check\+Is\+Main\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка использования метода главного критерия 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Флаг используется метод или нет
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a149243ecc0aecf0d5771bff83559be17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_ae48c5d649e7cee20e8833748a607f3d9}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_CloneValuesFromListNormalizationToListStartZones@{\_CloneValuesFromListNormalizationToListStartZones}}
+\index{\_CloneValuesFromListNormalizationToListStartZones@{\_CloneValuesFromListNormalizationToListStartZones}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_CloneValuesFromListNormalizationToListStartZones()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Clone\+Values\+From\+List\+Normalization\+To\+List\+Start\+Zones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Клонирование буферных зон 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_ae48c5d649e7cee20e8833748a607f3d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_aa26d6e747309da49dab4d285e88728e9}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_CreateUtopiaPoint@{\_CreateUtopiaPoint}}
+\index{\_CreateUtopiaPoint@{\_CreateUtopiaPoint}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_CreateUtopiaPoint()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Create\+Utopia\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Создать идеальную точку 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_aa26d6e747309da49dab4d285e88728e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_ac375dcd4f3becb6685a3c0c22354a8f2}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_GetOptimalZonesDisionMaking@{\_GetOptimalZonesDisionMaking}}
+\index{\_GetOptimalZonesDisionMaking@{\_GetOptimalZonesDisionMaking}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_GetOptimalZonesDisionMaking()}
+{\footnotesize\ttfamily List$<$ \textbf{ Optimal\+Zone} $>$ Optimum.\+Math\+Optimum\+Model.\+\_\+\+Get\+Optimal\+Zones\+Dision\+Making (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Вернуть список оптимальных точек 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Список оптимальных точек
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_ac375dcd4f3becb6685a3c0c22354a8f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_ad031b393cb589562b6c8cae381318f36}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_HermeierConvolution@{\_HermeierConvolution}}
+\index{\_HermeierConvolution@{\_HermeierConvolution}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_HermeierConvolution()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Hermeier\+Convolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Свертка Гермейера 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_ad031b393cb589562b6c8cae381318f36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a864ba41f67c28cf7e81bff0f0f7b29ff}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_IdealPointChebyshevMetricConvolution@{\_IdealPointChebyshevMetricConvolution}}
+\index{\_IdealPointChebyshevMetricConvolution@{\_IdealPointChebyshevMetricConvolution}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_IdealPointChebyshevMetricConvolution()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Ideal\+Point\+Chebyshev\+Metric\+Convolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Свертка на основе идеальной точки по метрике Чебышева 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a864ba41f67c28cf7e81bff0f0f7b29ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a4a692b62493f2b7226ebe315e87b4d81}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_IdealPointEuclideanMetricConvolution@{\_IdealPointEuclideanMetricConvolution}}
+\index{\_IdealPointEuclideanMetricConvolution@{\_IdealPointEuclideanMetricConvolution}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_IdealPointEuclideanMetricConvolution()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Ideal\+Point\+Euclidean\+Metric\+Convolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Свертка на основе идеальной точки по метрике Евклида 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a4a692b62493f2b7226ebe315e87b4d81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a6032287ad644bbb5dda7e6e79413440a}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_IdealPointHammingMetricConvolution@{\_IdealPointHammingMetricConvolution}}
+\index{\_IdealPointHammingMetricConvolution@{\_IdealPointHammingMetricConvolution}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_IdealPointHammingMetricConvolution()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Ideal\+Point\+Hamming\+Metric\+Convolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Свертка на основе идеальной точки по метрике Хемминг 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a6032287ad644bbb5dda7e6e79413440a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a1588f560e1ed68193ad513b27f8f2bff}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_LinearConvolution@{\_LinearConvolution}}
+\index{\_LinearConvolution@{\_LinearConvolution}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_LinearConvolution()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Linear\+Convolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Линейная свертка 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a1588f560e1ed68193ad513b27f8f2bff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a9a42665dc76a20c292631621a6ea8c34}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_MainCriterionMethod@{\_MainCriterionMethod}}
+\index{\_MainCriterionMethod@{\_MainCriterionMethod}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_MainCriterionMethod()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Main\+Criterion\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод главного критерия 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a9a42665dc76a20c292631621a6ea8c34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_ad1884ca72ec946d388676dd376326fe3}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_MaximizationOfCriterion@{\_MaximizationOfCriterion}}
+\index{\_MaximizationOfCriterion@{\_MaximizationOfCriterion}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_MaximizationOfCriterion()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Maximization\+Of\+Criterion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Максимизация всех параметров 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_ad1884ca72ec946d388676dd376326fe3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_a01903b3b22625b22165c2b874e6ba786}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_MultiplicativeConvolution@{\_MultiplicativeConvolution}}
+\index{\_MultiplicativeConvolution@{\_MultiplicativeConvolution}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_MultiplicativeConvolution()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Multiplicative\+Convolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Мультипликативная свертка 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_a01903b3b22625b22165c2b874e6ba786_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_af7a1621d7101a5df10e0776368fde1e8}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_Normalization@{\_Normalization}}
+\index{\_Normalization@{\_Normalization}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_Normalization()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Normalization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Нормализация всех критериев 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_af7a1621d7101a5df10e0776368fde1e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_ad17221d456e3de43a36c64fe2d67e35b}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_SearchMaxMinForEachCriterion@{\_SearchMaxMinForEachCriterion}}
+\index{\_SearchMaxMinForEachCriterion@{\_SearchMaxMinForEachCriterion}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_SearchMaxMinForEachCriterion()}
+{\footnotesize\ttfamily void Optimum.\+Math\+Optimum\+Model.\+\_\+\+Search\+Max\+Min\+For\+Each\+Criterion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Поиск максимума и минимума для каждого критерия 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_ad17221d456e3de43a36c64fe2d67e35b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_math_optimum_model_acb57e10bd4ac9bea230ca27e9b6b9e87}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!GetOptimum@{GetOptimum}}
+\index{GetOptimum@{GetOptimum}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{GetOptimum()}
+{\footnotesize\ttfamily List$<$ \textbf{ Optimal\+Zone} $>$ Optimum.\+Math\+Optimum\+Model.\+Get\+Optimum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение оптимальной точки 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Возвращает}
+Список оптимальных точек
+\end{DoxyReturn}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_optimum_1_1_math_optimum_model_acb57e10bd4ac9bea230ca27e9b6b9e87_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_math_optimum_model_acb57e10bd4ac9bea230ca27e9b6b9e87_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_math_optimum_model_aa5f25d572f5b37ca23819d6f1c751b0f}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_listAllOptimalZones@{\_listAllOptimalZones}}
+\index{\_listAllOptimalZones@{\_listAllOptimalZones}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_listAllOptimalZones}
+{\footnotesize\ttfamily List$<$\textbf{ Optimal\+Zone}$>$ Optimum.\+Math\+Optimum\+Model.\+\_\+list\+All\+Optimal\+Zones = new List$<$\textbf{ Optimal\+Zone}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список всех уникальных оптимумов 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a21be229b2b91d9eb08e8103868c568f9}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_listCriterion@{\_listCriterion}}
+\index{\_listCriterion@{\_listCriterion}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_listCriterion}
+{\footnotesize\ttfamily readonly List$<$\textbf{ Criterion}$>$ Optimum.\+Math\+Optimum\+Model.\+\_\+list\+Criterion = new List$<$\textbf{ Criterion}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список критериев оптимальности 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a32c78a9c1d3d438940f788761ffd0847}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_listForNormalization@{\_listForNormalization}}
+\index{\_listForNormalization@{\_listForNormalization}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_listForNormalization}
+{\footnotesize\ttfamily List$<$\textbf{ Buffer\+Zone}$>$ Optimum.\+Math\+Optimum\+Model.\+\_\+list\+For\+Normalization = new List$<$\textbf{ Buffer\+Zone}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список буферных зон, который нормализуется (для изменения) 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a970b72e1d94ca6620cfb7f62663addf2}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_listWithStartZones@{\_listWithStartZones}}
+\index{\_listWithStartZones@{\_listWithStartZones}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_listWithStartZones}
+{\footnotesize\ttfamily List$<$\textbf{ Buffer\+Zone}$>$ Optimum.\+Math\+Optimum\+Model.\+\_\+list\+With\+Start\+Zones = new List$<$\textbf{ Buffer\+Zone}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список буферных зон с карты (без изменения) 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a42701af18e368d027b991043b9d60196}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_maximums@{\_maximums}}
+\index{\_maximums@{\_maximums}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_maximums}
+{\footnotesize\ttfamily List$<$double$>$ Optimum.\+Math\+Optimum\+Model.\+\_\+maximums = new List$<$double$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Тут хранится максимум для каждого из Х критериев -\/ Х максимумов по каждому критерию 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_aae61c353a49436429906863cd9f1f523}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_minimums@{\_minimums}}
+\index{\_minimums@{\_minimums}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_minimums}
+{\footnotesize\ttfamily List$<$double$>$ Optimum.\+Math\+Optimum\+Model.\+\_\+minimums = new List$<$double$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Тут хранится минимум для каждого из Х критериев -\/ Х минимумов по каждому критерию 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a13094c0bc113387bd940d7b2d5af96cd}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_pairInfoOptimum@{\_pairInfoOptimum}}
+\index{\_pairInfoOptimum@{\_pairInfoOptimum}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_pairInfoOptimum}
+{\footnotesize\ttfamily List$<$\textbf{ Pair}$>$ Optimum.\+Math\+Optimum\+Model.\+\_\+pair\+Info\+Optimum = new List$<$\textbf{ Pair}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Пара, которую возвращает каждая свертка -\/ ID оптимума и название свертки 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a448b5bab2d86e642c6cbe00f712db2ab}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!\_utopiaPoint@{\_utopiaPoint}}
+\index{\_utopiaPoint@{\_utopiaPoint}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{\_utopiaPoint}
+{\footnotesize\ttfamily \textbf{ Optimal\+Zone} Optimum.\+Math\+Optimum\+Model.\+\_\+utopia\+Point = new \textbf{ Optimal\+Zone}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Утопическая точка 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a09b390e898504803d15678fe2d908d98}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!AGGREGATION\_COEFFICIENT@{AGGREGATION\_COEFFICIENT}}
+\index{AGGREGATION\_COEFFICIENT@{AGGREGATION\_COEFFICIENT}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{AGGREGATION\_COEFFICIENT}
+{\footnotesize\ttfamily const double Optimum.\+Math\+Optimum\+Model.\+AGGREGATION\+\_\+\+COEFFICIENT = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Коэффициент агрегирования, 0 -\/ нельзя, p-\/$>$0 -\/ мультипликативная, p=1 -\/ линайная 
+
+\mbox{\label{class_optimum_1_1_math_optimum_model_a23aa29a206e6f7ae4ecba01f097d2ea9}} 
+\index{Optimum.MathOptimumModel@{Optimum.MathOptimumModel}!THRESHOLD@{THRESHOLD}}
+\index{THRESHOLD@{THRESHOLD}!Optimum.MathOptimumModel@{Optimum.MathOptimumModel}}
+\doxysubsubsection{THRESHOLD}
+{\footnotesize\ttfamily const double Optimum.\+Math\+Optimum\+Model.\+THRESHOLD = 0.\+3999\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Пороговое значение, разница между двумя важными приоритетатми выше этого значения, то метод главного критерия используется 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Math\+Optimum\+Model.\+cs}\end{DoxyCompactItemize}

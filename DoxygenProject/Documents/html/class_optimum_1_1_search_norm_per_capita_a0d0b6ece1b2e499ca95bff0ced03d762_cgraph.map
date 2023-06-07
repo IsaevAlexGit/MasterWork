@@ -1,0 +1,52 @@
+<map id="Optimum.SearchNormPerCapita.SearchNormPerCapita" name="Optimum.SearchNormPerCapita.SearchNormPerCapita">
+<area shape="rect" id="node1" title="Инициализация формы" alt="" coords="5,1019,217,1059"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="265,1019,477,1059"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="541,539,789,579"/>
+<area shape="rect" id="node25" href="$class_optimum_1_1_search_norm_per_capita.html#af7c9b1aaa4a06297354ec1d81eb4362b" title="Скрыть норму" alt="" coords="541,891,789,931"/>
+<area shape="rect" id="node26" href="$class_optimum_1_1_search_norm_per_capita.html#a8fcc987c977e880755c215c59214b223" title="Открытие руководства пользователя в HTML." alt="" coords="541,955,789,995"/>
+<area shape="rect" id="node27" href="$class_optimum_1_1_search_norm_per_capita.html#a4ab06337bc8b68e767d25b9ef159cc94" title="Сохранение карты" alt="" coords="541,1019,789,1059"/>
+<area shape="rect" id="node28" href="$class_optimum_1_1_search_norm_per_capita.html#ae1ea0183b7f74dd12db04575c47036f7" title="Отобразить норму" alt="" coords="541,1083,789,1123"/>
+<area shape="rect" id="node29" href="$class_optimum_1_1_search_norm_per_capita.html#a3cbb41f916c81dbce9cdd2109eac9c4f" title="Загрузка карты" alt="" coords="525,1147,804,1173"/>
+<area shape="rect" id="node40" href="$class_optimum_1_1_search_norm_per_capita.html#a95c92e1db090383a6eee5ed6e0cf5c83" title="Обработка щелчка по объекту социальной инфраструктуры" alt="" coords="543,1197,787,1237"/>
+<area shape="rect" id="node41" href="$class_optimum_1_1_search_norm_per_capita.html#ad355b266db4c743f9558a059742b3243" title="Скрыть объекты социальной инфраструктуры" alt="" coords="865,8,1105,48"/>
+<area shape="rect" id="node43" href="$class_optimum_1_1_search_norm_per_capita.html#acdd0b9c836bb5225de527156c35c2eff" title="Отобразить объекты социальной инфраструктуры" alt="" coords="545,827,785,867"/>
+<area shape="rect" id="node45" href="$class_optimum_1_1_search_norm_per_capita.html#a4462f0ef5a6a51c7d42ce079fc5c24fa" title="Закрытие формы" alt="" coords="549,1261,780,1301"/>
+<area shape="rect" id="node46" href="$class_optimum_1_1_search_norm_per_capita.html#af03b9159d80c44dfa4106d455769acc9" title="Закрытие на ESC." alt="" coords="558,1325,771,1365"/>
+<area shape="rect" id="node47" href="$class_optimum_1_1_search_norm_per_capita.html#ad59fe4189420fc233c5c09113258a4a0" title="Загрузка формы" alt="" coords="559,104,771,144"/>
+<area shape="rect" id="node50" href="$class_optimum_1_1_search_norm_per_capita.html#a64c18cc5d5b01f13d3dfa05d7ea7128c" title="Скроллирование ползунка отображает текущее значение радиуса в метрах" alt="" coords="544,1389,785,1429"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_search_norm_per_capita.html#a5beee0bd20c81168fcedda0ca62400ee" title="Валидация текстовых полей с числом нормы и населением" alt="" coords="879,200,1091,240"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_search_norm_per_capita.html#a0834f23025d35c5835a51077d31d21e2" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="879,315,1091,355"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="1191,243,1405,283"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_map_model.html#a538e9bfb371a6c6f80c91a940a1a583e" title="Найти суммарное значение объектов социальной инфраструктуры в файле" alt="" coords="887,379,1084,419"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_map_model.html#a90e279bcfc5374aff4790ca6228be3bd" title="Найти суммарное значение населения в файле" alt="" coords="887,635,1084,675"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_map_view.html#a0354d862685b8803d065ecca0e64252b" title="Проверка принадлежности точки полигонам" alt="" coords="882,443,1089,483"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_map_model.html#a2c8ff1f3a8f324eccee7165788fd31a5" title="Вычисление для каждого полигона у слоя sublayerNormaFacility количества вошедших в него критериев" alt="" coords="884,699,1087,739"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_map_view.html#aef88bfc7e40d7c49f6304e0d19608c93" title="Отрисовка буферных зон кандидатов нормы" alt="" coords="884,507,1087,547"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_map_view.html#a7884e629e922d547cb15a051f2a18cbb" title="Отрисовка буферных зон оптимумов нормы" alt="" coords="884,827,1087,867"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="887,571,1083,611"/>
+<area shape="rect" id="node24" href="$class_optimum_1_1_search_norm_per_capita.html#a074de53348a7fad576625d4f802f9493" title="Очистить карту от нормы" alt="" coords="879,763,1091,803"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d" title="Создание таблицы из полигонов" alt="" coords="1192,371,1404,411"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_map_model.html#ab5378a26d6b01e2724179d3730a99190" title="Вернуть слой полигонов" alt="" coords="1191,307,1405,347"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_render_norma.html#a89c64de92bf1981f308f3582f89737ab" title="Инициализация точек на карте" alt="" coords="1183,435,1413,475"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_render_norma.html#a248224c00210ad03a761969fda08744f" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="1183,899,1413,939"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_math_optimum_model_auto.html#a262ecab3f016e27423e9d7805e91a24e" title="Свертка агрегирования" alt="" coords="1200,835,1396,875"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_math_optimum_model_auto.html#a37b3f73ba4f84a4eb24a16ad7fb5681c" title="Проверка использования метода главного критерия" alt="" coords="1200,499,1396,539"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_math_optimum_model_auto.html#a7d2d7da7076191237e183f2829c4a9a1" title="Клонирование буферных зон" alt="" coords="1167,563,1429,618"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_math_optimum_model_auto.html#a27a011ce8d0f275df5f20cbc4aefb032" title="Создать идеальную точку" alt="" coords="1200,643,1396,683"/>
+<area shape="rect" id="node22" href="$class_optimum_1_1_math_optimum_model_auto.html#a5db17cd61547ea56384ec8d01040924e" title="Сортировка всех буферных зон по рейтингу" alt="" coords="1200,707,1396,747"/>
+<area shape="rect" id="node23" href="$class_optimum_1_1_math_optimum_model_auto.html#a5ae8c3d6c1f22afbe9f9416d50afa4f0" title="Свертка Гермейера" alt="" coords="1200,771,1396,811"/>
+<area shape="rect" id="node30" href="$class_optimum_1_1_search_norm_per_capita.html#a53817449af943ba1477cc6cdd5d4172e" title="Обработка смены карты на ArcGIS." alt="" coords="879,941,1091,981"/>
+<area shape="rect" id="node31" href="$class_optimum_1_1_search_norm_per_capita.html#a1dd3ddf268b47c1d076f576e6f5f0b18" title="Обработка смены карты на BingHybridMap." alt="" coords="879,1005,1091,1045"/>
+<area shape="rect" id="node32" href="$class_optimum_1_1_search_norm_per_capita.html#a189da1aa6d051d7670e35cbc98c78a17" title="Обработка смены карты на BingMap." alt="" coords="879,1069,1091,1109"/>
+<area shape="rect" id="node33" href="$class_optimum_1_1_search_norm_per_capita.html#a35390aeac17bdf5e7f14a4289f8ecaf2" title="Обработка смены карты на GoogleHybridMap." alt="" coords="876,1133,1095,1173"/>
+<area shape="rect" id="node34" href="$class_optimum_1_1_search_norm_per_capita.html#afd84fbc22928d7b168b2c03300adbe83" title="Обработка смены карты на GoogleMap." alt="" coords="879,1197,1091,1237"/>
+<area shape="rect" id="node35" href="$class_optimum_1_1_search_norm_per_capita.html#ad73624162823201a090e4110cf107d6f" title="Обработка смены карты на GoogleTerrainMap." alt="" coords="875,1261,1095,1301"/>
+<area shape="rect" id="node36" href="$class_optimum_1_1_map_view.html#a6e953b9aa0c24fc0283f7f5563bf947f" title="Инициализация настроек карты" alt="" coords="891,1325,1079,1365"/>
+<area shape="rect" id="node37" href="$class_optimum_1_1_search_norm_per_capita.html#affdc941b8d05a776dcb5aa1361938fcd" title="Обработка смены карты на OpenCycleLandscapeMap." alt="" coords="852,1389,1119,1429"/>
+<area shape="rect" id="node38" href="$class_optimum_1_1_search_norm_per_capita.html#abbc23902fd4d14ef1c0aa24fc2ae9e7c" title="Обработка смены карты на OpenCycleTransportMap." alt="" coords="856,1453,1115,1493"/>
+<area shape="rect" id="node39" href="$class_optimum_1_1_search_norm_per_capita.html#a2a1efc969beefa2d8b93474e721db6e2" title="Обработка смены карты на WikiMapiaMap." alt="" coords="879,1517,1091,1557"/>
+<area shape="rect" id="node42" href="$class_optimum_1_1_map_view.html#a38fecfd2ea617ebd810bb539b1931012" title="Скрыть все объекты социальной инфраструктуры" alt="" coords="1194,15,1402,41"/>
+<area shape="rect" id="node44" href="$class_optimum_1_1_map_view.html#ac4d080061783d40d8bcacb1586c5e09a" title="Отобразить все объекты социальной инфраструктуры" alt="" coords="882,891,1089,917"/>
+<area shape="rect" id="node48" href="$class_optimum_1_1_search_norm_per_capita.html#a51223d10ac6f8c63c75d064d4ef587d4" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="879,72,1091,112"/>
+<area shape="rect" id="node49" href="$class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="865,136,1106,176"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Optimum.MapModel.GetSublayerUserPoints" name="Optimum.MapModel.GetSublayerUserPoints">
+<area shape="rect" id="node1" title="Вернуть слой пользовательских кандидатов" alt="" coords="501,5,716,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="243,5,453,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="5,13,195,38"/>
+</map>

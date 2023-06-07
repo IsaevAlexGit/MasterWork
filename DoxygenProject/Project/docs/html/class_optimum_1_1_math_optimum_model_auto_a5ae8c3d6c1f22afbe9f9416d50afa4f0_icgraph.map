@@ -1,0 +1,12 @@
+<map id="Optimum.MathOptimumModelAuto._HermeierConvolution" name="Optimum.MathOptimumModelAuto._HermeierConvolution">
+<area shape="rect" id="node1" title="Свертка Гермейера" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>

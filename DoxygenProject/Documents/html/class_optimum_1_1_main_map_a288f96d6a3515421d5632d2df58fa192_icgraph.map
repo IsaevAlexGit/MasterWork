@@ -1,0 +1,5 @@
+<map id="Optimum.MainMap.trackBarIntensity_Scroll" name="Optimum.MainMap.trackBarIntensity_Scroll">
+<area shape="rect" id="node1" title="Обработка изменения жирности границ для полигонов" alt="" coords="488,5,673,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,5,440,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,13,201,38"/>
+</map>

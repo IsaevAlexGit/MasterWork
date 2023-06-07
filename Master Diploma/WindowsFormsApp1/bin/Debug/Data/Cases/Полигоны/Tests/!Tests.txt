@@ -1,0 +1,25 @@
+.csv - файл без имени
+CSV_BigMemoryFile - файл более 1 Мб
+CSV_FirstRowEmpty - первая строка пустая
+CSV_HasEmptyString - в середине файла пустая строка
+CSV_OneRowWithoutInfo - полигон с пустыми ячейками
+CSV_LotPointsWrongInfo - в некоторых ячейках пустые строки
+CSV_WrongCentrePoint - пустые ячейки на месте координат центральной точки
+CSV_WrongCoordinates - пустые ячейки на месте координаты первой точки
+CSV_OneNegativeCriteria - значение критерия отрицательное число
+CSV_NegativeValueCountBorderPoints - отрицательное число граничных точек в полигоне
+CSV_IdText - вместо ID символы
+CSV_CountPointsText - вместо количества точек символы
+CSV_CriteriaText - вместо критерия символы
+CSV_Normal_1 - нормальный файл с 1 полигоном
+CSV_Normal_20 - нормальный файл с 20 полигонами
+CSV_Normal_50 - нормальный файл с 50 полигонами
+CSV_PointOutsideTerritory - одна точка за пределами территории
+CSV_LotPointOutsideTerritory - несколько точек за границами территории
+CSV_FirstRowOnlyID - в первой строке только ID
+CSV_BigCountBorderCount - количество граничных точек больше, чем их далее указано
+CSV_OneNewColumn - перед столбцом ID новый пустой столбец
+CSV_WithoutOneColumn - файл без колонки количества граничных точек
+CSV_WithoutID - у файла удален столбец с ID
+CSV_NewColumn - в конце строки лишний текст
+CSV_ZeroCountBorderPoints - у полигона количество граничных точек 0

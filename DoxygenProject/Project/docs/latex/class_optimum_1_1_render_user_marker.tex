@@ -1,0 +1,474 @@
+\doxysection{Класс Optimum.\+Render\+User\+Marker}
+\label{class_optimum_1_1_render_user_marker}\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+
+
+Класс \char`\"{}Отрисовщик точек-\/кандидатов\char`\"{}.  
+
+
+
+
+Граф связей класса Optimum.\+Render\+User\+Marker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_optimum_1_1_render_user_marker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Render\+User\+Marker} (\textbf{ Sublayer\+Location} sublayer\+User\+Points)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+void \textbf{ Initialization\+Point} (GMap\+Control gmap, int radius, List$<$ \textbf{ Optimal\+Zone} $>$ optimal\+Zones)
+\begin{DoxyCompactList}\small\item\em Инициализация точек на карте \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ \+\_\+\+Initialization\+Markers} ()
+\begin{DoxyCompactList}\small\item\em Инициализация маркеров \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Initialization\+Zone} (Point\+Lat\+Lng point)
+\begin{DoxyCompactList}\small\item\em Инициализация буферной зоны \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Initialization\+Zone\+Optimum} (Point\+Lat\+Lng point)
+\begin{DoxyCompactList}\small\item\em Инициализация оптимальной буферной зоны \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Initialization\+Best\+Zone\+Optimum} (Point\+Lat\+Lng point)
+\begin{DoxyCompactList}\small\item\em Инициализация самой оптимальной буферной зоны \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Create\+Circle} (Point\+Lat\+Lng center, double radius)
+\begin{DoxyCompactList}\small\item\em Отрисовка окружности \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Create\+Circle\+Optimum} (Point\+Lat\+Lng center, double radius)
+\begin{DoxyCompactList}\small\item\em Отрисовка окружности оптимальной точки \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Create\+Circle\+Best\+Optimum} (Point\+Lat\+Lng center, double radius)
+\begin{DoxyCompactList}\small\item\em Отрисовка окружности самых оптимальных точек \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static Point\+Lat\+Lng \textbf{ \+\_\+\+Find\+Point\+At\+Distance\+From} (Point\+Lat\+Lng start\+Point, double initial\+Bearing\+Radians, double distance\+Kilometres)
+\begin{DoxyCompactList}\small\item\em Вычисление каждой точки окружности \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Sublayer\+Location} \textbf{ \+\_\+sublayer\+Location\+Candidates} = new \textbf{ Sublayer\+Location}()
+\begin{DoxyCompactList}\small\item\em Слой с маркерами пользователя \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+radius\+Search}
+\begin{DoxyCompactList}\small\item\em Радиус поиска и оптимумы \end{DoxyCompactList}\item 
+List$<$ \textbf{ Optimal\+Zone} $>$ \textbf{ \+\_\+optimal\+Zones}
+\item 
+GMap\+Polygon \textbf{ \+\_\+polygon}
+\item 
+readonly int \textbf{ \+\_\+segments} = 360
+\begin{DoxyCompactList}\small\item\em Доля от окружности \end{DoxyCompactList}\item 
+List$<$ Point\+Lat\+Lng $>$ \textbf{ \+\_\+list\+Points\+For\+Circle}
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+const double \textbf{ CONVERSION\+\_\+\+FROM\+\_\+\+DEGREES\+\_\+\+TO\+\_\+\+RADIANS} = Math.\+PI / 180
+\item 
+const double \textbf{ CONVERSION\+\_\+\+FROM\+\_\+\+RADIANS\+\_\+\+TO\+\_\+\+DEGREES} = 180 / Math.\+PI
+\item 
+const double \textbf{ RADIUS\+\_\+\+OF\+\_\+\+THE\+\_\+\+EARTH\+\_\+\+IN\+\_\+\+KILOMETERS} = 6371.\+01
+\begin{DoxyCompactList}\small\item\em Радиус планеты Земля = 6 371 км. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \char`\"{}Отрисовщик точек-\/кандидатов\char`\"{}. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_render_user_marker_a5ca6f8e233fa447731dcebb015aa42ed}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!RenderUserMarker@{RenderUserMarker}}
+\index{RenderUserMarker@{RenderUserMarker}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{RenderUserMarker()}
+{\footnotesize\ttfamily Optimum.\+Render\+User\+Marker.\+Render\+User\+Marker (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Location}}]{sublayer\+User\+Points }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em sublayer\+User\+Points} & Слой пользователя\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public 
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_render_user_marker_ae376832310e232295909aaafa189ca16}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_CreateCircle@{\_CreateCircle}}
+\index{\_CreateCircle@{\_CreateCircle}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_CreateCircle()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+\_\+\+Create\+Circle (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка окружности 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em center} & Центр окружности\\
+\hline
+{\em radius} & Радиус окружности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_ae376832310e232295909aaafa189ca16_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_ae376832310e232295909aaafa189ca16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_af1cf9510eca60f8331ca71a87abc774c}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_CreateCircleBestOptimum@{\_CreateCircleBestOptimum}}
+\index{\_CreateCircleBestOptimum@{\_CreateCircleBestOptimum}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_CreateCircleBestOptimum()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+\_\+\+Create\+Circle\+Best\+Optimum (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка окружности самых оптимальных точек 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em center} & Центр окружности\\
+\hline
+{\em radius} & Радиус окружности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_af1cf9510eca60f8331ca71a87abc774c_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_af1cf9510eca60f8331ca71a87abc774c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_af91b105e52de261864a9c68575fbd0eb}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_CreateCircleOptimum@{\_CreateCircleOptimum}}
+\index{\_CreateCircleOptimum@{\_CreateCircleOptimum}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_CreateCircleOptimum()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+\_\+\+Create\+Circle\+Optimum (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка окружности оптимальной точки 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em center} & Центр окружности\\
+\hline
+{\em radius} & Радиус окружности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_af91b105e52de261864a9c68575fbd0eb_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_af91b105e52de261864a9c68575fbd0eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_a45088fec0a28d25206a65cb8a1c65a9e}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_FindPointAtDistanceFrom@{\_FindPointAtDistanceFrom}}
+\index{\_FindPointAtDistanceFrom@{\_FindPointAtDistanceFrom}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_FindPointAtDistanceFrom()}
+{\footnotesize\ttfamily static Point\+Lat\+Lng Optimum.\+Render\+User\+Marker.\+\_\+\+Find\+Point\+At\+Distance\+From (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{start\+Point,  }\item[{double}]{initial\+Bearing\+Radians,  }\item[{double}]{distance\+Kilometres }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Вычисление каждой точки окружности 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+Point} & Начальная точка (центр окружности)\\
+\hline
+{\em initial\+Bearing\+Radians} & Точка сегмента (от 0 до 360)\\
+\hline
+{\em distance\+Kilometres} & Радиус в километрах\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Точка, которая образует окружность
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a45088fec0a28d25206a65cb8a1c65a9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_a054f1162380e8fa1e1d4d8301cd4d5d4}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_InitializationBestZoneOptimum@{\_InitializationBestZoneOptimum}}
+\index{\_InitializationBestZoneOptimum@{\_InitializationBestZoneOptimum}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_InitializationBestZoneOptimum()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+\_\+\+Initialization\+Best\+Zone\+Optimum (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация самой оптимальной буферной зоны 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & Точка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a054f1162380e8fa1e1d4d8301cd4d5d4_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a054f1162380e8fa1e1d4d8301cd4d5d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_abcb8ce8339cc1a94b58fa93e272ca864}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_InitializationMarkers@{\_InitializationMarkers}}
+\index{\_InitializationMarkers@{\_InitializationMarkers}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_InitializationMarkers()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+\_\+\+Initialization\+Markers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация маркеров 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em \+\_\+sub\+User} & \\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_abcb8ce8339cc1a94b58fa93e272ca864_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_abcb8ce8339cc1a94b58fa93e272ca864_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_a4f0b3b027276dcae897c650e4f2d3442}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_InitializationZone@{\_InitializationZone}}
+\index{\_InitializationZone@{\_InitializationZone}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_InitializationZone()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+\_\+\+Initialization\+Zone (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация буферной зоны 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & Точка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a4f0b3b027276dcae897c650e4f2d3442_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a4f0b3b027276dcae897c650e4f2d3442_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_a14b702406e7dbb14622485d825ba923d}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_InitializationZoneOptimum@{\_InitializationZoneOptimum}}
+\index{\_InitializationZoneOptimum@{\_InitializationZoneOptimum}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_InitializationZoneOptimum()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+\_\+\+Initialization\+Zone\+Optimum (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация оптимальной буферной зоны 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & Точка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a14b702406e7dbb14622485d825ba923d_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a14b702406e7dbb14622485d825ba923d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_user_marker_a0cc2eead2c65b35689f894956dee684f}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!InitializationPoint@{InitializationPoint}}
+\index{InitializationPoint@{InitializationPoint}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{InitializationPoint()}
+{\footnotesize\ttfamily void Optimum.\+Render\+User\+Marker.\+Initialization\+Point (\begin{DoxyParamCaption}\item[{GMap\+Control}]{gmap,  }\item[{int}]{radius,  }\item[{List$<$ \textbf{ Optimal\+Zone} $>$}]{optimal\+Zones }\end{DoxyParamCaption})}
+
+
+
+Инициализация точек на карте 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em radius} & Радиус поиска\\
+\hline
+{\em optimal\+Zones} & Оптимальные точки\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a0cc2eead2c65b35689f894956dee684f_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_user_marker_a0cc2eead2c65b35689f894956dee684f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_render_user_marker_afd405614d842b50ad774bcbddabd2813}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_listPointsForCircle@{\_listPointsForCircle}}
+\index{\_listPointsForCircle@{\_listPointsForCircle}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_listPointsForCircle}
+{\footnotesize\ttfamily List$<$Point\+Lat\+Lng$>$ Optimum.\+Render\+User\+Marker.\+\_\+list\+Points\+For\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_user_marker_afdd9f4d525f58b3f8ae1433e146b73d4}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_optimalZones@{\_optimalZones}}
+\index{\_optimalZones@{\_optimalZones}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_optimalZones}
+{\footnotesize\ttfamily List$<$\textbf{ Optimal\+Zone}$>$ Optimum.\+Render\+User\+Marker.\+\_\+optimal\+Zones\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_user_marker_aef484e809843bf0e15ff11ed6d6e3eab}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_polygon@{\_polygon}}
+\index{\_polygon@{\_polygon}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_polygon}
+{\footnotesize\ttfamily GMap\+Polygon Optimum.\+Render\+User\+Marker.\+\_\+polygon\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_user_marker_aabf315431883dff93bbf6f1f7494a395}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_radiusSearch@{\_radiusSearch}}
+\index{\_radiusSearch@{\_radiusSearch}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_radiusSearch}
+{\footnotesize\ttfamily int Optimum.\+Render\+User\+Marker.\+\_\+radius\+Search\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радиус поиска и оптимумы 
+
+\mbox{\label{class_optimum_1_1_render_user_marker_ac7e9ebaa73b9fcd4409525346cfe641a}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_segments@{\_segments}}
+\index{\_segments@{\_segments}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_segments}
+{\footnotesize\ttfamily readonly int Optimum.\+Render\+User\+Marker.\+\_\+segments = 360\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Доля от окружности 
+
+\mbox{\label{class_optimum_1_1_render_user_marker_a22925bc6adffc3704d23369640aa3118}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!\_sublayerLocationCandidates@{\_sublayerLocationCandidates}}
+\index{\_sublayerLocationCandidates@{\_sublayerLocationCandidates}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{\_sublayerLocationCandidates}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Render\+User\+Marker.\+\_\+sublayer\+Location\+Candidates = new \textbf{ Sublayer\+Location}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой с маркерами пользователя 
+
+\mbox{\label{class_optimum_1_1_render_user_marker_a851de8d6aaa0c2c1506f09eed881181e}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!CONVERSION\_FROM\_DEGREES\_TO\_RADIANS@{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}}
+\index{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS@{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}
+{\footnotesize\ttfamily const double Optimum.\+Render\+User\+Marker.\+CONVERSION\+\_\+\+FROM\+\_\+\+DEGREES\+\_\+\+TO\+\_\+\+RADIANS = Math.\+PI / 180\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_user_marker_aa086acd0d0bd5e19089ea156ebbe31d2}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!CONVERSION\_FROM\_RADIANS\_TO\_DEGREES@{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}}
+\index{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES@{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}
+{\footnotesize\ttfamily const double Optimum.\+Render\+User\+Marker.\+CONVERSION\+\_\+\+FROM\+\_\+\+RADIANS\+\_\+\+TO\+\_\+\+DEGREES = 180 / Math.\+PI\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_user_marker_aaea39a8d302c22f99d469af17ca7593e}} 
+\index{Optimum.RenderUserMarker@{Optimum.RenderUserMarker}!RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS@{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}}
+\index{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS@{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}!Optimum.RenderUserMarker@{Optimum.RenderUserMarker}}
+\doxysubsubsection{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}
+{\footnotesize\ttfamily const double Optimum.\+Render\+User\+Marker.\+RADIUS\+\_\+\+OF\+\_\+\+THE\+\_\+\+EARTH\+\_\+\+IN\+\_\+\+KILOMETERS = 6371.\+01\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Радиус планеты Земля = 6 371 км. 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Render\+User\+Marker.\+cs}\end{DoxyCompactItemize}

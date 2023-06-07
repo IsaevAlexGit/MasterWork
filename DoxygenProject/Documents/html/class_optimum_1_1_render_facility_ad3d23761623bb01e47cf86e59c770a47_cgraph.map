@@ -1,0 +1,5 @@
+<map id="Optimum.RenderFacility.DrawFacility" name="Optimum.RenderFacility.DrawFacility">
+<area shape="rect" id="node1" title="Отображение всех объектов социальной инфраструктуры" alt="" coords="5,5,200,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_facility.html#a08d4dde0aefbaa71e6f0811649001196" title="Инициализация маркеров объектов социальной инфраструктуры" alt="" coords="248,5,435,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_facility.html#abd1fc541205dee429c529f103e30b116" title="Изменение выводимой информации об объекте социальной инфраструктуры" alt="" coords="483,5,649,45"/>
+</map>

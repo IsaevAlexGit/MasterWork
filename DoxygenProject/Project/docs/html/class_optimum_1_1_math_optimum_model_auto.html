@@ -1,0 +1,1282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>doxyMaster: Класс Optimum.MathOptimumModelAuto</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">doxyMaster<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_optimum.html">Optimum</a></li><li class="navelem"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html">MathOptimumModelAuto</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="class_optimum_1_1_math_optimum_model_auto-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Optimum.MathOptimumModelAuto</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс "Математика для автопоиска и нормы".  
+ <a href="class_optimum_1_1_math_optimum_model_auto.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса Optimum.MathOptimumModelAuto:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto__coll__graph.png" border="0" usemap="#a_optimum_8_math_optimum_model_auto_coll__map" alt="Collaboration graph"/></div>
+<map name="a_optimum_8_math_optimum_model_auto_coll__map" id="a_optimum_8_math_optimum_model_auto_coll__map">
+<area shape="rect" title="Класс &quot;Математика для автопоиска и нормы&quot;." alt="" coords="5,175,245,677"/>
+<area shape="rect" href="class_optimum_1_1_optimal_zone.html" title="Класс &quot;Оптимальная зона&quot;." alt="" coords="49,5,202,112"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto_1_1_auto_buffer_zone.html">AutoBufferZone</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс "Авто-буферная зона".  <a href="class_optimum_1_1_math_optimum_model_auto_1_1_auto_buffer_zone.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5c393133ae2899a949b6042468075321"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a5c393133ae2899a949b6042468075321">MathOptimumModelAuto</a> (List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt; arrayBuffers, List&lt; <a class="el" href="class_optimum_1_1_criterion.html">Criterion</a> &gt; criterion, int countOptimums)</td></tr>
+<tr class="memdesc:a5c393133ae2899a949b6042468075321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <br /></td></tr>
+<tr class="separator:a5c393133ae2899a949b6042468075321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae360fd4bbdbf52b3e5413e34ffaa2b44"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44">GetArrayWithOptimums</a> ()</td></tr>
+<tr class="memdesc:ae360fd4bbdbf52b3e5413e34ffaa2b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение оптимальной точки  <br /></td></tr>
+<tr class="separator:ae360fd4bbdbf52b3e5413e34ffaa2b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ac159e347fcb67df6b85e36ba0d3a0326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ac159e347fcb67df6b85e36ba0d3a0326">_MaximizationOfCriterion</a> ()</td></tr>
+<tr class="memdesc:ac159e347fcb67df6b85e36ba0d3a0326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимизация всех параметров  <br /></td></tr>
+<tr class="separator:ac159e347fcb67df6b85e36ba0d3a0326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13416047cac055a046ae2caab64f40c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ae13416047cac055a046ae2caab64f40c">_SearchMaxMinForEachCriterion</a> ()</td></tr>
+<tr class="memdesc:ae13416047cac055a046ae2caab64f40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск максимума и минимума для каждого критерия  <br /></td></tr>
+<tr class="separator:ae13416047cac055a046ae2caab64f40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5942c4ad2e9a38df399849665ac47513"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a5942c4ad2e9a38df399849665ac47513">_Normalization</a> ()</td></tr>
+<tr class="memdesc:a5942c4ad2e9a38df399849665ac47513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализация всех критериев  <br /></td></tr>
+<tr class="separator:a5942c4ad2e9a38df399849665ac47513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24f0b78e17ef0e506144b4df51c5939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ae24f0b78e17ef0e506144b4df51c5939">_LinearConvolution</a> ()</td></tr>
+<tr class="memdesc:ae24f0b78e17ef0e506144b4df51c5939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Линейная свертка  <br /></td></tr>
+<tr class="separator:ae24f0b78e17ef0e506144b4df51c5939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450fac6c3c9b64bc4bfa3f7007102136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a450fac6c3c9b64bc4bfa3f7007102136">_MultiplicativeConvolution</a> ()</td></tr>
+<tr class="memdesc:a450fac6c3c9b64bc4bfa3f7007102136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мультипликативная свертка  <br /></td></tr>
+<tr class="separator:a450fac6c3c9b64bc4bfa3f7007102136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262ecab3f016e27423e9d7805e91a24e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a262ecab3f016e27423e9d7805e91a24e">_AggregationConvolution</a> ()</td></tr>
+<tr class="memdesc:a262ecab3f016e27423e9d7805e91a24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свертка агрегирования  <br /></td></tr>
+<tr class="separator:a262ecab3f016e27423e9d7805e91a24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae8c3d6c1f22afbe9f9416d50afa4f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a5ae8c3d6c1f22afbe9f9416d50afa4f0">_HermeierConvolution</a> ()</td></tr>
+<tr class="memdesc:a5ae8c3d6c1f22afbe9f9416d50afa4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свертка Гермейера  <br /></td></tr>
+<tr class="separator:a5ae8c3d6c1f22afbe9f9416d50afa4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b3f73ba4f84a4eb24a16ad7fb5681c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a37b3f73ba4f84a4eb24a16ad7fb5681c">_CheckIsMainMethod</a> ()</td></tr>
+<tr class="memdesc:a37b3f73ba4f84a4eb24a16ad7fb5681c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка использования метода главного критерия  <br /></td></tr>
+<tr class="separator:a37b3f73ba4f84a4eb24a16ad7fb5681c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fced727ffd1e9dc283f98eba6489275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a6fced727ffd1e9dc283f98eba6489275">_MainCriterionMethod</a> ()</td></tr>
+<tr class="memdesc:a6fced727ffd1e9dc283f98eba6489275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод главного критерия  <br /></td></tr>
+<tr class="separator:a6fced727ffd1e9dc283f98eba6489275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a011ce8d0f275df5f20cbc4aefb032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a27a011ce8d0f275df5f20cbc4aefb032">_CreateUtopiaPoint</a> ()</td></tr>
+<tr class="memdesc:a27a011ce8d0f275df5f20cbc4aefb032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать идеальную точку  <br /></td></tr>
+<tr class="separator:a27a011ce8d0f275df5f20cbc4aefb032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535b092a2dd7011060aef167419e70b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a535b092a2dd7011060aef167419e70b9">_IdealPointChebyshevMetricConvolution</a> ()</td></tr>
+<tr class="memdesc:a535b092a2dd7011060aef167419e70b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свертка на основе идеальной точки по метрике Чебышева  <br /></td></tr>
+<tr class="separator:a535b092a2dd7011060aef167419e70b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6566b83232eab08e2b36b514aa1660b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ae6566b83232eab08e2b36b514aa1660b">_IdealPointHammingMetricConvolution</a> ()</td></tr>
+<tr class="memdesc:ae6566b83232eab08e2b36b514aa1660b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свертка на основе идеальной точки по метрике Хемминг  <br /></td></tr>
+<tr class="separator:ae6566b83232eab08e2b36b514aa1660b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912b4905cc6cda175ff06f5c6ab82e01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a912b4905cc6cda175ff06f5c6ab82e01">_IdealPointEuclideanMetricConvolution</a> ()</td></tr>
+<tr class="memdesc:a912b4905cc6cda175ff06f5c6ab82e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Свертка на основе идеальной точки по метрике Евклида  <br /></td></tr>
+<tr class="separator:a912b4905cc6cda175ff06f5c6ab82e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db17cd61547ea56384ec8d01040924e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a5db17cd61547ea56384ec8d01040924e">_FinalSort</a> ()</td></tr>
+<tr class="memdesc:a5db17cd61547ea56384ec8d01040924e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировка всех буферных зон по рейтингу  <br /></td></tr>
+<tr class="separator:a5db17cd61547ea56384ec8d01040924e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2d7da7076191237e183f2829c4a9a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a7d2d7da7076191237e183f2829c4a9a1">_CloneValuesFromListNormalizationToListStartZones</a> ()</td></tr>
+<tr class="memdesc:a7d2d7da7076191237e183f2829c4a9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Клонирование буферных зон  <br /></td></tr>
+<tr class="separator:a7d2d7da7076191237e183f2829c4a9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ac910e6fa337a45d460ad34ba5ac95ee4"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_math_optimum_model_auto_1_1_auto_buffer_zone.html">AutoBufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ac910e6fa337a45d460ad34ba5ac95ee4">_superBestPoints</a> = new List&lt;<a class="el" href="class_optimum_1_1_math_optimum_model_auto_1_1_auto_buffer_zone.html">AutoBufferZone</a>&gt;()</td></tr>
+<tr class="memdesc:ac910e6fa337a45d460ad34ba5ac95ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив оптимальных автоточек  <br /></td></tr>
+<tr class="separator:ac910e6fa337a45d460ad34ba5ac95ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accabf5cf53cbb1c943aec99d58513861"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#accabf5cf53cbb1c943aec99d58513861">_countOptimums</a></td></tr>
+<tr class="memdesc:accabf5cf53cbb1c943aec99d58513861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Требуемое количество авто-оптимумов  <br /></td></tr>
+<tr class="separator:accabf5cf53cbb1c943aec99d58513861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1421b404a8fbe538f94200335836cf70"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a1421b404a8fbe538f94200335836cf70">_listForNormalization</a> = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td></tr>
+<tr class="memdesc:a1421b404a8fbe538f94200335836cf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список буферных зон, который нормализуется (для изменения)  <br /></td></tr>
+<tr class="separator:a1421b404a8fbe538f94200335836cf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0e14433461af042f7ca138db07b83c"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#aee0e14433461af042f7ca138db07b83c">_listWithStartZones</a> = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td></tr>
+<tr class="memdesc:aee0e14433461af042f7ca138db07b83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список буферных зон с карты (без изменения)  <br /></td></tr>
+<tr class="separator:aee0e14433461af042f7ca138db07b83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f8da602b6b9007bbd974552d16aa5d"><td class="memItemLeft" align="right" valign="top">readonly List&lt; <a class="el" href="class_optimum_1_1_criterion.html">Criterion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a58f8da602b6b9007bbd974552d16aa5d">_listCriterion</a> = new List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt;()</td></tr>
+<tr class="memdesc:a58f8da602b6b9007bbd974552d16aa5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список критериев оптимальности  <br /></td></tr>
+<tr class="separator:a58f8da602b6b9007bbd974552d16aa5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b547ae7da723b0fb2526d12073c4c67"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a1b547ae7da723b0fb2526d12073c4c67">_autoBestPoints</a> = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td></tr>
+<tr class="memdesc:a1b547ae7da723b0fb2526d12073c4c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив оптимальных автоточек  <br /></td></tr>
+<tr class="separator:a1b547ae7da723b0fb2526d12073c4c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd9707cbb2be03aa3d7bf36095ff609"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a4fd9707cbb2be03aa3d7bf36095ff609">_utopiaPoint</a> = new <a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a>()</td></tr>
+<tr class="memdesc:a4fd9707cbb2be03aa3d7bf36095ff609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Утопическая точка  <br /></td></tr>
+<tr class="separator:a4fd9707cbb2be03aa3d7bf36095ff609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5104684c968b893d4708d386d84bac44"><td class="memItemLeft" align="right" valign="top">List&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a5104684c968b893d4708d386d84bac44">_minimums</a> = new List&lt;double&gt;()</td></tr>
+<tr class="memdesc:a5104684c968b893d4708d386d84bac44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тут хранится минимум для каждого из Х критериев - Х минимумов по каждому критерию  <br /></td></tr>
+<tr class="separator:a5104684c968b893d4708d386d84bac44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1986de9aac8f89ae11345c33213af3c"><td class="memItemLeft" align="right" valign="top">List&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ae1986de9aac8f89ae11345c33213af3c">_maximums</a> = new List&lt;double&gt;()</td></tr>
+<tr class="memdesc:ae1986de9aac8f89ae11345c33213af3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тут хранится максимум для каждого из Х критериев - Х максимумов по каждому критерию  <br /></td></tr>
+<tr class="separator:ae1986de9aac8f89ae11345c33213af3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:ab18a72cc9ae2eda00d5d847ff07afb39"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#ab18a72cc9ae2eda00d5d847ff07afb39">AGGREGATION_COEFFICIENT</a> = 2</td></tr>
+<tr class="memdesc:ab18a72cc9ae2eda00d5d847ff07afb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент агрегирования, 0 - нельзя, p-&gt;0 - мультипликативная, p=1 - линайная  <br /></td></tr>
+<tr class="separator:ab18a72cc9ae2eda00d5d847ff07afb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1b8a0c5139d8b3c98f71c7df0bb7d3"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_math_optimum_model_auto.html#a3f1b8a0c5139d8b3c98f71c7df0bb7d3">THRESHOLD</a> = 0.3999</td></tr>
+<tr class="memdesc:a3f1b8a0c5139d8b3c98f71c7df0bb7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пороговое значение, разница между двумя важными приоритетатми выше этого значения, то метод главного критерия используется  <br /></td></tr>
+<tr class="separator:a3f1b8a0c5139d8b3c98f71c7df0bb7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс "Математика для автопоиска и нормы". </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a5c393133ae2899a949b6042468075321" name="a5c393133ae2899a949b6042468075321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c393133ae2899a949b6042468075321">&#9670;&#160;</a></span>MathOptimumModelAuto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optimum.MathOptimumModelAuto.MathOptimumModelAuto </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td>
+          <td class="paramname"><em>arrayBuffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="class_optimum_1_1_criterion.html">Criterion</a> &gt;&#160;</td>
+          <td class="paramname"><em>criterion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>countOptimums</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arrayBuffers</td><td>Массив буферных зон</td></tr>
+    <tr><td class="paramname">criterion</td><td>Список критериев</td></tr>
+    <tr><td class="paramname">countOptimums</td><td>Искомое число оптимумов (1-10)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a262ecab3f016e27423e9d7805e91a24e" name="a262ecab3f016e27423e9d7805e91a24e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262ecab3f016e27423e9d7805e91a24e">&#9670;&#160;</a></span>_AggregationConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._AggregationConvolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Свертка агрегирования </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a262ecab3f016e27423e9d7805e91a24e_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a262ecab3f016e27423e9d7805e91a24e_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a262ecab3f016e27423e9d7805e91a24e_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a262ecab3f016e27423e9d7805e91a24e_icgraph">
+<area shape="rect" title="Свертка агрегирования" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a37b3f73ba4f84a4eb24a16ad7fb5681c" name="a37b3f73ba4f84a4eb24a16ad7fb5681c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b3f73ba4f84a4eb24a16ad7fb5681c">&#9670;&#160;</a></span>_CheckIsMainMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.MathOptimumModelAuto._CheckIsMainMethod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка использования метода главного критерия </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Флаг используется метод или нет</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a37b3f73ba4f84a4eb24a16ad7fb5681c_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a37b3f73ba4f84a4eb24a16ad7fb5681c_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a37b3f73ba4f84a4eb24a16ad7fb5681c_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a37b3f73ba4f84a4eb24a16ad7fb5681c_icgraph">
+<area shape="rect" title="Проверка использования метода главного критерия" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7d2d7da7076191237e183f2829c4a9a1" name="a7d2d7da7076191237e183f2829c4a9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2d7da7076191237e183f2829c4a9a1">&#9670;&#160;</a></span>_CloneValuesFromListNormalizationToListStartZones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._CloneValuesFromListNormalizationToListStartZones </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Клонирование буферных зон </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a7d2d7da7076191237e183f2829c4a9a1_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a7d2d7da7076191237e183f2829c4a9a1_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a7d2d7da7076191237e183f2829c4a9a1_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a7d2d7da7076191237e183f2829c4a9a1_icgraph">
+<area shape="rect" title="Клонирование буферных зон" alt="" coords="1303,30,1565,85"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a27a011ce8d0f275df5f20cbc4aefb032" name="a27a011ce8d0f275df5f20cbc4aefb032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a011ce8d0f275df5f20cbc4aefb032">&#9670;&#160;</a></span>_CreateUtopiaPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._CreateUtopiaPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать идеальную точку </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a27a011ce8d0f275df5f20cbc4aefb032_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a27a011ce8d0f275df5f20cbc4aefb032_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a27a011ce8d0f275df5f20cbc4aefb032_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a27a011ce8d0f275df5f20cbc4aefb032_icgraph">
+<area shape="rect" title="Создать идеальную точку" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5db17cd61547ea56384ec8d01040924e" name="a5db17cd61547ea56384ec8d01040924e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db17cd61547ea56384ec8d01040924e">&#9670;&#160;</a></span>_FinalSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt; Optimum.MathOptimumModelAuto._FinalSort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сортировка всех буферных зон по рейтингу </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Список авто-оптимумов</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a5db17cd61547ea56384ec8d01040924e_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a5db17cd61547ea56384ec8d01040924e_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a5db17cd61547ea56384ec8d01040924e_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a5db17cd61547ea56384ec8d01040924e_icgraph">
+<area shape="rect" title="Сортировка всех буферных зон по рейтингу" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ae8c3d6c1f22afbe9f9416d50afa4f0" name="a5ae8c3d6c1f22afbe9f9416d50afa4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae8c3d6c1f22afbe9f9416d50afa4f0">&#9670;&#160;</a></span>_HermeierConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._HermeierConvolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Свертка Гермейера </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a5ae8c3d6c1f22afbe9f9416d50afa4f0_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a5ae8c3d6c1f22afbe9f9416d50afa4f0_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a5ae8c3d6c1f22afbe9f9416d50afa4f0_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a5ae8c3d6c1f22afbe9f9416d50afa4f0_icgraph">
+<area shape="rect" title="Свертка Гермейера" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a535b092a2dd7011060aef167419e70b9" name="a535b092a2dd7011060aef167419e70b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535b092a2dd7011060aef167419e70b9">&#9670;&#160;</a></span>_IdealPointChebyshevMetricConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._IdealPointChebyshevMetricConvolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Свертка на основе идеальной точки по метрике Чебышева </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a535b092a2dd7011060aef167419e70b9_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a535b092a2dd7011060aef167419e70b9_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a535b092a2dd7011060aef167419e70b9_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a535b092a2dd7011060aef167419e70b9_icgraph">
+<area shape="rect" title="Свертка на основе идеальной точки по метрике Чебышева" alt="" coords="1303,30,1519,85"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a912b4905cc6cda175ff06f5c6ab82e01" name="a912b4905cc6cda175ff06f5c6ab82e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912b4905cc6cda175ff06f5c6ab82e01">&#9670;&#160;</a></span>_IdealPointEuclideanMetricConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._IdealPointEuclideanMetricConvolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Свертка на основе идеальной точки по метрике Евклида </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a912b4905cc6cda175ff06f5c6ab82e01_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a912b4905cc6cda175ff06f5c6ab82e01_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a912b4905cc6cda175ff06f5c6ab82e01_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a912b4905cc6cda175ff06f5c6ab82e01_icgraph">
+<area shape="rect" title="Свертка на основе идеальной точки по метрике Евклида" alt="" coords="1303,30,1513,85"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6566b83232eab08e2b36b514aa1660b" name="ae6566b83232eab08e2b36b514aa1660b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6566b83232eab08e2b36b514aa1660b">&#9670;&#160;</a></span>_IdealPointHammingMetricConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._IdealPointHammingMetricConvolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Свертка на основе идеальной точки по метрике Хемминг </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_ae6566b83232eab08e2b36b514aa1660b_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_ae6566b83232eab08e2b36b514aa1660b_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_ae6566b83232eab08e2b36b514aa1660b_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_ae6566b83232eab08e2b36b514aa1660b_icgraph">
+<area shape="rect" title="Свертка на основе идеальной точки по метрике Хемминг" alt="" coords="1303,30,1511,85"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae24f0b78e17ef0e506144b4df51c5939" name="ae24f0b78e17ef0e506144b4df51c5939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24f0b78e17ef0e506144b4df51c5939">&#9670;&#160;</a></span>_LinearConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._LinearConvolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Линейная свертка </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_ae24f0b78e17ef0e506144b4df51c5939_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_ae24f0b78e17ef0e506144b4df51c5939_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_ae24f0b78e17ef0e506144b4df51c5939_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_ae24f0b78e17ef0e506144b4df51c5939_icgraph">
+<area shape="rect" title="Линейная свертка" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6fced727ffd1e9dc283f98eba6489275" name="a6fced727ffd1e9dc283f98eba6489275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fced727ffd1e9dc283f98eba6489275">&#9670;&#160;</a></span>_MainCriterionMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._MainCriterionMethod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод главного критерия </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a6fced727ffd1e9dc283f98eba6489275_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a6fced727ffd1e9dc283f98eba6489275_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a6fced727ffd1e9dc283f98eba6489275_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a6fced727ffd1e9dc283f98eba6489275_icgraph">
+<area shape="rect" title="Метод главного критерия" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac159e347fcb67df6b85e36ba0d3a0326" name="ac159e347fcb67df6b85e36ba0d3a0326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac159e347fcb67df6b85e36ba0d3a0326">&#9670;&#160;</a></span>_MaximizationOfCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._MaximizationOfCriterion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Максимизация всех параметров </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_ac159e347fcb67df6b85e36ba0d3a0326_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_ac159e347fcb67df6b85e36ba0d3a0326_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_ac159e347fcb67df6b85e36ba0d3a0326_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_ac159e347fcb67df6b85e36ba0d3a0326_icgraph">
+<area shape="rect" title="Максимизация всех параметров" alt="" coords="1303,37,1501,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a450fac6c3c9b64bc4bfa3f7007102136" name="a450fac6c3c9b64bc4bfa3f7007102136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450fac6c3c9b64bc4bfa3f7007102136">&#9670;&#160;</a></span>_MultiplicativeConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._MultiplicativeConvolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Мультипликативная свертка </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a450fac6c3c9b64bc4bfa3f7007102136_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a450fac6c3c9b64bc4bfa3f7007102136_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a450fac6c3c9b64bc4bfa3f7007102136_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a450fac6c3c9b64bc4bfa3f7007102136_icgraph">
+<area shape="rect" title="Мультипликативная свертка" alt="" coords="1303,37,1503,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5942c4ad2e9a38df399849665ac47513" name="a5942c4ad2e9a38df399849665ac47513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5942c4ad2e9a38df399849665ac47513">&#9670;&#160;</a></span>_Normalization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._Normalization </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нормализация всех критериев </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_a5942c4ad2e9a38df399849665ac47513_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_a5942c4ad2e9a38df399849665ac47513_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_a5942c4ad2e9a38df399849665ac47513_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_a5942c4ad2e9a38df399849665ac47513_icgraph">
+<area shape="rect" title="Нормализация всех критериев" alt="" coords="1303,37,1499,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae13416047cac055a046ae2caab64f40c" name="ae13416047cac055a046ae2caab64f40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae13416047cac055a046ae2caab64f40c">&#9670;&#160;</a></span>_SearchMaxMinForEachCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MathOptimumModelAuto._SearchMaxMinForEachCriterion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поиск максимума и минимума для каждого критерия </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_ae13416047cac055a046ae2caab64f40c_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_ae13416047cac055a046ae2caab64f40c_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_ae13416047cac055a046ae2caab64f40c_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_ae13416047cac055a046ae2caab64f40c_icgraph">
+<area shape="rect" title="Поиск максимума и минимума для каждого критерия" alt="" coords="1303,37,1547,77"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae360fd4bbdbf52b3e5413e34ffaa2b44" name="ae360fd4bbdbf52b3e5413e34ffaa2b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae360fd4bbdbf52b3e5413e34ffaa2b44">&#9670;&#160;</a></span>GetArrayWithOptimums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt; Optimum.MathOptimumModelAuto.GetArrayWithOptimums </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение оптимальной точки </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Оптимальные точки</dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_cgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_cgraph" id="aclass_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_cgraph">
+<area shape="rect" title="Получение оптимальной точки" alt="" coords="5,492,201,532"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a262ecab3f016e27423e9d7805e91a24e" title="Свертка агрегирования" alt="" coords="283,5,479,45"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a37b3f73ba4f84a4eb24a16ad7fb5681c" title="Проверка использования метода главного критерия" alt="" coords="283,69,479,109"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a7d2d7da7076191237e183f2829c4a9a1" title="Клонирование буферных зон" alt="" coords="249,134,512,189"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a27a011ce8d0f275df5f20cbc4aefb032" title="Создать идеальную точку" alt="" coords="283,213,479,253"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a5db17cd61547ea56384ec8d01040924e" title="Сортировка всех буферных зон по рейтингу" alt="" coords="283,277,479,317"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a5ae8c3d6c1f22afbe9f9416d50afa4f0" title="Свертка Гермейера" alt="" coords="283,341,479,381"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a535b092a2dd7011060aef167419e70b9" title="Свертка на основе идеальной точки по метрике Чебышева" alt="" coords="273,406,489,461"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a912b4905cc6cda175ff06f5c6ab82e01" title="Свертка на основе идеальной точки по метрике Евклида" alt="" coords="275,485,486,539"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae6566b83232eab08e2b36b514aa1660b" title="Свертка на основе идеальной точки по метрике Хемминг" alt="" coords="277,563,485,618"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae24f0b78e17ef0e506144b4df51c5939" title="Линейная свертка" alt="" coords="283,643,479,683"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a6fced727ffd1e9dc283f98eba6489275" title="Метод главного критерия" alt="" coords="283,707,479,747"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ac159e347fcb67df6b85e36ba0d3a0326" title="Максимизация всех параметров" alt="" coords="281,771,480,811"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a450fac6c3c9b64bc4bfa3f7007102136" title="Мультипликативная свертка" alt="" coords="281,835,481,875"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#a5942c4ad2e9a38df399849665ac47513" title="Нормализация всех критериев" alt="" coords="283,899,479,939"/>
+<area shape="rect" href="class_optimum_1_1_math_optimum_model_auto.html#ae13416047cac055a046ae2caab64f40c" title="Поиск максимума и минимума для каждого критерия" alt="" coords="259,963,503,1003"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_icgraph.png" border="0" usemap="#aclass_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_icgraph" id="aclass_optimum_1_1_math_optimum_model_auto_ae360fd4bbdbf52b3e5413e34ffaa2b44_icgraph">
+<area shape="rect" title="Получение оптимальной точки" alt="" coords="1059,37,1255,77"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,5,1011,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,69,981,109"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,101,440,141"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,109,195,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a1b547ae7da723b0fb2526d12073c4c67" name="a1b547ae7da723b0fb2526d12073c4c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b547ae7da723b0fb2526d12073c4c67">&#9670;&#160;</a></span>_autoBestPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt; Optimum.MathOptimumModelAuto._autoBestPoints = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Массив оптимальных автоточек </p>
+
+</div>
+</div>
+<a id="accabf5cf53cbb1c943aec99d58513861" name="accabf5cf53cbb1c943aec99d58513861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accabf5cf53cbb1c943aec99d58513861">&#9670;&#160;</a></span>_countOptimums</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int Optimum.MathOptimumModelAuto._countOptimums</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Требуемое количество авто-оптимумов </p>
+
+</div>
+</div>
+<a id="a58f8da602b6b9007bbd974552d16aa5d" name="a58f8da602b6b9007bbd974552d16aa5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f8da602b6b9007bbd974552d16aa5d">&#9670;&#160;</a></span>_listCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt; Optimum.MathOptimumModelAuto._listCriterion = new List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список критериев оптимальности </p>
+
+</div>
+</div>
+<a id="a1421b404a8fbe538f94200335836cf70" name="a1421b404a8fbe538f94200335836cf70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1421b404a8fbe538f94200335836cf70">&#9670;&#160;</a></span>_listForNormalization</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt; Optimum.MathOptimumModelAuto._listForNormalization = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список буферных зон, который нормализуется (для изменения) </p>
+
+</div>
+</div>
+<a id="aee0e14433461af042f7ca138db07b83c" name="aee0e14433461af042f7ca138db07b83c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0e14433461af042f7ca138db07b83c">&#9670;&#160;</a></span>_listWithStartZones</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt; Optimum.MathOptimumModelAuto._listWithStartZones = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список буферных зон с карты (без изменения) </p>
+
+</div>
+</div>
+<a id="ae1986de9aac8f89ae11345c33213af3c" name="ae1986de9aac8f89ae11345c33213af3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1986de9aac8f89ae11345c33213af3c">&#9670;&#160;</a></span>_maximums</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;double&gt; Optimum.MathOptimumModelAuto._maximums = new List&lt;double&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тут хранится максимум для каждого из Х критериев - Х максимумов по каждому критерию </p>
+
+</div>
+</div>
+<a id="a5104684c968b893d4708d386d84bac44" name="a5104684c968b893d4708d386d84bac44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5104684c968b893d4708d386d84bac44">&#9670;&#160;</a></span>_minimums</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;double&gt; Optimum.MathOptimumModelAuto._minimums = new List&lt;double&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Тут хранится минимум для каждого из Х критериев - Х минимумов по каждому критерию </p>
+
+</div>
+</div>
+<a id="ac910e6fa337a45d460ad34ba5ac95ee4" name="ac910e6fa337a45d460ad34ba5ac95ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac910e6fa337a45d460ad34ba5ac95ee4">&#9670;&#160;</a></span>_superBestPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_math_optimum_model_auto_1_1_auto_buffer_zone.html">AutoBufferZone</a>&gt; Optimum.MathOptimumModelAuto._superBestPoints = new List&lt;<a class="el" href="class_optimum_1_1_math_optimum_model_auto_1_1_auto_buffer_zone.html">AutoBufferZone</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Массив оптимальных автоточек </p>
+
+</div>
+</div>
+<a id="a4fd9707cbb2be03aa3d7bf36095ff609" name="a4fd9707cbb2be03aa3d7bf36095ff609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd9707cbb2be03aa3d7bf36095ff609">&#9670;&#160;</a></span>_utopiaPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a> Optimum.MathOptimumModelAuto._utopiaPoint = new <a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Утопическая точка </p>
+
+</div>
+</div>
+<a id="ab18a72cc9ae2eda00d5d847ff07afb39" name="ab18a72cc9ae2eda00d5d847ff07afb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18a72cc9ae2eda00d5d847ff07afb39">&#9670;&#160;</a></span>AGGREGATION_COEFFICIENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double Optimum.MathOptimumModelAuto.AGGREGATION_COEFFICIENT = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Коэффициент агрегирования, 0 - нельзя, p-&gt;0 - мультипликативная, p=1 - линайная </p>
+
+</div>
+</div>
+<a id="a3f1b8a0c5139d8b3c98f71c7df0bb7d3" name="a3f1b8a0c5139d8b3c98f71c7df0bb7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1b8a0c5139d8b3c98f71c7df0bb7d3">&#9670;&#160;</a></span>THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double Optimum.MathOptimumModelAuto.THRESHOLD = 0.3999</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Пороговое значение, разница между двумя важными приоритетатми выше этого значения, то метод главного критерия используется </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>C:/Users/PC/Desktop/doxxygen/WindowsFormsApp1/<a class="el" href="_math_optimum_model_auto_8cs.html">MathOptimumModelAuto.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

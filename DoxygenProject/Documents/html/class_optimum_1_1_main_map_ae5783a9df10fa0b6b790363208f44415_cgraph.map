@@ -1,0 +1,15 @@
+<map id="Optimum.MainMap.LeaveOptimumToolStripMenuItem_Click" name="Optimum.MainMap.LeaveOptimumToolStripMenuItem_Click">
+<area shape="rect" id="node1" title="Оставить на карте только оптимальные точки" alt="" coords="5,37,228,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_view.html#a0da028c2a83375bed6dec781650ac938" title="Отрисовка оптимальных зон авто&#45;оптимумов" alt="" coords="277,5,469,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_view.html#ad5bf24fdb0af958a7fa446e61d648a03" title="Отрисовка буферной зоны около точки&#45;кандидата и оптимальных точек" alt="" coords="276,69,471,109"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_auto_points.html#a95feaa1777a3b8f407d414ccad4727d6" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="520,5,708,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_user_marker.html#a0cc2eead2c65b35689f894956dee684f" title="Инициализация точек на карте" alt="" coords="519,69,709,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_render_user_marker.html#abcb8ce8339cc1a94b58fa93e272ca864" title="Инициализация маркеров" alt="" coords="757,69,948,109"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_render_user_marker.html#a054f1162380e8fa1e1d4d8301cd4d5d4" title="Инициализация самой оптимальной буферной зоны" alt="" coords="996,5,1201,45"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_user_marker.html#a4f0b3b027276dcae897c650e4f2d3442" title="Инициализация буферной зоны" alt="" coords="1003,69,1194,109"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_user_marker.html#a14b702406e7dbb14622485d825ba923d" title="Инициализация оптимальной буферной зоны" alt="" coords="1003,133,1194,173"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_render_user_marker.html#af1cf9510eca60f8331ca71a87abc774c" title="Отрисовка окружности самых оптимальных точек" alt="" coords="1249,5,1440,45"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_render_user_marker.html#a45088fec0a28d25206a65cb8a1c65a9e" title="Вычисление каждой точки окружности" alt="" coords="1488,69,1679,109"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_render_user_marker.html#ae376832310e232295909aaafa189ca16" title="Отрисовка окружности" alt="" coords="1249,69,1440,109"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_render_user_marker.html#af91b105e52de261864a9c68575fbd0eb" title="Отрисовка окружности оптимальной точки" alt="" coords="1249,133,1440,173"/>
+</map>

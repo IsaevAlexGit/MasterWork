@@ -1,0 +1,7 @@
+<map id="Optimum.MainMap._DrawPolygonColoring" name="Optimum.MainMap._DrawPolygonColoring">
+<area shape="rect" id="node1" title="Отрисовка полигонов" alt="" coords="5,63,224,103"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#aac028a05422d1a5780bfee7290822343" title="Легенда карты" alt="" coords="272,13,504,38"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d" title="Создание таблицы из полигонов" alt="" coords="282,63,494,103"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_map_model.html#aa8ad00f983ffb9fd9f2f5c128bd4fcb9" title="Определение цвета, в который будет окрашен полигон" alt="" coords="285,127,491,167"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html#a2a18615cd118dd620b7201b1c21a602f" title="Найти максимум и минимум по выбранному критерию для площадной раскраски" alt="" coords="552,5,791,45"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Optimum.MapModel.CreateListBufferZones" name="Optimum.MapModel.CreateListBufferZones">
+<area shape="rect" id="node1" title="Вычисление для каждого полигона у слоя sublayerUserPoints количества вошедших в него критериев" alt="" coords="1004,25,1207,65"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a11e7f6cdf04729832a0c88070ffffd0d" title="Поиск оптимальных точек" alt="" coords="725,25,956,65"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,25,425,65"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,25,677,65"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,89,667,129"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,32,195,57"/>
+</map>

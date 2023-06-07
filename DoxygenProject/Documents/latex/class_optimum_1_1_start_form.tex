@@ -1,0 +1,440 @@
+\doxysection{Класс Optimum.\+Start\+Form}
+\label{class_optimum_1_1_start_form}\index{Optimum.StartForm@{Optimum.StartForm}}
+
+
+Класс для начального окна  
+
+
+
+
+Граф наследования\+:Optimum.\+Start\+Form\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_optimum_1_1_start_form__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Optimum.\+Start\+Form\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_optimum_1_1_start_form__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Start\+Form} ()
+\begin{DoxyCompactList}\small\item\em Конструктор формы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+override void \textbf{ Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Start\+Form\+\_\+\+Load} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка формы \end{DoxyCompactList}\item 
+void \textbf{ button\+Select\+Color\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Установка цвета для интерфейса \end{DoxyCompactList}\item 
+void \textbf{ button\+Proceed\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Переход на главный экран \end{DoxyCompactList}\item 
+void \textbf{ timer\+\_\+\+Tick} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка таймера каждую секунду для проверки наличие Интернета \end{DoxyCompactList}\item 
+void \textbf{ button\+PDF\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Открытие руководства пользователя в HTML. \end{DoxyCompactList}\item 
+void \textbf{ Start\+Form\+\_\+\+Key\+Down} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Закрыть форму через ESC. \end{DoxyCompactList}\item 
+void \textbf{ Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Language\+Type \textbf{ \+\_\+language\+Of\+Map}
+\begin{DoxyCompactList}\small\item\em Локализация карты \end{DoxyCompactList}\item 
+string \textbf{ \+\_\+selected\+Map\+Language}
+\item 
+Color \textbf{ \+\_\+main\+Color} = Color.\+From\+Argb(138, 230, 145)
+\begin{DoxyCompactList}\small\item\em Цвета интерфейса по умолчанию \end{DoxyCompactList}\item 
+Color \textbf{ \+\_\+secondary\+Color} = Color.\+From\+Argb(174, 238, 180)
+\item 
+bool \textbf{ \+\_\+flag\+Connection} = false
+\begin{DoxyCompactList}\small\item\em Состояние Интернета \end{DoxyCompactList}\item 
+System.\+Component\+Model.\+IContainer \textbf{ components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+About\+Program}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Proceed}
+\item 
+System.\+Windows.\+Forms.\+Picture\+Box \textbf{ picture\+Logo\+Application}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Name\+Program}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Manual}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Tip \textbf{ tool\+Tip}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box\+Language}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Select\+Local}
+\item 
+System.\+Windows.\+Forms.\+Picture\+Box \textbf{ picture\+Box\+Connection}
+\item 
+System.\+Windows.\+Forms.\+Color\+Dialog \textbf{ color\+Dialog}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Select\+Color}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+State\+Connetion}
+\item 
+System.\+Windows.\+Forms.\+Timer \textbf{ timer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для начального окна 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_start_form_a9cc06a02e74be3cf330ef63bafaedc4e}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!StartForm@{StartForm}}
+\index{StartForm@{StartForm}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{StartForm()}
+{\footnotesize\ttfamily Optimum.\+Start\+Form.\+Start\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a9cc06a02e74be3cf330ef63bafaedc4e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_start_form_abd7b649fedf41318649c7580720fbbf3}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!buttonPDF\_Click@{buttonPDF\_Click}}
+\index{buttonPDF\_Click@{buttonPDF\_Click}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{buttonPDF\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Form.\+button\+PDF\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Открытие руководства пользователя в HTML. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_abd7b649fedf41318649c7580720fbbf3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_form_a571359f2935677757ac3990bf7d4abcf}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!buttonProceed\_Click@{buttonProceed\_Click}}
+\index{buttonProceed\_Click@{buttonProceed\_Click}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{buttonProceed\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Form.\+button\+Proceed\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Переход на главный экран 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a571359f2935677757ac3990bf7d4abcf_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a571359f2935677757ac3990bf7d4abcf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_form_a38f915014901f0ae17a4545f49a1853b}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!buttonSelectColor\_Click@{buttonSelectColor\_Click}}
+\index{buttonSelectColor\_Click@{buttonSelectColor\_Click}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{buttonSelectColor\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Form.\+button\+Select\+Color\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Установка цвета для интерфейса 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a38f915014901f0ae17a4545f49a1853b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_form_abb5fab4b655b3c948a43bb7053d74fdc}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{Dispose()}
+{\footnotesize\ttfamily override void Optimum.\+Start\+Form.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_optimum_1_1_start_form_a690b8d74ee46e890ba4a4d613017e76e}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{InitializeComponent()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Form.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a690b8d74ee46e890ba4a4d613017e76e_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a690b8d74ee46e890ba4a4d613017e76e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_form_aa679696d952969156ce1e03d6b799b81}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!StartForm\_KeyDown@{StartForm\_KeyDown}}
+\index{StartForm\_KeyDown@{StartForm\_KeyDown}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{StartForm\_KeyDown()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Form.\+Start\+Form\+\_\+\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Закрыть форму через ESC. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_aa679696d952969156ce1e03d6b799b81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_form_adfba2919772f7e3d8c7a93d89bb52b9e}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!StartForm\_Load@{StartForm\_Load}}
+\index{StartForm\_Load@{StartForm\_Load}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{StartForm\_Load()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Form.\+Start\+Form\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_adfba2919772f7e3d8c7a93d89bb52b9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_form_a09dd50e8ffb7612c6014d805ee77f379}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!timer\_Tick@{timer\_Tick}}
+\index{timer\_Tick@{timer\_Tick}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{timer\_Tick()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Form.\+timer\+\_\+\+Tick (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка таймера каждую секунду для проверки наличие Интернета 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a09dd50e8ffb7612c6014d805ee77f379_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_form_a09dd50e8ffb7612c6014d805ee77f379_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_start_form_a9fbea39b0aa5688536aa1b4b9d2c5c10}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!\_flagConnection@{\_flagConnection}}
+\index{\_flagConnection@{\_flagConnection}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{\_flagConnection}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Form.\+\_\+flag\+Connection = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Состояние Интернета 
+
+\mbox{\label{class_optimum_1_1_start_form_ad80fd331ca6057bfbf802a5cb0fd2928}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!\_languageOfMap@{\_languageOfMap}}
+\index{\_languageOfMap@{\_languageOfMap}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{\_languageOfMap}
+{\footnotesize\ttfamily Language\+Type Optimum.\+Start\+Form.\+\_\+language\+Of\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Локализация карты 
+
+\mbox{\label{class_optimum_1_1_start_form_a7c060d5f3fe26e19be7e6e354fe6cd0e}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!\_mainColor@{\_mainColor}}
+\index{\_mainColor@{\_mainColor}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{\_mainColor}
+{\footnotesize\ttfamily Color Optimum.\+Start\+Form.\+\_\+main\+Color = Color.\+From\+Argb(138, 230, 145)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Цвета интерфейса по умолчанию 
+
+\mbox{\label{class_optimum_1_1_start_form_a14111483468781fc2642b8cd9fd2a5bf}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!\_secondaryColor@{\_secondaryColor}}
+\index{\_secondaryColor@{\_secondaryColor}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{\_secondaryColor}
+{\footnotesize\ttfamily Color Optimum.\+Start\+Form.\+\_\+secondary\+Color = Color.\+From\+Argb(174, 238, 180)\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a408398e52763cefe0cfb565a34d04c96}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!\_selectedMapLanguage@{\_selectedMapLanguage}}
+\index{\_selectedMapLanguage@{\_selectedMapLanguage}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{\_selectedMapLanguage}
+{\footnotesize\ttfamily string Optimum.\+Start\+Form.\+\_\+selected\+Map\+Language\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a01d8224df9e2f2ba71042d3271d68bff}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!buttonManual@{buttonManual}}
+\index{buttonManual@{buttonManual}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{buttonManual}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Form.\+button\+Manual\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_aa76620b8cdfcf1ffa058b5b7926d46b6}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!buttonProceed@{buttonProceed}}
+\index{buttonProceed@{buttonProceed}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{buttonProceed}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Form.\+button\+Proceed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a0cea24735fd81384c96a2a55ed966e42}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!buttonSelectColor@{buttonSelectColor}}
+\index{buttonSelectColor@{buttonSelectColor}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{buttonSelectColor}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Form.\+button\+Select\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_aeeae0d5f4c31a6192dbc0a1957c352e5}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!colorDialog@{colorDialog}}
+\index{colorDialog@{colorDialog}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{colorDialog}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Color\+Dialog Optimum.\+Start\+Form.\+color\+Dialog\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a43c30e384448d9625ea4bf43faa49580}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!comboBoxLanguage@{comboBoxLanguage}}
+\index{comboBoxLanguage@{comboBoxLanguage}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{comboBoxLanguage}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Form.\+combo\+Box\+Language\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a557605c830bdfd24db3ba84cc72d5225}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!components@{components}}
+\index{components@{components}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{components}
+{\footnotesize\ttfamily System.\+Component\+Model.\+IContainer Optimum.\+Start\+Form.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\label{class_optimum_1_1_start_form_a954c6e5336911a7b11499ae42c707d57}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!labelAboutProgram@{labelAboutProgram}}
+\index{labelAboutProgram@{labelAboutProgram}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{labelAboutProgram}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Form.\+label\+About\+Program\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a9bca4e5f26b198be3268f2ec127137a8}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!labelNameProgram@{labelNameProgram}}
+\index{labelNameProgram@{labelNameProgram}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{labelNameProgram}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Form.\+label\+Name\+Program\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_ad75e873bfb11e47747c7d664384fd076}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!labelSelectLocal@{labelSelectLocal}}
+\index{labelSelectLocal@{labelSelectLocal}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{labelSelectLocal}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Form.\+label\+Select\+Local\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a55db747057e334cfeed7dfe366ab04e7}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!labelStateConnetion@{labelStateConnetion}}
+\index{labelStateConnetion@{labelStateConnetion}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{labelStateConnetion}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Form.\+label\+State\+Connetion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a7c7d40109a228919ec25da17d1aa1b8d}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!pictureBoxConnection@{pictureBoxConnection}}
+\index{pictureBoxConnection@{pictureBoxConnection}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{pictureBoxConnection}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Picture\+Box Optimum.\+Start\+Form.\+picture\+Box\+Connection\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_ae22b9e02544241b153ef7eaa89ebd92f}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!pictureLogoApplication@{pictureLogoApplication}}
+\index{pictureLogoApplication@{pictureLogoApplication}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{pictureLogoApplication}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Picture\+Box Optimum.\+Start\+Form.\+picture\+Logo\+Application\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a541b04559518f30bf3e21bc468610d8d}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!timer@{timer}}
+\index{timer@{timer}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{timer}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Timer Optimum.\+Start\+Form.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_form_a8628a5f43fd95ae43cdc2385aaa552eb}} 
+\index{Optimum.StartForm@{Optimum.StartForm}!toolTip@{toolTip}}
+\index{toolTip@{toolTip}!Optimum.StartForm@{Optimum.StartForm}}
+\doxysubsubsection{toolTip}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Tip Optimum.\+Start\+Form.\+tool\+Tip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Start\+Form.\+cs}\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Start\+Form.\+Designer.\+cs}\end{DoxyCompactItemize}

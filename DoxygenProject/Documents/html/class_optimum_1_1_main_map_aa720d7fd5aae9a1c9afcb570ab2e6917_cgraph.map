@@ -1,0 +1,4 @@
+<map id="Optimum.MainMap._FindDiagonalTerritory" name="Optimum.MainMap._FindDiagonalTerritory">
+<area shape="rect" id="node1" title="Найти динамиечески максимальную длину для радиуса поиска" alt="" coords="5,5,224,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="272,5,487,45"/>
+</map>

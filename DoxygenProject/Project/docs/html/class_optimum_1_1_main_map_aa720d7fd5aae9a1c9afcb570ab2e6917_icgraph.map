@@ -1,0 +1,8 @@
+<map id="Optimum.MainMap._FindDiagonalTerritory" name="Optimum.MainMap._FindDiagonalTerritory">
+<area shape="rect" id="node1" title="Найти динамиечески максимальную длину для радиуса поиска" alt="" coords="961,37,1180,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>

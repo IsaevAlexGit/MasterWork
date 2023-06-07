@@ -1,0 +1,6 @@
+<map id="Optimum.FacilityInfo.FacilityInfo_Load" name="Optimum.FacilityInfo.FacilityInfo_Load">
+<area shape="rect" id="node1" title="Загрузка формы" alt="" coords="5,37,192,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_facility_info.html#afe7f84d348f47ba4010c8d8262d712e8" title="Проверка: является ли строка веб&#45;адресом" alt="" coords="269,5,452,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="240,69,481,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="529,69,739,109"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Optimum.RenderNorma._CreateCircle" name="Optimum.RenderNorma._CreateCircle">
+<area shape="rect" id="node1" title="Отрисовка окружности" alt="" coords="5,5,168,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_norma.html#a03b7db9ec605b27fbe1fdbb3bda9da78" title="Вычисление каждой точки окружности" alt="" coords="216,5,395,45"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Optimum.StartForm.buttonProceed_Click" name="Optimum.StartForm.buttonProceed_Click">
+<area shape="rect" id="node1" title="Переход на главный экран" alt="" coords="5,35,183,75"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_start_form.html#a09dd50e8ffb7612c6014d805ee77f379" title="Обработка таймера каждую секунду для проверки наличие Интернета" alt="" coords="231,42,432,67"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_internet.html#a72bcf82df64a794b3733fe5819d39fd7" title="Проверка, есть ли соединение с интернетом" alt="" coords="480,42,708,67"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_internet.html#a76d295c0b99678adcc5569e0bfe17478" title=" " alt="" coords="765,5,935,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_internet.html#ac3dfd016be81e0579b6e9e330852a6bd" title="Пингануть сервера, при первом получении ответа от любого сервера возвращает true." alt="" coords="756,70,944,95"/>
+</map>

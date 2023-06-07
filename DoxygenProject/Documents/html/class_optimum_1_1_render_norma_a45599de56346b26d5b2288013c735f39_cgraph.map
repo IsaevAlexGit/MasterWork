@@ -1,0 +1,6 @@
+<map id="Optimum.RenderNorma._InitializationMarkers" name="Optimum.RenderNorma._InitializationMarkers">
+<area shape="rect" id="node1" title="Установка маркеров на карте" alt="" coords="5,5,168,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_norma.html#af2b3a0348f37e3de059204c408edb5cb" title="Инициализация буферной зоны" alt="" coords="216,5,379,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_norma.html#ad9597f1226de047475458c330a17db29" title="Отрисовка окружности" alt="" coords="427,5,589,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_norma.html#a03b7db9ec605b27fbe1fdbb3bda9da78" title="Вычисление каждой точки окружности" alt="" coords="637,5,816,45"/>
+</map>

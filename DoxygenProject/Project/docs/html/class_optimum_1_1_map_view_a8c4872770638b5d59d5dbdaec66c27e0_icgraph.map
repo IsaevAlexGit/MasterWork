@@ -1,0 +1,7 @@
+<map id="Optimum.MapView.SetHoverTextForFacility" name="Optimum.MapView.SetHoverTextForFacility">
+<area shape="rect" id="node1" title="Обработка выводящейся информации при наведении на объект социальной инфраструктуры" alt="" coords="739,37,927,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a18ba7ca5b5fa9d2004206760d833d5d4" title="Показать только название объектов социальной инфраструктуры при наведении на маркер" alt="" coords="488,69,691,109"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#ab555e6c20a158d8a425bbdd8cd140c69" title="Показать всю информацию об объектах социальной инфраструктуры при наведении на маркер" alt="" coords="488,5,691,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,12,440,52"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,49,201,74"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Optimum.MapView.ClearTerritory" name="Optimum.MapView.ClearTerritory">
+<area shape="rect" id="node1" title="Скрыть зону анализа" alt="" coords="5,13,219,38"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_territory.html#aadbe8e1c1174676709602a0809b695f8" title="Скрыть отображение зоны анализа" alt="" coords="267,5,437,45"/>
+</map>

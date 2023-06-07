@@ -1,0 +1,5 @@
+<map id="Optimum.Internet.CheckConnection" name="Optimum.Internet.CheckConnection">
+<area shape="rect" id="node1" title="Проверка, есть ли соединение с интернетом" alt="" coords="5,42,233,67"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_internet.html#a76d295c0b99678adcc5569e0bfe17478" title=" " alt="" coords="291,5,460,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_internet.html#ac3dfd016be81e0579b6e9e330852a6bd" title="Пингануть сервера, при первом получении ответа от любого сервера возвращает true." alt="" coords="281,70,469,95"/>
+</map>

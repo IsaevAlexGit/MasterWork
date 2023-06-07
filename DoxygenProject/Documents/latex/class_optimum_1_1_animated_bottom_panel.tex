@@ -1,0 +1,249 @@
+\doxysection{Класс Optimum.\+Animated\+Bottom\+Panel}
+\label{class_optimum_1_1_animated_bottom_panel}\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+
+
+Класс для нижней панели  
+
+
+
+
+Граф наследования\+:Optimum.\+Animated\+Bottom\+Panel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{class_optimum_1_1_animated_bottom_panel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Optimum.\+Animated\+Bottom\+Panel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_animated_bottom_panel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ state\+Enum} \{ \textbf{ close} = 0
+, \textbf{ open} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Два состояния панели\+: открыта или закрыта \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Animated\+Bottom\+Panel} (Size size, int top, Color color, \textbf{ state\+Enum} \textbf{ state}, \textbf{ Map\+Model} model)
+\begin{DoxyCompactList}\small\item\em Конструктор панели \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+Button \textbf{ action\+Button}
+\begin{DoxyCompactList}\small\item\em Кнопка показать/Скрыть панель \end{DoxyCompactList}\item 
+\textbf{ state\+Enum} \textbf{ state}
+\begin{DoxyCompactList}\small\item\em Состояние панели \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ \+\_\+\+Action\+Button\+Click} (object Sender, Event\+Args E)
+\begin{DoxyCompactList}\small\item\em Обработка клика по кнопке \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Tick\+Tack} (object Sender, Event\+Args E)
+\begin{DoxyCompactList}\small\item\em Обработка тика таймера \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Map\+Model} \textbf{ \+\_\+model}
+\item 
+Timer \textbf{ \+\_\+tick\+Tack}
+\begin{DoxyCompactList}\small\item\em Таймер \end{DoxyCompactList}\item 
+Tool\+Tip \textbf{ \+\_\+tool\+Tip\+For\+Panel} = new Tool\+Tip()
+\begin{DoxyCompactList}\small\item\em Всплывающая подсказка при наведении на кнопку \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+step} = 0
+\begin{DoxyCompactList}\small\item\em Шаг сдвига панели \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+flag\+Move} = false
+\begin{DoxyCompactList}\small\item\em Флаг остановки движения панели \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для нижней панели 
+
+\doxysubsection{Перечисления}
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_a663dd594bac60bd8bc9e8c0600d20704}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!stateEnum@{stateEnum}}
+\index{stateEnum@{stateEnum}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{stateEnum}
+{\footnotesize\ttfamily enum \textbf{ Optimum.\+Animated\+Bottom\+Panel.\+state\+Enum}}
+
+
+
+Два состояния панели\+: открыта или закрыта 
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{close@{close}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!close@{close}}}\mbox{\label{class_optimum_1_1_animated_bottom_panel_a663dd594bac60bd8bc9e8c0600d20704a716f6b30598ba30945d84485e61c1027}} 
+close&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{open@{open}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!open@{open}}}\mbox{\label{class_optimum_1_1_animated_bottom_panel_a663dd594bac60bd8bc9e8c0600d20704a7cef8a734855777c2a9d0caf42666e69}} 
+open&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_aca47d4d339ba7a42f5bfb0c5774e7692}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!AnimatedBottomPanel@{AnimatedBottomPanel}}
+\index{AnimatedBottomPanel@{AnimatedBottomPanel}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{AnimatedBottomPanel()}
+{\footnotesize\ttfamily Optimum.\+Animated\+Bottom\+Panel.\+Animated\+Bottom\+Panel (\begin{DoxyParamCaption}\item[{Size}]{size,  }\item[{int}]{top,  }\item[{Color}]{color,  }\item[{\textbf{ state\+Enum}}]{state,  }\item[{\textbf{ Map\+Model}}]{model }\end{DoxyParamCaption})}
+
+
+
+Конструктор панели 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public 
+\begin{DoxyParams}{Аргументы}
+{\em size} & Размер панели\\
+\hline
+{\em top} & Расположение панели\\
+\hline
+{\em color} & Цвет панели\\
+\hline
+{\em state} & Состояние панели\\
+\hline
+{\em model} & Объект Map\+Model\\
+\hline
+\end{DoxyParams}
+
+
+Функция создаёт нижнюю выдвигающуюся панель Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_animated_bottom_panel_aca47d4d339ba7a42f5bfb0c5774e7692_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_ae03a14bbc6c641324d48d2bcc095021b}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!\_ActionButtonClick@{\_ActionButtonClick}}
+\index{\_ActionButtonClick@{\_ActionButtonClick}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{\_ActionButtonClick()}
+{\footnotesize\ttfamily void Optimum.\+Animated\+Bottom\+Panel.\+\_\+\+Action\+Button\+Click (\begin{DoxyParamCaption}\item[{object}]{Sender,  }\item[{Event\+Args}]{E }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка клика по кнопке 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private 
+
+Функция запускает таймер для движения панели Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_animated_bottom_panel_ae03a14bbc6c641324d48d2bcc095021b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_a56e831e373cbcfa3d9541526b8d48477}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!\_TickTack@{\_TickTack}}
+\index{\_TickTack@{\_TickTack}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{\_TickTack()}
+{\footnotesize\ttfamily void Optimum.\+Animated\+Bottom\+Panel.\+\_\+\+Tick\+Tack (\begin{DoxyParamCaption}\item[{object}]{Sender,  }\item[{Event\+Args}]{E }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка тика таймера 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private 
+
+Функция выполняет действия каждый тик таймера Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_animated_bottom_panel_a56e831e373cbcfa3d9541526b8d48477_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_ad4b8381b1592ae9627b5ad9ca650b75c}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!\_flagMove@{\_flagMove}}
+\index{\_flagMove@{\_flagMove}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{\_flagMove}
+{\footnotesize\ttfamily bool Optimum.\+Animated\+Bottom\+Panel.\+\_\+flag\+Move = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг остановки движения панели 
+
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_aaeca426c91f6595aa2c94cf9da010173}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!\_model@{\_model}}
+\index{\_model@{\_model}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{\_model}
+{\footnotesize\ttfamily \textbf{ Map\+Model} Optimum.\+Animated\+Bottom\+Panel.\+\_\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_a4fa0b463cdc91314e012559d9dd506ff}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!\_step@{\_step}}
+\index{\_step@{\_step}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{\_step}
+{\footnotesize\ttfamily int Optimum.\+Animated\+Bottom\+Panel.\+\_\+step = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Шаг сдвига панели 
+
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_a74f166da8647fed14920657a3ef090e0}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!\_tickTack@{\_tickTack}}
+\index{\_tickTack@{\_tickTack}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{\_tickTack}
+{\footnotesize\ttfamily Timer Optimum.\+Animated\+Bottom\+Panel.\+\_\+tick\+Tack\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Таймер 
+
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_a505e003c3bde26f2404ffd42b4989df7}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!\_toolTipForPanel@{\_toolTipForPanel}}
+\index{\_toolTipForPanel@{\_toolTipForPanel}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{\_toolTipForPanel}
+{\footnotesize\ttfamily Tool\+Tip Optimum.\+Animated\+Bottom\+Panel.\+\_\+tool\+Tip\+For\+Panel = new Tool\+Tip()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Всплывающая подсказка при наведении на кнопку 
+
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_a45ca2387dd90db42efadaa31e9ab3a8c}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!actionButton@{actionButton}}
+\index{actionButton@{actionButton}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{actionButton}
+{\footnotesize\ttfamily Button Optimum.\+Animated\+Bottom\+Panel.\+action\+Button}
+
+
+
+Кнопка показать/Скрыть панель 
+
+\mbox{\label{class_optimum_1_1_animated_bottom_panel_a5bdca9d2d79d36dc830a8af52690a928}} 
+\index{Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}!state@{state}}
+\index{state@{state}!Optimum.AnimatedBottomPanel@{Optimum.AnimatedBottomPanel}}
+\doxysubsubsection{state}
+{\footnotesize\ttfamily \textbf{ state\+Enum} Optimum.\+Animated\+Bottom\+Panel.\+state}
+
+
+
+Состояние панели 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Animated\+Bottom\+Panel.\+cs}\end{DoxyCompactItemize}

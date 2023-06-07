@@ -1,0 +1,38 @@
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\bin\Debug\Optimum.exe.config
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\bin\Debug\Optimum.exe
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\bin\Debug\Optimum.pdb
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\bin\Debug\GMap.NET.Core.dll
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.SearchNormPerCapita.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.SettingRadius.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.MainMap.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.Properties.Resources.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.FacilityInfo.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.Settings.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.StartSettings.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.StartForm.resources
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.csproj.CopyComplete
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.exe
+C:\Users\PC\Desktop\MD\WindowsFormsApp1\obj\Debug\Optimum.pdb
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\bin\Debug\Optimum.exe.config
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\bin\Debug\Optimum.exe
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\bin\Debug\Optimum.pdb
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\bin\Debug\GMap.NET.Core.dll
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.SearchNormPerCapita.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.SettingRadius.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.MainMap.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.Properties.Resources.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.FacilityInfo.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.Settings.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.StartSettings.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.StartForm.resources
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.csproj.CopyComplete
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.exe
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.pdb
+C:\Users\PC\Desktop\Master Diploma\WindowsFormsApp1\obj\Debug\Optimum.csprojAssemblyReference.cache

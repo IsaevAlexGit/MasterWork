@@ -1,0 +1,4 @@
+<map id="Optimum.FileValidator.WriteToFileInfoOptimumZones" name="Optimum.FileValidator.WriteToFileInfoOptimumZones">
+<area shape="rect" id="node1" title="Запись в CSV&#45;файл информации обо всех найденных оптимальных точках" alt="" coords="271,5,457,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a564f4febef1c4ff8cd5fc1ff065aaf45" title="Сохранение оптимальных точек в CSV&#45;файл" alt="" coords="5,5,223,45"/>
+</map>

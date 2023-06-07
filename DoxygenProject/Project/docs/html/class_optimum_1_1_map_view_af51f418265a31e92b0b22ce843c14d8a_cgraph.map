@@ -1,0 +1,4 @@
+<map id="Optimum.MapView.CheckInsidePointTerritory" name="Optimum.MapView.CheckInsidePointTerritory">
+<area shape="rect" id="node1" title="Проверка принадлежности точки зоне анализа" alt="" coords="5,5,212,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="260,5,475,45"/>
+</map>

@@ -1,0 +1,174 @@
+\doxysection{Класс Optimum.\+Internet}
+\label{class_optimum_1_1_internet}\index{Optimum.Internet@{Optimum.Internet}}
+
+
+Класс проверки подключения к Интернету  
+
+
+
+
+Граф связей класса Optimum.\+Internet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_optimum_1_1_internet__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ internet\+Connection\+State} \+: int \{ \newline
+\textbf{ INTERNET\+\_\+\+CONNECTION\+\_\+\+MODEM} = 0x1
+, \textbf{ INTERNET\+\_\+\+CONNECTION\+\_\+\+LAN} = 0x2
+, \textbf{ INTERNET\+\_\+\+CONNECTION\+\_\+\+PROXY} = 0x4
+, \textbf{ INTERNET\+\_\+\+RAS\+\_\+\+INSTALLED} = 0x10
+, \newline
+\textbf{ INTERNET\+\_\+\+CONNECTION\+\_\+\+OFFLINE} = 0x20
+, \textbf{ INTERNET\+\_\+\+CONNECTION\+\_\+\+CONFIGURED} = 0x40
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Internet\+Get\+Connected\+State} (ref \textbf{ internet\+Connection\+State} lpdw\+Flags, int dw\+Reserved)
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Check\+Connection} ()
+\begin{DoxyCompactList}\small\item\em Проверка, есть ли соединение с интернетом \end{DoxyCompactList}\item 
+static bool \textbf{ Ping\+Server} (string[$\,$] server\+List)
+\begin{DoxyCompactList}\small\item\em Пингануть сервера, при первом получении ответа от любого сервера возвращает true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static object \textbf{ sync\+Obj} = new object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс проверки подключения к Интернету 
+
+\doxysubsection{Перечисления}
+\mbox{\label{class_optimum_1_1_internet_acf711caee387e8f5bd3c9192b4477703}} 
+\index{Optimum.Internet@{Optimum.Internet}!internetConnectionState@{internetConnectionState}}
+\index{internetConnectionState@{internetConnectionState}!Optimum.Internet@{Optimum.Internet}}
+\doxysubsubsection{internetConnectionState}
+{\footnotesize\ttfamily enum \textbf{ Optimum.\+Internet.\+internet\+Connection\+State} \+: int}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNET\_CONNECTION\_MODEM@{INTERNET\_CONNECTION\_MODEM}!Optimum.Internet@{Optimum.Internet}}\index{Optimum.Internet@{Optimum.Internet}!INTERNET\_CONNECTION\_MODEM@{INTERNET\_CONNECTION\_MODEM}}}\mbox{\label{class_optimum_1_1_internet_acf711caee387e8f5bd3c9192b4477703a3089b445590db79f384656d5bde5a4da}} 
+INTERNET\+\_\+\+CONNECTION\+\_\+\+MODEM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNET\_CONNECTION\_LAN@{INTERNET\_CONNECTION\_LAN}!Optimum.Internet@{Optimum.Internet}}\index{Optimum.Internet@{Optimum.Internet}!INTERNET\_CONNECTION\_LAN@{INTERNET\_CONNECTION\_LAN}}}\mbox{\label{class_optimum_1_1_internet_acf711caee387e8f5bd3c9192b4477703ac5c70722493aee03859a7dae81a09e15}} 
+INTERNET\+\_\+\+CONNECTION\+\_\+\+LAN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNET\_CONNECTION\_PROXY@{INTERNET\_CONNECTION\_PROXY}!Optimum.Internet@{Optimum.Internet}}\index{Optimum.Internet@{Optimum.Internet}!INTERNET\_CONNECTION\_PROXY@{INTERNET\_CONNECTION\_PROXY}}}\mbox{\label{class_optimum_1_1_internet_acf711caee387e8f5bd3c9192b4477703a6cc2e13da042543d3be9b09a1a65e7a0}} 
+INTERNET\+\_\+\+CONNECTION\+\_\+\+PROXY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNET\_RAS\_INSTALLED@{INTERNET\_RAS\_INSTALLED}!Optimum.Internet@{Optimum.Internet}}\index{Optimum.Internet@{Optimum.Internet}!INTERNET\_RAS\_INSTALLED@{INTERNET\_RAS\_INSTALLED}}}\mbox{\label{class_optimum_1_1_internet_acf711caee387e8f5bd3c9192b4477703ab798a325ae6fe1c3993d7b053a215bd4}} 
+INTERNET\+\_\+\+RAS\+\_\+\+INSTALLED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNET\_CONNECTION\_OFFLINE@{INTERNET\_CONNECTION\_OFFLINE}!Optimum.Internet@{Optimum.Internet}}\index{Optimum.Internet@{Optimum.Internet}!INTERNET\_CONNECTION\_OFFLINE@{INTERNET\_CONNECTION\_OFFLINE}}}\mbox{\label{class_optimum_1_1_internet_acf711caee387e8f5bd3c9192b4477703a4e9c35d7a9653e28719f30f5dd4bd7c7}} 
+INTERNET\+\_\+\+CONNECTION\+\_\+\+OFFLINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNET\_CONNECTION\_CONFIGURED@{INTERNET\_CONNECTION\_CONFIGURED}!Optimum.Internet@{Optimum.Internet}}\index{Optimum.Internet@{Optimum.Internet}!INTERNET\_CONNECTION\_CONFIGURED@{INTERNET\_CONNECTION\_CONFIGURED}}}\mbox{\label{class_optimum_1_1_internet_acf711caee387e8f5bd3c9192b4477703acad1cdd2e71ec82a42e8ee96054fbd93}} 
+INTERNET\+\_\+\+CONNECTION\+\_\+\+CONFIGURED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_internet_a72bcf82df64a794b3733fe5819d39fd7}} 
+\index{Optimum.Internet@{Optimum.Internet}!CheckConnection@{CheckConnection}}
+\index{CheckConnection@{CheckConnection}!Optimum.Internet@{Optimum.Internet}}
+\doxysubsubsection{CheckConnection()}
+{\footnotesize\ttfamily static bool Optimum.\+Internet.\+Check\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Проверка, есть ли соединение с интернетом 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Результат соединения с интернетом
+\end{DoxyReturn}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_internet_a72bcf82df64a794b3733fe5819d39fd7_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_internet_a72bcf82df64a794b3733fe5819d39fd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_internet_a76d295c0b99678adcc5569e0bfe17478}} 
+\index{Optimum.Internet@{Optimum.Internet}!InternetGetConnectedState@{InternetGetConnectedState}}
+\index{InternetGetConnectedState@{InternetGetConnectedState}!Optimum.Internet@{Optimum.Internet}}
+\doxysubsubsection{InternetGetConnectedState()}
+{\footnotesize\ttfamily static bool Optimum.\+Internet.\+Internet\+Get\+Connected\+State (\begin{DoxyParamCaption}\item[{ref \textbf{ internet\+Connection\+State}}]{lpdw\+Flags,  }\item[{int}]{dw\+Reserved }\end{DoxyParamCaption})}
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_internet_a76d295c0b99678adcc5569e0bfe17478_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_internet_ac3dfd016be81e0579b6e9e330852a6bd}} 
+\index{Optimum.Internet@{Optimum.Internet}!PingServer@{PingServer}}
+\index{PingServer@{PingServer}!Optimum.Internet@{Optimum.Internet}}
+\doxysubsubsection{PingServer()}
+{\footnotesize\ttfamily static bool Optimum.\+Internet.\+Ping\+Server (\begin{DoxyParamCaption}\item[{string[$\,$]}]{server\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Пингануть сервера, при первом получении ответа от любого сервера возвращает true. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em server\+List} & Список серверов\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Флаг наличия соединения с интернетом
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_internet_ac3dfd016be81e0579b6e9e330852a6bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_internet_a11ad867a836d2355e97a3d0fbfc51aff}} 
+\index{Optimum.Internet@{Optimum.Internet}!syncObj@{syncObj}}
+\index{syncObj@{syncObj}!Optimum.Internet@{Optimum.Internet}}
+\doxysubsubsection{syncObj}
+{\footnotesize\ttfamily object Optimum.\+Internet.\+sync\+Obj = new object()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Internet.\+cs}\end{DoxyCompactItemize}

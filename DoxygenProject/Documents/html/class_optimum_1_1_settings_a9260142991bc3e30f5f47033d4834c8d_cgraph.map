@@ -1,0 +1,6 @@
+<map id="Optimum.Settings.Settings_Load" name="Optimum.Settings.Settings_Load">
+<area shape="rect" id="node1" title="Загрузка формы" alt="" coords="5,45,220,70"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_settings.html#a32198591d42dae282a13c3d9157fd63e" title="Заполнить критерии данными, загруженными ранее" alt="" coords="289,5,488,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="268,69,509,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="557,69,767,109"/>
+</map>

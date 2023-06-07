@@ -1,0 +1,37 @@
+<map id="Optimum.MainMap.MainMap_SizeChanged" name="Optimum.MainMap.MainMap_SizeChanged">
+<area shape="rect" id="node1" title="Обработка сворачивания формы" alt="" coords="5,241,195,281"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a3c5d3e9d46f06a778378e42afcab3080" title="Проверить, отображены ли на карте объекты социальной инфраструктуры" alt="" coords="531,69,762,109"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_map_view.html#a0da028c2a83375bed6dec781650ac938" title="Отрисовка оптимальных зон авто&#45;оптимумов" alt="" coords="1105,125,1297,165"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_map_view.html#ad5bf24fdb0af958a7fa446e61d648a03" title="Отрисовка буферной зоны около точки&#45;кандидата и оптимальных точек" alt="" coords="1104,268,1299,308"/>
+<area shape="rect" id="node23" href="$class_optimum_1_1_main_map.html#a299f8afdddc52866a61ed87fe171ef6d" title="Отрисовка полигонов" alt="" coords="253,573,472,613"/>
+<area shape="rect" id="node28" href="$class_optimum_1_1_main_map.html#a62bd3b8c93d05cdf33e4ee4dc29ed455" title="Изменение критерия в точечной раскраски" alt="" coords="243,299,483,339"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a1684caabe5cd903639548d235d2285f4" title="Скрыть на карте объекты социальной инфраструктуры" alt="" coords="829,69,1031,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#a751e6bb1fc9fa56e623b9dc188c76743" title="Отобразить на карте объекты социальной инфраструктуры" alt="" coords="829,184,1031,224"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_view.html#a38fecfd2ea617ebd810bb539b1931012" title="Скрыть все объекты социальной инфраструктуры" alt="" coords="1097,73,1305,98"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_facility.html#a04b3e0f63090407a5d2da1ee49281510" title="Скрыть все объектов социальной инфраструктуры" alt="" coords="1370,60,1566,100"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_map_view.html#ac4d080061783d40d8bcacb1586c5e09a" title="Отобразить все объекты социальной инфраструктуры" alt="" coords="1098,194,1305,219"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_render_auto_points.html#a95feaa1777a3b8f407d414ccad4727d6" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="1374,124,1562,164"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_facility.html#ad3d23761623bb01e47cf86e59c770a47" title="Отображение всех объектов социальной инфраструктуры" alt="" coords="1371,188,1565,228"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_render_facility.html#a08d4dde0aefbaa71e6f0811649001196" title="Инициализация маркеров объектов социальной инфраструктуры" alt="" coords="1633,176,1819,216"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_facility.html#abd1fc541205dee429c529f103e30b116" title="Изменение выводимой информации об объекте социальной инфраструктуры" alt="" coords="1889,173,2055,213"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_render_user_marker.html#a0cc2eead2c65b35689f894956dee684f" title="Инициализация точек на карте" alt="" coords="1373,272,1563,312"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_render_user_marker.html#abcb8ce8339cc1a94b58fa93e272ca864" title="Инициализация маркеров" alt="" coords="1631,296,1821,336"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_render_user_marker.html#a054f1162380e8fa1e1d4d8301cd4d5d4" title="Инициализация самой оптимальной буферной зоны" alt="" coords="1869,237,2075,277"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_render_user_marker.html#a4f0b3b027276dcae897c650e4f2d3442" title="Инициализация буферной зоны" alt="" coords="1877,301,2067,341"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_render_user_marker.html#a14b702406e7dbb14622485d825ba923d" title="Инициализация оптимальной буферной зоны" alt="" coords="1877,365,2067,405"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_render_user_marker.html#af1cf9510eca60f8331ca71a87abc774c" title="Отрисовка окружности самых оптимальных точек" alt="" coords="2123,237,2313,277"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_render_user_marker.html#a45088fec0a28d25206a65cb8a1c65a9e" title="Вычисление каждой точки окружности" alt="" coords="2361,301,2552,341"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_render_user_marker.html#ae376832310e232295909aaafa189ca16" title="Отрисовка окружности" alt="" coords="2123,301,2313,341"/>
+<area shape="rect" id="node22" href="$class_optimum_1_1_render_user_marker.html#af91b105e52de261864a9c68575fbd0eb" title="Отрисовка окружности оптимальной точки" alt="" coords="2123,365,2313,405"/>
+<area shape="rect" id="node24" href="$class_optimum_1_1_main_map.html#aac028a05422d1a5780bfee7290822343" title="Легенда карты" alt="" coords="531,670,763,695"/>
+<area shape="rect" id="node26" href="$class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d" title="Создание таблицы из полигонов" alt="" coords="541,541,753,581"/>
+<area shape="rect" id="node27" href="$class_optimum_1_1_map_model.html#aa8ad00f983ffb9fd9f2f5c128bd4fcb9" title="Определение цвета, в который будет окрашен полигон" alt="" coords="543,605,750,645"/>
+<area shape="rect" id="node25" href="$class_optimum_1_1_map_model.html#a2a18615cd118dd620b7201b1c21a602f" title="Найти максимум и минимум по выбранному критерию для площадной раскраски" alt="" coords="811,663,1049,703"/>
+<area shape="rect" id="node29" href="$class_optimum_1_1_map_view.html#a57610785654b26b18dd6b21172123db3" title="Скрыть точечную раскраску" alt="" coords="551,349,742,389"/>
+<area shape="rect" id="node31" href="$class_optimum_1_1_map_view.html#ade5b3c759363b3e93ec39d308ea8893f" title="Отобразить точечную раскраску" alt="" coords="552,413,741,453"/>
+<area shape="rect" id="node35" href="$class_optimum_1_1_map_model.html#aa634a884579916f323e24ad03a37ea7d" title="Найти максимум и минимум по выбранному критерию для точечной раскраски" alt="" coords="535,477,758,517"/>
+<area shape="rect" id="node30" href="$class_optimum_1_1_render_polygon.html#a64e92656e895c71b0fca77ea5ceb306f" title="Скрыть точечную раскраску" alt="" coords="829,349,1031,389"/>
+<area shape="rect" id="node32" href="$class_optimum_1_1_render_polygon.html#a4f78de8179e729fe70ffd793669a03ea" title="Точечная раскраска" alt="" coords="829,413,1031,453"/>
+<area shape="rect" id="node33" href="$class_optimum_1_1_render_polygon.html#ae1ee05378916fba310e7186068ab532d" title="Инициализация маркеров" alt="" coords="1116,413,1287,453"/>
+<area shape="rect" id="node34" href="$class_optimum_1_1_render_polygon.html#a729793e673cf72f03bb7357144d92f6d" title="Получить значки для выбранного количества оттенков" alt="" coords="1353,413,1583,453"/>
+</map>

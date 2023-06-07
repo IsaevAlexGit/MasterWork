@@ -1,0 +1,12 @@
+<map id="Optimum.RenderAutoPoints._CreateCircle" name="Optimum.RenderAutoPoints._CreateCircle">
+<area shape="rect" id="node1" title="Отрисовка окружности" alt="" coords="1909,37,2097,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="1673,37,1861,77"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="1437,37,1625,77"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5" title="Инициализация точек на карте" alt="" coords="1201,37,1389,77"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_map_view.html#ac383b2c45b43a20cef3b7172e21c80db" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="961,37,1153,77"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>

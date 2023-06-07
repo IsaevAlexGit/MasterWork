@@ -1,0 +1,13 @@
+<map id="Optimum.SearchNormPerCapita._RedrawMap" name="Optimum.SearchNormPerCapita._RedrawMap">
+<area shape="rect" id="node1" title="Перерисовать все слои" alt="" coords="5,37,217,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_view.html#a7884e629e922d547cb15a051f2a18cbb" title="Отрисовка буферных зон оптимумов нормы" alt="" coords="555,8,758,48"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_search_norm_per_capita.html#acdd0b9c836bb5225de527156c35c2eff" title="Отобразить объекты социальной инфраструктуры" alt="" coords="265,65,505,105"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_norma.html#a248224c00210ad03a761969fda08744f" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="808,5,1039,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_norma.html#af2b3a0348f37e3de059204c408edb5cb" title="Инициализация буферной зоны" alt="" coords="1099,5,1261,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_norma.html#ad9597f1226de047475458c330a17db29" title="Отрисовка окружности" alt="" coords="1323,5,1486,45"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_render_norma.html#a03b7db9ec605b27fbe1fdbb3bda9da78" title="Вычисление каждой точки окружности" alt="" coords="1536,5,1715,45"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_map_view.html#ac4d080061783d40d8bcacb1586c5e09a" title="Отобразить все объекты социальной инфраструктуры" alt="" coords="553,74,760,99"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_render_facility.html#ad3d23761623bb01e47cf86e59c770a47" title="Отображение всех объектов социальной инфраструктуры" alt="" coords="826,69,1021,109"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_facility.html#a08d4dde0aefbaa71e6f0811649001196" title="Инициализация маркеров объектов социальной инфраструктуры" alt="" coords="1087,69,1273,109"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_render_facility.html#abd1fc541205dee429c529f103e30b116" title="Изменение выводимой информации об объекте социальной инфраструктуры" alt="" coords="1321,69,1488,109"/>
+</map>

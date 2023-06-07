@@ -1,0 +1,10 @@
+<map id="Optimum.SearchNormPerCapita.SearchNormPerCapita_Load" name="Optimum.SearchNormPerCapita.SearchNormPerCapita_Load">
+<area shape="rect" id="node1" title="Загрузка формы" alt="" coords="5,69,217,109"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_search_norm_per_capita.html#a51223d10ac6f8c63c75d064d4ef587d4" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="280,5,492,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="265,69,507,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_search_norm_per_capita.html#ad355b266db4c743f9558a059742b3243" title="Скрыть объекты социальной инфраструктуры" alt="" coords="266,133,506,173"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="555,5,769,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="557,69,767,109"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_map_view.html#a38fecfd2ea617ebd810bb539b1931012" title="Скрыть все объекты социальной инфраструктуры" alt="" coords="558,141,766,166"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_render_facility.html#a04b3e0f63090407a5d2da1ee49281510" title="Скрыть все объектов социальной инфраструктуры" alt="" coords="817,133,1013,173"/>
+</map>

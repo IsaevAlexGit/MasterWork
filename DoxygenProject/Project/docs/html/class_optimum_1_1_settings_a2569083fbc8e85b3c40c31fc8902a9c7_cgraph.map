@@ -1,0 +1,5 @@
+<map id="Optimum.Settings.buttonLoadPolygons_Click" name="Optimum.Settings.buttonLoadPolygons_Click">
+<area shape="rect" id="node1" title="Загрузка файла с полигонами" alt="" coords="5,37,200,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="248,5,451,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="248,69,451,109"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Optimum.StartSettings.buttonLoadBorderTerritory_Click" name="Optimum.StartSettings.buttonLoadBorderTerritory_Click">
+<area shape="rect" id="node1" title="Загрузка файла с зоной анализа" alt="" coords="5,37,200,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="248,5,451,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_file_validator.html#aa616dbd607869ba5f43c0067e99ce345" title="Проверка корректности файла с граничными точками зоны анализа" alt="" coords="248,69,451,109"/>
+</map>

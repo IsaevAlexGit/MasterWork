@@ -1,0 +1,14 @@
+<map id="Optimum.MapView" name="Optimum.MapView">
+<area shape="rect" id="node1" title="Класс для визуализации" alt="" coords="776,857,967,1096"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_model.html" title="Класс с данными" alt="" coords="523,248,763,795"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_location.html" title="Класс &quot;Точка на карте&quot;." alt="" coords="586,20,714,127"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_sublayer_facility.html" title="Класс &quot;Слой для объектов социальной инфраструктуры&quot;." alt="" coords="339,5,511,141"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_render_facility.html" title="Класс &quot;Отрисовщик объектов социальной инфраструктуры&quot;." alt="" coords="283,446,486,597"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_sublayer_location.html" title="Класс &quot;Слой для точек&quot;." alt="" coords="1063,5,1242,141"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_render_territory.html" title="Класс &quot;Отрисовщик зоны анализа&quot;." alt="" coords="788,468,955,575"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_user_marker.html" title="Класс &quot;Отрисовщик точек&#45;кандидатов&quot;." alt="" coords="979,343,1211,699"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_render_auto_points.html" title="Класс &quot;Отрисовщик авто&#45;оптимумов&quot;." alt="" coords="1235,373,1467,670"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_norma.html" title="Класс &quot;Отрисовщик нормы&quot;." alt="" coords="1491,373,1723,670"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_sublayer_polygon.html" title="Класс &quot;Слой для полигонов&quot;." alt="" coords="65,5,243,141"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_render_polygon.html" title="Класс &quot;Отрисовщик точечной раскраски&quot;." alt="" coords="5,409,199,633"/>
+</map>

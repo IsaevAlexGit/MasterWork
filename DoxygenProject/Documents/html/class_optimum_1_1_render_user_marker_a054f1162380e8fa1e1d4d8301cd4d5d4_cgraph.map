@@ -1,0 +1,5 @@
+<map id="Optimum.RenderUserMarker._InitializationBestZoneOptimum" name="Optimum.RenderUserMarker._InitializationBestZoneOptimum">
+<area shape="rect" id="node1" title="Инициализация самой оптимальной буферной зоны" alt="" coords="5,5,211,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_user_marker.html#af1cf9510eca60f8331ca71a87abc774c" title="Отрисовка окружности самых оптимальных точек" alt="" coords="259,5,449,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_user_marker.html#a45088fec0a28d25206a65cb8a1c65a9e" title="Вычисление каждой точки окружности" alt="" coords="497,5,688,45"/>
+</map>

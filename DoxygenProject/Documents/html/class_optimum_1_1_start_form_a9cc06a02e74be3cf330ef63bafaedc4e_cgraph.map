@@ -1,0 +1,13 @@
+<map id="Optimum.StartForm.StartForm" name="Optimum.StartForm.StartForm">
+<area shape="rect" id="node1" title="Конструктор формы" alt="" coords="5,163,204,189"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_start_form.html#a690b8d74ee46e890ba4a4d613017e76e" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="252,156,440,196"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_start_form.html#abd7b649fedf41318649c7580720fbbf3" title="Открытие руководства пользователя в HTML." alt="" coords="517,5,694,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_start_form.html#a571359f2935677757ac3990bf7d4abcf" title="Переход на главный экран" alt="" coords="517,69,694,109"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_start_form.html#a09dd50e8ffb7612c6014d805ee77f379" title="Обработка таймера каждую секунду для проверки наличие Интернета" alt="" coords="771,106,972,131"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_start_form.html#a38f915014901f0ae17a4545f49a1853b" title="Установка цвета для интерфейса" alt="" coords="517,184,694,224"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_start_form.html#aa679696d952969156ce1e03d6b799b81" title="Закрыть форму через ESC." alt="" coords="506,248,705,288"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_start_form.html#adfba2919772f7e3d8c7a93d89bb52b9e" title="Загрузка формы" alt="" coords="488,313,723,338"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_internet.html#a72bcf82df64a794b3733fe5819d39fd7" title="Проверка, есть ли соединение с интернетом" alt="" coords="1020,106,1248,131"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_internet.html#a76d295c0b99678adcc5569e0bfe17478" title=" " alt="" coords="1305,69,1475,109"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_internet.html#ac3dfd016be81e0579b6e9e330852a6bd" title="Пингануть сервера, при первом получении ответа от любого сервера возвращает true." alt="" coords="1296,134,1484,159"/>
+</map>

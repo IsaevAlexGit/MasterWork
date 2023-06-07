@@ -1,0 +1,23 @@
+<map id="Optimum.MapModel.GetSublayerBorderPointsTerritory" name="Optimum.MapModel.GetSublayerBorderPointsTerritory">
+<area shape="rect" id="node1" title="Вернуть слой граничных точек зоны анализа" alt="" coords="1325,207,1540,247"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#aa720d7fd5aae9a1c9afcb570ab2e6917" title="Найти динамиечески максимальную длину для радиуса поиска" alt="" coords="1059,235,1277,275"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,205,981,245"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_search_norm_per_capita.html#a0834f23025d35c5835a51077d31d21e2" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="1062,5,1274,45"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,56,1011,96"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_search_norm_per_capita.html#a51223d10ac6f8c63c75d064d4ef587d4" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="1062,120,1274,160"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_setting_radius.html#a44542fc4de95c83cc3b633ac02a9c24c" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="1086,413,1250,453"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="1063,349,1273,389"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_map_view.html#af51f418265a31e92b0b22ce843c14d8a" title="Проверка принадлежности точки зоне анализа" alt="" coords="783,292,990,332"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,189,711,229"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,253,701,293"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,253,440,293"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,261,195,286"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,111,715,151"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,111,455,151"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_search_norm_per_capita.html#ad59fe4189420fc233c5c09113258a4a0" title="Загрузка формы" alt="" coords="781,120,993,160"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_setting_radius.html#a36ecc925d6f5cbce6fdc2e63f101c396" title="Загрузка формы" alt="" coords="784,413,989,453"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_setting_radius.html#ac596fbc43eed4cb2f18d4b62f7ea1eeb" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,413,714,453"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_setting_radius.html#a4ffa4c995cffde50fef469583c04bfc7" title="Конструктор формы" alt="" coords="246,413,451,453"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="792,357,981,382"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_main_map.html#ae76b3bd55dd7168683b0098857a36cf6" title="Установка точки&#45;кандидата на карте" alt="" coords="525,317,693,357"/>
+</map>

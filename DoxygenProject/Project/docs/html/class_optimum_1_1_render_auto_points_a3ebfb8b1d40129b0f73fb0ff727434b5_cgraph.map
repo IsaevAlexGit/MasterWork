@@ -1,0 +1,7 @@
+<map id="Optimum.RenderAutoPoints.InitializationPoint" name="Optimum.RenderAutoPoints.InitializationPoint">
+<area shape="rect" id="node1" title="Инициализация точек на карте" alt="" coords="5,5,193,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="241,5,429,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="477,5,665,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81" title="Отрисовка окружности" alt="" coords="713,5,901,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d" title="Вычисление каждой точки окружности" alt="" coords="949,5,1137,45"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Optimum.MainMap.gMapControl_Load" name="Optimum.MainMap.gMapControl_Load">
+<area shape="rect" id="node1" title="Загрузка карты при открытии окна" alt="" coords="5,45,249,70"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_view.html#a6e953b9aa0c24fc0283f7f5563bf947f" title="Инициализация настроек карты" alt="" coords="309,5,497,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html#a281c9822e288363a3d1cab7ded19a7c4" title="Инициализация слоев и списков данными" alt="" coords="297,69,508,109"/>
+</map>

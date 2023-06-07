@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['calculatecountfacility_0',['CalculateCountFacility',['../class_optimum_1_1_map_model.html#a538e9bfb371a6c6f80c91a940a1a583e',1,'Optimum::MapModel']]],
+  ['calculatecountpopulation_1',['CalculateCountPopulation',['../class_optimum_1_1_map_model.html#a90e279bcfc5374aff4790ca6228be3bd',1,'Optimum::MapModel']]],
+  ['centeringtoolstripmenuitem_5fclick_2',['CenteringToolStripMenuItem_Click',['../class_optimum_1_1_main_map.html#afd44aeded73ceb609dace20b269d3c0e',1,'Optimum::MainMap']]],
+  ['changecentermap_3',['ChangeCenterMap',['../class_optimum_1_1_map_view.html#a1a3d05fbaecf2e0ea9520e9963f262a5',1,'Optimum::MapView']]],
+  ['checkconnection_4',['CheckConnection',['../class_optimum_1_1_internet.html#a72bcf82df64a794b3733fe5819d39fd7',1,'Optimum::Internet']]],
+  ['checkinsidepointpolygon_5',['CheckInsidePointPolygon',['../class_optimum_1_1_map_view.html#a0354d862685b8803d065ecca0e64252b',1,'Optimum::MapView']]],
+  ['checkinsidepointterritory_6',['CheckInsidePointTerritory',['../class_optimum_1_1_map_view.html#af51f418265a31e92b0b22ce843c14d8a',1,'Optimum::MapView']]],
+  ['checkvalidatewebaddress_7',['CheckValidateWebAddress',['../class_optimum_1_1_facility_info.html#afe7f84d348f47ba4010c8d8262d712e8',1,'Optimum::FacilityInfo']]],
+  ['clearfacility_8',['ClearFacility',['../class_optimum_1_1_map_view.html#a38fecfd2ea617ebd810bb539b1931012',1,'Optimum.MapView.ClearFacility()'],['../class_optimum_1_1_render_facility.html#a04b3e0f63090407a5d2da1ee49281510',1,'Optimum.RenderFacility.ClearFacility()']]],
+  ['cleariconcoloring_9',['ClearIconColoring',['../class_optimum_1_1_map_view.html#a57610785654b26b18dd6b21172123db3',1,'Optimum::MapView']]],
+  ['cleariconpolygon_10',['ClearIconPolygon',['../class_optimum_1_1_render_polygon.html#a64e92656e895c71b0fca77ea5ceb306f',1,'Optimum::RenderPolygon']]],
+  ['clearidealpoints_11',['ClearIdealPoints',['../class_optimum_1_1_map_view.html#a3fa271771d6a327d6238584796227314',1,'Optimum::MapView']]],
+  ['clearnormapoints_12',['ClearNormaPoints',['../class_optimum_1_1_map_view.html#ac18d989ad64c442b4a2e44f73ea30788',1,'Optimum::MapView']]],
+  ['clearsquarecoloring_13',['ClearSquareColoring',['../class_optimum_1_1_map_view.html#add6756a536fb7f7cfeaf481ae451c9a1',1,'Optimum::MapView']]],
+  ['clearterritory_14',['ClearTerritory',['../class_optimum_1_1_map_view.html#a3cc15b002084f44c245780b121650286',1,'Optimum.MapView.ClearTerritory()'],['../class_optimum_1_1_render_territory.html#aadbe8e1c1174676709602a0809b695f8',1,'Optimum.RenderTerritory.ClearTerritory()']]],
+  ['clone_15',['Clone',['../class_optimum_1_1_buffer_zone.html#aed970708ac961cb28f6988ed896b4087',1,'Optimum.BufferZone.Clone()'],['../class_optimum_1_1_criterion.html#a7944c2916a0a198bac65b74420bf8175',1,'Optimum.Criterion.Clone()']]],
+  ['comboboxcoloringicons_5fselectedindexchanged_16',['comboBoxColoringIcons_SelectedIndexChanged',['../class_optimum_1_1_main_map.html#a62bd3b8c93d05cdf33e4ee4dc29ed455',1,'Optimum::MainMap']]],
+  ['comboboxcoloringpolygon_5fselectedindexchanged_17',['comboBoxColoringPolygon_SelectedIndexChanged',['../class_optimum_1_1_main_map.html#a0cbab48090f2eb5cc72f72b067d3e262',1,'Optimum::MainMap']]],
+  ['comboboxprovidersmap_5fselectedindexchanged_18',['comboBoxProvidersMap_SelectedIndexChanged',['../class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b',1,'Optimum::MainMap']]],
+  ['combocountcriterion_5fselectedindexchanged_19',['comboCountCriterion_SelectedIndexChanged',['../class_optimum_1_1_settings.html#affb72bdbcd80d0fff38155449bba3bf1',1,'Optimum.Settings.comboCountCriterion_SelectedIndexChanged()'],['../class_optimum_1_1_start_settings.html#ac9c49886c1cd543afc14dc81ab77e3e0',1,'Optimum.StartSettings.comboCountCriterion_SelectedIndexChanged()']]],
+  ['createlistautobufferzones_20',['CreateListAutoBufferZones',['../class_optimum_1_1_map_model.html#a9d96ad73cafd0682df8e013542bc0908',1,'Optimum::MapModel']]],
+  ['createlistbufferzones_21',['CreateListBufferZones',['../class_optimum_1_1_map_model.html#a806d6493027f5c74f07a19b7a222d18b',1,'Optimum::MapModel']]],
+  ['createlistnormabufferzones_22',['CreateListNormaBufferZones',['../class_optimum_1_1_map_model.html#a2c8ff1f3a8f324eccee7165788fd31a5',1,'Optimum::MapModel']]],
+  ['createtablefrompolygons_23',['CreateTableFromPolygons',['../class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d',1,'Optimum::MapModel']]],
+  ['criterion_24',['Criterion',['../class_optimum_1_1_criterion.html#a55bac49f5e859bac081a2edba295c091',1,'Optimum.Criterion.Criterion()'],['../class_optimum_1_1_criterion.html#ade1e97359063ac48aa53d6d21a309be1',1,'Optimum.Criterion.Criterion(string NameOfCriterion, bool DirectionOfCriterion, double WeightOfCriterion)']]]
+];

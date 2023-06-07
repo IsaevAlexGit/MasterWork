@@ -1,0 +1,10 @@
+<map id="Optimum.MainMap._RedrawMap" name="Optimum.MainMap._RedrawMap">
+<area shape="rect" id="node1" title="Перерисовать все слои на карте" alt="" coords="776,77,987,102"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b" title="Обработка выбора поставщика карты" alt="" coords="488,5,728,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="516,69,700,109"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_main_map.html#a232bbc3f7f4f1cccf6440cf46ce960e8" title="Обработка тика таймера" alt="" coords="507,133,709,173"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,5,440,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,13,201,38"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="253,69,436,109"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="9,77,198,102"/>
+</map>

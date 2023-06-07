@@ -1,0 +1,783 @@
+\doxysection{Класс Optimum.\+Map\+View}
+\label{class_optimum_1_1_map_view}\index{Optimum.MapView@{Optimum.MapView}}
+
+
+Класс для визуализации  
+
+
+
+
+Граф связей класса Optimum.\+Map\+View\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Map\+View} (\textbf{ Map\+Model} map\+Model)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Facility} ()
+\begin{DoxyCompactList}\small\item\em Отобразить все объекты социальной инфраструктуры \end{DoxyCompactList}\item 
+void \textbf{ Clear\+Facility} ()
+\begin{DoxyCompactList}\small\item\em Скрыть все объекты социальной инфраструктуры \end{DoxyCompactList}\item 
+void \textbf{ Set\+Hover\+Text\+For\+Facility} (int mode\+Visual)
+\begin{DoxyCompactList}\small\item\em Обработка выводящейся информации при наведении на объект социальной инфраструктуры \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Territory} ()
+\begin{DoxyCompactList}\small\item\em Отобразить зону анализа \end{DoxyCompactList}\item 
+void \textbf{ Clear\+Territory} ()
+\begin{DoxyCompactList}\small\item\em Скрыть зону анализа \end{DoxyCompactList}\item 
+void \textbf{ Clear\+Square\+Coloring} (\textbf{ Sublayer\+Polygon} sublayer\+Polygon)
+\begin{DoxyCompactList}\small\item\em Скрыть площадную раскраску \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Icon\+Coloring} (double max\+Selected\+Criterion, double min\+Selected\+Criterion, int shades\+Color, int index\+Selected\+Criterion, string name\+Criterion)
+\begin{DoxyCompactList}\small\item\em Отобразить точечную раскраску \end{DoxyCompactList}\item 
+void \textbf{ Clear\+Icon\+Coloring} ()
+\begin{DoxyCompactList}\small\item\em Скрыть точечную раскраску \end{DoxyCompactList}\item 
+bool \textbf{ Check\+Inside\+Point\+Territory} (Point\+Lat\+Lng point)
+\begin{DoxyCompactList}\small\item\em Проверка принадлежности точки зоне анализа \end{DoxyCompactList}\item 
+bool \textbf{ Check\+Inside\+Point\+Polygon} (Point\+Lat\+Lng point)
+\begin{DoxyCompactList}\small\item\em Проверка принадлежности точки полигонам \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Point\+Buffer\+Zone} ()
+\begin{DoxyCompactList}\small\item\em Отрисовка буферной зоны около точки-\/кандидата и оптимальных точек \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Auto\+Point\+Buffer\+Zone} (int radius\+For\+Search)
+\begin{DoxyCompactList}\small\item\em Отрисовка буферной зоны авто-\/кандидатов \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Auto\+Ideal\+Point\+Buffer\+Zone} (List$<$ \textbf{ Buffer\+Zone} $>$ list\+Ideal\+Buffer\+Zone\+For\+Auto\+Search)
+\begin{DoxyCompactList}\small\item\em Отрисовка оптимальных зон авто-\/оптимумов \end{DoxyCompactList}\item 
+void \textbf{ Clear\+Ideal\+Points} (\textbf{ Sublayer\+Location} sublayer\+Auto\+Points)
+\begin{DoxyCompactList}\small\item\em Очистить авто-\/оптимумы \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Norma\+Buffer\+Zone} (int radius\+For\+Search)
+\begin{DoxyCompactList}\small\item\em Отрисовка буферных зон кандидатов нормы \end{DoxyCompactList}\item 
+void \textbf{ Draw\+Norma\+Ideal\+Point\+Buffer\+Zone} (List$<$ \textbf{ Buffer\+Zone} $>$ list\+Ideal\+Buffer\+Zone\+For\+Norma)
+\begin{DoxyCompactList}\small\item\em Отрисовка буферных зон оптимумов нормы \end{DoxyCompactList}\item 
+void \textbf{ Clear\+Norma\+Points} (\textbf{ Sublayer\+Location} sublayer\+Norma)
+\begin{DoxyCompactList}\small\item\em Очистка карты от нормы \end{DoxyCompactList}\item 
+void \textbf{ Change\+Center\+Map} (\textbf{ Location} center)
+\begin{DoxyCompactList}\small\item\em Центрирование карты \end{DoxyCompactList}\item 
+void \textbf{ Init\+GMap\+Control} (GMap\+Control g\+Map\+Control, \textbf{ Location} center)
+\begin{DoxyCompactList}\small\item\em Инициализация настроек карты \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ \+\_\+\+Initialization\+Renders} ()
+\begin{DoxyCompactList}\small\item\em Инициализация всех отрисовщиков \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Map\+Model} \textbf{ \+\_\+map\+Model}
+\item 
+GMap\+Control \textbf{ \+\_\+gmap} = new GMap\+Control()
+\item 
+\textbf{ Render\+Facility} \textbf{ \+\_\+render\+Facility}
+\begin{DoxyCompactList}\small\item\em Отрисовщик слоя \end{DoxyCompactList}\item 
+\textbf{ Render\+Territory} \textbf{ \+\_\+render\+Territory}
+\begin{DoxyCompactList}\small\item\em Отрисовщик слоя \end{DoxyCompactList}\item 
+\textbf{ Render\+Polygon} \textbf{ \+\_\+render\+Polygon}
+\begin{DoxyCompactList}\small\item\em Отрисовщик слоя \end{DoxyCompactList}\item 
+\textbf{ Render\+User\+Marker} \textbf{ \+\_\+render\+User\+Points}
+\begin{DoxyCompactList}\small\item\em Отрисовщик слоя \end{DoxyCompactList}\item 
+\textbf{ Render\+Auto\+Points} \textbf{ \+\_\+render\+Auto\+Points}
+\begin{DoxyCompactList}\small\item\em Отрисовщик слоя \end{DoxyCompactList}\item 
+\textbf{ Render\+Norma} \textbf{ \+\_\+render\+Norma}
+\begin{DoxyCompactList}\small\item\em Отрисовщик слоя \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для визуализации 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_map_view_a4d504a8e1fc7dd346b5806484c876088}} 
+\index{Optimum.MapView@{Optimum.MapView}!MapView@{MapView}}
+\index{MapView@{MapView}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{MapView()}
+{\footnotesize\ttfamily Optimum.\+Map\+View.\+Map\+View (\begin{DoxyParamCaption}\item[{\textbf{ Map\+Model}}]{map\+Model }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em map\+Model} & Объект Map\+Model\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a4d504a8e1fc7dd346b5806484c876088_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_map_view_ab971383f5237671716645627bbf7c4e8}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_InitializationRenders@{\_InitializationRenders}}
+\index{\_InitializationRenders@{\_InitializationRenders}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_InitializationRenders()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+\_\+\+Initialization\+Renders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация всех отрисовщиков 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ab971383f5237671716645627bbf7c4e8_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ab971383f5237671716645627bbf7c4e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a1a3d05fbaecf2e0ea9520e9963f262a5}} 
+\index{Optimum.MapView@{Optimum.MapView}!ChangeCenterMap@{ChangeCenterMap}}
+\index{ChangeCenterMap@{ChangeCenterMap}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{ChangeCenterMap()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Change\+Center\+Map (\begin{DoxyParamCaption}\item[{\textbf{ Location}}]{center }\end{DoxyParamCaption})}
+
+
+
+Центрирование карты 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em center} & Точка для центрирования карты\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a1a3d05fbaecf2e0ea9520e9963f262a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a0354d862685b8803d065ecca0e64252b}} 
+\index{Optimum.MapView@{Optimum.MapView}!CheckInsidePointPolygon@{CheckInsidePointPolygon}}
+\index{CheckInsidePointPolygon@{CheckInsidePointPolygon}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{CheckInsidePointPolygon()}
+{\footnotesize\ttfamily bool Optimum.\+Map\+View.\+Check\+Inside\+Point\+Polygon (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{point }\end{DoxyParamCaption})}
+
+
+
+Проверка принадлежности точки полигонам 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & Точка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Флаг принадлежности полигонам
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a0354d862685b8803d065ecca0e64252b_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a0354d862685b8803d065ecca0e64252b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_af51f418265a31e92b0b22ce843c14d8a}} 
+\index{Optimum.MapView@{Optimum.MapView}!CheckInsidePointTerritory@{CheckInsidePointTerritory}}
+\index{CheckInsidePointTerritory@{CheckInsidePointTerritory}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{CheckInsidePointTerritory()}
+{\footnotesize\ttfamily bool Optimum.\+Map\+View.\+Check\+Inside\+Point\+Territory (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{point }\end{DoxyParamCaption})}
+
+
+
+Проверка принадлежности точки зоне анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & Точка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public \begin{DoxyReturn}{Возвращает}
+Флаг принадлежности зоне анализа
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_af51f418265a31e92b0b22ce843c14d8a_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_af51f418265a31e92b0b22ce843c14d8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a38fecfd2ea617ebd810bb539b1931012}} 
+\index{Optimum.MapView@{Optimum.MapView}!ClearFacility@{ClearFacility}}
+\index{ClearFacility@{ClearFacility}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{ClearFacility()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Clear\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Скрыть все объекты социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a38fecfd2ea617ebd810bb539b1931012_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a38fecfd2ea617ebd810bb539b1931012_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a57610785654b26b18dd6b21172123db3}} 
+\index{Optimum.MapView@{Optimum.MapView}!ClearIconColoring@{ClearIconColoring}}
+\index{ClearIconColoring@{ClearIconColoring}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{ClearIconColoring()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Clear\+Icon\+Coloring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Скрыть точечную раскраску 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a57610785654b26b18dd6b21172123db3_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a57610785654b26b18dd6b21172123db3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a3fa271771d6a327d6238584796227314}} 
+\index{Optimum.MapView@{Optimum.MapView}!ClearIdealPoints@{ClearIdealPoints}}
+\index{ClearIdealPoints@{ClearIdealPoints}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{ClearIdealPoints()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Clear\+Ideal\+Points (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Location}}]{sublayer\+Auto\+Points }\end{DoxyParamCaption})}
+
+
+
+Очистить авто-\/оптимумы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em sublayer\+Auto\+Points} & Слой с авто-\/оптимумами\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a3fa271771d6a327d6238584796227314_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_ac18d989ad64c442b4a2e44f73ea30788}} 
+\index{Optimum.MapView@{Optimum.MapView}!ClearNormaPoints@{ClearNormaPoints}}
+\index{ClearNormaPoints@{ClearNormaPoints}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{ClearNormaPoints()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Clear\+Norma\+Points (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Location}}]{sublayer\+Norma }\end{DoxyParamCaption})}
+
+
+
+Очистка карты от нормы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em sublayer\+Norma} & Слой c нормой\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ac18d989ad64c442b4a2e44f73ea30788_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_add6756a536fb7f7cfeaf481ae451c9a1}} 
+\index{Optimum.MapView@{Optimum.MapView}!ClearSquareColoring@{ClearSquareColoring}}
+\index{ClearSquareColoring@{ClearSquareColoring}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{ClearSquareColoring()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Clear\+Square\+Coloring (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Polygon}}]{sublayer\+Polygon }\end{DoxyParamCaption})}
+
+
+
+Скрыть площадную раскраску 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em sublayer\+Polygon} & \\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_add6756a536fb7f7cfeaf481ae451c9a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a3cc15b002084f44c245780b121650286}} 
+\index{Optimum.MapView@{Optimum.MapView}!ClearTerritory@{ClearTerritory}}
+\index{ClearTerritory@{ClearTerritory}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{ClearTerritory()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Clear\+Territory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Скрыть зону анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a3cc15b002084f44c245780b121650286_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a3cc15b002084f44c245780b121650286_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a0da028c2a83375bed6dec781650ac938}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawAutoIdealPointBufferZone@{DrawAutoIdealPointBufferZone}}
+\index{DrawAutoIdealPointBufferZone@{DrawAutoIdealPointBufferZone}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawAutoIdealPointBufferZone()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Auto\+Ideal\+Point\+Buffer\+Zone (\begin{DoxyParamCaption}\item[{List$<$ \textbf{ Buffer\+Zone} $>$}]{list\+Ideal\+Buffer\+Zone\+For\+Auto\+Search }\end{DoxyParamCaption})}
+
+
+
+Отрисовка оптимальных зон авто-\/оптимумов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em list\+Ideal\+Buffer\+Zone\+For\+Auto\+Search} & Список буферных зон\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a0da028c2a83375bed6dec781650ac938_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a0da028c2a83375bed6dec781650ac938_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_ac383b2c45b43a20cef3b7172e21c80db}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawAutoPointBufferZone@{DrawAutoPointBufferZone}}
+\index{DrawAutoPointBufferZone@{DrawAutoPointBufferZone}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawAutoPointBufferZone()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Auto\+Point\+Buffer\+Zone (\begin{DoxyParamCaption}\item[{int}]{radius\+For\+Search }\end{DoxyParamCaption})}
+
+
+
+Отрисовка буферной зоны авто-\/кандидатов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em radius\+For\+Search} & Радиус буферной зоны\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ac383b2c45b43a20cef3b7172e21c80db_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ac383b2c45b43a20cef3b7172e21c80db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_ac4d080061783d40d8bcacb1586c5e09a}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawFacility@{DrawFacility}}
+\index{DrawFacility@{DrawFacility}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawFacility()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Facility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Отобразить все объекты социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ac4d080061783d40d8bcacb1586c5e09a_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ac4d080061783d40d8bcacb1586c5e09a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_ade5b3c759363b3e93ec39d308ea8893f}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawIconColoring@{DrawIconColoring}}
+\index{DrawIconColoring@{DrawIconColoring}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawIconColoring()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Icon\+Coloring (\begin{DoxyParamCaption}\item[{double}]{max\+Selected\+Criterion,  }\item[{double}]{min\+Selected\+Criterion,  }\item[{int}]{shades\+Color,  }\item[{int}]{index\+Selected\+Criterion,  }\item[{string}]{name\+Criterion }\end{DoxyParamCaption})}
+
+
+
+Отобразить точечную раскраску 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em max\+Selected\+Criterion} & Максимум критерия\\
+\hline
+{\em min\+Selected\+Criterion} & Минимум критерия\\
+\hline
+{\em shades\+Color} & Количество оттенков\\
+\hline
+{\em index\+Selected\+Criterion} & Индекс критерия\\
+\hline
+{\em name\+Criterion} & Название критерия\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ade5b3c759363b3e93ec39d308ea8893f_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ade5b3c759363b3e93ec39d308ea8893f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_aef88bfc7e40d7c49f6304e0d19608c93}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawNormaBufferZone@{DrawNormaBufferZone}}
+\index{DrawNormaBufferZone@{DrawNormaBufferZone}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawNormaBufferZone()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Norma\+Buffer\+Zone (\begin{DoxyParamCaption}\item[{int}]{radius\+For\+Search }\end{DoxyParamCaption})}
+
+
+
+Отрисовка буферных зон кандидатов нормы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em radius\+For\+Search} & Радиус буферной зоны\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_aef88bfc7e40d7c49f6304e0d19608c93_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_aef88bfc7e40d7c49f6304e0d19608c93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a7884e629e922d547cb15a051f2a18cbb}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawNormaIdealPointBufferZone@{DrawNormaIdealPointBufferZone}}
+\index{DrawNormaIdealPointBufferZone@{DrawNormaIdealPointBufferZone}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawNormaIdealPointBufferZone()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Norma\+Ideal\+Point\+Buffer\+Zone (\begin{DoxyParamCaption}\item[{List$<$ \textbf{ Buffer\+Zone} $>$}]{list\+Ideal\+Buffer\+Zone\+For\+Norma }\end{DoxyParamCaption})}
+
+
+
+Отрисовка буферных зон оптимумов нормы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em list\+Ideal\+Buffer\+Zone\+For\+Norma} & Список буферных зон\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a7884e629e922d547cb15a051f2a18cbb_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a7884e629e922d547cb15a051f2a18cbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_ad5bf24fdb0af958a7fa446e61d648a03}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawPointBufferZone@{DrawPointBufferZone}}
+\index{DrawPointBufferZone@{DrawPointBufferZone}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawPointBufferZone()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Point\+Buffer\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Отрисовка буферной зоны около точки-\/кандидата и оптимальных точек 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ad5bf24fdb0af958a7fa446e61d648a03_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_ad5bf24fdb0af958a7fa446e61d648a03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a72b4f4e3253053764a005f8949cc3405}} 
+\index{Optimum.MapView@{Optimum.MapView}!DrawTerritory@{DrawTerritory}}
+\index{DrawTerritory@{DrawTerritory}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{DrawTerritory()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Draw\+Territory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Отобразить зону анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a72b4f4e3253053764a005f8949cc3405_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a72b4f4e3253053764a005f8949cc3405_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a6e953b9aa0c24fc0283f7f5563bf947f}} 
+\index{Optimum.MapView@{Optimum.MapView}!InitGMapControl@{InitGMapControl}}
+\index{InitGMapControl@{InitGMapControl}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{InitGMapControl()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Init\+GMap\+Control (\begin{DoxyParamCaption}\item[{GMap\+Control}]{g\+Map\+Control,  }\item[{\textbf{ Location}}]{center }\end{DoxyParamCaption})}
+
+
+
+Инициализация настроек карты 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em g\+Map\+Control} & Карта\\
+\hline
+{\em center} & Центр карты\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a6e953b9aa0c24fc0283f7f5563bf947f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_map_view_a8c4872770638b5d59d5dbdaec66c27e0}} 
+\index{Optimum.MapView@{Optimum.MapView}!SetHoverTextForFacility@{SetHoverTextForFacility}}
+\index{SetHoverTextForFacility@{SetHoverTextForFacility}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{SetHoverTextForFacility()}
+{\footnotesize\ttfamily void Optimum.\+Map\+View.\+Set\+Hover\+Text\+For\+Facility (\begin{DoxyParamCaption}\item[{int}]{mode\+Visual }\end{DoxyParamCaption})}
+
+
+
+Обработка выводящейся информации при наведении на объект социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em mode\+Visual} & Режим вывода информации\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a8c4872770638b5d59d5dbdaec66c27e0_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_map_view_a8c4872770638b5d59d5dbdaec66c27e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_map_view_afed1ce38bb18abaa2c463f85736e51d1}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_gmap@{\_gmap}}
+\index{\_gmap@{\_gmap}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_gmap}
+{\footnotesize\ttfamily GMap\+Control Optimum.\+Map\+View.\+\_\+gmap = new GMap\+Control()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_map_view_a35a3ec63d7a974d543214539fdb15708}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_mapModel@{\_mapModel}}
+\index{\_mapModel@{\_mapModel}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_mapModel}
+{\footnotesize\ttfamily \textbf{ Map\+Model} Optimum.\+Map\+View.\+\_\+map\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_map_view_a0a7fcbcd6764c9f424cfe942f4a29e1a}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_renderAutoPoints@{\_renderAutoPoints}}
+\index{\_renderAutoPoints@{\_renderAutoPoints}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_renderAutoPoints}
+{\footnotesize\ttfamily \textbf{ Render\+Auto\+Points} Optimum.\+Map\+View.\+\_\+render\+Auto\+Points\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовщик слоя 
+
+\mbox{\label{class_optimum_1_1_map_view_ad5bdb8f895e4a6c3a99d8ab8469e02eb}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_renderFacility@{\_renderFacility}}
+\index{\_renderFacility@{\_renderFacility}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_renderFacility}
+{\footnotesize\ttfamily \textbf{ Render\+Facility} Optimum.\+Map\+View.\+\_\+render\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовщик слоя 
+
+\mbox{\label{class_optimum_1_1_map_view_afa5ddb82e39745c4a89974bcf2d07246}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_renderNorma@{\_renderNorma}}
+\index{\_renderNorma@{\_renderNorma}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_renderNorma}
+{\footnotesize\ttfamily \textbf{ Render\+Norma} Optimum.\+Map\+View.\+\_\+render\+Norma\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовщик слоя 
+
+\mbox{\label{class_optimum_1_1_map_view_a0ffe796f9edd44aa58499bf14667243a}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_renderPolygon@{\_renderPolygon}}
+\index{\_renderPolygon@{\_renderPolygon}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_renderPolygon}
+{\footnotesize\ttfamily \textbf{ Render\+Polygon} Optimum.\+Map\+View.\+\_\+render\+Polygon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовщик слоя 
+
+\mbox{\label{class_optimum_1_1_map_view_af6c4d414d1a0217cc4706394b492cb01}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_renderTerritory@{\_renderTerritory}}
+\index{\_renderTerritory@{\_renderTerritory}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_renderTerritory}
+{\footnotesize\ttfamily \textbf{ Render\+Territory} Optimum.\+Map\+View.\+\_\+render\+Territory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовщик слоя 
+
+\mbox{\label{class_optimum_1_1_map_view_a6648fc45fefd56c60aceb523b9702ffb}} 
+\index{Optimum.MapView@{Optimum.MapView}!\_renderUserPoints@{\_renderUserPoints}}
+\index{\_renderUserPoints@{\_renderUserPoints}!Optimum.MapView@{Optimum.MapView}}
+\doxysubsubsection{\_renderUserPoints}
+{\footnotesize\ttfamily \textbf{ Render\+User\+Marker} Optimum.\+Map\+View.\+\_\+render\+User\+Points\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовщик слоя 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Map\+View.\+cs}\end{DoxyCompactItemize}

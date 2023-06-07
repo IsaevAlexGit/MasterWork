@@ -1,0 +1,1914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>doxyMaster: Класс Optimum.MapModel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">doxyMaster<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_optimum.html">Optimum</a></li><li class="navelem"><a class="el" href="class_optimum_1_1_map_model.html">MapModel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_optimum_1_1_map_model-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Optimum.MapModel</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс с данными  
+ <a href="class_optimum_1_1_map_model.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса Optimum.MapModel:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model__coll__graph.png" border="0" usemap="#a_optimum_8_map_model_coll__map" alt="Collaboration graph"/></div>
+<map name="a_optimum_8_map_model_coll__map" id="a_optimum_8_map_model_coll__map">
+<area shape="rect" title="Класс с данными" alt="" coords="220,248,460,795"/>
+<area shape="rect" href="class_optimum_1_1_location.html" title="Класс &quot;Точка на карте&quot;." alt="" coords="5,20,133,127"/>
+<area shape="rect" href="class_optimum_1_1_sublayer_facility.html" title="Класс &quot;Слой для объектов социальной инфраструктуры&quot;." alt="" coords="158,5,330,141"/>
+<area shape="rect" href="class_optimum_1_1_sublayer_location.html" title="Класс &quot;Слой для точек&quot;." alt="" coords="355,5,533,141"/>
+<area shape="rect" href="class_optimum_1_1_sublayer_polygon.html" title="Класс &quot;Слой для полигонов&quot;." alt="" coords="562,5,739,141"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa61775d5cfba56c9764de92efad8eebb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aa61775d5cfba56c9764de92efad8eebb">MapModel</a> ()</td></tr>
+<tr class="memdesc:aa61775d5cfba56c9764de92efad8eebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <br /></td></tr>
+<tr class="separator:aa61775d5cfba56c9764de92efad8eebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281c9822e288363a3d1cab7ded19a7c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a281c9822e288363a3d1cab7ded19a7c4">InitializationSublayersAndLists</a> ()</td></tr>
+<tr class="memdesc:a281c9822e288363a3d1cab7ded19a7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация слоев и списков данными  <br /></td></tr>
+<tr class="separator:a281c9822e288363a3d1cab7ded19a7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf60594b0d6b87d2cc03d5b65d9e8f3d"><td class="memItemLeft" align="right" valign="top">DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d">CreateTableFromPolygons</a> ()</td></tr>
+<tr class="memdesc:abf60594b0d6b87d2cc03d5b65d9e8f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание таблицы из полигонов  <br /></td></tr>
+<tr class="separator:abf60594b0d6b87d2cc03d5b65d9e8f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ad00f983ffb9fd9f2f5c128bd4fcb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aa8ad00f983ffb9fd9f2f5c128bd4fcb9">GetnumberShade</a> (double valueForColoring, double minValueColoring, double maxValueColoring, int countOfGrids, double countOfSteps)</td></tr>
+<tr class="memdesc:aa8ad00f983ffb9fd9f2f5c128bd4fcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определение цвета, в который будет окрашен полигон  <br /></td></tr>
+<tr class="separator:aa8ad00f983ffb9fd9f2f5c128bd4fcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806d6493027f5c74f07a19b7a222d18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a806d6493027f5c74f07a19b7a222d18b">CreateListBufferZones</a> ()</td></tr>
+<tr class="memdesc:a806d6493027f5c74f07a19b7a222d18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление для каждого полигона у слоя sublayerUserPoints количества вошедших в него критериев  <br /></td></tr>
+<tr class="separator:a806d6493027f5c74f07a19b7a222d18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d96ad73cafd0682df8e013542bc0908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a9d96ad73cafd0682df8e013542bc0908">CreateListAutoBufferZones</a> ()</td></tr>
+<tr class="memdesc:a9d96ad73cafd0682df8e013542bc0908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление для каждого полигона у слоя sublayerAutoPoints количества вошедших в него критериев  <br /></td></tr>
+<tr class="separator:a9d96ad73cafd0682df8e013542bc0908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a18615cd118dd620b7201b1c21a602f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a2a18615cd118dd620b7201b1c21a602f">SetMaximumAndMinumForCriterionSquareColoring</a> (int indexOfSelectedCriterion)</td></tr>
+<tr class="memdesc:a2a18615cd118dd620b7201b1c21a602f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти максимум и минимум по выбранному критерию для площадной раскраски  <br /></td></tr>
+<tr class="separator:a2a18615cd118dd620b7201b1c21a602f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa634a884579916f323e24ad03a37ea7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aa634a884579916f323e24ad03a37ea7d">SetMaximumAndMinumForCriterionIconColoring</a> (int indexOfSelectedCriterion)</td></tr>
+<tr class="memdesc:aa634a884579916f323e24ad03a37ea7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти максимум и минимум по выбранному критерию для точечной раскраски  <br /></td></tr>
+<tr class="separator:aa634a884579916f323e24ad03a37ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e279bcfc5374aff4790ca6228be3bd"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a90e279bcfc5374aff4790ca6228be3bd">CalculateCountPopulation</a> ()</td></tr>
+<tr class="memdesc:a90e279bcfc5374aff4790ca6228be3bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти суммарное значение населения в файле  <br /></td></tr>
+<tr class="separator:a90e279bcfc5374aff4790ca6228be3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538e9bfb371a6c6f80c91a940a1a583e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a538e9bfb371a6c6f80c91a940a1a583e">CalculateCountFacility</a> ()</td></tr>
+<tr class="memdesc:a538e9bfb371a6c6f80c91a940a1a583e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Найти суммарное значение объектов социальной инфраструктуры в файле  <br /></td></tr>
+<tr class="separator:a538e9bfb371a6c6f80c91a940a1a583e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8ff1f3a8f324eccee7165788fd31a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a2c8ff1f3a8f324eccee7165788fd31a5">CreateListNormaBufferZones</a> ()</td></tr>
+<tr class="memdesc:a2c8ff1f3a8f324eccee7165788fd31a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление для каждого полигона у слоя sublayerNormaFacility количества вошедших в него критериев  <br /></td></tr>
+<tr class="separator:a2c8ff1f3a8f324eccee7165788fd31a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab406b19494b665762817dd7a80bd0b8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d">GetSublayerBorderPointsTerritory</a> ()</td></tr>
+<tr class="memdesc:ab406b19494b665762817dd7a80bd0b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть слой граничных точек зоны анализа  <br /></td></tr>
+<tr class="separator:ab406b19494b665762817dd7a80bd0b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed074d7211f4b2f01d11dc78d72f2d70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_facility.html">SublayerFacility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aed074d7211f4b2f01d11dc78d72f2d70">GetSublayerFacility</a> ()</td></tr>
+<tr class="memdesc:aed074d7211f4b2f01d11dc78d72f2d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть слой объектов социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:aed074d7211f4b2f01d11dc78d72f2d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9474979a314931368df24f329efe02a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a9474979a314931368df24f329efe02a2">GetSublayerPolygonIcon</a> ()</td></tr>
+<tr class="memdesc:a9474979a314931368df24f329efe02a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть слой полигонов  <br /></td></tr>
+<tr class="separator:a9474979a314931368df24f329efe02a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5378a26d6b01e2724179d3730a99190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ab5378a26d6b01e2724179d3730a99190">GetSublayerPolygonCheck</a> ()</td></tr>
+<tr class="memdesc:ab5378a26d6b01e2724179d3730a99190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть слой полигонов  <br /></td></tr>
+<tr class="separator:ab5378a26d6b01e2724179d3730a99190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe51b973d608d3838d047d3d1d403a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#acfe51b973d608d3838d047d3d1d403a2">GetSublayerUserPoints</a> ()</td></tr>
+<tr class="memdesc:acfe51b973d608d3838d047d3d1d403a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть слой пользовательских кандидатов  <br /></td></tr>
+<tr class="separator:acfe51b973d608d3838d047d3d1d403a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa133896d6d8c263b0dd5dc1b445b2631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aa133896d6d8c263b0dd5dc1b445b2631">GetSublayerAutoUserPoints</a> ()</td></tr>
+<tr class="memdesc:aa133896d6d8c263b0dd5dc1b445b2631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть слой авто-оптимумов  <br /></td></tr>
+<tr class="separator:aa133896d6d8c263b0dd5dc1b445b2631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed518720e6d1ed53d4ebb305d8e50d9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aed518720e6d1ed53d4ebb305d8e50d9d">GetSublayerNorma</a> ()</td></tr>
+<tr class="memdesc:aed518720e6d1ed53d4ebb305d8e50d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть слой нормы на душу населения  <br /></td></tr>
+<tr class="separator:aed518720e6d1ed53d4ebb305d8e50d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ab6cb67134a1bd14970cd08255534c23b"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ab6cb67134a1bd14970cd08255534c23b">mainColor</a></td></tr>
+<tr class="memdesc:ab6cb67134a1bd14970cd08255534c23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основной и дополнительный цвет интерфейса  <br /></td></tr>
+<tr class="separator:ab6cb67134a1bd14970cd08255534c23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b721d4d5c4c6c3b4e712cea99ed64d1"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a1b721d4d5c4c6c3b4e712cea99ed64d1">secondaryColor</a></td></tr>
+<tr class="separator:a1b721d4d5c4c6c3b4e712cea99ed64d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99790627cdcae73248acbe8b866546f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ac99790627cdcae73248acbe8b866546f">centerMap</a> = new <a class="el" href="class_optimum_1_1_location.html">Location</a>()</td></tr>
+<tr class="memdesc:ac99790627cdcae73248acbe8b866546f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка центрирования карты  <br /></td></tr>
+<tr class="separator:ac99790627cdcae73248acbe8b866546f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4acce3257dee23f971f73750aa26842"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#af4acce3257dee23f971f73750aa26842">nameObjectFacility</a></td></tr>
+<tr class="memdesc:af4acce3257dee23f971f73750aa26842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название объекта социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:af4acce3257dee23f971f73750aa26842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d374c63daa68f9cd31099b489d3f928"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a6d374c63daa68f9cd31099b489d3f928">pathToIconObjectFacility</a></td></tr>
+<tr class="memdesc:a6d374c63daa68f9cd31099b489d3f928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загруженный пользователем значок для отображения объектов социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a6d374c63daa68f9cd31099b489d3f928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c101d32e70fef9ec34ed2132987591"><td class="memItemLeft" align="right" valign="top">Image&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aa5c101d32e70fef9ec34ed2132987591">iconFacility</a></td></tr>
+<tr class="separator:aa5c101d32e70fef9ec34ed2132987591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbf7765e1f2750c4130fab01cc745bb"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_criterion.html">Criterion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a2bbf7765e1f2750c4130fab01cc745bb">listUserCriterion</a> = new List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt;()</td></tr>
+<tr class="memdesc:a2bbf7765e1f2750c4130fab01cc745bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список критериев оптимальности  <br /></td></tr>
+<tr class="separator:a2bbf7765e1f2750c4130fab01cc745bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ab2e4ac8aef7312f37cc7ce372c64f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a99ab2e4ac8aef7312f37cc7ce372c64f">flagChangePolygon</a> = false</td></tr>
+<tr class="memdesc:a99ab2e4ac8aef7312f37cc7ce372c64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаги изменения файлов в настройках  <br /></td></tr>
+<tr class="separator:a99ab2e4ac8aef7312f37cc7ce372c64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad9dfad2127c76dd602c6529972eb90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a2ad9dfad2127c76dd602c6529972eb90">flagChangeTerritory</a> = false</td></tr>
+<tr class="separator:a2ad9dfad2127c76dd602c6529972eb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a608285b31d94e49da1efdbf0a8a38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#af5a608285b31d94e49da1efdbf0a8a38">flagChangeCriterion</a> = false</td></tr>
+<tr class="separator:af5a608285b31d94e49da1efdbf0a8a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44562475b7ccb62c3428f13ff0dc78ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a44562475b7ccb62c3428f13ff0dc78ec">flagLoadFileNorma</a> = false</td></tr>
+<tr class="separator:a44562475b7ccb62c3428f13ff0dc78ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe974ba7b190be4b39426681c6343aca"><td class="memItemLeft" align="right" valign="top">List&lt; Image &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#afe974ba7b190be4b39426681c6343aca">arrayIcons</a> = new List&lt;Image&gt;()</td></tr>
+<tr class="memdesc:afe974ba7b190be4b39426681c6343aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив значков для точечной раскраски  <br /></td></tr>
+<tr class="separator:afe974ba7b190be4b39426681c6343aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9eacb69149225eab946cf989ad69d68"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ad9eacb69149225eab946cf989ad69d68">stateOfBottomPanel</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:ad9eacb69149225eab946cf989ad69d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояние нижней панели "Open"/"Close".  <br /></td></tr>
+<tr class="separator:ad9eacb69149225eab946cf989ad69d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d3dcfa3bc2dcca7be7b8b45173d9d3"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a36d3dcfa3bc2dcca7be7b8b45173d9d3">optimalZones</a> = new List&lt;<a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a>&gt;()</td></tr>
+<tr class="memdesc:a36d3dcfa3bc2dcca7be7b8b45173d9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список оптимальных точек  <br /></td></tr>
+<tr class="separator:a36d3dcfa3bc2dcca7be7b8b45173d9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6779da9d3617e39a68097395c018ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_facility.html">SublayerFacility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a8f6779da9d3617e39a68097395c018ca">sublayerFacility</a> = new <a class="el" href="class_optimum_1_1_sublayer_facility.html">SublayerFacility</a>(&quot;&quot;, &quot;&quot;)</td></tr>
+<tr class="memdesc:a8f6779da9d3617e39a68097395c018ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой со всеми объектами социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a8f6779da9d3617e39a68097395c018ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a379da980d3598b8aa82a7e57dafc5"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_facility.html">Facility</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a26a379da980d3598b8aa82a7e57dafc5">listUserFacilities</a></td></tr>
+<tr class="memdesc:a26a379da980d3598b8aa82a7e57dafc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список объектов социальной инфраструктуры из файла  <br /></td></tr>
+<tr class="separator:a26a379da980d3598b8aa82a7e57dafc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae6f8653d02c34fc41e4af19a5e4620"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a4ae6f8653d02c34fc41e4af19a5e4620">sublayerBorderPointsTerritory</a> = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;&quot;, &quot;&quot;)</td></tr>
+<tr class="memdesc:a4ae6f8653d02c34fc41e4af19a5e4620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой с граничными зоны анализа  <br /></td></tr>
+<tr class="separator:a4ae6f8653d02c34fc41e4af19a5e4620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613ad1b58cae6bf18933a2d1d123ef77"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_location.html">Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a613ad1b58cae6bf18933a2d1d123ef77">listUserPointsBorderTerritory</a></td></tr>
+<tr class="memdesc:a613ad1b58cae6bf18933a2d1d123ef77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список граничных точек зоны анализа  <br /></td></tr>
+<tr class="separator:a613ad1b58cae6bf18933a2d1d123ef77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172a57b37ae4698f68f50ea71b342ddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a172a57b37ae4698f68f50ea71b342ddc">sublayerPolygonSquare</a> = new <a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>(&quot;&quot;, &quot;&quot;)</td></tr>
+<tr class="memdesc:a172a57b37ae4698f68f50ea71b342ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой со всеми полигонами  <br /></td></tr>
+<tr class="separator:a172a57b37ae4698f68f50ea71b342ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c15ede8d71194ab549d7ed573c4b2f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a8c15ede8d71194ab549d7ed573c4b2f9">sublayerPolygonrIcon</a> = new <a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>(&quot;&quot;, &quot;&quot;)</td></tr>
+<tr class="memdesc:a8c15ede8d71194ab549d7ed573c4b2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой со всеми полигонами для точечной раскраски  <br /></td></tr>
+<tr class="separator:a8c15ede8d71194ab549d7ed573c4b2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df58c8716b57b9dbe06740dfab53eb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a0df58c8716b57b9dbe06740dfab53eb8">sublayerPolygonCheck</a> = new <a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>(&quot;&quot;, &quot;&quot;)</td></tr>
+<tr class="memdesc:a0df58c8716b57b9dbe06740dfab53eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой для проверки вхождения точки в полигоны  <br /></td></tr>
+<tr class="separator:a0df58c8716b57b9dbe06740dfab53eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa790ea2dd3072001f8dcd4a2f4486683"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_polygon.html">Polygon</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aa790ea2dd3072001f8dcd4a2f4486683">listUserPolygons</a></td></tr>
+<tr class="memdesc:aa790ea2dd3072001f8dcd4a2f4486683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список полигонов из файла  <br /></td></tr>
+<tr class="separator:aa790ea2dd3072001f8dcd4a2f4486683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ae331ae3fedc07b5827df8ae9168ba"><td class="memItemLeft" align="right" valign="top">List&lt; PointLatLng &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ac1ae331ae3fedc07b5827df8ae9168ba">tempListForPolygons</a></td></tr>
+<tr class="memdesc:ac1ae331ae3fedc07b5827df8ae9168ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Временный список для граничных точек полигонов  <br /></td></tr>
+<tr class="separator:ac1ae331ae3fedc07b5827df8ae9168ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e909e99c6a02eecdb9b82ce80af806"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#aa5e909e99c6a02eecdb9b82ce80af806">numberOfShadesCriterion</a> = 8</td></tr>
+<tr class="memdesc:aa5e909e99c6a02eecdb9b82ce80af806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество оттенков для раскраски полигонов по критериям  <br /></td></tr>
+<tr class="separator:aa5e909e99c6a02eecdb9b82ce80af806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51b6cf4d1ca848acf10f462ba891ad3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ae51b6cf4d1ca848acf10f462ba891ad3">maxCriterionPolygonColoring</a></td></tr>
+<tr class="memdesc:ae51b6cf4d1ca848acf10f462ba891ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимум и максимум для точечной и площадной раскраски  <br /></td></tr>
+<tr class="separator:ae51b6cf4d1ca848acf10f462ba891ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4547e7035a14de492d2da431ab01b79"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#af4547e7035a14de492d2da431ab01b79">minCriterionPolygonColoring</a></td></tr>
+<tr class="separator:af4547e7035a14de492d2da431ab01b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe03dccc04eb3e9a2c0f344608909b7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a9fe03dccc04eb3e9a2c0f344608909b7">maxCriterionIconColoring</a></td></tr>
+<tr class="separator:a9fe03dccc04eb3e9a2c0f344608909b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26034ea37e14e181d8652a8f8c5aa0c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a26034ea37e14e181d8652a8f8c5aa0c1">minCriterionIconColoring</a></td></tr>
+<tr class="separator:a26034ea37e14e181d8652a8f8c5aa0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df66edaf1968b809cd7f3a85ccbe821"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a7df66edaf1968b809cd7f3a85ccbe821">pathToFilePolygonUser</a></td></tr>
+<tr class="memdesc:a7df66edaf1968b809cd7f3a85ccbe821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к файлу с полигонами  <br /></td></tr>
+<tr class="separator:a7df66edaf1968b809cd7f3a85ccbe821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64aab078d500645f730a07ea26db7c0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a64aab078d500645f730a07ea26db7c0b">sublayerUserPoints</a> = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;&quot;, @&quot;Icon/iconUserFacility.png&quot;)</td></tr>
+<tr class="memdesc:a64aab078d500645f730a07ea26db7c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой с маркерами пользователя  <br /></td></tr>
+<tr class="separator:a64aab078d500645f730a07ea26db7c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4996ee669b6f1caced5c0989a7a6b0"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_location.html">Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a3d4996ee669b6f1caced5c0989a7a6b0">listPointsUser</a> = new List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt;()</td></tr>
+<tr class="memdesc:a3d4996ee669b6f1caced5c0989a7a6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список точек-кандидатов пользователя  <br /></td></tr>
+<tr class="separator:a3d4996ee669b6f1caced5c0989a7a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f285e4a99e299ee56d789b3315ae184"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a9f285e4a99e299ee56d789b3315ae184">listPointsBufferZone</a> = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td></tr>
+<tr class="memdesc:a9f285e4a99e299ee56d789b3315ae184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список буферных зон пользователя  <br /></td></tr>
+<tr class="separator:a9f285e4a99e299ee56d789b3315ae184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b58d07189c3388c6d89b19ab177d185"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a0b58d07189c3388c6d89b19ab177d185">radiusBufferZone</a> = 500</td></tr>
+<tr class="memdesc:a0b58d07189c3388c6d89b19ab177d185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус буферных зон по умолчанию  <br /></td></tr>
+<tr class="separator:a0b58d07189c3388c6d89b19ab177d185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac428e238fbe1188c6afcd124bf1cc8b4"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ac428e238fbe1188c6afcd124bf1cc8b4">LIMIT_USER_POINTS_ON_MAP</a> = 30</td></tr>
+<tr class="memdesc:ac428e238fbe1188c6afcd124bf1cc8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ограничение на установку пользовательских маркеров на карте  <br /></td></tr>
+<tr class="separator:ac428e238fbe1188c6afcd124bf1cc8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1911c95db0d6292940800c98a683ceb2"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a1911c95db0d6292940800c98a683ceb2">DISTANCE_BETWEEN_USER_POINTS</a> = 25</td></tr>
+<tr class="memdesc:a1911c95db0d6292940800c98a683ceb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ограничение на расстояние между пользовательскими маркерами  <br /></td></tr>
+<tr class="separator:a1911c95db0d6292940800c98a683ceb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef659a2b5981c2f70cc5e835a19f553"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a4ef659a2b5981c2f70cc5e835a19f553">sublayerAutoPoints</a> = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;Авто-оптимумы&quot;, @&quot;Icon/iconBestOptimum.png&quot;)</td></tr>
+<tr class="memdesc:a4ef659a2b5981c2f70cc5e835a19f553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой с авто-оптимумами  <br /></td></tr>
+<tr class="separator:a4ef659a2b5981c2f70cc5e835a19f553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5db9f4aec85f41ba177b6a3ada94d7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_location.html">Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#acb5db9f4aec85f41ba177b6a3ada94d7">listAutoPoints</a> = new List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt;()</td></tr>
+<tr class="memdesc:acb5db9f4aec85f41ba177b6a3ada94d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список авто-точек  <br /></td></tr>
+<tr class="separator:acb5db9f4aec85f41ba177b6a3ada94d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5dad35c4c7e4912b59136f7de7d514"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a6f5dad35c4c7e4912b59136f7de7d514">listAutoPointsBufferZone</a> = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td></tr>
+<tr class="memdesc:a6f5dad35c4c7e4912b59136f7de7d514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список авто-буферных зон  <br /></td></tr>
+<tr class="separator:a6f5dad35c4c7e4912b59136f7de7d514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f1cd8ec68863dcc2138687f90d49a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a66f1cd8ec68863dcc2138687f90d49a0">sublayerNormaFacility</a> = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;Норма&quot;, @&quot;Icon/iconBestOptimum.png&quot;)</td></tr>
+<tr class="memdesc:a66f1cd8ec68863dcc2138687f90d49a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой для нормы на душу населения  <br /></td></tr>
+<tr class="separator:a66f1cd8ec68863dcc2138687f90d49a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44adc7f5be49727b3d9a48ccb883f28"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_location.html">Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ab44adc7f5be49727b3d9a48ccb883f28">listNorma</a> = new List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt;()</td></tr>
+<tr class="memdesc:ab44adc7f5be49727b3d9a48ccb883f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список авто-точек для нормы на душу населения  <br /></td></tr>
+<tr class="separator:ab44adc7f5be49727b3d9a48ccb883f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ce7eddbdc42269b29343cfd5f55490"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a41ce7eddbdc42269b29343cfd5f55490">listNormaPointsBufferZone</a> = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td></tr>
+<tr class="memdesc:a41ce7eddbdc42269b29343cfd5f55490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список буферных зон для нормы на душу населения  <br /></td></tr>
+<tr class="separator:a41ce7eddbdc42269b29343cfd5f55490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9817b32e116c258dbf74a42d27c01bcd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a9817b32e116c258dbf74a42d27c01bcd">radiusNormaBufferZone</a> = 500</td></tr>
+<tr class="memdesc:a9817b32e116c258dbf74a42d27c01bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус буферных зон по умолчанию для нормы на душу населения  <br /></td></tr>
+<tr class="separator:a9817b32e116c258dbf74a42d27c01bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b8dcb0ad51892b775a024e7f143c11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ad4b8dcb0ad51892b775a024e7f143c11">implementedRateOfFacility</a> = 1</td></tr>
+<tr class="memdesc:ad4b8dcb0ad51892b775a024e7f143c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Норма объекта социальной инфраструктуры и населения  <br /></td></tr>
+<tr class="separator:ad4b8dcb0ad51892b775a024e7f143c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a86a31bb603e6d7501785865fa671c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ae1a86a31bb603e6d7501785865fa671c">implementedRateOfPopulation</a> = 1000</td></tr>
+<tr class="separator:ae1a86a31bb603e6d7501785865fa671c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a0c71e6718d00d4b46594aa613e74b6bb"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a0c71e6718d00d4b46594aa613e74b6bb">_overlayFacility</a> = new GMapOverlay(&quot;Объекты социальной инфраструктуры&quot;)</td></tr>
+<tr class="memdesc:a0c71e6718d00d4b46594aa613e74b6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой со всеми объектами социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a0c71e6718d00d4b46594aa613e74b6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7a733c974bd60d1db3992963b731e8"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a7b7a733c974bd60d1db3992963b731e8">_overlayWithBorderPointsTerritoryForUser</a> = new GMapOverlay(&quot;Граничные точки зоны анализа&quot;)</td></tr>
+<tr class="memdesc:a7b7a733c974bd60d1db3992963b731e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой с граничными точками зоны анализа  <br /></td></tr>
+<tr class="separator:a7b7a733c974bd60d1db3992963b731e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a42a2b936b39b5959ad71eeb48e71a0"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a1a42a2b936b39b5959ad71eeb48e71a0">_overlayPolygon</a> = new GMapOverlay(&quot;&quot;)</td></tr>
+<tr class="memdesc:a1a42a2b936b39b5959ad71eeb48e71a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой с полигонами  <br /></td></tr>
+<tr class="separator:a1a42a2b936b39b5959ad71eeb48e71a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583841a751e87035693bb1e613870525"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a583841a751e87035693bb1e613870525">_overlayPolygonIcon</a> = new GMapOverlay(&quot;&quot;)</td></tr>
+<tr class="memdesc:a583841a751e87035693bb1e613870525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой с полигонами для точечной раскраски  <br /></td></tr>
+<tr class="separator:a583841a751e87035693bb1e613870525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6d89ceddd99381dd88f889cb0274c9"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a6b6d89ceddd99381dd88f889cb0274c9">_overlayPolygonCheck</a> = new GMapOverlay(&quot;&quot;)</td></tr>
+<tr class="memdesc:a6b6d89ceddd99381dd88f889cb0274c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой для проверки вхождения точки в полигоны  <br /></td></tr>
+<tr class="separator:a6b6d89ceddd99381dd88f889cb0274c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35b67662fcd8d23560032031eb3c86d"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#ab35b67662fcd8d23560032031eb3c86d">_overlayUserPoints</a> = new GMapOverlay(&quot;Точки-кандидаты пользователя&quot;)</td></tr>
+<tr class="memdesc:ab35b67662fcd8d23560032031eb3c86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой с маркерами пользователя  <br /></td></tr>
+<tr class="separator:ab35b67662fcd8d23560032031eb3c86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d18a78e968099e1c414b9763795a04a"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a7d18a78e968099e1c414b9763795a04a">_overlayAutoPoints</a> = new GMapOverlay(&quot;Авто-поиск&quot;)</td></tr>
+<tr class="memdesc:a7d18a78e968099e1c414b9763795a04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой с авто-оптимумами  <br /></td></tr>
+<tr class="separator:a7d18a78e968099e1c414b9763795a04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870bbe9f0ff53ff0319fe195ed9c3448"><td class="memItemLeft" align="right" valign="top">readonly GMapOverlay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_map_model.html#a870bbe9f0ff53ff0319fe195ed9c3448">_overlayNorma</a> = new GMapOverlay(&quot;Норма&quot;)</td></tr>
+<tr class="memdesc:a870bbe9f0ff53ff0319fe195ed9c3448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Библиотечный слой для нормы на душу населения  <br /></td></tr>
+<tr class="separator:a870bbe9f0ff53ff0319fe195ed9c3448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс с данными </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aa61775d5cfba56c9764de92efad8eebb" name="aa61775d5cfba56c9764de92efad8eebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa61775d5cfba56c9764de92efad8eebb">&#9670;&#160;</a></span>MapModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optimum.MapModel.MapModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a538e9bfb371a6c6f80c91a940a1a583e" name="a538e9bfb371a6c6f80c91a940a1a583e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538e9bfb371a6c6f80c91a940a1a583e">&#9670;&#160;</a></span>CalculateCountFacility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.MapModel.CalculateCountFacility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти суммарное значение объектов социальной инфраструктуры в файле </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Общее количество объектов социальной инфраструктуры в файле</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a538e9bfb371a6c6f80c91a940a1a583e_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a538e9bfb371a6c6f80c91a940a1a583e_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a538e9bfb371a6c6f80c91a940a1a583e_icgraph" id="aclass_optimum_1_1_map_model_a538e9bfb371a6c6f80c91a940a1a583e_icgraph">
+<area shape="rect" title="Найти суммарное значение объектов социальной инфраструктуры в файле" alt="" coords="821,5,1019,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="525,5,773,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="265,5,477,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="5,5,217,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a90e279bcfc5374aff4790ca6228be3bd" name="a90e279bcfc5374aff4790ca6228be3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e279bcfc5374aff4790ca6228be3bd">&#9670;&#160;</a></span>CalculateCountPopulation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Optimum.MapModel.CalculateCountPopulation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти суммарное значение населения в файле </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Общее количество населения в файле</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a90e279bcfc5374aff4790ca6228be3bd_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a90e279bcfc5374aff4790ca6228be3bd_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a90e279bcfc5374aff4790ca6228be3bd_icgraph" id="aclass_optimum_1_1_map_model_a90e279bcfc5374aff4790ca6228be3bd_icgraph">
+<area shape="rect" title="Найти суммарное значение населения в файле" alt="" coords="821,5,1019,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="525,5,773,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="265,5,477,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="5,5,217,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9d96ad73cafd0682df8e013542bc0908" name="a9d96ad73cafd0682df8e013542bc0908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d96ad73cafd0682df8e013542bc0908">&#9670;&#160;</a></span>CreateListAutoBufferZones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MapModel.CreateListAutoBufferZones </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисление для каждого полигона у слоя sublayerAutoPoints количества вошедших в него критериев </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a9d96ad73cafd0682df8e013542bc0908_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a9d96ad73cafd0682df8e013542bc0908_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a9d96ad73cafd0682df8e013542bc0908_icgraph" id="aclass_optimum_1_1_map_model_a9d96ad73cafd0682df8e013542bc0908_icgraph">
+<area shape="rect" title="Вычисление для каждого полигона у слоя sublayerAutoPoints количества вошедших в него критериев" alt="" coords="961,37,1164,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a806d6493027f5c74f07a19b7a222d18b" name="a806d6493027f5c74f07a19b7a222d18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806d6493027f5c74f07a19b7a222d18b">&#9670;&#160;</a></span>CreateListBufferZones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MapModel.CreateListBufferZones </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисление для каждого полигона у слоя sublayerUserPoints количества вошедших в него критериев </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a806d6493027f5c74f07a19b7a222d18b_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a806d6493027f5c74f07a19b7a222d18b_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a806d6493027f5c74f07a19b7a222d18b_icgraph" id="aclass_optimum_1_1_map_model_a806d6493027f5c74f07a19b7a222d18b_icgraph">
+<area shape="rect" title="Вычисление для каждого полигона у слоя sublayerUserPoints количества вошедших в него критериев" alt="" coords="1004,25,1207,65"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a11e7f6cdf04729832a0c88070ffffd0d" title="Поиск оптимальных точек" alt="" coords="725,25,956,65"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,25,425,65"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,25,677,65"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,89,667,129"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,32,195,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c8ff1f3a8f324eccee7165788fd31a5" name="a2c8ff1f3a8f324eccee7165788fd31a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8ff1f3a8f324eccee7165788fd31a5">&#9670;&#160;</a></span>CreateListNormaBufferZones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MapModel.CreateListNormaBufferZones </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисление для каждого полигона у слоя sublayerNormaFacility количества вошедших в него критериев </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a2c8ff1f3a8f324eccee7165788fd31a5_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a2c8ff1f3a8f324eccee7165788fd31a5_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a2c8ff1f3a8f324eccee7165788fd31a5_icgraph" id="aclass_optimum_1_1_map_model_a2c8ff1f3a8f324eccee7165788fd31a5_icgraph">
+<area shape="rect" title="Вычисление для каждого полигона у слоя sublayerNormaFacility количества вошедших в него критериев" alt="" coords="821,5,1024,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="525,5,773,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="265,5,477,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="5,5,217,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abf60594b0d6b87d2cc03d5b65d9e8f3d" name="abf60594b0d6b87d2cc03d5b65d9e8f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf60594b0d6b87d2cc03d5b65d9e8f3d">&#9670;&#160;</a></span>CreateTableFromPolygons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataTable Optimum.MapModel.CreateTableFromPolygons </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание таблицы из полигонов </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Таблица, заполненная данными из списка полигонов</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_abf60594b0d6b87d2cc03d5b65d9e8f3d_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_abf60594b0d6b87d2cc03d5b65d9e8f3d_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_abf60594b0d6b87d2cc03d5b65d9e8f3d_icgraph" id="aclass_optimum_1_1_map_model_abf60594b0d6b87d2cc03d5b65d9e8f3d_icgraph">
+<area shape="rect" title="Создание таблицы из полигонов" alt="" coords="2149,388,2361,428"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a299f8afdddc52866a61ed87fe171ef6d" title="Отрисовка полигонов" alt="" coords="1883,165,2101,205"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a0354d862685b8803d065ecca0e64252b" title="Проверка принадлежности точки полигонам" alt="" coords="1105,588,1312,628"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0cbab48090f2eb5cc72f72b067d3e262" title="Изменение критерия в площадной раскраске" alt="" coords="1629,297,1835,351"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ab62fd6ba9bf7524c6fe92c9e57f0d99a" title="Обработка сворачивания формы" alt="" coords="1637,108,1827,148"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#aa433666039584e6ba36f6f0d0f08cb6a" title="Обработка щелчка по легенде карты" alt="" coords="1372,5,1581,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a288f96d6a3515421d5632d2df58fa192" title="Обработка изменения жирности границ для полигонов" alt="" coords="1384,88,1569,128"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ac5c5b33d965ca83ac8c9d71e6368d643" title="Обработка изменения количества оттенков раскраски" alt="" coords="1116,159,1301,199"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a87cfd18f832cf6e1c775ca644cfd1d61" title="Обработка изменения прозрачности цвета заливки полигона" alt="" coords="1639,223,1825,263"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0483d8cbe84a105d3f4b67807a3450c9" title="Перерисовать все слои на карте" alt="" coords="816,393,1027,418"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="260,216,451,256"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a29785299f72f132c2ee4fe2a39c72ab1" title="Отобразить зону анализа" alt="" coords="1375,385,1578,425"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b" title="Обработка выбора поставщика карты" alt="" coords="509,388,749,428"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="537,503,721,543"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a232bbc3f7f4f1cccf6440cf46ce960e8" title="Обработка тика таймера" alt="" coords="528,324,731,364"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,223,201,249"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="264,567,447,607"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="9,574,198,599"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#afcf6000fdb20fd616d799987eb609a0f" title="Проверить, отображена ли на карте зона анализа" alt="" coords="1093,385,1324,425"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="797,684,1045,724"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="827,556,1015,596"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae76b3bd55dd7168683b0098857a36cf6" title="Установка точки&#45;кандидата на карте" alt="" coords="837,620,1005,660"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="523,684,735,724"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="249,684,461,724"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="527,567,731,607"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa8ad00f983ffb9fd9f2f5c128bd4fcb9" name="aa8ad00f983ffb9fd9f2f5c128bd4fcb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ad00f983ffb9fd9f2f5c128bd4fcb9">&#9670;&#160;</a></span>GetnumberShade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.MapModel.GetnumberShade </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>valueForColoring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minValueColoring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxValueColoring</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>countOfGrids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>countOfSteps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Определение цвета, в который будет окрашен полигон </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valueForColoring</td><td>Число для раскраски</td></tr>
+    <tr><td class="paramname">minValueColoring</td><td>Минимум раскраски</td></tr>
+    <tr><td class="paramname">maxValueColoring</td><td>Максимум раскраски</td></tr>
+    <tr><td class="paramname">countOfGrids</td><td>Количество оттенков</td></tr>
+    <tr><td class="paramname">countOfSteps</td><td>Количество шагов</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Номер оттенка</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_aa8ad00f983ffb9fd9f2f5c128bd4fcb9_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_aa8ad00f983ffb9fd9f2f5c128bd4fcb9_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_aa8ad00f983ffb9fd9f2f5c128bd4fcb9_icgraph" id="aclass_optimum_1_1_map_model_aa8ad00f983ffb9fd9f2f5c128bd4fcb9_icgraph">
+<area shape="rect" title="Определение цвета, в который будет окрашен полигон" alt="" coords="2091,379,2297,419"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a299f8afdddc52866a61ed87fe171ef6d" title="Отрисовка полигонов" alt="" coords="1824,379,2043,419"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0cbab48090f2eb5cc72f72b067d3e262" title="Изменение критерия в площадной раскраске" alt="" coords="1571,198,1776,253"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ab62fd6ba9bf7524c6fe92c9e57f0d99a" title="Обработка сворачивания формы" alt="" coords="1579,528,1768,568"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#aa433666039584e6ba36f6f0d0f08cb6a" title="Обработка щелчка по легенде карты" alt="" coords="1313,413,1523,453"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a288f96d6a3515421d5632d2df58fa192" title="Обработка изменения жирности границ для полигонов" alt="" coords="1057,469,1243,509"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ac5c5b33d965ca83ac8c9d71e6368d643" title="Обработка изменения количества оттенков раскраски" alt="" coords="789,299,974,339"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a87cfd18f832cf6e1c775ca644cfd1d61" title="Обработка изменения прозрачности цвета заливки полигона" alt="" coords="1325,349,1511,389"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0483d8cbe84a105d3f4b67807a3450c9" title="Перерисовать все слои на карте" alt="" coords="776,83,987,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,299,440,339"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a29785299f72f132c2ee4fe2a39c72ab1" title="Отобразить зону анализа" alt="" coords="1317,184,1519,224"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b" title="Обработка выбора поставщика карты" alt="" coords="488,133,728,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="516,5,700,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a232bbc3f7f4f1cccf6440cf46ce960e8" title="Обработка тика таймера" alt="" coords="507,69,709,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,306,201,331"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="253,5,436,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="9,13,198,38"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#afcf6000fdb20fd616d799987eb609a0f" title="Проверить, отображена ли на карте зона анализа" alt="" coords="1035,133,1265,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa133896d6d8c263b0dd5dc1b445b2631" name="aa133896d6d8c263b0dd5dc1b445b2631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa133896d6d8c263b0dd5dc1b445b2631">&#9670;&#160;</a></span>GetSublayerAutoUserPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.GetSublayerAutoUserPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть слой авто-оптимумов </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Слой с авто-оптимумами</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_aa133896d6d8c263b0dd5dc1b445b2631_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_aa133896d6d8c263b0dd5dc1b445b2631_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_aa133896d6d8c263b0dd5dc1b445b2631_icgraph" id="aclass_optimum_1_1_map_model_aa133896d6d8c263b0dd5dc1b445b2631_icgraph">
+<area shape="rect" title="Вернуть слой авто&#45;оптимумов" alt="" coords="501,5,716,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="243,5,453,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="5,13,195,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab406b19494b665762817dd7a80bd0b8d" name="ab406b19494b665762817dd7a80bd0b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab406b19494b665762817dd7a80bd0b8d">&#9670;&#160;</a></span>GetSublayerBorderPointsTerritory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.GetSublayerBorderPointsTerritory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть слой граничных точек зоны анализа </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Слой с зоной анализа</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_ab406b19494b665762817dd7a80bd0b8d_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_ab406b19494b665762817dd7a80bd0b8d_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_ab406b19494b665762817dd7a80bd0b8d_icgraph" id="aclass_optimum_1_1_map_model_ab406b19494b665762817dd7a80bd0b8d_icgraph">
+<area shape="rect" title="Вернуть слой граничных точек зоны анализа" alt="" coords="1325,207,1540,247"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#aa720d7fd5aae9a1c9afcb570ab2e6917" title="Найти динамиечески максимальную длину для радиуса поиска" alt="" coords="1059,235,1277,275"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,205,981,245"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0834f23025d35c5835a51077d31d21e2" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="1062,5,1274,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,56,1011,96"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a51223d10ac6f8c63c75d064d4ef587d4" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="1062,120,1274,160"/>
+<area shape="rect" href="class_optimum_1_1_setting_radius.html#a44542fc4de95c83cc3b633ac02a9c24c" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="1086,413,1250,453"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="1063,349,1273,389"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#af51f418265a31e92b0b22ce843c14d8a" title="Проверка принадлежности точки зоне анализа" alt="" coords="783,292,990,332"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,189,711,229"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,253,701,293"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,253,440,293"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,261,195,286"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,111,715,151"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,111,455,151"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ad59fe4189420fc233c5c09113258a4a0" title="Загрузка формы" alt="" coords="781,120,993,160"/>
+<area shape="rect" href="class_optimum_1_1_setting_radius.html#a36ecc925d6f5cbce6fdc2e63f101c396" title="Загрузка формы" alt="" coords="784,413,989,453"/>
+<area shape="rect" href="class_optimum_1_1_setting_radius.html#ac596fbc43eed4cb2f18d4b62f7ea1eeb" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,413,714,453"/>
+<area shape="rect" href="class_optimum_1_1_setting_radius.html#a4ffa4c995cffde50fef469583c04bfc7" title="Конструктор формы" alt="" coords="246,413,451,453"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="792,357,981,382"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae76b3bd55dd7168683b0098857a36cf6" title="Установка точки&#45;кандидата на карте" alt="" coords="525,317,693,357"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed074d7211f4b2f01d11dc78d72f2d70" name="aed074d7211f4b2f01d11dc78d72f2d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed074d7211f4b2f01d11dc78d72f2d70">&#9670;&#160;</a></span>GetSublayerFacility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_facility.html">SublayerFacility</a> Optimum.MapModel.GetSublayerFacility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть слой объектов социальной инфраструктуры </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Слой с объектами социальной инфраструктуры</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_aed074d7211f4b2f01d11dc78d72f2d70_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_aed074d7211f4b2f01d11dc78d72f2d70_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_aed074d7211f4b2f01d11dc78d72f2d70_icgraph" id="aclass_optimum_1_1_map_model_aed074d7211f4b2f01d11dc78d72f2d70_icgraph">
+<area shape="rect" title="Вернуть слой объектов социальной инфраструктуры" alt="" coords="501,5,716,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="243,5,453,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="5,13,195,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed518720e6d1ed53d4ebb305d8e50d9d" name="aed518720e6d1ed53d4ebb305d8e50d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed518720e6d1ed53d4ebb305d8e50d9d">&#9670;&#160;</a></span>GetSublayerNorma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.GetSublayerNorma </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть слой нормы на душу населения </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Слой с нормой</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_aed518720e6d1ed53d4ebb305d8e50d9d_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_aed518720e6d1ed53d4ebb305d8e50d9d_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_aed518720e6d1ed53d4ebb305d8e50d9d_icgraph" id="aclass_optimum_1_1_map_model_aed518720e6d1ed53d4ebb305d8e50d9d_icgraph">
+<area shape="rect" title="Вернуть слой нормы на душу населения" alt="" coords="501,5,716,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="243,5,453,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="5,13,195,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5378a26d6b01e2724179d3730a99190" name="ab5378a26d6b01e2724179d3730a99190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5378a26d6b01e2724179d3730a99190">&#9670;&#160;</a></span>GetSublayerPolygonCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a> Optimum.MapModel.GetSublayerPolygonCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть слой полигонов </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Слой с полигонами</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_ab5378a26d6b01e2724179d3730a99190_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_ab5378a26d6b01e2724179d3730a99190_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_ab5378a26d6b01e2724179d3730a99190_icgraph" id="aclass_optimum_1_1_map_model_ab5378a26d6b01e2724179d3730a99190_icgraph">
+<area shape="rect" title="Вернуть слой полигонов" alt="" coords="1313,84,1528,124"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a0354d862685b8803d065ecca0e64252b" title="Проверка принадлежности точки полигонам" alt="" coords="1059,84,1265,124"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#ace39f31ae8b1a55bea0996544669a59e" title="Найти ному" alt="" coords="763,13,1011,53"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="793,84,981,124"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae76b3bd55dd7168683b0098857a36cf6" title="Установка точки&#45;кандидата на карте" alt="" coords="803,163,971,203"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a800ea4fd9016ef35e08e98a5dc521a53" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="503,5,715,45"/>
+<area shape="rect" href="class_optimum_1_1_search_norm_per_capita.html#a0d0b6ece1b2e499ca95bff0ced03d762" title="Инициализация формы" alt="" coords="243,5,455,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="507,69,711,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="517,133,701,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="257,133,440,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,141,195,166"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9474979a314931368df24f329efe02a2" name="a9474979a314931368df24f329efe02a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9474979a314931368df24f329efe02a2">&#9670;&#160;</a></span>GetSublayerPolygonIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a> Optimum.MapModel.GetSublayerPolygonIcon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть слой полигонов </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Слой с полигонами</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a9474979a314931368df24f329efe02a2_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a9474979a314931368df24f329efe02a2_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a9474979a314931368df24f329efe02a2_icgraph" id="aclass_optimum_1_1_map_model_a9474979a314931368df24f329efe02a2_icgraph">
+<area shape="rect" title="Вернуть слой полигонов" alt="" coords="501,5,716,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="243,5,453,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="5,13,195,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acfe51b973d608d3838d047d3d1d403a2" name="acfe51b973d608d3838d047d3d1d403a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe51b973d608d3838d047d3d1d403a2">&#9670;&#160;</a></span>GetSublayerUserPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.GetSublayerUserPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вернуть слой пользовательских кандидатов </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p><dl class="section return"><dt>Возвращает</dt><dd>Слой с пользовательскими кандидатами</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_acfe51b973d608d3838d047d3d1d403a2_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_acfe51b973d608d3838d047d3d1d403a2_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_acfe51b973d608d3838d047d3d1d403a2_icgraph" id="aclass_optimum_1_1_map_model_acfe51b973d608d3838d047d3d1d403a2_icgraph">
+<area shape="rect" title="Вернуть слой пользовательских кандидатов" alt="" coords="501,5,716,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ab971383f5237671716645627bbf7c4e8" title="Инициализация всех отрисовщиков" alt="" coords="243,5,453,45"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a4d504a8e1fc7dd346b5806484c876088" title="Конструктор" alt="" coords="5,13,195,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a281c9822e288363a3d1cab7ded19a7c4" name="a281c9822e288363a3d1cab7ded19a7c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a281c9822e288363a3d1cab7ded19a7c4">&#9670;&#160;</a></span>InitializationSublayersAndLists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MapModel.InitializationSublayersAndLists </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация слоев и списков данными </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a281c9822e288363a3d1cab7ded19a7c4_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a281c9822e288363a3d1cab7ded19a7c4_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a281c9822e288363a3d1cab7ded19a7c4_icgraph" id="aclass_optimum_1_1_map_model_a281c9822e288363a3d1cab7ded19a7c4_icgraph">
+<area shape="rect" title="Инициализация слоев и списков данными" alt="" coords="765,5,976,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ab3f69716f9ac60541ed6997622d79dbd" title="Загрузка карты при открытии окна" alt="" coords="473,13,717,38"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,5,425,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,13,195,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa634a884579916f323e24ad03a37ea7d" name="aa634a884579916f323e24ad03a37ea7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa634a884579916f323e24ad03a37ea7d">&#9670;&#160;</a></span>SetMaximumAndMinumForCriterionIconColoring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MapModel.SetMaximumAndMinumForCriterionIconColoring </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexOfSelectedCriterion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти максимум и минимум по выбранному критерию для точечной раскраски </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexOfSelectedCriterion</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_aa634a884579916f323e24ad03a37ea7d_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_aa634a884579916f323e24ad03a37ea7d_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_aa634a884579916f323e24ad03a37ea7d_icgraph" id="aclass_optimum_1_1_map_model_aa634a884579916f323e24ad03a37ea7d_icgraph">
+<area shape="rect" title="Найти максимум и минимум по выбранному критерию для точечной раскраски" alt="" coords="2112,228,2335,268"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a62bd3b8c93d05cdf33e4ee4dc29ed455" title="Изменение критерия в точечной раскраски" alt="" coords="1824,228,2064,268"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0483d8cbe84a105d3f4b67807a3450c9" title="Перерисовать все слои на карте" alt="" coords="776,455,987,481"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,200,440,240"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0cbab48090f2eb5cc72f72b067d3e262" title="Изменение критерия в площадной раскраске" alt="" coords="1571,337,1776,391"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a29785299f72f132c2ee4fe2a39c72ab1" title="Отобразить зону анализа" alt="" coords="1317,285,1519,325"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ab62fd6ba9bf7524c6fe92c9e57f0d99a" title="Обработка сворачивания формы" alt="" coords="1579,552,1768,592"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#aa433666039584e6ba36f6f0d0f08cb6a" title="Обработка щелчка по легенде карты" alt="" coords="1313,69,1523,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a288f96d6a3515421d5632d2df58fa192" title="Обработка изменения жирности границ для полигонов" alt="" coords="1057,120,1243,160"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ac5c5b33d965ca83ac8c9d71e6368d643" title="Обработка изменения количества оттенков раскраски" alt="" coords="789,171,974,211"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a87cfd18f832cf6e1c775ca644cfd1d61" title="Обработка изменения прозрачности цвета заливки полигона" alt="" coords="1325,5,1511,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b" title="Обработка выбора поставщика карты" alt="" coords="488,387,728,427"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="516,515,700,555"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a232bbc3f7f4f1cccf6440cf46ce960e8" title="Обработка тика таймера" alt="" coords="507,451,709,491"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,207,201,233"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="253,515,436,555"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="9,522,198,547"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#afcf6000fdb20fd616d799987eb609a0f" title="Проверить, отображена ли на карте зона анализа" alt="" coords="1035,387,1265,427"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2a18615cd118dd620b7201b1c21a602f" name="a2a18615cd118dd620b7201b1c21a602f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a18615cd118dd620b7201b1c21a602f">&#9670;&#160;</a></span>SetMaximumAndMinumForCriterionSquareColoring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.MapModel.SetMaximumAndMinumForCriterionSquareColoring </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexOfSelectedCriterion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Найти максимум и минимум по выбранному критерию для площадной раскраски </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexOfSelectedCriterion</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_map_model_a2a18615cd118dd620b7201b1c21a602f_icgraph.png" border="0" usemap="#aclass_optimum_1_1_map_model_a2a18615cd118dd620b7201b1c21a602f_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_map_model_a2a18615cd118dd620b7201b1c21a602f_icgraph" id="aclass_optimum_1_1_map_model_a2a18615cd118dd620b7201b1c21a602f_icgraph">
+<area shape="rect" title="Найти максимум и минимум по выбранному критерию для площадной раскраски" alt="" coords="2371,379,2609,419"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#aac028a05422d1a5780bfee7290822343" title="Легенда карты" alt="" coords="2091,386,2323,411"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a299f8afdddc52866a61ed87fe171ef6d" title="Отрисовка полигонов" alt="" coords="1824,379,2043,419"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0cbab48090f2eb5cc72f72b067d3e262" title="Изменение критерия в площадной раскраске" alt="" coords="1571,198,1776,253"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ab62fd6ba9bf7524c6fe92c9e57f0d99a" title="Обработка сворачивания формы" alt="" coords="1579,528,1768,568"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#aa433666039584e6ba36f6f0d0f08cb6a" title="Обработка щелчка по легенде карты" alt="" coords="1313,413,1523,453"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a288f96d6a3515421d5632d2df58fa192" title="Обработка изменения жирности границ для полигонов" alt="" coords="1057,469,1243,509"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ac5c5b33d965ca83ac8c9d71e6368d643" title="Обработка изменения количества оттенков раскраски" alt="" coords="789,299,974,339"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a87cfd18f832cf6e1c775ca644cfd1d61" title="Обработка изменения прозрачности цвета заливки полигона" alt="" coords="1325,349,1511,389"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0483d8cbe84a105d3f4b67807a3450c9" title="Перерисовать все слои на карте" alt="" coords="776,83,987,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,299,440,339"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a29785299f72f132c2ee4fe2a39c72ab1" title="Отобразить зону анализа" alt="" coords="1317,184,1519,224"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b" title="Обработка выбора поставщика карты" alt="" coords="488,133,728,173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="516,5,700,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a232bbc3f7f4f1cccf6440cf46ce960e8" title="Обработка тика таймера" alt="" coords="507,69,709,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,306,201,331"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="253,5,436,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="9,13,198,38"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#afcf6000fdb20fd616d799987eb609a0f" title="Проверить, отображена ли на карте зона анализа" alt="" coords="1035,133,1265,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a7d18a78e968099e1c414b9763795a04a" name="a7d18a78e968099e1c414b9763795a04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d18a78e968099e1c414b9763795a04a">&#9670;&#160;</a></span>_overlayAutoPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayAutoPoints = new GMapOverlay(&quot;Авто-поиск&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой с авто-оптимумами </p>
+
+</div>
+</div>
+<a id="a0c71e6718d00d4b46594aa613e74b6bb" name="a0c71e6718d00d4b46594aa613e74b6bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c71e6718d00d4b46594aa613e74b6bb">&#9670;&#160;</a></span>_overlayFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayFacility = new GMapOverlay(&quot;Объекты социальной инфраструктуры&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой со всеми объектами социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a870bbe9f0ff53ff0319fe195ed9c3448" name="a870bbe9f0ff53ff0319fe195ed9c3448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870bbe9f0ff53ff0319fe195ed9c3448">&#9670;&#160;</a></span>_overlayNorma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayNorma = new GMapOverlay(&quot;Норма&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой для нормы на душу населения </p>
+
+</div>
+</div>
+<a id="a1a42a2b936b39b5959ad71eeb48e71a0" name="a1a42a2b936b39b5959ad71eeb48e71a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a42a2b936b39b5959ad71eeb48e71a0">&#9670;&#160;</a></span>_overlayPolygon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayPolygon = new GMapOverlay(&quot;&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой с полигонами </p>
+
+</div>
+</div>
+<a id="a6b6d89ceddd99381dd88f889cb0274c9" name="a6b6d89ceddd99381dd88f889cb0274c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6d89ceddd99381dd88f889cb0274c9">&#9670;&#160;</a></span>_overlayPolygonCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayPolygonCheck = new GMapOverlay(&quot;&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой для проверки вхождения точки в полигоны </p>
+
+</div>
+</div>
+<a id="a583841a751e87035693bb1e613870525" name="a583841a751e87035693bb1e613870525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a583841a751e87035693bb1e613870525">&#9670;&#160;</a></span>_overlayPolygonIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayPolygonIcon = new GMapOverlay(&quot;&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой с полигонами для точечной раскраски </p>
+
+</div>
+</div>
+<a id="ab35b67662fcd8d23560032031eb3c86d" name="ab35b67662fcd8d23560032031eb3c86d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35b67662fcd8d23560032031eb3c86d">&#9670;&#160;</a></span>_overlayUserPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayUserPoints = new GMapOverlay(&quot;Точки-кандидаты пользователя&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой с маркерами пользователя </p>
+
+</div>
+</div>
+<a id="a7b7a733c974bd60d1db3992963b731e8" name="a7b7a733c974bd60d1db3992963b731e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7a733c974bd60d1db3992963b731e8">&#9670;&#160;</a></span>_overlayWithBorderPointsTerritoryForUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly GMapOverlay Optimum.MapModel._overlayWithBorderPointsTerritoryForUser = new GMapOverlay(&quot;Граничные точки зоны анализа&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Библиотечный слой с граничными точками зоны анализа </p>
+
+</div>
+</div>
+<a id="afe974ba7b190be4b39426681c6343aca" name="afe974ba7b190be4b39426681c6343aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe974ba7b190be4b39426681c6343aca">&#9670;&#160;</a></span>arrayIcons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Image&gt; Optimum.MapModel.arrayIcons = new List&lt;Image&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Массив значков для точечной раскраски </p>
+
+</div>
+</div>
+<a id="ac99790627cdcae73248acbe8b866546f" name="ac99790627cdcae73248acbe8b866546f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac99790627cdcae73248acbe8b866546f">&#9670;&#160;</a></span>centerMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_location.html">Location</a> Optimum.MapModel.centerMap = new <a class="el" href="class_optimum_1_1_location.html">Location</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Точка центрирования карты </p>
+
+</div>
+</div>
+<a id="a1911c95db0d6292940800c98a683ceb2" name="a1911c95db0d6292940800c98a683ceb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1911c95db0d6292940800c98a683ceb2">&#9670;&#160;</a></span>DISTANCE_BETWEEN_USER_POINTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int Optimum.MapModel.DISTANCE_BETWEEN_USER_POINTS = 25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ограничение на расстояние между пользовательскими маркерами </p>
+
+</div>
+</div>
+<a id="af5a608285b31d94e49da1efdbf0a8a38" name="af5a608285b31d94e49da1efdbf0a8a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a608285b31d94e49da1efdbf0a8a38">&#9670;&#160;</a></span>flagChangeCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.MapModel.flagChangeCriterion = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99ab2e4ac8aef7312f37cc7ce372c64f" name="a99ab2e4ac8aef7312f37cc7ce372c64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ab2e4ac8aef7312f37cc7ce372c64f">&#9670;&#160;</a></span>flagChangePolygon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.MapModel.flagChangePolygon = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаги изменения файлов в настройках </p>
+
+</div>
+</div>
+<a id="a2ad9dfad2127c76dd602c6529972eb90" name="a2ad9dfad2127c76dd602c6529972eb90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad9dfad2127c76dd602c6529972eb90">&#9670;&#160;</a></span>flagChangeTerritory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.MapModel.flagChangeTerritory = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44562475b7ccb62c3428f13ff0dc78ec" name="a44562475b7ccb62c3428f13ff0dc78ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44562475b7ccb62c3428f13ff0dc78ec">&#9670;&#160;</a></span>flagLoadFileNorma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.MapModel.flagLoadFileNorma = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5c101d32e70fef9ec34ed2132987591" name="aa5c101d32e70fef9ec34ed2132987591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c101d32e70fef9ec34ed2132987591">&#9670;&#160;</a></span>iconFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image Optimum.MapModel.iconFacility</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4b8dcb0ad51892b775a024e7f143c11" name="ad4b8dcb0ad51892b775a024e7f143c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b8dcb0ad51892b775a024e7f143c11">&#9670;&#160;</a></span>implementedRateOfFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.MapModel.implementedRateOfFacility = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Норма объекта социальной инфраструктуры и населения </p>
+
+</div>
+</div>
+<a id="ae1a86a31bb603e6d7501785865fa671c" name="ae1a86a31bb603e6d7501785865fa671c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a86a31bb603e6d7501785865fa671c">&#9670;&#160;</a></span>implementedRateOfPopulation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.MapModel.implementedRateOfPopulation = 1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac428e238fbe1188c6afcd124bf1cc8b4" name="ac428e238fbe1188c6afcd124bf1cc8b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac428e238fbe1188c6afcd124bf1cc8b4">&#9670;&#160;</a></span>LIMIT_USER_POINTS_ON_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int Optimum.MapModel.LIMIT_USER_POINTS_ON_MAP = 30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ограничение на установку пользовательских маркеров на карте </p>
+
+</div>
+</div>
+<a id="acb5db9f4aec85f41ba177b6a3ada94d7" name="acb5db9f4aec85f41ba177b6a3ada94d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5db9f4aec85f41ba177b6a3ada94d7">&#9670;&#160;</a></span>listAutoPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt; Optimum.MapModel.listAutoPoints = new List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список авто-точек </p>
+
+</div>
+</div>
+<a id="a6f5dad35c4c7e4912b59136f7de7d514" name="a6f5dad35c4c7e4912b59136f7de7d514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f5dad35c4c7e4912b59136f7de7d514">&#9670;&#160;</a></span>listAutoPointsBufferZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt; Optimum.MapModel.listAutoPointsBufferZone = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список авто-буферных зон </p>
+
+</div>
+</div>
+<a id="ab44adc7f5be49727b3d9a48ccb883f28" name="ab44adc7f5be49727b3d9a48ccb883f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44adc7f5be49727b3d9a48ccb883f28">&#9670;&#160;</a></span>listNorma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt; Optimum.MapModel.listNorma = new List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список авто-точек для нормы на душу населения </p>
+
+</div>
+</div>
+<a id="a41ce7eddbdc42269b29343cfd5f55490" name="a41ce7eddbdc42269b29343cfd5f55490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41ce7eddbdc42269b29343cfd5f55490">&#9670;&#160;</a></span>listNormaPointsBufferZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt; Optimum.MapModel.listNormaPointsBufferZone = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список буферных зон для нормы на душу населения </p>
+
+</div>
+</div>
+<a id="a9f285e4a99e299ee56d789b3315ae184" name="a9f285e4a99e299ee56d789b3315ae184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f285e4a99e299ee56d789b3315ae184">&#9670;&#160;</a></span>listPointsBufferZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt; Optimum.MapModel.listPointsBufferZone = new List&lt;<a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список буферных зон пользователя </p>
+
+</div>
+</div>
+<a id="a3d4996ee669b6f1caced5c0989a7a6b0" name="a3d4996ee669b6f1caced5c0989a7a6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4996ee669b6f1caced5c0989a7a6b0">&#9670;&#160;</a></span>listPointsUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt; Optimum.MapModel.listPointsUser = new List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список точек-кандидатов пользователя </p>
+
+</div>
+</div>
+<a id="a2bbf7765e1f2750c4130fab01cc745bb" name="a2bbf7765e1f2750c4130fab01cc745bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbf7765e1f2750c4130fab01cc745bb">&#9670;&#160;</a></span>listUserCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt; Optimum.MapModel.listUserCriterion = new List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список критериев оптимальности </p>
+
+</div>
+</div>
+<a id="a26a379da980d3598b8aa82a7e57dafc5" name="a26a379da980d3598b8aa82a7e57dafc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a379da980d3598b8aa82a7e57dafc5">&#9670;&#160;</a></span>listUserFacilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_facility.html">Facility</a>&gt; Optimum.MapModel.listUserFacilities</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список объектов социальной инфраструктуры из файла </p>
+
+</div>
+</div>
+<a id="a613ad1b58cae6bf18933a2d1d123ef77" name="a613ad1b58cae6bf18933a2d1d123ef77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a613ad1b58cae6bf18933a2d1d123ef77">&#9670;&#160;</a></span>listUserPointsBorderTerritory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt; Optimum.MapModel.listUserPointsBorderTerritory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список граничных точек зоны анализа </p>
+
+</div>
+</div>
+<a id="aa790ea2dd3072001f8dcd4a2f4486683" name="aa790ea2dd3072001f8dcd4a2f4486683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa790ea2dd3072001f8dcd4a2f4486683">&#9670;&#160;</a></span>listUserPolygons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_polygon.html">Polygon</a>&gt; Optimum.MapModel.listUserPolygons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список полигонов из файла </p>
+
+</div>
+</div>
+<a id="ab6cb67134a1bd14970cd08255534c23b" name="ab6cb67134a1bd14970cd08255534c23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cb67134a1bd14970cd08255534c23b">&#9670;&#160;</a></span>mainColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Optimum.MapModel.mainColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основной и дополнительный цвет интерфейса </p>
+
+</div>
+</div>
+<a id="a9fe03dccc04eb3e9a2c0f344608909b7" name="a9fe03dccc04eb3e9a2c0f344608909b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe03dccc04eb3e9a2c0f344608909b7">&#9670;&#160;</a></span>maxCriterionIconColoring</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Optimum.MapModel.maxCriterionIconColoring</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae51b6cf4d1ca848acf10f462ba891ad3" name="ae51b6cf4d1ca848acf10f462ba891ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51b6cf4d1ca848acf10f462ba891ad3">&#9670;&#160;</a></span>maxCriterionPolygonColoring</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Optimum.MapModel.maxCriterionPolygonColoring</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Минимум и максимум для точечной и площадной раскраски </p>
+
+</div>
+</div>
+<a id="a26034ea37e14e181d8652a8f8c5aa0c1" name="a26034ea37e14e181d8652a8f8c5aa0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26034ea37e14e181d8652a8f8c5aa0c1">&#9670;&#160;</a></span>minCriterionIconColoring</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Optimum.MapModel.minCriterionIconColoring</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4547e7035a14de492d2da431ab01b79" name="af4547e7035a14de492d2da431ab01b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4547e7035a14de492d2da431ab01b79">&#9670;&#160;</a></span>minCriterionPolygonColoring</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Optimum.MapModel.minCriterionPolygonColoring</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4acce3257dee23f971f73750aa26842" name="af4acce3257dee23f971f73750aa26842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4acce3257dee23f971f73750aa26842">&#9670;&#160;</a></span>nameObjectFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.MapModel.nameObjectFacility</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Название объекта социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="aa5e909e99c6a02eecdb9b82ce80af806" name="aa5e909e99c6a02eecdb9b82ce80af806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e909e99c6a02eecdb9b82ce80af806">&#9670;&#160;</a></span>numberOfShadesCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.MapModel.numberOfShadesCriterion = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество оттенков для раскраски полигонов по критериям </p>
+
+</div>
+</div>
+<a id="a36d3dcfa3bc2dcca7be7b8b45173d9d3" name="a36d3dcfa3bc2dcca7be7b8b45173d9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d3dcfa3bc2dcca7be7b8b45173d9d3">&#9670;&#160;</a></span>optimalZones</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a>&gt; Optimum.MapModel.optimalZones = new List&lt;<a class="el" href="class_optimum_1_1_optimal_zone.html">OptimalZone</a>&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Список оптимальных точек </p>
+
+</div>
+</div>
+<a id="a7df66edaf1968b809cd7f3a85ccbe821" name="a7df66edaf1968b809cd7f3a85ccbe821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df66edaf1968b809cd7f3a85ccbe821">&#9670;&#160;</a></span>pathToFilePolygonUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.MapModel.pathToFilePolygonUser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Путь к файлу с полигонами </p>
+
+</div>
+</div>
+<a id="a6d374c63daa68f9cd31099b489d3f928" name="a6d374c63daa68f9cd31099b489d3f928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d374c63daa68f9cd31099b489d3f928">&#9670;&#160;</a></span>pathToIconObjectFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.MapModel.pathToIconObjectFacility</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загруженный пользователем значок для отображения объектов социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a0b58d07189c3388c6d89b19ab177d185" name="a0b58d07189c3388c6d89b19ab177d185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b58d07189c3388c6d89b19ab177d185">&#9670;&#160;</a></span>radiusBufferZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.MapModel.radiusBufferZone = 500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Радиус буферных зон по умолчанию </p>
+
+</div>
+</div>
+<a id="a9817b32e116c258dbf74a42d27c01bcd" name="a9817b32e116c258dbf74a42d27c01bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9817b32e116c258dbf74a42d27c01bcd">&#9670;&#160;</a></span>radiusNormaBufferZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.MapModel.radiusNormaBufferZone = 500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Радиус буферных зон по умолчанию для нормы на душу населения </p>
+
+</div>
+</div>
+<a id="a1b721d4d5c4c6c3b4e712cea99ed64d1" name="a1b721d4d5c4c6c3b4e712cea99ed64d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b721d4d5c4c6c3b4e712cea99ed64d1">&#9670;&#160;</a></span>secondaryColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Optimum.MapModel.secondaryColor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9eacb69149225eab946cf989ad69d68" name="ad9eacb69149225eab946cf989ad69d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9eacb69149225eab946cf989ad69d68">&#9670;&#160;</a></span>stateOfBottomPanel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.MapModel.stateOfBottomPanel = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Состояние нижней панели "Open"/"Close". </p>
+
+</div>
+</div>
+<a id="a4ef659a2b5981c2f70cc5e835a19f553" name="a4ef659a2b5981c2f70cc5e835a19f553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef659a2b5981c2f70cc5e835a19f553">&#9670;&#160;</a></span>sublayerAutoPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.sublayerAutoPoints = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;Авто-оптимумы&quot;, @&quot;Icon/iconBestOptimum.png&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой с авто-оптимумами </p>
+
+</div>
+</div>
+<a id="a4ae6f8653d02c34fc41e4af19a5e4620" name="a4ae6f8653d02c34fc41e4af19a5e4620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae6f8653d02c34fc41e4af19a5e4620">&#9670;&#160;</a></span>sublayerBorderPointsTerritory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.sublayerBorderPointsTerritory = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;&quot;, &quot;&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой с граничными зоны анализа </p>
+
+</div>
+</div>
+<a id="a8f6779da9d3617e39a68097395c018ca" name="a8f6779da9d3617e39a68097395c018ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6779da9d3617e39a68097395c018ca">&#9670;&#160;</a></span>sublayerFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_facility.html">SublayerFacility</a> Optimum.MapModel.sublayerFacility = new <a class="el" href="class_optimum_1_1_sublayer_facility.html">SublayerFacility</a>(&quot;&quot;, &quot;&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой со всеми объектами социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a66f1cd8ec68863dcc2138687f90d49a0" name="a66f1cd8ec68863dcc2138687f90d49a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f1cd8ec68863dcc2138687f90d49a0">&#9670;&#160;</a></span>sublayerNormaFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.sublayerNormaFacility = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;Норма&quot;, @&quot;Icon/iconBestOptimum.png&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой для нормы на душу населения </p>
+
+</div>
+</div>
+<a id="a0df58c8716b57b9dbe06740dfab53eb8" name="a0df58c8716b57b9dbe06740dfab53eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df58c8716b57b9dbe06740dfab53eb8">&#9670;&#160;</a></span>sublayerPolygonCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a> Optimum.MapModel.sublayerPolygonCheck = new <a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>(&quot;&quot;, &quot;&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой для проверки вхождения точки в полигоны </p>
+
+</div>
+</div>
+<a id="a8c15ede8d71194ab549d7ed573c4b2f9" name="a8c15ede8d71194ab549d7ed573c4b2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c15ede8d71194ab549d7ed573c4b2f9">&#9670;&#160;</a></span>sublayerPolygonrIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a> Optimum.MapModel.sublayerPolygonrIcon = new <a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>(&quot;&quot;, &quot;&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой со всеми полигонами для точечной раскраски </p>
+
+</div>
+</div>
+<a id="a172a57b37ae4698f68f50ea71b342ddc" name="a172a57b37ae4698f68f50ea71b342ddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172a57b37ae4698f68f50ea71b342ddc">&#9670;&#160;</a></span>sublayerPolygonSquare</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a> Optimum.MapModel.sublayerPolygonSquare = new <a class="el" href="class_optimum_1_1_sublayer_polygon.html">SublayerPolygon</a>(&quot;&quot;, &quot;&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой со всеми полигонами </p>
+
+</div>
+</div>
+<a id="a64aab078d500645f730a07ea26db7c0b" name="a64aab078d500645f730a07ea26db7c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64aab078d500645f730a07ea26db7c0b">&#9670;&#160;</a></span>sublayerUserPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.MapModel.sublayerUserPoints = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>(&quot;&quot;, @&quot;Icon/iconUserFacility.png&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Слой с маркерами пользователя </p>
+
+</div>
+</div>
+<a id="ac1ae331ae3fedc07b5827df8ae9168ba" name="ac1ae331ae3fedc07b5827df8ae9168ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ae331ae3fedc07b5827df8ae9168ba">&#9670;&#160;</a></span>tempListForPolygons</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;PointLatLng&gt; Optimum.MapModel.tempListForPolygons</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Временный список для граничных точек полигонов </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>C:/Users/PC/Desktop/doxxygen/WindowsFormsApp1/<a class="el" href="_map_model_8cs.html">MapModel.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<map id="Optimum.Settings.buttonValidateAndSave_Click" name="Optimum.Settings.buttonValidateAndSave_Click">
+<area shape="rect" id="node1" title="Кнопка &quot;Сохранить&quot;." alt="" coords="5,101,220,141"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_settings.html#a4fef326fa617b58a711716dfaab5a237" title="Проверка уникальности названия критериев" alt="" coords="277,5,486,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_settings.html#a1908fb93e5272fce91d61d000b602b66" title="Проверка корректности названия объекта социальной инфраструктуры" alt="" coords="268,69,495,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_settings.html#a8796cdb3ba8f82b80b695fef0d93483f" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="270,133,493,173"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_settings.html#a75c2f8fa4f79435d44564342e82514d9" title="Поиск точки центрирования карты" alt="" coords="281,197,482,237"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_settings.html#afd2b050fe4f4593265579da38b8eb5a1" title="Проверка корректности направления" alt="" coords="543,37,769,77"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_settings.html#a73a9ec906ed47a70ae121393ee6f5027" title="Проверка корректности названия критериея" alt="" coords="551,101,761,141"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_settings.html#a437259db652807a405a6d7ccaefc9e63" title="Проверка корректности весового коэффициента" alt="" coords="548,165,764,205"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_settings.html#a296e6bcde5a8b584b92cc8daa135d3a6" title="Проверить, подходит ли файл с полигонами на неизменяющееся количество критериев" alt="" coords="563,229,749,269"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="817,197,1020,237"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="817,261,1020,301"/>
+</map>

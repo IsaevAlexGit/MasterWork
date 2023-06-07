@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>doxyMaster: Класс Optimum.RenderAutoPoints</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">doxyMaster<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_optimum.html">Optimum</a></li><li class="navelem"><a class="el" href="class_optimum_1_1_render_auto_points.html">RenderAutoPoints</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="class_optimum_1_1_render_auto_points-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Optimum.RenderAutoPoints</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс "Отрисовщик авто-оптимумов".  
+ <a href="class_optimum_1_1_render_auto_points.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса Optimum.RenderAutoPoints:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points__coll__graph.png" border="0" usemap="#a_optimum_8_render_auto_points_coll__map" alt="Collaboration graph"/></div>
+<map name="a_optimum_8_render_auto_points_coll__map" id="a_optimum_8_render_auto_points_coll__map">
+<area shape="rect" title="Класс &quot;Отрисовщик авто&#45;оптимумов&quot;." alt="" coords="5,204,237,501"/>
+<area shape="rect" href="class_optimum_1_1_sublayer_location.html" title="Класс &quot;Слой для точек&quot;." alt="" coords="32,5,211,141"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac9d356ab5deea5a2d1cf9c0c24c2718e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#ac9d356ab5deea5a2d1cf9c0c24c2718e">RenderAutoPoints</a> (<a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> sublayerLocation)</td></tr>
+<tr class="memdesc:ac9d356ab5deea5a2d1cf9c0c24c2718e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор  <br /></td></tr>
+<tr class="separator:ac9d356ab5deea5a2d1cf9c0c24c2718e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95feaa1777a3b8f407d414ccad4727d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#a95feaa1777a3b8f407d414ccad4727d6">InitializationIdealPoints</a> (GMapControl gmap, List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt; listBufferZones)</td></tr>
+<tr class="memdesc:a95feaa1777a3b8f407d414ccad4727d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовать звездочками идеальные оптимумы (1-10)  <br /></td></tr>
+<tr class="separator:a95feaa1777a3b8f407d414ccad4727d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebfb8b1d40129b0f73fb0ff727434b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5">InitializationPoint</a> (GMapControl gmap, int radiusAutoBufferZone)</td></tr>
+<tr class="memdesc:a3ebfb8b1d40129b0f73fb0ff727434b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация точек на карте  <br /></td></tr>
+<tr class="separator:a3ebfb8b1d40129b0f73fb0ff727434b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:abfbaf3e27b6dfbab78bc6aae2f196da8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8">_InitializationMarkers</a> (<a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> sublayerAutoZone)</td></tr>
+<tr class="memdesc:abfbaf3e27b6dfbab78bc6aae2f196da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовка маркера на карте  <br /></td></tr>
+<tr class="separator:abfbaf3e27b6dfbab78bc6aae2f196da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5650d07152600dbd523ca833b593bf39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39">_InitializationZone</a> (PointLatLng point)</td></tr>
+<tr class="memdesc:a5650d07152600dbd523ca833b593bf39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация буферной зоны  <br /></td></tr>
+<tr class="separator:a5650d07152600dbd523ca833b593bf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8a012a96b7e7285136e52846dfbf81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81">_CreateCircle</a> (PointLatLng center, double radius)</td></tr>
+<tr class="memdesc:a7b8a012a96b7e7285136e52846dfbf81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовка окружности  <br /></td></tr>
+<tr class="separator:a7b8a012a96b7e7285136e52846dfbf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a014e845e4a9633f6aca40de6dcbfa39d"><td class="memItemLeft" align="right" valign="top">static PointLatLng&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d">_FindPointAtDistanceFrom</a> (PointLatLng startPoint, double initialBearingRadians, double distanceKilometres)</td></tr>
+<tr class="memdesc:a014e845e4a9633f6aca40de6dcbfa39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисление каждой точки окружности  <br /></td></tr>
+<tr class="separator:a014e845e4a9633f6aca40de6dcbfa39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a607d5ab74a67f171f091f058c901822d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#a607d5ab74a67f171f091f058c901822d">_sublayerLocationAutoPoints</a> = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>()</td></tr>
+<tr class="memdesc:a607d5ab74a67f171f091f058c901822d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слой с маркерами пользователя  <br /></td></tr>
+<tr class="separator:a607d5ab74a67f171f091f058c901822d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acffa137d696142ffd50e2881658558"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#a7acffa137d696142ffd50e2881658558">_radiusSearch</a></td></tr>
+<tr class="memdesc:a7acffa137d696142ffd50e2881658558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус поиска  <br /></td></tr>
+<tr class="separator:a7acffa137d696142ffd50e2881658558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddca035e21af2dbcaf6d841b30a328a"><td class="memItemLeft" align="right" valign="top">GMapPolygon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#aeddca035e21af2dbcaf6d841b30a328a">_polygon</a></td></tr>
+<tr class="separator:aeddca035e21af2dbcaf6d841b30a328a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b11ab863f1df0024c335df07df2937"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#af0b11ab863f1df0024c335df07df2937">_segments</a> = 360</td></tr>
+<tr class="memdesc:af0b11ab863f1df0024c335df07df2937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доля от окружности  <br /></td></tr>
+<tr class="separator:af0b11ab863f1df0024c335df07df2937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5499d7482a26d08c54a1e1836d6b417"><td class="memItemLeft" align="right" valign="top">List&lt; PointLatLng &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#ae5499d7482a26d08c54a1e1836d6b417">_listPointsForCircle</a></td></tr>
+<tr class="separator:ae5499d7482a26d08c54a1e1836d6b417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:af550c2f32bb362ce144b0532ab237405"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#af550c2f32bb362ce144b0532ab237405">CONVERSION_FROM_DEGREES_TO_RADIANS</a> = Math.PI / 180</td></tr>
+<tr class="separator:af550c2f32bb362ce144b0532ab237405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e0750a7e952c3f9f5f5a966282f03d"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#ae4e0750a7e952c3f9f5f5a966282f03d">CONVERSION_FROM_RADIANS_TO_DEGREES</a> = 180 / Math.PI</td></tr>
+<tr class="separator:ae4e0750a7e952c3f9f5f5a966282f03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81e74def3d36065d50f43d9748ad6f7"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_render_auto_points.html#af81e74def3d36065d50f43d9748ad6f7">RADIUS_OF_THE_EARTH_IN_KILOMETERS</a> = 6371.01</td></tr>
+<tr class="memdesc:af81e74def3d36065d50f43d9748ad6f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радиус планеты Земля = 6 371 км.  <br /></td></tr>
+<tr class="separator:af81e74def3d36065d50f43d9748ad6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс "Отрисовщик авто-оптимумов". </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ac9d356ab5deea5a2d1cf9c0c24c2718e" name="ac9d356ab5deea5a2d1cf9c0c24c2718e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d356ab5deea5a2d1cf9c0c24c2718e">&#9670;&#160;</a></span>RenderAutoPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optimum.RenderAutoPoints.RenderAutoPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td>
+          <td class="paramname"><em>sublayerLocation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gmap</td><td>Карта</td></tr>
+    <tr><td class="paramname">sublayerLocation</td><td>Слой пользователя</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a7b8a012a96b7e7285136e52846dfbf81" name="a7b8a012a96b7e7285136e52846dfbf81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8a012a96b7e7285136e52846dfbf81">&#9670;&#160;</a></span>_CreateCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.RenderAutoPoints._CreateCircle </td>
+          <td>(</td>
+          <td class="paramtype">PointLatLng&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовка окружности </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>Центр окружности</td></tr>
+    <tr><td class="paramname">radius</td><td>Радиус окружности</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_cgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_cgraph" id="aclass_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_cgraph">
+<area shape="rect" title="Отрисовка окружности" alt="" coords="5,5,193,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d" title="Вычисление каждой точки окружности" alt="" coords="241,5,429,45"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_icgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_icgraph" id="aclass_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_icgraph">
+<area shape="rect" title="Отрисовка окружности" alt="" coords="1909,37,2097,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="1673,37,1861,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="1437,37,1625,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5" title="Инициализация точек на карте" alt="" coords="1201,37,1389,77"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ac383b2c45b43a20cef3b7172e21c80db" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="961,37,1153,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a014e845e4a9633f6aca40de6dcbfa39d" name="a014e845e4a9633f6aca40de6dcbfa39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a014e845e4a9633f6aca40de6dcbfa39d">&#9670;&#160;</a></span>_FindPointAtDistanceFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static PointLatLng Optimum.RenderAutoPoints._FindPointAtDistanceFrom </td>
+          <td>(</td>
+          <td class="paramtype">PointLatLng&#160;</td>
+          <td class="paramname"><em>startPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>initialBearingRadians</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distanceKilometres</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисление каждой точки окружности </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startPoint</td><td>Начальная точка (центр окружности)</td></tr>
+    <tr><td class="paramname">initialBearingRadians</td><td>Точка сегмента (от 0 до 360)</td></tr>
+    <tr><td class="paramname">distanceKilometres</td><td>Радиус в километрах</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Точка, которая образует окружность</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a014e845e4a9633f6aca40de6dcbfa39d_icgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a014e845e4a9633f6aca40de6dcbfa39d_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a014e845e4a9633f6aca40de6dcbfa39d_icgraph" id="aclass_optimum_1_1_render_auto_points_a014e845e4a9633f6aca40de6dcbfa39d_icgraph">
+<area shape="rect" title="Вычисление каждой точки окружности" alt="" coords="2145,37,2333,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81" title="Отрисовка окружности" alt="" coords="1909,37,2097,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="1673,37,1861,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="1437,37,1625,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5" title="Инициализация точек на карте" alt="" coords="1201,37,1389,77"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ac383b2c45b43a20cef3b7172e21c80db" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="961,37,1153,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abfbaf3e27b6dfbab78bc6aae2f196da8" name="abfbaf3e27b6dfbab78bc6aae2f196da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfbaf3e27b6dfbab78bc6aae2f196da8">&#9670;&#160;</a></span>_InitializationMarkers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.RenderAutoPoints._InitializationMarkers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>&#160;</td>
+          <td class="paramname"><em>sublayerAutoZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовка маркера на карте </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sublayerAutoZone</td><td>Слой с авто-точками</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_cgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_cgraph" id="aclass_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_cgraph">
+<area shape="rect" title="Отрисовка маркера на карте" alt="" coords="5,5,193,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="241,5,429,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81" title="Отрисовка окружности" alt="" coords="477,5,665,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d" title="Вычисление каждой точки окружности" alt="" coords="713,5,901,45"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_icgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_icgraph" id="aclass_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_icgraph">
+<area shape="rect" title="Отрисовка маркера на карте" alt="" coords="1437,37,1625,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5" title="Инициализация точек на карте" alt="" coords="1201,37,1389,77"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ac383b2c45b43a20cef3b7172e21c80db" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="961,37,1153,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5650d07152600dbd523ca833b593bf39" name="a5650d07152600dbd523ca833b593bf39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5650d07152600dbd523ca833b593bf39">&#9670;&#160;</a></span>_InitializationZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.RenderAutoPoints._InitializationZone </td>
+          <td>(</td>
+          <td class="paramtype">PointLatLng&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Инициализация буферной зоны </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>Точка</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_cgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_cgraph" id="aclass_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_cgraph">
+<area shape="rect" title="Инициализация буферной зоны" alt="" coords="5,5,193,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81" title="Отрисовка окружности" alt="" coords="241,5,429,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d" title="Вычисление каждой точки окружности" alt="" coords="477,5,665,45"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_icgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_icgraph" id="aclass_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_icgraph">
+<area shape="rect" title="Инициализация буферной зоны" alt="" coords="1673,37,1861,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="1437,37,1625,77"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5" title="Инициализация точек на карте" alt="" coords="1201,37,1389,77"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ac383b2c45b43a20cef3b7172e21c80db" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="961,37,1153,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a95feaa1777a3b8f407d414ccad4727d6" name="a95feaa1777a3b8f407d414ccad4727d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95feaa1777a3b8f407d414ccad4727d6">&#9670;&#160;</a></span>InitializationIdealPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.RenderAutoPoints.InitializationIdealPoints </td>
+          <td>(</td>
+          <td class="paramtype">GMapControl&#160;</td>
+          <td class="paramname"><em>gmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="class_optimum_1_1_buffer_zone.html">BufferZone</a> &gt;&#160;</td>
+          <td class="paramname"><em>listBufferZones</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отрисовать звездочками идеальные оптимумы (1-10) </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gmap</td><td>Карта</td></tr>
+    <tr><td class="paramname">listBufferZones</td><td>Список буферных зон</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a95feaa1777a3b8f407d414ccad4727d6_icgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a95feaa1777a3b8f407d414ccad4727d6_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a95feaa1777a3b8f407d414ccad4727d6_icgraph" id="aclass_optimum_1_1_render_auto_points_a95feaa1777a3b8f407d414ccad4727d6_icgraph">
+<area shape="rect" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="2919,924,3107,964"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#a0da028c2a83375bed6dec781650ac938" title="Отрисовка оптимальных зон авто&#45;оптимумов" alt="" coords="2679,924,2871,964"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0483d8cbe84a105d3f4b67807a3450c9" title="Перерисовать все слои на карте" alt="" coords="786,733,997,758"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a62bd3b8c93d05cdf33e4ee4dc29ed455" title="Изменение критерия в точечной раскраски" alt="" coords="1841,664,2081,704"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a0cbab48090f2eb5cc72f72b067d3e262" title="Изменение критерия в площадной раскраске" alt="" coords="1586,657,1791,711"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a29785299f72f132c2ee4fe2a39c72ab1" title="Отобразить зону анализа" alt="" coords="1333,764,1536,804"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ab62fd6ba9bf7524c6fe92c9e57f0d99a" title="Обработка сворачивания формы" alt="" coords="1594,917,1783,957"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#aa433666039584e6ba36f6f0d0f08cb6a" title="Обработка щелчка по легенде карты" alt="" coords="1584,169,1793,209"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a288f96d6a3515421d5632d2df58fa192" title="Обработка изменения жирности границ для полигонов" alt="" coords="1596,397,1781,437"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ac5c5b33d965ca83ac8c9d71e6368d643" title="Обработка изменения количества оттенков раскраски" alt="" coords="1596,541,1781,581"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a87cfd18f832cf6e1c775ca644cfd1d61" title="Обработка изменения прозрачности цвета заливки полигона" alt="" coords="1596,260,1781,300"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="797,1184,985,1224"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae76b3bd55dd7168683b0098857a36cf6" title="Установка точки&#45;кандидата на карте" alt="" coords="2161,1083,2329,1123"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a90ee00e96fd1c80f80dd89c64d6fef54" title="Обработка клика по маркеру" alt="" coords="1086,1133,1254,1173"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae5783a9df10fa0b6b790363208f44415" title="Оставить на карте только оптимальные точки" alt="" coords="2408,1299,2631,1339"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a751e6bb1fc9fa56e623b9dc188c76743" title="Отобразить на карте объекты социальной инфраструктуры" alt="" coords="2418,131,2621,171"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a11e7f6cdf04729832a0c88070ffffd0d" title="Поиск оптимальных точек" alt="" coords="776,1248,1007,1288"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b" title="Обработка выбора поставщика карты" alt="" coords="488,764,728,804"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="516,1184,700,1224"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a232bbc3f7f4f1cccf6440cf46ce960e8" title="Обработка тика таймера" alt="" coords="507,700,709,740"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,371,440,411"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,309,201,334"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="253,1184,436,1224"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="9,1191,198,1217"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#afcf6000fdb20fd616d799987eb609a0f" title="Проверить, отображена ли на карте зона анализа" alt="" coords="1055,751,1285,791"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="506,1248,710,1288"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a3c5d3e9d46f06a778378e42afcab3080" title="Проверить, отображены ли на карте объекты социальной инфраструктуры" alt="" coords="2129,441,2360,481"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ac886bc8c95fb6484526b0e759be87891" title="Норма на душу населения" alt="" coords="1858,499,2065,539"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a18ba7ca5b5fa9d2004206760d833d5d4" title="Показать только название объектов социальной инфраструктуры при наведении на маркер" alt="" coords="507,175,709,215"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ab555e6c20a158d8a425bbdd8cd140c69" title="Показать всю информацию об объектах социальной инфраструктуры при наведении на маркер" alt="" coords="1333,340,1536,380"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3ebfb8b1d40129b0f73fb0ff727434b5" name="a3ebfb8b1d40129b0f73fb0ff727434b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebfb8b1d40129b0f73fb0ff727434b5">&#9670;&#160;</a></span>InitializationPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.RenderAutoPoints.InitializationPoint </td>
+          <td>(</td>
+          <td class="paramtype">GMapControl&#160;</td>
+          <td class="paramname"><em>gmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>radiusAutoBufferZone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация точек на карте </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gmap</td><td>Карта</td></tr>
+    <tr><td class="paramname">radiusAutoBufferZone</td><td>Радиус буферной зоны</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_cgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_cgraph" id="aclass_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_cgraph">
+<area shape="rect" title="Инициализация точек на карте" alt="" coords="5,5,193,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="241,5,429,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="477,5,665,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81" title="Отрисовка окружности" alt="" coords="713,5,901,45"/>
+<area shape="rect" href="class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d" title="Вычисление каждой точки окружности" alt="" coords="949,5,1137,45"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_icgraph.png" border="0" usemap="#aclass_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_icgraph" id="aclass_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_icgraph">
+<area shape="rect" title="Инициализация точек на карте" alt="" coords="1201,37,1389,77"/>
+<area shape="rect" href="class_optimum_1_1_map_view.html#ac383b2c45b43a20cef3b7172e21c80db" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="961,37,1153,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ada44232650028245ed70c1e39916d7b1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="725,37,913,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#af93dd050774139b5981c488d25983bad" title="Ввод радиуса поиска буферной зоны" alt="" coords="473,5,677,45"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="483,69,667,109"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" href="class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ae5499d7482a26d08c54a1e1836d6b417" name="ae5499d7482a26d08c54a1e1836d6b417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5499d7482a26d08c54a1e1836d6b417">&#9670;&#160;</a></span>_listPointsForCircle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;PointLatLng&gt; Optimum.RenderAutoPoints._listPointsForCircle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeddca035e21af2dbcaf6d841b30a328a" name="aeddca035e21af2dbcaf6d841b30a328a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeddca035e21af2dbcaf6d841b30a328a">&#9670;&#160;</a></span>_polygon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GMapPolygon Optimum.RenderAutoPoints._polygon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7acffa137d696142ffd50e2881658558" name="a7acffa137d696142ffd50e2881658558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acffa137d696142ffd50e2881658558">&#9670;&#160;</a></span>_radiusSearch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.RenderAutoPoints._radiusSearch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Радиус поиска </p>
+
+</div>
+</div>
+<a id="af0b11ab863f1df0024c335df07df2937" name="af0b11ab863f1df0024c335df07df2937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b11ab863f1df0024c335df07df2937">&#9670;&#160;</a></span>_segments</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int Optimum.RenderAutoPoints._segments = 360</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Доля от окружности </p>
+
+</div>
+</div>
+<a id="a607d5ab74a67f171f091f058c901822d" name="a607d5ab74a67f171f091f058c901822d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a607d5ab74a67f171f091f058c901822d">&#9670;&#160;</a></span>_sublayerLocationAutoPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a> Optimum.RenderAutoPoints._sublayerLocationAutoPoints = new <a class="el" href="class_optimum_1_1_sublayer_location.html">SublayerLocation</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слой с маркерами пользователя </p>
+
+</div>
+</div>
+<a id="af550c2f32bb362ce144b0532ab237405" name="af550c2f32bb362ce144b0532ab237405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af550c2f32bb362ce144b0532ab237405">&#9670;&#160;</a></span>CONVERSION_FROM_DEGREES_TO_RADIANS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double Optimum.RenderAutoPoints.CONVERSION_FROM_DEGREES_TO_RADIANS = Math.PI / 180</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4e0750a7e952c3f9f5f5a966282f03d" name="ae4e0750a7e952c3f9f5f5a966282f03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e0750a7e952c3f9f5f5a966282f03d">&#9670;&#160;</a></span>CONVERSION_FROM_RADIANS_TO_DEGREES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double Optimum.RenderAutoPoints.CONVERSION_FROM_RADIANS_TO_DEGREES = 180 / Math.PI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af81e74def3d36065d50f43d9748ad6f7" name="af81e74def3d36065d50f43d9748ad6f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81e74def3d36065d50f43d9748ad6f7">&#9670;&#160;</a></span>RADIUS_OF_THE_EARTH_IN_KILOMETERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double Optimum.RenderAutoPoints.RADIUS_OF_THE_EARTH_IN_KILOMETERS = 6371.01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Радиус планеты Земля = 6 371 км. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>C:/Users/PC/Desktop/doxxygen/WindowsFormsApp1/<a class="el" href="_render_auto_points_8cs.html">RenderAutoPoints.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

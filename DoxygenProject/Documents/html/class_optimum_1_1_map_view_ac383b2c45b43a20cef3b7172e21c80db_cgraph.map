@@ -1,0 +1,8 @@
+<map id="Optimum.MapView.DrawAutoPointBufferZone" name="Optimum.MapView.DrawAutoPointBufferZone">
+<area shape="rect" id="node1" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="5,5,197,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5" title="Инициализация точек на карте" alt="" coords="245,5,433,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="481,5,669,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="717,5,905,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81" title="Отрисовка окружности" alt="" coords="953,5,1141,45"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d" title="Вычисление каждой точки окружности" alt="" coords="1189,5,1377,45"/>
+</map>

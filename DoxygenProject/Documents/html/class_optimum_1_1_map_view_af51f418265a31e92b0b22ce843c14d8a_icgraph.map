@@ -1,0 +1,7 @@
+<map id="Optimum.MapView.CheckInsidePointTerritory" name="Optimum.MapView.CheckInsidePointTerritory">
+<area shape="rect" id="node1" title="Проверка принадлежности точки зоне анализа" alt="" coords="705,37,912,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#ae76b3bd55dd7168683b0098857a36cf6" title="Установка точки&#45;кандидата на карте" alt="" coords="481,5,649,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="473,69,657,109"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="243,37,425,77"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="5,45,195,70"/>
+</map>

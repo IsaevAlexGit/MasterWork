@@ -1,0 +1,360 @@
+\doxysection{Класс Optimum.\+Render\+Norma}
+\label{class_optimum_1_1_render_norma}\index{Optimum.RenderNorma@{Optimum.RenderNorma}}
+
+
+Класс \char`\"{}Отрисовщик нормы\char`\"{}.  
+
+
+
+
+Граф связей класса Optimum.\+Render\+Norma\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_optimum_1_1_render_norma__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Render\+Norma} (\textbf{ Sublayer\+Location} sublayer\+Norma)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+void \textbf{ Initialization\+Ideal\+Points} (GMap\+Control gmap, List$<$ \textbf{ Buffer\+Zone} $>$ list\+Points\+Norma)
+\begin{DoxyCompactList}\small\item\em Отрисовать звездочками идеальные оптимумы (1-\/10) \end{DoxyCompactList}\item 
+void \textbf{ Initialization\+Point} (GMap\+Control gmap, int radius)
+\begin{DoxyCompactList}\small\item\em Инициализация точек на карте \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ \+\_\+\+Initialization\+Markers} (\textbf{ Sublayer\+Location} sublayer\+Norma)
+\begin{DoxyCompactList}\small\item\em Установка маркеров на карте \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Initialization\+Zone} (Point\+Lat\+Lng point)
+\begin{DoxyCompactList}\small\item\em Инициализация буферной зоны \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Create\+Circle} (Point\+Lat\+Lng center, double radius)
+\begin{DoxyCompactList}\small\item\em Отрисовка окружности \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static Point\+Lat\+Lng \textbf{ \+\_\+\+Find\+Point\+At\+Distance\+From} (Point\+Lat\+Lng start\+Point, double initial\+Bearing\+Radians, double distance\+Kilometres)
+\begin{DoxyCompactList}\small\item\em Вычисление каждой точки окружности \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Sublayer\+Location} \textbf{ \+\_\+sublayer\+Location\+Norma} = new \textbf{ Sublayer\+Location}()
+\begin{DoxyCompactList}\small\item\em Слой с точками нормы \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+radius\+Search}
+\begin{DoxyCompactList}\small\item\em Радиус поиска \end{DoxyCompactList}\item 
+GMap\+Polygon \textbf{ \+\_\+polygon}
+\item 
+readonly int \textbf{ \+\_\+segments} = 360
+\begin{DoxyCompactList}\small\item\em Доля от окружности \end{DoxyCompactList}\item 
+List$<$ Point\+Lat\+Lng $>$ \textbf{ \+\_\+list\+Points\+For\+Circle}
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+const double \textbf{ CONVERSION\+\_\+\+FROM\+\_\+\+DEGREES\+\_\+\+TO\+\_\+\+RADIANS} = Math.\+PI / 180
+\item 
+const double \textbf{ CONVERSION\+\_\+\+FROM\+\_\+\+RADIANS\+\_\+\+TO\+\_\+\+DEGREES} = 180 / Math.\+PI
+\item 
+const double \textbf{ RADIUS\+\_\+\+OF\+\_\+\+THE\+\_\+\+EARTH\+\_\+\+IN\+\_\+\+KILOMETERS} = 6371.\+01
+\begin{DoxyCompactList}\small\item\em Радиус планеты Земля = 6 371 км. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \char`\"{}Отрисовщик нормы\char`\"{}. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_render_norma_a50bcfa78a83a5076b8e7551a092d8818}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!RenderNorma@{RenderNorma}}
+\index{RenderNorma@{RenderNorma}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{RenderNorma()}
+{\footnotesize\ttfamily Optimum.\+Render\+Norma.\+Render\+Norma (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Location}}]{sublayer\+Norma }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em sublayer\+Norma} & Слой с нормой\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public 
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_render_norma_ad9597f1226de047475458c330a17db29}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_CreateCircle@{\_CreateCircle}}
+\index{\_CreateCircle@{\_CreateCircle}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_CreateCircle()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Norma.\+\_\+\+Create\+Circle (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка окружности 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em center} & Центр окружности\\
+\hline
+{\em radius} & Радиус окружности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_ad9597f1226de047475458c330a17db29_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_ad9597f1226de047475458c330a17db29_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_norma_a03b7db9ec605b27fbe1fdbb3bda9da78}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_FindPointAtDistanceFrom@{\_FindPointAtDistanceFrom}}
+\index{\_FindPointAtDistanceFrom@{\_FindPointAtDistanceFrom}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_FindPointAtDistanceFrom()}
+{\footnotesize\ttfamily static Point\+Lat\+Lng Optimum.\+Render\+Norma.\+\_\+\+Find\+Point\+At\+Distance\+From (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{start\+Point,  }\item[{double}]{initial\+Bearing\+Radians,  }\item[{double}]{distance\+Kilometres }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Вычисление каждой точки окружности 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+Point} & Начальная точка (центр окружности)\\
+\hline
+{\em initial\+Bearing\+Radians} & Точка сегмента (от 0 до 360)\\
+\hline
+{\em distance\+Kilometres} & Радиус в километрах\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Точка, которая образует окружность
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_a03b7db9ec605b27fbe1fdbb3bda9da78_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_norma_a45599de56346b26d5b2288013c735f39}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_InitializationMarkers@{\_InitializationMarkers}}
+\index{\_InitializationMarkers@{\_InitializationMarkers}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_InitializationMarkers()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Norma.\+\_\+\+Initialization\+Markers (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Location}}]{sublayer\+Norma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Установка маркеров на карте 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em sublayer\+Norma} & \\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_a45599de56346b26d5b2288013c735f39_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_a45599de56346b26d5b2288013c735f39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_norma_af2b3a0348f37e3de059204c408edb5cb}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_InitializationZone@{\_InitializationZone}}
+\index{\_InitializationZone@{\_InitializationZone}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_InitializationZone()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Norma.\+\_\+\+Initialization\+Zone (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация буферной зоны 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & Точка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_af2b3a0348f37e3de059204c408edb5cb_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_af2b3a0348f37e3de059204c408edb5cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_norma_a248224c00210ad03a761969fda08744f}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!InitializationIdealPoints@{InitializationIdealPoints}}
+\index{InitializationIdealPoints@{InitializationIdealPoints}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{InitializationIdealPoints()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Norma.\+Initialization\+Ideal\+Points (\begin{DoxyParamCaption}\item[{GMap\+Control}]{gmap,  }\item[{List$<$ \textbf{ Buffer\+Zone} $>$}]{list\+Points\+Norma }\end{DoxyParamCaption})}
+
+
+
+Отрисовать звездочками идеальные оптимумы (1-\/10) 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em list\+Points\+Norma} & Список с точками нормы\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_a248224c00210ad03a761969fda08744f_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_a248224c00210ad03a761969fda08744f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_norma_a89c64de92bf1981f308f3582f89737ab}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!InitializationPoint@{InitializationPoint}}
+\index{InitializationPoint@{InitializationPoint}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{InitializationPoint()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Norma.\+Initialization\+Point (\begin{DoxyParamCaption}\item[{GMap\+Control}]{gmap,  }\item[{int}]{radius }\end{DoxyParamCaption})}
+
+
+
+Инициализация точек на карте 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em radius} & Радиус\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_a89c64de92bf1981f308f3582f89737ab_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_norma_a89c64de92bf1981f308f3582f89737ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_render_norma_a9833237df839d95306c229ddb0b6e4ce}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_listPointsForCircle@{\_listPointsForCircle}}
+\index{\_listPointsForCircle@{\_listPointsForCircle}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_listPointsForCircle}
+{\footnotesize\ttfamily List$<$Point\+Lat\+Lng$>$ Optimum.\+Render\+Norma.\+\_\+list\+Points\+For\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_norma_aec9c430ce1444b463efd9cfa04eefea2}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_polygon@{\_polygon}}
+\index{\_polygon@{\_polygon}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_polygon}
+{\footnotesize\ttfamily GMap\+Polygon Optimum.\+Render\+Norma.\+\_\+polygon\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_norma_a5ceb74d887323bb834b3d0cb6b5332bc}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_radiusSearch@{\_radiusSearch}}
+\index{\_radiusSearch@{\_radiusSearch}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_radiusSearch}
+{\footnotesize\ttfamily int Optimum.\+Render\+Norma.\+\_\+radius\+Search\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радиус поиска 
+
+\mbox{\label{class_optimum_1_1_render_norma_aa97b1233084a72a295790b1fabd56b70}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_segments@{\_segments}}
+\index{\_segments@{\_segments}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_segments}
+{\footnotesize\ttfamily readonly int Optimum.\+Render\+Norma.\+\_\+segments = 360\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Доля от окружности 
+
+\mbox{\label{class_optimum_1_1_render_norma_a417758de7859d926243d24fa6dcfde42}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!\_sublayerLocationNorma@{\_sublayerLocationNorma}}
+\index{\_sublayerLocationNorma@{\_sublayerLocationNorma}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{\_sublayerLocationNorma}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Render\+Norma.\+\_\+sublayer\+Location\+Norma = new \textbf{ Sublayer\+Location}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой с точками нормы 
+
+\mbox{\label{class_optimum_1_1_render_norma_af090d78a59112c2204b4a2764ccb9486}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!CONVERSION\_FROM\_DEGREES\_TO\_RADIANS@{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}}
+\index{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS@{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}
+{\footnotesize\ttfamily const double Optimum.\+Render\+Norma.\+CONVERSION\+\_\+\+FROM\+\_\+\+DEGREES\+\_\+\+TO\+\_\+\+RADIANS = Math.\+PI / 180\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_norma_a58ecba3450f4d63203edeba78b9e0e84}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!CONVERSION\_FROM\_RADIANS\_TO\_DEGREES@{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}}
+\index{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES@{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}
+{\footnotesize\ttfamily const double Optimum.\+Render\+Norma.\+CONVERSION\+\_\+\+FROM\+\_\+\+RADIANS\+\_\+\+TO\+\_\+\+DEGREES = 180 / Math.\+PI\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_norma_a435b388fcf2ba3d133a913e3855021e2}} 
+\index{Optimum.RenderNorma@{Optimum.RenderNorma}!RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS@{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}}
+\index{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS@{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}!Optimum.RenderNorma@{Optimum.RenderNorma}}
+\doxysubsubsection{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}
+{\footnotesize\ttfamily const double Optimum.\+Render\+Norma.\+RADIUS\+\_\+\+OF\+\_\+\+THE\+\_\+\+EARTH\+\_\+\+IN\+\_\+\+KILOMETERS = 6371.\+01\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Радиус планеты Земля = 6 371 км. 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Render\+Norma.\+cs}\end{DoxyCompactItemize}

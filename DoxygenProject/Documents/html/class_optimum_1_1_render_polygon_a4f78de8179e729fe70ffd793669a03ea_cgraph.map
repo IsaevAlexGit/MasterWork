@@ -1,0 +1,5 @@
+<map id="Optimum.RenderPolygon.ShowIconCriterion" name="Optimum.RenderPolygon.ShowIconCriterion">
+<area shape="rect" id="node1" title="Точечная раскраска" alt="" coords="5,5,208,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_polygon.html#ae1ee05378916fba310e7186068ab532d" title="Инициализация маркеров" alt="" coords="256,5,427,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_polygon.html#a729793e673cf72f03bb7357144d92f6d" title="Получить значки для выбранного количества оттенков" alt="" coords="475,5,704,45"/>
+</map>

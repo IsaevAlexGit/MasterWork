@@ -1,0 +1,2782 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>doxyMaster: Класс Optimum.StartSettings</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">doxyMaster<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_optimum.html">Optimum</a></li><li class="navelem"><a class="el" href="class_optimum_1_1_start_settings.html">StartSettings</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_optimum_1_1_start_settings-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Optimum.StartSettings</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для окна с начальной загрузкой данных  
+ <a href="class_optimum_1_1_start_settings.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:Optimum.StartSettings:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings__inherit__graph.png" border="0" usemap="#a_optimum_8_start_settings_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_optimum_8_start_settings_inherit__map" id="a_optimum_8_start_settings_inherit__map">
+<area shape="rect" title="Класс для окна с начальной загрузкой данных" alt="" coords="5,131,217,589"/>
+<area shape="rect" title=" " alt="" coords="85,5,137,83"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса Optimum.StartSettings:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings__coll__graph.png" border="0" usemap="#a_optimum_8_start_settings_coll__map" alt="Collaboration graph"/></div>
+<map name="a_optimum_8_start_settings_coll__map" id="a_optimum_8_start_settings_coll__map">
+<area shape="rect" title="Класс для окна с начальной загрузкой данных" alt="" coords="336,843,548,1301"/>
+<area shape="rect" title=" " alt="" coords="5,380,57,457"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html" title="Класс &quot;Валидация загружаемых и обрабатываемых файлов&quot;." alt="" coords="81,204,315,633"/>
+<area shape="rect" href="class_optimum_1_1_sublayer_location.html" title="Класс &quot;Слой для точек&quot;." alt="" coords="109,5,287,141"/>
+<area shape="rect" href="class_optimum_1_1_paint_group_box_border.html" title="Класс &quot;Отрисовка границ рамки у GroupBox&quot;." alt="" coords="339,373,545,465"/>
+<area shape="rect" href="class_optimum_1_1_location.html" title="Класс &quot;Точка на карте&quot;." alt="" coords="569,365,697,472"/>
+<area shape="rect" title=" " alt="" coords="743,380,810,457"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad107ea0d3181efd6ad97be3c50667bea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea">StartSettings</a> (LanguageType language, Color colorForInterface, Color colorForElements)</td></tr>
+<tr class="memdesc:ad107ea0d3181efd6ad97be3c50667bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание формы  <br /></td></tr>
+<tr class="separator:ad107ea0d3181efd6ad97be3c50667bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a8e4ed30b94bba61ba6db01e5e881e49f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a8e4ed30b94bba61ba6db01e5e881e49f">Dispose</a> (bool disposing)</td></tr>
+<tr class="memdesc:a8e4ed30b94bba61ba6db01e5e881e49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up any resources being used.  <br /></td></tr>
+<tr class="separator:a8e4ed30b94bba61ba6db01e5e881e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ae905bc0684c508efc25da6da4cd6b5a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ae905bc0684c508efc25da6da4cd6b5a8">Settings_Load</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ae905bc0684c508efc25da6da4cd6b5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузка формы  <br /></td></tr>
+<tr class="separator:ae905bc0684c508efc25da6da4cd6b5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a3cc4990246becebad89d46f5b052b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ab1a3cc4990246becebad89d46f5b052b">buttonLoadIconFacility_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ab1a3cc4990246becebad89d46f5b052b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузка значка  <br /></td></tr>
+<tr class="separator:ab1a3cc4990246becebad89d46f5b052b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80aef5d9e0e6ca26318735ffcf959c2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a80aef5d9e0e6ca26318735ffcf959c2b">_CheckVadidateNameFaicility</a> ()</td></tr>
+<tr class="memdesc:a80aef5d9e0e6ca26318735ffcf959c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка корректности названия объекта социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a80aef5d9e0e6ca26318735ffcf959c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39a8c0979b7f2167d40580eb9565fd1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1">_CheckNameCriterion</a> (string nameCriterion)</td></tr>
+<tr class="memdesc:ac39a8c0979b7f2167d40580eb9565fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка корректности названия критериея  <br /></td></tr>
+<tr class="separator:ac39a8c0979b7f2167d40580eb9565fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0848ccd90d9f1a79a88ab6e7335a1106"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106">_CheckDirectionCriterion</a> (string directionCriterion)</td></tr>
+<tr class="memdesc:a0848ccd90d9f1a79a88ab6e7335a1106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка корректности направления  <br /></td></tr>
+<tr class="separator:a0848ccd90d9f1a79a88ab6e7335a1106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ff88543811f68581a4e59de3faf0c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0">_CheckWeightCriterion</a> (string weihgt)</td></tr>
+<tr class="memdesc:a72ff88543811f68581a4e59de3faf0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка корректности весового коэффициента  <br /></td></tr>
+<tr class="separator:a72ff88543811f68581a4e59de3faf0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391d212eca750d6567a6a6b08fe4a315"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315">_CheckValidateCriterion</a> ()</td></tr>
+<tr class="memdesc:a391d212eca750d6567a6a6b08fe4a315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка заполненности критериев-направлений-весов  <br /></td></tr>
+<tr class="separator:a391d212eca750d6567a6a6b08fe4a315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0bbf1840b51a356cfa77e9e232dab33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#af0bbf1840b51a356cfa77e9e232dab33">buttonLoadBorderTerritory_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:af0bbf1840b51a356cfa77e9e232dab33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузка файла с зоной анализа  <br /></td></tr>
+<tr class="separator:af0bbf1840b51a356cfa77e9e232dab33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87faa48a0179a649a551131487308c39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a87faa48a0179a649a551131487308c39">buttonLoadFacilities_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a87faa48a0179a649a551131487308c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузка файла с объектами социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a87faa48a0179a649a551131487308c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7542f0b4780d830f04ec0b95fb83009f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f">buttonLoadPolygons_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a7542f0b4780d830f04ec0b95fb83009f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузка файла с полигонами  <br /></td></tr>
+<tr class="separator:a7542f0b4780d830f04ec0b95fb83009f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65476c3a6fc9037534d31f19a1ad4971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971">buttonValidateAndSave_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a65476c3a6fc9037534d31f19a1ad4971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка "Сохранить".  <br /></td></tr>
+<tr class="separator:a65476c3a6fc9037534d31f19a1ad4971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0752e868365ce8f11418a4f4f05fb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#aed0752e868365ce8f11418a4f4f05fb2">_CheckSameNameCriterion</a> ()</td></tr>
+<tr class="memdesc:aed0752e868365ce8f11418a4f4f05fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка уникальности названия критериев  <br /></td></tr>
+<tr class="separator:aed0752e868365ce8f11418a4f4f05fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460be301f996fd4673890addb6fb1298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a460be301f996fd4673890addb6fb1298">_FindCenterPoint</a> ()</td></tr>
+<tr class="memdesc:a460be301f996fd4673890addb6fb1298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск точки центрирования карты  <br /></td></tr>
+<tr class="separator:a460be301f996fd4673890addb6fb1298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c99d504e0120cdc2f52f528ac741a6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a4c99d504e0120cdc2f52f528ac741a6f">Settings_KeyDown</a> (object sender, KeyEventArgs e)</td></tr>
+<tr class="memdesc:a4c99d504e0120cdc2f52f528ac741a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрытие формы на ESC.  <br /></td></tr>
+<tr class="separator:a4c99d504e0120cdc2f52f528ac741a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c49886c1cd543afc14dc81ab77e3e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ac9c49886c1cd543afc14dc81ab77e3e0">comboCountCriterion_SelectedIndexChanged</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:ac9c49886c1cd543afc14dc81ab77e3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка выбранного числа в выпадающем списке количества критериев  <br /></td></tr>
+<tr class="separator:ac9c49886c1cd543afc14dc81ab77e3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a076c0b123440e004d374c0463dd57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57">InitializeComponent</a> ()</td></tr>
+<tr class="memdesc:ab0a076c0b123440e004d374c0463dd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required method for Designer support - do not modify the contents of this method with the code editor.  <br /></td></tr>
+<tr class="separator:ab0a076c0b123440e004d374c0463dd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a5af680959c7f1ddd85dbc563c8c023b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_file_validator.html">FileValidator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a5af680959c7f1ddd85dbc563c8c023b6">_fileValidator</a></td></tr>
+<tr class="memdesc:a5af680959c7f1ddd85dbc563c8c023b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Работа с файлом  <br /></td></tr>
+<tr class="separator:a5af680959c7f1ddd85dbc563c8c023b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045b320a6608a9714d8bc53b3a297f68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_paint_group_box_border.html">PaintGroupBoxBorder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a045b320a6608a9714d8bc53b3a297f68">_paintGroupBoxBorder</a> = new <a class="el" href="class_optimum_1_1_paint_group_box_border.html">PaintGroupBoxBorder</a>()</td></tr>
+<tr class="memdesc:a045b320a6608a9714d8bc53b3a297f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовка границ groupbox.  <br /></td></tr>
+<tr class="separator:a045b320a6608a9714d8bc53b3a297f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0830a9fbc10c3132dcaa205836a4dfdf"><td class="memItemLeft" align="right" valign="top">readonly CultureInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a0830a9fbc10c3132dcaa205836a4dfdf">_cultureInfo</a> = new CultureInfo(&quot;ru-RU&quot;)</td></tr>
+<tr class="memdesc:a0830a9fbc10c3132dcaa205836a4dfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройка для того, чтобы программа работала на английской версии Windows.  <br /></td></tr>
+<tr class="separator:a0830a9fbc10c3132dcaa205836a4dfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15da2cedb79aae59a02c1ea17aad5944"><td class="memItemLeft" align="right" valign="top">LanguageType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a15da2cedb79aae59a02c1ea17aad5944">_languageOfMap</a></td></tr>
+<tr class="memdesc:a15da2cedb79aae59a02c1ea17aad5944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Локализация карты  <br /></td></tr>
+<tr class="separator:a15da2cedb79aae59a02c1ea17aad5944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9141e750d2bde9c3d586380d1c9bbddc"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a9141e750d2bde9c3d586380d1c9bbddc">_mainColor</a></td></tr>
+<tr class="memdesc:a9141e750d2bde9c3d586380d1c9bbddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цвет интерфейса  <br /></td></tr>
+<tr class="separator:a9141e750d2bde9c3d586380d1c9bbddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4318047a9be0ced75c37403acd802e"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#acc4318047a9be0ced75c37403acd802e">_secondaryColor</a></td></tr>
+<tr class="separator:acc4318047a9be0ced75c37403acd802e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001f3569da8f22984f9691d0ec9eff7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a001f3569da8f22984f9691d0ec9eff7f">_pathToIconFacility</a> = Application.StartupPath + @&quot;\Icon\octagon.png&quot;</td></tr>
+<tr class="memdesc:a001f3569da8f22984f9691d0ec9eff7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значок объекта социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a001f3569da8f22984f9691d0ec9eff7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d2222f926887be68ffd989e1abaf58"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ad0d2222f926887be68ffd989e1abaf58">_nameFacility</a></td></tr>
+<tr class="memdesc:ad0d2222f926887be68ffd989e1abaf58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название объекта социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:ad0d2222f926887be68ffd989e1abaf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8000d256f85f710c1a113dd6a3d8bd9b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_criterion.html">Criterion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a8000d256f85f710c1a113dd6a3d8bd9b">_listCriteriaForSearch</a></td></tr>
+<tr class="memdesc:a8000d256f85f710c1a113dd6a3d8bd9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список критериев оптимальности  <br /></td></tr>
+<tr class="separator:a8000d256f85f710c1a113dd6a3d8bd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24eecfaab3b7b2650d51336fb5d5c2fc"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_criterion.html">Criterion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a24eecfaab3b7b2650d51336fb5d5c2fc">_criterion</a> = new List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt;()</td></tr>
+<tr class="memdesc:a24eecfaab3b7b2650d51336fb5d5c2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список критериев для модификации  <br /></td></tr>
+<tr class="separator:a24eecfaab3b7b2650d51336fb5d5c2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5a7fb3a7abebba8e0ae2d3f5de8c07"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_location.html">Location</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a6c5a7fb3a7abebba8e0ae2d3f5de8c07">_listPointsBorderTerritory</a></td></tr>
+<tr class="memdesc:a6c5a7fb3a7abebba8e0ae2d3f5de8c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список граничных точек зоны анализа  <br /></td></tr>
+<tr class="separator:a6c5a7fb3a7abebba8e0ae2d3f5de8c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70608c3efce9fe48497121bcfa8a2fd1"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_polygon.html">Polygon</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a70608c3efce9fe48497121bcfa8a2fd1">_listPolygonsFromFile</a></td></tr>
+<tr class="memdesc:a70608c3efce9fe48497121bcfa8a2fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список полигонов  <br /></td></tr>
+<tr class="separator:a70608c3efce9fe48497121bcfa8a2fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafcf635b90629b02d5425fc178b4e76"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_optimum_1_1_facility.html">Facility</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#abafcf635b90629b02d5425fc178b4e76">_listFacilitiesFromFile</a></td></tr>
+<tr class="memdesc:abafcf635b90629b02d5425fc178b4e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список объектов социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:abafcf635b90629b02d5425fc178b4e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb94a8344044a13d6a94e75a8e8f565b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_optimum_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#acb94a8344044a13d6a94e75a8e8f565b">_locationCenterMap</a> = new <a class="el" href="class_optimum_1_1_location.html">Location</a>()</td></tr>
+<tr class="memdesc:acb94a8344044a13d6a94e75a8e8f565b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка центрирования карты  <br /></td></tr>
+<tr class="separator:acb94a8344044a13d6a94e75a8e8f565b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aefc6a0183b4eef789a00622d307207"><td class="memItemLeft" align="right" valign="top">Bitmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a1aefc6a0183b4eef789a00622d307207">_bitmapForLoadIconFacility</a></td></tr>
+<tr class="memdesc:a1aefc6a0183b4eef789a00622d307207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загруженный пользователем значок для отображения объекта социальной инфраструктуры на карте  <br /></td></tr>
+<tr class="separator:a1aefc6a0183b4eef789a00622d307207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d061e83d817534e6765b9f4b10f8d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a24d061e83d817534e6765b9f4b10f8d3">_isLoadName</a> = false</td></tr>
+<tr class="memdesc:a24d061e83d817534e6765b9f4b10f8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг введенного названия объекта социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a24d061e83d817534e6765b9f4b10f8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7245f76c51900b09e15ea68907f7c646"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a7245f76c51900b09e15ea68907f7c646">_isLoadCriterion</a> = false</td></tr>
+<tr class="memdesc:a7245f76c51900b09e15ea68907f7c646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг загрузки критериев  <br /></td></tr>
+<tr class="separator:a7245f76c51900b09e15ea68907f7c646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac839fa5609d8a7edd7893415e5fddcc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ac839fa5609d8a7edd7893415e5fddcc9">_countCriterionOnComboBox</a> = 0</td></tr>
+<tr class="memdesc:ac839fa5609d8a7edd7893415e5fddcc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество критериев из выпадающего списка  <br /></td></tr>
+<tr class="separator:ac839fa5609d8a7edd7893415e5fddcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb97b27d2ade547a33a8bd28c63a0d12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#afb97b27d2ade547a33a8bd28c63a0d12">_isLoadFileBorderTerritory</a> = false</td></tr>
+<tr class="memdesc:afb97b27d2ade547a33a8bd28c63a0d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг загрузки файла с границами зоны анализа  <br /></td></tr>
+<tr class="separator:afb97b27d2ade547a33a8bd28c63a0d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74a59bd85a006b8ce24bb172b125d42"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ad74a59bd85a006b8ce24bb172b125d42">_infoFacility</a> = new List&lt;string&gt;()</td></tr>
+<tr class="memdesc:ad74a59bd85a006b8ce24bb172b125d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список строк с информацией о каждом объекте социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:ad74a59bd85a006b8ce24bb172b125d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e659c0a4a52f4ffc17078cdd048867f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a3e659c0a4a52f4ffc17078cdd048867f">_isLoadFileFacilities</a> = false</td></tr>
+<tr class="memdesc:a3e659c0a4a52f4ffc17078cdd048867f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг загрузки объектов социальной инфраструктуры  <br /></td></tr>
+<tr class="separator:a3e659c0a4a52f4ffc17078cdd048867f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387c563e345ea4c09a98e53519e41b14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a387c563e345ea4c09a98e53519e41b14">_isLoadFilePolygons</a> = false</td></tr>
+<tr class="memdesc:a387c563e345ea4c09a98e53519e41b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг загрузки полигонов  <br /></td></tr>
+<tr class="separator:a387c563e345ea4c09a98e53519e41b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8710ec6238068959ec2e71e9954e471c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a8710ec6238068959ec2e71e9954e471c">_pathToFilePolygons</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a8710ec6238068959ec2e71e9954e471c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к файлу с полигонами  <br /></td></tr>
+<tr class="separator:a8710ec6238068959ec2e71e9954e471c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1ef8281cdcfcf9c2fe644642b632fa"><td class="memItemLeft" align="right" valign="top">System.ComponentModel.IContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a4c1ef8281cdcfcf9c2fe644642b632fa">components</a> = null</td></tr>
+<tr class="memdesc:a4c1ef8281cdcfcf9c2fe644642b632fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required designer variable.  <br /></td></tr>
+<tr class="separator:a4c1ef8281cdcfcf9c2fe644642b632fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580c3517fb7669832c02a117519e76a9"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.GroupBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a580c3517fb7669832c02a117519e76a9">groupBoxLoadFiles</a></td></tr>
+<tr class="separator:a580c3517fb7669832c02a117519e76a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6a96c8a6dfce0eb6221a2628038510"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a5d6a96c8a6dfce0eb6221a2628038510">buttonLoadPolygons</a></td></tr>
+<tr class="separator:a5d6a96c8a6dfce0eb6221a2628038510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088608cdba69b8146e71dc77eb5f43eb"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.GroupBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a088608cdba69b8146e71dc77eb5f43eb">groupBoxCriterion</a></td></tr>
+<tr class="separator:a088608cdba69b8146e71dc77eb5f43eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a278dd8829305a5addd13848fa6070"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a31a278dd8829305a5addd13848fa6070">comboBox2</a></td></tr>
+<tr class="separator:a31a278dd8829305a5addd13848fa6070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52d986156aafe040478753b1eb0f4cb"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#aa52d986156aafe040478753b1eb0f4cb">comboCountCriterion</a></td></tr>
+<tr class="separator:aa52d986156aafe040478753b1eb0f4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4415fc515de218d4038be672889504d9"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a4415fc515de218d4038be672889504d9">labelCountCriterion</a></td></tr>
+<tr class="separator:a4415fc515de218d4038be672889504d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ae5cbab68effdaaa950d80a77455dd"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a27ae5cbab68effdaaa950d80a77455dd">labelWeight</a></td></tr>
+<tr class="separator:a27ae5cbab68effdaaa950d80a77455dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a0a1d35ca223e23595a24969874a38"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a42a0a1d35ca223e23595a24969874a38">textBox1</a></td></tr>
+<tr class="separator:a42a0a1d35ca223e23595a24969874a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a3f6b8ee01861775f0950671c4148e"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a36a3f6b8ee01861775f0950671c4148e">textBox6</a></td></tr>
+<tr class="separator:a36a3f6b8ee01861775f0950671c4148e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11990efbc755eff6f3312fdc9f9e9254"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a11990efbc755eff6f3312fdc9f9e9254">labelNameCriterion</a></td></tr>
+<tr class="separator:a11990efbc755eff6f3312fdc9f9e9254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2068ad3c228cc5ab36e1935bff34aec6"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a2068ad3c228cc5ab36e1935bff34aec6">textBox5</a></td></tr>
+<tr class="separator:a2068ad3c228cc5ab36e1935bff34aec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d981cd55e5c47129779c727398409e"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a26d981cd55e5c47129779c727398409e">textBox2</a></td></tr>
+<tr class="separator:a26d981cd55e5c47129779c727398409e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c72197eecfaf438bf2ffd6157a0f3e"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a14c72197eecfaf438bf2ffd6157a0f3e">textBox4</a></td></tr>
+<tr class="separator:a14c72197eecfaf438bf2ffd6157a0f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39bc7ef9570b37cd6fbdcb057f4a8eaf"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a39bc7ef9570b37cd6fbdcb057f4a8eaf">textBox3</a></td></tr>
+<tr class="separator:a39bc7ef9570b37cd6fbdcb057f4a8eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543bb1e33d1fdced97ae256f836c7556"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.GroupBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a543bb1e33d1fdced97ae256f836c7556">groupBoxNameFacility</a></td></tr>
+<tr class="separator:a543bb1e33d1fdced97ae256f836c7556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affccdfe5c6fbdbf57a33e2e59dedbb29"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#affccdfe5c6fbdbf57a33e2e59dedbb29">labelNameFacility</a></td></tr>
+<tr class="separator:affccdfe5c6fbdbf57a33e2e59dedbb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b9aa09af3e2c566d50162a02796bc1"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a66b9aa09af3e2c566d50162a02796bc1">textBoxNameFacility</a></td></tr>
+<tr class="separator:a66b9aa09af3e2c566d50162a02796bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839346ce1f76d86648a3faf2767172d1"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.GroupBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a839346ce1f76d86648a3faf2767172d1">groupBoxIconFacility</a></td></tr>
+<tr class="separator:a839346ce1f76d86648a3faf2767172d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac901c0409c1cab16fc09fc1cf3809258"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ac901c0409c1cab16fc09fc1cf3809258">labelLoadIcon</a></td></tr>
+<tr class="separator:ac901c0409c1cab16fc09fc1cf3809258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ac4051705749ad78101c5fc9f521e6"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.PictureBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a72ac4051705749ad78101c5fc9f521e6">pictureIconFacility</a></td></tr>
+<tr class="separator:a72ac4051705749ad78101c5fc9f521e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3406ee215b0748b20de7e789fd1645"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a6a3406ee215b0748b20de7e789fd1645">buttonLoadIconFacility</a></td></tr>
+<tr class="separator:a6a3406ee215b0748b20de7e789fd1645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e830c188303ae9a2d94397eb68f03fe"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a4e830c188303ae9a2d94397eb68f03fe">buttonLoadBorderTerritory</a></td></tr>
+<tr class="separator:a4e830c188303ae9a2d94397eb68f03fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef1f260399c9d12ec379b3c476fd735"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#adef1f260399c9d12ec379b3c476fd735">buttonLoadFacilities</a></td></tr>
+<tr class="separator:adef1f260399c9d12ec379b3c476fd735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41b923784521e1a4378b83d86550d96"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ad41b923784521e1a4378b83d86550d96">buttonValidateAndSave</a></td></tr>
+<tr class="separator:ad41b923784521e1a4378b83d86550d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d78616d184f92dd0cf06a6078198d5"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ac1d78616d184f92dd0cf06a6078198d5">labelAboutWeights</a></td></tr>
+<tr class="separator:ac1d78616d184f92dd0cf06a6078198d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29072077a361b55bfe6c146fa1f36e96"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a29072077a361b55bfe6c146fa1f36e96">textBox13</a></td></tr>
+<tr class="separator:a29072077a361b55bfe6c146fa1f36e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e69b2370b4b11cbf80700cb5183b38"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a20e69b2370b4b11cbf80700cb5183b38">textBox14</a></td></tr>
+<tr class="separator:a20e69b2370b4b11cbf80700cb5183b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef3324b6ebaeffab3bc3fdeec7a9683"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#aeef3324b6ebaeffab3bc3fdeec7a9683">textBox7</a></td></tr>
+<tr class="separator:aeef3324b6ebaeffab3bc3fdeec7a9683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cc82281690a3eccba637cbecdb62ca"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a42cc82281690a3eccba637cbecdb62ca">textBox8</a></td></tr>
+<tr class="separator:a42cc82281690a3eccba637cbecdb62ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85edb7aee66797d1a2dbfd3913d5c7f6"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a85edb7aee66797d1a2dbfd3913d5c7f6">textBox9</a></td></tr>
+<tr class="separator:a85edb7aee66797d1a2dbfd3913d5c7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709c13d831f7c620b355572a6305e870"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a709c13d831f7c620b355572a6305e870">textBox10</a></td></tr>
+<tr class="separator:a709c13d831f7c620b355572a6305e870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f6542b89d644e62d6c7afab959fd1c"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ab6f6542b89d644e62d6c7afab959fd1c">textBox11</a></td></tr>
+<tr class="separator:ab6f6542b89d644e62d6c7afab959fd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a63af33ae3be356c77b8cb61964a233"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.TextBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a0a63af33ae3be356c77b8cb61964a233">textBox12</a></td></tr>
+<tr class="separator:a0a63af33ae3be356c77b8cb61964a233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9619fef5e311a9910e203197567a3ebc"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a9619fef5e311a9910e203197567a3ebc">labelDirection</a></td></tr>
+<tr class="separator:a9619fef5e311a9910e203197567a3ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fd4ec6b217282766bdefe1a81e5e54"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ab7fd4ec6b217282766bdefe1a81e5e54">comboBox8</a></td></tr>
+<tr class="separator:ab7fd4ec6b217282766bdefe1a81e5e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a49896d545f0b4ebdcbf9f059d696c"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a09a49896d545f0b4ebdcbf9f059d696c">comboBox7</a></td></tr>
+<tr class="separator:a09a49896d545f0b4ebdcbf9f059d696c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aea7c9dd9a22cdc93b5237db71ea3c4"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a1aea7c9dd9a22cdc93b5237db71ea3c4">comboBox6</a></td></tr>
+<tr class="separator:a1aea7c9dd9a22cdc93b5237db71ea3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0602e453fd5c4c27fe423813ffd2c8"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#ade0602e453fd5c4c27fe423813ffd2c8">comboBox5</a></td></tr>
+<tr class="separator:ade0602e453fd5c4c27fe423813ffd2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a7c7651fd0d779b8f5a2b46331b219"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a65a7c7651fd0d779b8f5a2b46331b219">comboBox4</a></td></tr>
+<tr class="separator:a65a7c7651fd0d779b8f5a2b46331b219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550e658a87f9e3ab5a86e2c21d1852c7"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ComboBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a550e658a87f9e3ab5a86e2c21d1852c7">comboBox3</a></td></tr>
+<tr class="separator:a550e658a87f9e3ab5a86e2c21d1852c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ca0e61d4ed7d4f8d0710d8fac32420"><td class="memItemLeft" align="right" valign="top">System.Windows.Forms.ToolTip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_optimum_1_1_start_settings.html#a08ca0e61d4ed7d4f8d0710d8fac32420">toolTip</a></td></tr>
+<tr class="separator:a08ca0e61d4ed7d4f8d0710d8fac32420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для окна с начальной загрузкой данных </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ad107ea0d3181efd6ad97be3c50667bea" name="ad107ea0d3181efd6ad97be3c50667bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad107ea0d3181efd6ad97be3c50667bea">&#9670;&#160;</a></span>StartSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optimum.StartSettings.StartSettings </td>
+          <td>(</td>
+          <td class="paramtype">LanguageType&#160;</td>
+          <td class="paramname"><em>language</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>colorForInterface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>colorForElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание формы </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">language</td><td>Локализация карты</td></tr>
+    <tr><td class="paramname">colorForInterface</td><td>Основной цвет интерфейса</td></tr>
+    <tr><td class="paramname">colorForElements</td><td>Второстепенный цвет интерфейса</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: public </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ad107ea0d3181efd6ad97be3c50667bea_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ad107ea0d3181efd6ad97be3c50667bea_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ad107ea0d3181efd6ad97be3c50667bea_cgraph" id="aclass_optimum_1_1_start_settings_ad107ea0d3181efd6ad97be3c50667bea_cgraph">
+<area shape="rect" title="Создание формы" alt="" coords="5,296,192,336"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,296,447,336"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#af0bbf1840b51a356cfa77e9e232dab33" title="Загрузка файла с зоной анализа" alt="" coords="519,135,714,175"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a87faa48a0179a649a551131487308c39" title="Загрузка файла с объектами социальной инфраструктуры" alt="" coords="519,71,714,111"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab1a3cc4990246becebad89d46f5b052b" title="Загрузка значка" alt="" coords="519,328,714,368"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f" title="Загрузка файла с полигонами" alt="" coords="519,199,714,239"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="519,264,714,304"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ac9c49886c1cd543afc14dc81ab77e3e0" title="Обработка выбранного числа в выпадающем списке количества критериев" alt="" coords="495,392,739,432"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a4c99d504e0120cdc2f52f528ac741a6f" title="Закрытие формы на ESC." alt="" coords="513,456,720,496"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ae905bc0684c508efc25da6da4cd6b5a8" title="Загрузка формы" alt="" coords="495,522,738,547"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="806,133,1009,173"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#aa616dbd607869ba5f43c0067e99ce345" title="Проверка корректности файла с граничными точками зоны анализа" alt="" coords="806,69,1009,109"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a6f550a9c2633358e90f1a13a3868216c" title="Проверка корректности файла с объектами социальной инфраструктуры на целостность данных" alt="" coords="806,5,1009,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="827,261,988,301"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="806,197,1009,237"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="1098,197,1263,237"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="1101,261,1260,301"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="1101,325,1260,365"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#aed0752e868365ce8f11418a4f4f05fb2" title="Проверка уникальности названия критериев" alt="" coords="816,325,999,365"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a80aef5d9e0e6ca26318735ffcf959c2b" title="Проверка корректности названия объекта социальной инфраструктуры" alt="" coords="809,389,1005,429"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a460be301f996fd4673890addb6fb1298" title="Поиск точки центрирования карты" alt="" coords="828,453,987,493"/>
+<area shape="rect" href="class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="787,517,1028,557"/>
+<area shape="rect" href="class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="1076,517,1285,557"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a0848ccd90d9f1a79a88ab6e7335a1106" name="a0848ccd90d9f1a79a88ab6e7335a1106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0848ccd90d9f1a79a88ab6e7335a1106">&#9670;&#160;</a></span>_CheckDirectionCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._CheckDirectionCriterion </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>directionCriterion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка корректности направления </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">directionCriterion</td><td>Направление критерия</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Флаг корректности</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a0848ccd90d9f1a79a88ab6e7335a1106_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a0848ccd90d9f1a79a88ab6e7335a1106_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a0848ccd90d9f1a79a88ab6e7335a1106_icgraph" id="aclass_optimum_1_1_start_settings_a0848ccd90d9f1a79a88ab6e7335a1106_icgraph">
+<area shape="rect" title="Проверка корректности направления" alt="" coords="947,37,1112,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="737,37,899,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f" title="Загрузка файла с полигонами" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,69,689,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,37,447,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,37,192,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac39a8c0979b7f2167d40580eb9565fd1" name="ac39a8c0979b7f2167d40580eb9565fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac39a8c0979b7f2167d40580eb9565fd1">&#9670;&#160;</a></span>_CheckNameCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._CheckNameCriterion </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nameCriterion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка корректности названия критериея </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nameCriterion</td><td>Название критерия</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Флаг корректности</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ac39a8c0979b7f2167d40580eb9565fd1_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ac39a8c0979b7f2167d40580eb9565fd1_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ac39a8c0979b7f2167d40580eb9565fd1_icgraph" id="aclass_optimum_1_1_start_settings_ac39a8c0979b7f2167d40580eb9565fd1_icgraph">
+<area shape="rect" title="Проверка корректности названия критериея" alt="" coords="947,37,1105,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="737,37,899,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f" title="Загрузка файла с полигонами" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,69,689,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,37,447,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,37,192,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed0752e868365ce8f11418a4f4f05fb2" name="aed0752e868365ce8f11418a4f4f05fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0752e868365ce8f11418a4f4f05fb2">&#9670;&#160;</a></span>_CheckSameNameCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._CheckSameNameCriterion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка уникальности названия критериев </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Флаг уникальны или нет названия</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_aed0752e868365ce8f11418a4f4f05fb2_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_aed0752e868365ce8f11418a4f4f05fb2_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_aed0752e868365ce8f11418a4f4f05fb2_icgraph" id="aclass_optimum_1_1_start_settings_aed0752e868365ce8f11418a4f4f05fb2_icgraph">
+<area shape="rect" title="Проверка уникальности названия критериев" alt="" coords="737,5,920,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80aef5d9e0e6ca26318735ffcf959c2b" name="a80aef5d9e0e6ca26318735ffcf959c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80aef5d9e0e6ca26318735ffcf959c2b">&#9670;&#160;</a></span>_CheckVadidateNameFaicility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings._CheckVadidateNameFaicility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка корректности названия объекта социальной инфраструктуры </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a80aef5d9e0e6ca26318735ffcf959c2b_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a80aef5d9e0e6ca26318735ffcf959c2b_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a80aef5d9e0e6ca26318735ffcf959c2b_icgraph" id="aclass_optimum_1_1_start_settings_a80aef5d9e0e6ca26318735ffcf959c2b_icgraph">
+<area shape="rect" title="Проверка корректности названия объекта социальной инфраструктуры" alt="" coords="737,5,933,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a391d212eca750d6567a6a6b08fe4a315" name="a391d212eca750d6567a6a6b08fe4a315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391d212eca750d6567a6a6b08fe4a315">&#9670;&#160;</a></span>_CheckValidateCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.StartSettings._CheckValidateCriterion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка заполненности критериев-направлений-весов </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Статус загрузки данных</dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_cgraph" id="aclass_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_cgraph">
+<area shape="rect" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="5,69,167,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="215,5,380,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="218,69,377,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="218,133,377,173"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_icgraph" id="aclass_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_icgraph">
+<area shape="rect" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="737,37,899,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f" title="Загрузка файла с полигонами" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,69,689,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,37,447,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,37,192,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a72ff88543811f68581a4e59de3faf0c0" name="a72ff88543811f68581a4e59de3faf0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ff88543811f68581a4e59de3faf0c0">&#9670;&#160;</a></span>_CheckWeightCriterion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._CheckWeightCriterion </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>weihgt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка корректности весового коэффициента </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weihgt</td><td>Весовой коэффициент</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Флаг корректности</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a72ff88543811f68581a4e59de3faf0c0_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a72ff88543811f68581a4e59de3faf0c0_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a72ff88543811f68581a4e59de3faf0c0_icgraph" id="aclass_optimum_1_1_start_settings_a72ff88543811f68581a4e59de3faf0c0_icgraph">
+<area shape="rect" title="Проверка корректности весового коэффициента" alt="" coords="947,37,1105,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="737,37,899,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f" title="Загрузка файла с полигонами" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,69,689,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,37,447,77"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,37,192,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a460be301f996fd4673890addb6fb1298" name="a460be301f996fd4673890addb6fb1298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460be301f996fd4673890addb6fb1298">&#9670;&#160;</a></span>_FindCenterPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_location.html">Location</a> Optimum.StartSettings._FindCenterPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поиск точки центрирования карты </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p><dl class="section return"><dt>Возвращает</dt><dd>Координата для отцентрирования карты</dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a460be301f996fd4673890addb6fb1298_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a460be301f996fd4673890addb6fb1298_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a460be301f996fd4673890addb6fb1298_icgraph" id="aclass_optimum_1_1_start_settings_a460be301f996fd4673890addb6fb1298_icgraph">
+<area shape="rect" title="Поиск точки центрирования карты" alt="" coords="737,5,896,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af0bbf1840b51a356cfa77e9e232dab33" name="af0bbf1840b51a356cfa77e9e232dab33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0bbf1840b51a356cfa77e9e232dab33">&#9670;&#160;</a></span>buttonLoadBorderTerritory_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.buttonLoadBorderTerritory_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузка файла с зоной анализа </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_cgraph" id="aclass_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_cgraph">
+<area shape="rect" title="Загрузка файла с зоной анализа" alt="" coords="5,37,200,77"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="248,5,451,45"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#aa616dbd607869ba5f43c0067e99ce345" title="Проверка корректности файла с граничными точками зоны анализа" alt="" coords="248,69,451,109"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_icgraph" id="aclass_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_icgraph">
+<area shape="rect" title="Загрузка файла с зоной анализа" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a87faa48a0179a649a551131487308c39" name="a87faa48a0179a649a551131487308c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87faa48a0179a649a551131487308c39">&#9670;&#160;</a></span>buttonLoadFacilities_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.buttonLoadFacilities_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузка файла с объектами социальной инфраструктуры </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_cgraph" id="aclass_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_cgraph">
+<area shape="rect" title="Загрузка файла с объектами социальной инфраструктуры" alt="" coords="5,37,200,77"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="248,5,451,45"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a6f550a9c2633358e90f1a13a3868216c" title="Проверка корректности файла с объектами социальной инфраструктуры на целостность данных" alt="" coords="248,69,451,109"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_icgraph" id="aclass_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_icgraph">
+<area shape="rect" title="Загрузка файла с объектами социальной инфраструктуры" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab1a3cc4990246becebad89d46f5b052b" name="ab1a3cc4990246becebad89d46f5b052b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a3cc4990246becebad89d46f5b052b">&#9670;&#160;</a></span>buttonLoadIconFacility_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.buttonLoadIconFacility_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузка значка </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ab1a3cc4990246becebad89d46f5b052b_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ab1a3cc4990246becebad89d46f5b052b_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ab1a3cc4990246becebad89d46f5b052b_icgraph" id="aclass_optimum_1_1_start_settings_ab1a3cc4990246becebad89d46f5b052b_icgraph">
+<area shape="rect" title="Загрузка значка" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7542f0b4780d830f04ec0b95fb83009f" name="a7542f0b4780d830f04ec0b95fb83009f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7542f0b4780d830f04ec0b95fb83009f">&#9670;&#160;</a></span>buttonLoadPolygons_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.buttonLoadPolygons_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузка файла с полигонами </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_cgraph" id="aclass_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_cgraph">
+<area shape="rect" title="Загрузка файла с полигонами" alt="" coords="5,133,200,173"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="269,69,430,109"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="248,133,451,173"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="248,197,451,237"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="499,5,664,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="502,69,661,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="502,133,661,173"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_icgraph" id="aclass_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_icgraph">
+<area shape="rect" title="Загрузка файла с полигонами" alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a65476c3a6fc9037534d31f19a1ad4971" name="a65476c3a6fc9037534d31f19a1ad4971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65476c3a6fc9037534d31f19a1ad4971">&#9670;&#160;</a></span>buttonValidateAndSave_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.buttonValidateAndSave_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Кнопка "Сохранить". </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_cgraph" id="aclass_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_cgraph">
+<area shape="rect" title="Кнопка &quot;Сохранить&quot;." alt="" coords="5,101,200,141"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#aed0752e868365ce8f11418a4f4f05fb2" title="Проверка уникальности названия критериев" alt="" coords="255,5,437,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a80aef5d9e0e6ca26318735ffcf959c2b" title="Проверка корректности названия объекта социальной инфраструктуры" alt="" coords="248,69,444,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="265,133,427,173"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a460be301f996fd4673890addb6fb1298" title="Поиск точки центрирования карты" alt="" coords="267,197,425,237"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="492,69,657,109"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="495,133,654,173"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="495,197,654,237"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_icgraph" id="aclass_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_icgraph">
+<area shape="rect" title="Кнопка &quot;Сохранить&quot;." alt="" coords="495,5,689,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac9c49886c1cd543afc14dc81ab77e3e0" name="ac9c49886c1cd543afc14dc81ab77e3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c49886c1cd543afc14dc81ab77e3e0">&#9670;&#160;</a></span>comboCountCriterion_SelectedIndexChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.comboCountCriterion_SelectedIndexChanged </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обработка выбранного числа в выпадающем списке количества критериев </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ac9c49886c1cd543afc14dc81ab77e3e0_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ac9c49886c1cd543afc14dc81ab77e3e0_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ac9c49886c1cd543afc14dc81ab77e3e0_icgraph" id="aclass_optimum_1_1_start_settings_ac9c49886c1cd543afc14dc81ab77e3e0_icgraph">
+<area shape="rect" title="Обработка выбранного числа в выпадающем списке количества критериев" alt="" coords="495,5,739,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e4ed30b94bba61ba6db01e5e881e49f" name="a8e4ed30b94bba61ba6db01e5e881e49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4ed30b94bba61ba6db01e5e881e49f">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Optimum.StartSettings.Dispose </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disposing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clean up any resources being used. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disposing</td><td>true if managed resources should be disposed; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab0a076c0b123440e004d374c0463dd57" name="ab0a076c0b123440e004d374c0463dd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a076c0b123440e004d374c0463dd57">&#9670;&#160;</a></span>InitializeComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.InitializeComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Required method for Designer support - do not modify the contents of this method with the code editor. </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_cgraph" id="aclass_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_cgraph">
+<area shape="rect" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="5,296,212,336"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#af0bbf1840b51a356cfa77e9e232dab33" title="Загрузка файла с зоной анализа" alt="" coords="285,135,479,175"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a87faa48a0179a649a551131487308c39" title="Загрузка файла с объектами социальной инфраструктуры" alt="" coords="285,71,479,111"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab1a3cc4990246becebad89d46f5b052b" title="Загрузка значка" alt="" coords="285,328,479,368"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f" title="Загрузка файла с полигонами" alt="" coords="285,199,479,239"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="285,264,479,304"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ac9c49886c1cd543afc14dc81ab77e3e0" title="Обработка выбранного числа в выпадающем списке количества критериев" alt="" coords="260,392,504,432"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a4c99d504e0120cdc2f52f528ac741a6f" title="Закрытие формы на ESC." alt="" coords="279,456,485,496"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ae905bc0684c508efc25da6da4cd6b5a8" title="Загрузка формы" alt="" coords="261,522,503,547"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="571,133,774,173"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#aa616dbd607869ba5f43c0067e99ce345" title="Проверка корректности файла с граничными точками зоны анализа" alt="" coords="571,69,774,109"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#a6f550a9c2633358e90f1a13a3868216c" title="Проверка корректности файла с объектами социальной инфраструктуры на целостность данных" alt="" coords="571,5,774,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="592,261,753,301"/>
+<area shape="rect" href="class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="571,197,774,237"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="863,197,1029,237"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="867,261,1025,301"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="867,325,1025,365"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#aed0752e868365ce8f11418a4f4f05fb2" title="Проверка уникальности названия критериев" alt="" coords="581,325,764,365"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a80aef5d9e0e6ca26318735ffcf959c2b" title="Проверка корректности названия объекта социальной инфраструктуры" alt="" coords="575,389,771,429"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#a460be301f996fd4673890addb6fb1298" title="Поиск точки центрирования карты" alt="" coords="593,453,752,493"/>
+<area shape="rect" href="class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="552,517,793,557"/>
+<area shape="rect" href="class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="841,517,1051,557"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_icgraph" id="aclass_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_icgraph">
+<area shape="rect" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4c99d504e0120cdc2f52f528ac741a6f" name="a4c99d504e0120cdc2f52f528ac741a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c99d504e0120cdc2f52f528ac741a6f">&#9670;&#160;</a></span>Settings_KeyDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.Settings_KeyDown </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">KeyEventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Закрытие формы на ESC. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_a4c99d504e0120cdc2f52f528ac741a6f_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_a4c99d504e0120cdc2f52f528ac741a6f_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_a4c99d504e0120cdc2f52f528ac741a6f_icgraph" id="aclass_optimum_1_1_start_settings_a4c99d504e0120cdc2f52f528ac741a6f_icgraph">
+<area shape="rect" title="Закрытие формы на ESC." alt="" coords="495,5,701,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae905bc0684c508efc25da6da4cd6b5a8" name="ae905bc0684c508efc25da6da4cd6b5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae905bc0684c508efc25da6da4cd6b5a8">&#9670;&#160;</a></span>Settings_Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Optimum.StartSettings.Settings_Load </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузка формы </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0</dd></dl>
+<p>Доступ к функции: private </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_cgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_cgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_cgraph" id="aclass_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_cgraph">
+<area shape="rect" title="Загрузка формы" alt="" coords="5,13,248,38"/>
+<area shape="rect" href="class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="296,5,537,45"/>
+<area shape="rect" href="class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="585,5,795,45"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_icgraph.png" border="0" usemap="#aclass_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_icgraph" alt=""/></div>
+<map name="aclass_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_icgraph" id="aclass_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_icgraph">
+<area shape="rect" title="Загрузка формы" alt="" coords="495,13,737,38"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ab0a076c0b123440e004d374c0463dd57" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="240,5,447,45"/>
+<area shape="rect" href="class_optimum_1_1_start_settings.html#ad107ea0d3181efd6ad97be3c50667bea" title="Создание формы" alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a1aefc6a0183b4eef789a00622d307207" name="a1aefc6a0183b4eef789a00622d307207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aefc6a0183b4eef789a00622d307207">&#9670;&#160;</a></span>_bitmapForLoadIconFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bitmap Optimum.StartSettings._bitmapForLoadIconFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загруженный пользователем значок для отображения объекта социальной инфраструктуры на карте </p>
+
+</div>
+</div>
+<a id="ac839fa5609d8a7edd7893415e5fddcc9" name="ac839fa5609d8a7edd7893415e5fddcc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac839fa5609d8a7edd7893415e5fddcc9">&#9670;&#160;</a></span>_countCriterionOnComboBox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Optimum.StartSettings._countCriterionOnComboBox = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество критериев из выпадающего списка </p>
+
+</div>
+</div>
+<a id="a24eecfaab3b7b2650d51336fb5d5c2fc" name="a24eecfaab3b7b2650d51336fb5d5c2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24eecfaab3b7b2650d51336fb5d5c2fc">&#9670;&#160;</a></span>_criterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt; Optimum.StartSettings._criterion = new List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список критериев для модификации </p>
+
+</div>
+</div>
+<a id="a0830a9fbc10c3132dcaa205836a4dfdf" name="a0830a9fbc10c3132dcaa205836a4dfdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0830a9fbc10c3132dcaa205836a4dfdf">&#9670;&#160;</a></span>_cultureInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly CultureInfo Optimum.StartSettings._cultureInfo = new CultureInfo(&quot;ru-RU&quot;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Настройка для того, чтобы программа работала на английской версии Windows. </p>
+
+</div>
+</div>
+<a id="a5af680959c7f1ddd85dbc563c8c023b6" name="a5af680959c7f1ddd85dbc563c8c023b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af680959c7f1ddd85dbc563c8c023b6">&#9670;&#160;</a></span>_fileValidator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_file_validator.html">FileValidator</a> Optimum.StartSettings._fileValidator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Работа с файлом </p>
+
+</div>
+</div>
+<a id="ad74a59bd85a006b8ce24bb172b125d42" name="ad74a59bd85a006b8ce24bb172b125d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74a59bd85a006b8ce24bb172b125d42">&#9670;&#160;</a></span>_infoFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; Optimum.StartSettings._infoFacility = new List&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список строк с информацией о каждом объекте социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a7245f76c51900b09e15ea68907f7c646" name="a7245f76c51900b09e15ea68907f7c646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7245f76c51900b09e15ea68907f7c646">&#9670;&#160;</a></span>_isLoadCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._isLoadCriterion = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг загрузки критериев </p>
+
+</div>
+</div>
+<a id="afb97b27d2ade547a33a8bd28c63a0d12" name="afb97b27d2ade547a33a8bd28c63a0d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb97b27d2ade547a33a8bd28c63a0d12">&#9670;&#160;</a></span>_isLoadFileBorderTerritory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._isLoadFileBorderTerritory = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг загрузки файла с границами зоны анализа </p>
+
+</div>
+</div>
+<a id="a3e659c0a4a52f4ffc17078cdd048867f" name="a3e659c0a4a52f4ffc17078cdd048867f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e659c0a4a52f4ffc17078cdd048867f">&#9670;&#160;</a></span>_isLoadFileFacilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._isLoadFileFacilities = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг загрузки объектов социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a387c563e345ea4c09a98e53519e41b14" name="a387c563e345ea4c09a98e53519e41b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a387c563e345ea4c09a98e53519e41b14">&#9670;&#160;</a></span>_isLoadFilePolygons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._isLoadFilePolygons = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг загрузки полигонов </p>
+
+</div>
+</div>
+<a id="a24d061e83d817534e6765b9f4b10f8d3" name="a24d061e83d817534e6765b9f4b10f8d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d061e83d817534e6765b9f4b10f8d3">&#9670;&#160;</a></span>_isLoadName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Optimum.StartSettings._isLoadName = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг введенного названия объекта социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a15da2cedb79aae59a02c1ea17aad5944" name="a15da2cedb79aae59a02c1ea17aad5944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15da2cedb79aae59a02c1ea17aad5944">&#9670;&#160;</a></span>_languageOfMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LanguageType Optimum.StartSettings._languageOfMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Локализация карты </p>
+
+</div>
+</div>
+<a id="a8000d256f85f710c1a113dd6a3d8bd9b" name="a8000d256f85f710c1a113dd6a3d8bd9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8000d256f85f710c1a113dd6a3d8bd9b">&#9670;&#160;</a></span>_listCriteriaForSearch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_criterion.html">Criterion</a>&gt; Optimum.StartSettings._listCriteriaForSearch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список критериев оптимальности </p>
+
+</div>
+</div>
+<a id="abafcf635b90629b02d5425fc178b4e76" name="abafcf635b90629b02d5425fc178b4e76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafcf635b90629b02d5425fc178b4e76">&#9670;&#160;</a></span>_listFacilitiesFromFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_facility.html">Facility</a>&gt; Optimum.StartSettings._listFacilitiesFromFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список объектов социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a6c5a7fb3a7abebba8e0ae2d3f5de8c07" name="a6c5a7fb3a7abebba8e0ae2d3f5de8c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c5a7fb3a7abebba8e0ae2d3f5de8c07">&#9670;&#160;</a></span>_listPointsBorderTerritory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_location.html">Location</a>&gt; Optimum.StartSettings._listPointsBorderTerritory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список граничных точек зоны анализа </p>
+
+</div>
+</div>
+<a id="a70608c3efce9fe48497121bcfa8a2fd1" name="a70608c3efce9fe48497121bcfa8a2fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70608c3efce9fe48497121bcfa8a2fd1">&#9670;&#160;</a></span>_listPolygonsFromFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_optimum_1_1_polygon.html">Polygon</a>&gt; Optimum.StartSettings._listPolygonsFromFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список полигонов </p>
+
+</div>
+</div>
+<a id="acb94a8344044a13d6a94e75a8e8f565b" name="acb94a8344044a13d6a94e75a8e8f565b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb94a8344044a13d6a94e75a8e8f565b">&#9670;&#160;</a></span>_locationCenterMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_location.html">Location</a> Optimum.StartSettings._locationCenterMap = new <a class="el" href="class_optimum_1_1_location.html">Location</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Точка центрирования карты </p>
+
+</div>
+</div>
+<a id="a9141e750d2bde9c3d586380d1c9bbddc" name="a9141e750d2bde9c3d586380d1c9bbddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9141e750d2bde9c3d586380d1c9bbddc">&#9670;&#160;</a></span>_mainColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Optimum.StartSettings._mainColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Цвет интерфейса </p>
+
+</div>
+</div>
+<a id="ad0d2222f926887be68ffd989e1abaf58" name="ad0d2222f926887be68ffd989e1abaf58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d2222f926887be68ffd989e1abaf58">&#9670;&#160;</a></span>_nameFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.StartSettings._nameFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название объекта социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="a045b320a6608a9714d8bc53b3a297f68" name="a045b320a6608a9714d8bc53b3a297f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a045b320a6608a9714d8bc53b3a297f68">&#9670;&#160;</a></span>_paintGroupBoxBorder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_optimum_1_1_paint_group_box_border.html">PaintGroupBoxBorder</a> Optimum.StartSettings._paintGroupBoxBorder = new <a class="el" href="class_optimum_1_1_paint_group_box_border.html">PaintGroupBoxBorder</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отрисовка границ groupbox. </p>
+
+</div>
+</div>
+<a id="a8710ec6238068959ec2e71e9954e471c" name="a8710ec6238068959ec2e71e9954e471c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8710ec6238068959ec2e71e9954e471c">&#9670;&#160;</a></span>_pathToFilePolygons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.StartSettings._pathToFilePolygons = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Путь к файлу с полигонами </p>
+
+</div>
+</div>
+<a id="a001f3569da8f22984f9691d0ec9eff7f" name="a001f3569da8f22984f9691d0ec9eff7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001f3569da8f22984f9691d0ec9eff7f">&#9670;&#160;</a></span>_pathToIconFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Optimum.StartSettings._pathToIconFacility = Application.StartupPath + @&quot;\Icon\octagon.png&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Значок объекта социальной инфраструктуры </p>
+
+</div>
+</div>
+<a id="acc4318047a9be0ced75c37403acd802e" name="acc4318047a9be0ced75c37403acd802e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4318047a9be0ced75c37403acd802e">&#9670;&#160;</a></span>_secondaryColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Optimum.StartSettings._secondaryColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e830c188303ae9a2d94397eb68f03fe" name="a4e830c188303ae9a2d94397eb68f03fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e830c188303ae9a2d94397eb68f03fe">&#9670;&#160;</a></span>buttonLoadBorderTerritory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button Optimum.StartSettings.buttonLoadBorderTerritory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adef1f260399c9d12ec379b3c476fd735" name="adef1f260399c9d12ec379b3c476fd735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef1f260399c9d12ec379b3c476fd735">&#9670;&#160;</a></span>buttonLoadFacilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button Optimum.StartSettings.buttonLoadFacilities</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a3406ee215b0748b20de7e789fd1645" name="a6a3406ee215b0748b20de7e789fd1645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3406ee215b0748b20de7e789fd1645">&#9670;&#160;</a></span>buttonLoadIconFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button Optimum.StartSettings.buttonLoadIconFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d6a96c8a6dfce0eb6221a2628038510" name="a5d6a96c8a6dfce0eb6221a2628038510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6a96c8a6dfce0eb6221a2628038510">&#9670;&#160;</a></span>buttonLoadPolygons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button Optimum.StartSettings.buttonLoadPolygons</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad41b923784521e1a4378b83d86550d96" name="ad41b923784521e1a4378b83d86550d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41b923784521e1a4378b83d86550d96">&#9670;&#160;</a></span>buttonValidateAndSave</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Button Optimum.StartSettings.buttonValidateAndSave</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31a278dd8829305a5addd13848fa6070" name="a31a278dd8829305a5addd13848fa6070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a278dd8829305a5addd13848fa6070">&#9670;&#160;</a></span>comboBox2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboBox2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a550e658a87f9e3ab5a86e2c21d1852c7" name="a550e658a87f9e3ab5a86e2c21d1852c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550e658a87f9e3ab5a86e2c21d1852c7">&#9670;&#160;</a></span>comboBox3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboBox3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65a7c7651fd0d779b8f5a2b46331b219" name="a65a7c7651fd0d779b8f5a2b46331b219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a7c7651fd0d779b8f5a2b46331b219">&#9670;&#160;</a></span>comboBox4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboBox4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade0602e453fd5c4c27fe423813ffd2c8" name="ade0602e453fd5c4c27fe423813ffd2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0602e453fd5c4c27fe423813ffd2c8">&#9670;&#160;</a></span>comboBox5</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboBox5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1aea7c9dd9a22cdc93b5237db71ea3c4" name="a1aea7c9dd9a22cdc93b5237db71ea3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aea7c9dd9a22cdc93b5237db71ea3c4">&#9670;&#160;</a></span>comboBox6</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboBox6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09a49896d545f0b4ebdcbf9f059d696c" name="a09a49896d545f0b4ebdcbf9f059d696c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a49896d545f0b4ebdcbf9f059d696c">&#9670;&#160;</a></span>comboBox7</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboBox7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7fd4ec6b217282766bdefe1a81e5e54" name="ab7fd4ec6b217282766bdefe1a81e5e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7fd4ec6b217282766bdefe1a81e5e54">&#9670;&#160;</a></span>comboBox8</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboBox8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa52d986156aafe040478753b1eb0f4cb" name="aa52d986156aafe040478753b1eb0f4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52d986156aafe040478753b1eb0f4cb">&#9670;&#160;</a></span>comboCountCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ComboBox Optimum.StartSettings.comboCountCriterion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c1ef8281cdcfcf9c2fe644642b632fa" name="a4c1ef8281cdcfcf9c2fe644642b632fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c1ef8281cdcfcf9c2fe644642b632fa">&#9670;&#160;</a></span>components</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.ComponentModel.IContainer Optimum.StartSettings.components = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Required designer variable. </p>
+
+</div>
+</div>
+<a id="a088608cdba69b8146e71dc77eb5f43eb" name="a088608cdba69b8146e71dc77eb5f43eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088608cdba69b8146e71dc77eb5f43eb">&#9670;&#160;</a></span>groupBoxCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.GroupBox Optimum.StartSettings.groupBoxCriterion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a839346ce1f76d86648a3faf2767172d1" name="a839346ce1f76d86648a3faf2767172d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839346ce1f76d86648a3faf2767172d1">&#9670;&#160;</a></span>groupBoxIconFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.GroupBox Optimum.StartSettings.groupBoxIconFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a580c3517fb7669832c02a117519e76a9" name="a580c3517fb7669832c02a117519e76a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a580c3517fb7669832c02a117519e76a9">&#9670;&#160;</a></span>groupBoxLoadFiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.GroupBox Optimum.StartSettings.groupBoxLoadFiles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a543bb1e33d1fdced97ae256f836c7556" name="a543bb1e33d1fdced97ae256f836c7556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543bb1e33d1fdced97ae256f836c7556">&#9670;&#160;</a></span>groupBoxNameFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.GroupBox Optimum.StartSettings.groupBoxNameFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1d78616d184f92dd0cf06a6078198d5" name="ac1d78616d184f92dd0cf06a6078198d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1d78616d184f92dd0cf06a6078198d5">&#9670;&#160;</a></span>labelAboutWeights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Label Optimum.StartSettings.labelAboutWeights</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4415fc515de218d4038be672889504d9" name="a4415fc515de218d4038be672889504d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4415fc515de218d4038be672889504d9">&#9670;&#160;</a></span>labelCountCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Label Optimum.StartSettings.labelCountCriterion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9619fef5e311a9910e203197567a3ebc" name="a9619fef5e311a9910e203197567a3ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9619fef5e311a9910e203197567a3ebc">&#9670;&#160;</a></span>labelDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Label Optimum.StartSettings.labelDirection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac901c0409c1cab16fc09fc1cf3809258" name="ac901c0409c1cab16fc09fc1cf3809258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac901c0409c1cab16fc09fc1cf3809258">&#9670;&#160;</a></span>labelLoadIcon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Label Optimum.StartSettings.labelLoadIcon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11990efbc755eff6f3312fdc9f9e9254" name="a11990efbc755eff6f3312fdc9f9e9254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11990efbc755eff6f3312fdc9f9e9254">&#9670;&#160;</a></span>labelNameCriterion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Label Optimum.StartSettings.labelNameCriterion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affccdfe5c6fbdbf57a33e2e59dedbb29" name="affccdfe5c6fbdbf57a33e2e59dedbb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affccdfe5c6fbdbf57a33e2e59dedbb29">&#9670;&#160;</a></span>labelNameFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Label Optimum.StartSettings.labelNameFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27ae5cbab68effdaaa950d80a77455dd" name="a27ae5cbab68effdaaa950d80a77455dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ae5cbab68effdaaa950d80a77455dd">&#9670;&#160;</a></span>labelWeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.Label Optimum.StartSettings.labelWeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72ac4051705749ad78101c5fc9f521e6" name="a72ac4051705749ad78101c5fc9f521e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ac4051705749ad78101c5fc9f521e6">&#9670;&#160;</a></span>pictureIconFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.PictureBox Optimum.StartSettings.pictureIconFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42a0a1d35ca223e23595a24969874a38" name="a42a0a1d35ca223e23595a24969874a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a0a1d35ca223e23595a24969874a38">&#9670;&#160;</a></span>textBox1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a709c13d831f7c620b355572a6305e870" name="a709c13d831f7c620b355572a6305e870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709c13d831f7c620b355572a6305e870">&#9670;&#160;</a></span>textBox10</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6f6542b89d644e62d6c7afab959fd1c" name="ab6f6542b89d644e62d6c7afab959fd1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f6542b89d644e62d6c7afab959fd1c">&#9670;&#160;</a></span>textBox11</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a63af33ae3be356c77b8cb61964a233" name="a0a63af33ae3be356c77b8cb61964a233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a63af33ae3be356c77b8cb61964a233">&#9670;&#160;</a></span>textBox12</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox12</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29072077a361b55bfe6c146fa1f36e96" name="a29072077a361b55bfe6c146fa1f36e96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29072077a361b55bfe6c146fa1f36e96">&#9670;&#160;</a></span>textBox13</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox13</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20e69b2370b4b11cbf80700cb5183b38" name="a20e69b2370b4b11cbf80700cb5183b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e69b2370b4b11cbf80700cb5183b38">&#9670;&#160;</a></span>textBox14</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox14</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26d981cd55e5c47129779c727398409e" name="a26d981cd55e5c47129779c727398409e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d981cd55e5c47129779c727398409e">&#9670;&#160;</a></span>textBox2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39bc7ef9570b37cd6fbdcb057f4a8eaf" name="a39bc7ef9570b37cd6fbdcb057f4a8eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39bc7ef9570b37cd6fbdcb057f4a8eaf">&#9670;&#160;</a></span>textBox3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14c72197eecfaf438bf2ffd6157a0f3e" name="a14c72197eecfaf438bf2ffd6157a0f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c72197eecfaf438bf2ffd6157a0f3e">&#9670;&#160;</a></span>textBox4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2068ad3c228cc5ab36e1935bff34aec6" name="a2068ad3c228cc5ab36e1935bff34aec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2068ad3c228cc5ab36e1935bff34aec6">&#9670;&#160;</a></span>textBox5</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36a3f6b8ee01861775f0950671c4148e" name="a36a3f6b8ee01861775f0950671c4148e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a3f6b8ee01861775f0950671c4148e">&#9670;&#160;</a></span>textBox6</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeef3324b6ebaeffab3bc3fdeec7a9683" name="aeef3324b6ebaeffab3bc3fdeec7a9683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef3324b6ebaeffab3bc3fdeec7a9683">&#9670;&#160;</a></span>textBox7</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42cc82281690a3eccba637cbecdb62ca" name="a42cc82281690a3eccba637cbecdb62ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cc82281690a3eccba637cbecdb62ca">&#9670;&#160;</a></span>textBox8</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85edb7aee66797d1a2dbfd3913d5c7f6" name="a85edb7aee66797d1a2dbfd3913d5c7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85edb7aee66797d1a2dbfd3913d5c7f6">&#9670;&#160;</a></span>textBox9</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBox9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66b9aa09af3e2c566d50162a02796bc1" name="a66b9aa09af3e2c566d50162a02796bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b9aa09af3e2c566d50162a02796bc1">&#9670;&#160;</a></span>textBoxNameFacility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.TextBox Optimum.StartSettings.textBoxNameFacility</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08ca0e61d4ed7d4f8d0710d8fac32420" name="a08ca0e61d4ed7d4f8d0710d8fac32420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ca0e61d4ed7d4f8d0710d8fac32420">&#9670;&#160;</a></span>toolTip</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Windows.Forms.ToolTip Optimum.StartSettings.toolTip</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/PC/Desktop/doxxygen/WindowsFormsApp1/<a class="el" href="_start_settings_8cs.html">StartSettings.cs</a></li>
+<li>C:/Users/PC/Desktop/doxxygen/WindowsFormsApp1/<a class="el" href="_start_settings_8_designer_8cs.html">StartSettings.Designer.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

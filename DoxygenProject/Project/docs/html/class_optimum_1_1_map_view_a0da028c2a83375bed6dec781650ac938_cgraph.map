@@ -1,0 +1,4 @@
+<map id="Optimum.MapView.DrawAutoIdealPointBufferZone" name="Optimum.MapView.DrawAutoIdealPointBufferZone">
+<area shape="rect" id="node1" title="Отрисовка оптимальных зон авто&#45;оптимумов" alt="" coords="5,5,197,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_auto_points.html#a95feaa1777a3b8f407d414ccad4727d6" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="245,5,433,45"/>
+</map>

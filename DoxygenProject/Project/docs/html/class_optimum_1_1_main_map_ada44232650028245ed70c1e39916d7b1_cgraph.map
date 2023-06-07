@@ -1,0 +1,34 @@
+<map id="Optimum.MainMap.FindAutoToolStripMenuItem_Click" name="Optimum.MainMap.FindAutoToolStripMenuItem_Click">
+<area shape="rect" id="node1" title="Поиск заданного количества авто&#45;оптимумов" alt="" coords="5,216,193,256"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#aa720d7fd5aae9a1c9afcb570ab2e6917" title="Найти динамиечески максимальную длину для радиуса поиска" alt="" coords="241,5,460,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="532,19,747,59"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_view.html#a0354d862685b8803d065ecca0e64252b" title="Проверка принадлежности точки полигонам" alt="" coords="247,120,454,160"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_map_view.html#a3fa271771d6a327d6238584796227314" title="Очистить авто&#45;оптимумы" alt="" coords="254,184,447,224"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_map_model.html#a9d96ad73cafd0682df8e013542bc0908" title="Вычисление для каждого полигона у слоя sublayerAutoPoints количества вошедших в него критериев" alt="" coords="249,248,452,288"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_map_view.html#a0da028c2a83375bed6dec781650ac938" title="Отрисовка оптимальных зон авто&#45;оптимумов" alt="" coords="255,312,447,352"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_map_view.html#ac383b2c45b43a20cef3b7172e21c80db" title="Отрисовка буферной зоны авто&#45;кандидатов" alt="" coords="255,376,447,416"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="253,888,449,928"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d" title="Создание таблицы из полигонов" alt="" coords="533,95,745,135"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_map_model.html#ab5378a26d6b01e2724179d3730a99190" title="Вернуть слой полигонов" alt="" coords="532,159,747,199"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_auto_points.html#a95feaa1777a3b8f407d414ccad4727d6" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="545,312,733,352"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_auto_points.html#a3ebfb8b1d40129b0f73fb0ff727434b5" title="Инициализация точек на карте" alt="" coords="545,376,733,416"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_render_auto_points.html#abfbaf3e27b6dfbab78bc6aae2f196da8" title="Отрисовка маркера на карте" alt="" coords="819,376,1007,416"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_render_auto_points.html#a5650d07152600dbd523ca833b593bf39" title="Инициализация буферной зоны" alt="" coords="1055,376,1243,416"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_render_auto_points.html#a7b8a012a96b7e7285136e52846dfbf81" title="Отрисовка окружности" alt="" coords="1291,376,1479,416"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_render_auto_points.html#a014e845e4a9633f6aca40de6dcbfa39d" title="Вычисление каждой точки окружности" alt="" coords="1527,376,1715,416"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_math_optimum_model_auto.html#a262ecab3f016e27423e9d7805e91a24e" title="Свертка агрегирования" alt="" coords="541,440,737,480"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_math_optimum_model_auto.html#a37b3f73ba4f84a4eb24a16ad7fb5681c" title="Проверка использования метода главного критерия" alt="" coords="541,504,737,544"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_math_optimum_model_auto.html#a7d2d7da7076191237e183f2829c4a9a1" title="Клонирование буферных зон" alt="" coords="508,569,771,623"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_math_optimum_model_auto.html#a27a011ce8d0f275df5f20cbc4aefb032" title="Создать идеальную точку" alt="" coords="541,648,737,688"/>
+<area shape="rect" id="node22" href="$class_optimum_1_1_math_optimum_model_auto.html#a5db17cd61547ea56384ec8d01040924e" title="Сортировка всех буферных зон по рейтингу" alt="" coords="541,712,737,752"/>
+<area shape="rect" id="node23" href="$class_optimum_1_1_math_optimum_model_auto.html#a5ae8c3d6c1f22afbe9f9416d50afa4f0" title="Свертка Гермейера" alt="" coords="541,776,737,816"/>
+<area shape="rect" id="node24" href="$class_optimum_1_1_math_optimum_model_auto.html#a535b092a2dd7011060aef167419e70b9" title="Свертка на основе идеальной точки по метрике Чебышева" alt="" coords="531,841,747,895"/>
+<area shape="rect" id="node25" href="$class_optimum_1_1_math_optimum_model_auto.html#a912b4905cc6cda175ff06f5c6ab82e01" title="Свертка на основе идеальной точки по метрике Евклида" alt="" coords="534,919,745,974"/>
+<area shape="rect" id="node26" href="$class_optimum_1_1_math_optimum_model_auto.html#ae6566b83232eab08e2b36b514aa1660b" title="Свертка на основе идеальной точки по метрике Хемминг" alt="" coords="535,998,743,1053"/>
+<area shape="rect" id="node27" href="$class_optimum_1_1_math_optimum_model_auto.html#ae24f0b78e17ef0e506144b4df51c5939" title="Линейная свертка" alt="" coords="541,1077,737,1117"/>
+<area shape="rect" id="node28" href="$class_optimum_1_1_math_optimum_model_auto.html#a6fced727ffd1e9dc283f98eba6489275" title="Метод главного критерия" alt="" coords="541,1141,737,1181"/>
+<area shape="rect" id="node29" href="$class_optimum_1_1_math_optimum_model_auto.html#ac159e347fcb67df6b85e36ba0d3a0326" title="Максимизация всех параметров" alt="" coords="540,1205,739,1245"/>
+<area shape="rect" id="node30" href="$class_optimum_1_1_math_optimum_model_auto.html#a450fac6c3c9b64bc4bfa3f7007102136" title="Мультипликативная свертка" alt="" coords="539,1269,739,1309"/>
+<area shape="rect" id="node31" href="$class_optimum_1_1_math_optimum_model_auto.html#a5942c4ad2e9a38df399849665ac47513" title="Нормализация всех критериев" alt="" coords="541,1333,737,1373"/>
+<area shape="rect" id="node32" href="$class_optimum_1_1_math_optimum_model_auto.html#ae13416047cac055a046ae2caab64f40c" title="Поиск максимума и минимума для каждого критерия" alt="" coords="517,1397,761,1437"/>
+</map>

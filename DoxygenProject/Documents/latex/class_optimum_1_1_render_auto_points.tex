@@ -1,0 +1,353 @@
+\doxysection{Класс Optimum.\+Render\+Auto\+Points}
+\label{class_optimum_1_1_render_auto_points}\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+
+
+Класс \char`\"{}Отрисовщик авто-\/оптимумов\char`\"{}.  
+
+
+
+
+Граф связей класса Optimum.\+Render\+Auto\+Points\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_optimum_1_1_render_auto_points__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Render\+Auto\+Points} (\textbf{ Sublayer\+Location} sublayer\+Location)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+void \textbf{ Initialization\+Ideal\+Points} (GMap\+Control gmap, List$<$ \textbf{ Buffer\+Zone} $>$ list\+Buffer\+Zones)
+\begin{DoxyCompactList}\small\item\em Отрисовать звездочками идеальные оптимумы (1-\/10) \end{DoxyCompactList}\item 
+void \textbf{ Initialization\+Point} (GMap\+Control gmap, int radius\+Auto\+Buffer\+Zone)
+\begin{DoxyCompactList}\small\item\em Инициализация точек на карте \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ \+\_\+\+Initialization\+Markers} (\textbf{ Sublayer\+Location} sublayer\+Auto\+Zone)
+\begin{DoxyCompactList}\small\item\em Отрисовка маркера на карте \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Initialization\+Zone} (Point\+Lat\+Lng point)
+\begin{DoxyCompactList}\small\item\em Инициализация буферной зоны \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Create\+Circle} (Point\+Lat\+Lng center, double radius)
+\begin{DoxyCompactList}\small\item\em Отрисовка окружности \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static Point\+Lat\+Lng \textbf{ \+\_\+\+Find\+Point\+At\+Distance\+From} (Point\+Lat\+Lng start\+Point, double initial\+Bearing\+Radians, double distance\+Kilometres)
+\begin{DoxyCompactList}\small\item\em Вычисление каждой точки окружности \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Sublayer\+Location} \textbf{ \+\_\+sublayer\+Location\+Auto\+Points} = new \textbf{ Sublayer\+Location}()
+\begin{DoxyCompactList}\small\item\em Слой с маркерами пользователя \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+radius\+Search}
+\begin{DoxyCompactList}\small\item\em Радиус поиска \end{DoxyCompactList}\item 
+GMap\+Polygon \textbf{ \+\_\+polygon}
+\item 
+readonly int \textbf{ \+\_\+segments} = 360
+\begin{DoxyCompactList}\small\item\em Доля от окружности \end{DoxyCompactList}\item 
+List$<$ Point\+Lat\+Lng $>$ \textbf{ \+\_\+list\+Points\+For\+Circle}
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+const double \textbf{ CONVERSION\+\_\+\+FROM\+\_\+\+DEGREES\+\_\+\+TO\+\_\+\+RADIANS} = Math.\+PI / 180
+\item 
+const double \textbf{ CONVERSION\+\_\+\+FROM\+\_\+\+RADIANS\+\_\+\+TO\+\_\+\+DEGREES} = 180 / Math.\+PI
+\item 
+const double \textbf{ RADIUS\+\_\+\+OF\+\_\+\+THE\+\_\+\+EARTH\+\_\+\+IN\+\_\+\+KILOMETERS} = 6371.\+01
+\begin{DoxyCompactList}\small\item\em Радиус планеты Земля = 6 371 км. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \char`\"{}Отрисовщик авто-\/оптимумов\char`\"{}. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_render_auto_points_ac9d356ab5deea5a2d1cf9c0c24c2718e}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!RenderAutoPoints@{RenderAutoPoints}}
+\index{RenderAutoPoints@{RenderAutoPoints}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{RenderAutoPoints()}
+{\footnotesize\ttfamily Optimum.\+Render\+Auto\+Points.\+Render\+Auto\+Points (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Location}}]{sublayer\+Location }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em sublayer\+Location} & Слой пользователя\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public 
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_CreateCircle@{\_CreateCircle}}
+\index{\_CreateCircle@{\_CreateCircle}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_CreateCircle()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Auto\+Points.\+\_\+\+Create\+Circle (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка окружности 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em center} & Центр окружности\\
+\hline
+{\em radius} & Радиус окружности\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a7b8a012a96b7e7285136e52846dfbf81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_auto_points_a014e845e4a9633f6aca40de6dcbfa39d}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_FindPointAtDistanceFrom@{\_FindPointAtDistanceFrom}}
+\index{\_FindPointAtDistanceFrom@{\_FindPointAtDistanceFrom}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_FindPointAtDistanceFrom()}
+{\footnotesize\ttfamily static Point\+Lat\+Lng Optimum.\+Render\+Auto\+Points.\+\_\+\+Find\+Point\+At\+Distance\+From (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{start\+Point,  }\item[{double}]{initial\+Bearing\+Radians,  }\item[{double}]{distance\+Kilometres }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Вычисление каждой точки окружности 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+Point} & Начальная точка (центр окружности)\\
+\hline
+{\em initial\+Bearing\+Radians} & Точка сегмента (от 0 до 360)\\
+\hline
+{\em distance\+Kilometres} & Радиус в километрах\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Точка, которая образует окружность
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a014e845e4a9633f6aca40de6dcbfa39d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_InitializationMarkers@{\_InitializationMarkers}}
+\index{\_InitializationMarkers@{\_InitializationMarkers}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_InitializationMarkers()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Auto\+Points.\+\_\+\+Initialization\+Markers (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Location}}]{sublayer\+Auto\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка маркера на карте 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em sublayer\+Auto\+Zone} & Слой с авто-\/точками\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_abfbaf3e27b6dfbab78bc6aae2f196da8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_InitializationZone@{\_InitializationZone}}
+\index{\_InitializationZone@{\_InitializationZone}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_InitializationZone()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Auto\+Points.\+\_\+\+Initialization\+Zone (\begin{DoxyParamCaption}\item[{Point\+Lat\+Lng}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация буферной зоны 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & Точка\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a5650d07152600dbd523ca833b593bf39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_auto_points_a95feaa1777a3b8f407d414ccad4727d6}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!InitializationIdealPoints@{InitializationIdealPoints}}
+\index{InitializationIdealPoints@{InitializationIdealPoints}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{InitializationIdealPoints()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Auto\+Points.\+Initialization\+Ideal\+Points (\begin{DoxyParamCaption}\item[{GMap\+Control}]{gmap,  }\item[{List$<$ \textbf{ Buffer\+Zone} $>$}]{list\+Buffer\+Zones }\end{DoxyParamCaption})}
+
+
+
+Отрисовать звездочками идеальные оптимумы (1-\/10) 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em list\+Buffer\+Zones} & Список буферных зон\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a95feaa1777a3b8f407d414ccad4727d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!InitializationPoint@{InitializationPoint}}
+\index{InitializationPoint@{InitializationPoint}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{InitializationPoint()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Auto\+Points.\+Initialization\+Point (\begin{DoxyParamCaption}\item[{GMap\+Control}]{gmap,  }\item[{int}]{radius\+Auto\+Buffer\+Zone }\end{DoxyParamCaption})}
+
+
+
+Инициализация точек на карте 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em radius\+Auto\+Buffer\+Zone} & Радиус буферной зоны\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_auto_points_a3ebfb8b1d40129b0f73fb0ff727434b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_render_auto_points_ae5499d7482a26d08c54a1e1836d6b417}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_listPointsForCircle@{\_listPointsForCircle}}
+\index{\_listPointsForCircle@{\_listPointsForCircle}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_listPointsForCircle}
+{\footnotesize\ttfamily List$<$Point\+Lat\+Lng$>$ Optimum.\+Render\+Auto\+Points.\+\_\+list\+Points\+For\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_auto_points_aeddca035e21af2dbcaf6d841b30a328a}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_polygon@{\_polygon}}
+\index{\_polygon@{\_polygon}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_polygon}
+{\footnotesize\ttfamily GMap\+Polygon Optimum.\+Render\+Auto\+Points.\+\_\+polygon\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_auto_points_a7acffa137d696142ffd50e2881658558}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_radiusSearch@{\_radiusSearch}}
+\index{\_radiusSearch@{\_radiusSearch}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_radiusSearch}
+{\footnotesize\ttfamily int Optimum.\+Render\+Auto\+Points.\+\_\+radius\+Search\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Радиус поиска 
+
+\mbox{\label{class_optimum_1_1_render_auto_points_af0b11ab863f1df0024c335df07df2937}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_segments@{\_segments}}
+\index{\_segments@{\_segments}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_segments}
+{\footnotesize\ttfamily readonly int Optimum.\+Render\+Auto\+Points.\+\_\+segments = 360\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Доля от окружности 
+
+\mbox{\label{class_optimum_1_1_render_auto_points_a607d5ab74a67f171f091f058c901822d}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!\_sublayerLocationAutoPoints@{\_sublayerLocationAutoPoints}}
+\index{\_sublayerLocationAutoPoints@{\_sublayerLocationAutoPoints}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{\_sublayerLocationAutoPoints}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Location} Optimum.\+Render\+Auto\+Points.\+\_\+sublayer\+Location\+Auto\+Points = new \textbf{ Sublayer\+Location}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой с маркерами пользователя 
+
+\mbox{\label{class_optimum_1_1_render_auto_points_af550c2f32bb362ce144b0532ab237405}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!CONVERSION\_FROM\_DEGREES\_TO\_RADIANS@{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}}
+\index{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS@{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{CONVERSION\_FROM\_DEGREES\_TO\_RADIANS}
+{\footnotesize\ttfamily const double Optimum.\+Render\+Auto\+Points.\+CONVERSION\+\_\+\+FROM\+\_\+\+DEGREES\+\_\+\+TO\+\_\+\+RADIANS = Math.\+PI / 180\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_auto_points_ae4e0750a7e952c3f9f5f5a966282f03d}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!CONVERSION\_FROM\_RADIANS\_TO\_DEGREES@{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}}
+\index{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES@{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{CONVERSION\_FROM\_RADIANS\_TO\_DEGREES}
+{\footnotesize\ttfamily const double Optimum.\+Render\+Auto\+Points.\+CONVERSION\+\_\+\+FROM\+\_\+\+RADIANS\+\_\+\+TO\+\_\+\+DEGREES = 180 / Math.\+PI\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_render_auto_points_af81e74def3d36065d50f43d9748ad6f7}} 
+\index{Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}!RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS@{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}}
+\index{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS@{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}!Optimum.RenderAutoPoints@{Optimum.RenderAutoPoints}}
+\doxysubsubsection{RADIUS\_OF\_THE\_EARTH\_IN\_KILOMETERS}
+{\footnotesize\ttfamily const double Optimum.\+Render\+Auto\+Points.\+RADIUS\+\_\+\+OF\+\_\+\+THE\+\_\+\+EARTH\+\_\+\+IN\+\_\+\+KILOMETERS = 6371.\+01\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Радиус планеты Земля = 6 371 км. 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Render\+Auto\+Points.\+cs}\end{DoxyCompactItemize}

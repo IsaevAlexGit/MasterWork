@@ -1,0 +1,19 @@
+<map id="Optimum.MainMap._DrawPolygonColoring" name="Optimum.MainMap._DrawPolygonColoring">
+<area shape="rect" id="node1" title="Отрисовка полигонов" alt="" coords="1824,379,2043,419"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_main_map.html#a0cbab48090f2eb5cc72f72b067d3e262" title="Изменение критерия в площадной раскраске" alt="" coords="1571,198,1776,253"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_main_map.html#ab62fd6ba9bf7524c6fe92c9e57f0d99a" title="Обработка сворачивания формы" alt="" coords="1579,528,1768,568"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_main_map.html#aa433666039584e6ba36f6f0d0f08cb6a" title="Обработка щелчка по легенде карты" alt="" coords="1313,413,1523,453"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_main_map.html#a288f96d6a3515421d5632d2df58fa192" title="Обработка изменения жирности границ для полигонов" alt="" coords="1057,469,1243,509"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_main_map.html#ac5c5b33d965ca83ac8c9d71e6368d643" title="Обработка изменения количества оттенков раскраски" alt="" coords="789,299,974,339"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_main_map.html#a87cfd18f832cf6e1c775ca644cfd1d61" title="Обработка изменения прозрачности цвета заливки полигона" alt="" coords="1325,349,1511,389"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_main_map.html#a0483d8cbe84a105d3f4b67807a3450c9" title="Перерисовать все слои на карте" alt="" coords="776,83,987,109"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_main_map.html#a145af077f4cd03a7bb4017e4b02fdaa6" title="Создание анимированных панелей на главном окне" alt="" coords="249,299,440,339"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_main_map.html#a29785299f72f132c2ee4fe2a39c72ab1" title="Отобразить зону анализа" alt="" coords="1317,184,1519,224"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_main_map.html#a20ddbfb2c1a7ee96909926eaca90d23b" title="Обработка выбора поставщика карты" alt="" coords="488,133,728,173"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_main_map.html#ae6488565b5ffe923e69a4a317bac5583" title="Модификация загруженных данных" alt="" coords="516,5,700,45"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_main_map.html#a232bbc3f7f4f1cccf6440cf46ce960e8" title="Обработка тика таймера" alt="" coords="507,69,709,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_main_map.html#a5ed89720e0af0732939a388bc8093b9f" title="Загрузка формы" alt="" coords="5,306,201,331"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_main_map.html#a9bf681819801a98b6a89230f201c8312" title="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..." alt="" coords="253,5,436,45"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_main_map.html#a161dacb58dc5f2c71dc6e2fdf0a0eddd" title="Конструктор формы" alt="" coords="9,13,198,38"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_main_map.html#afcf6000fdb20fd616d799987eb609a0f" title="Проверить, отображена ли на карте зона анализа" alt="" coords="1035,133,1265,173"/>
+</map>

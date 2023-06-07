@@ -1,0 +1,5 @@
+<map id="Optimum.MainMap.SaveOptimumToolStripMenuItem_Click" name="Optimum.MainMap.SaveOptimumToolStripMenuItem_Click">
+<area shape="rect" id="node1" title="Сохранение оптимальных точек в CSV&#45;файл" alt="" coords="5,37,223,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_file_validator.html#a6e3b7b63c3b007fc7c0208bb73f48466" title="Проверка CSV&#45;файла, в который записывают оптимальные точки, создавая файл" alt="" coords="276,5,452,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_file_validator.html#aa7b996e6e533b49cc8320995ce3ab71d" title="Запись в CSV&#45;файл информации обо всех найденных оптимальных точках" alt="" coords="271,69,457,109"/>
+</map>

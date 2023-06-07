@@ -1,0 +1,38 @@
+<map id="Optimum.SearchNormPerCapita.buttonFindBest_Click" name="Optimum.SearchNormPerCapita.buttonFindBest_Click">
+<area shape="rect" id="node1" title="Найти ному" alt="" coords="5,312,253,352"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_search_norm_per_capita.html#a5beee0bd20c81168fcedda0ca62400ee" title="Валидация текстовых полей с числом нормы и населением" alt="" coords="301,5,513,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_search_norm_per_capita.html#a0834f23025d35c5835a51077d31d21e2" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="301,69,513,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="585,99,800,139"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_map_model.html#a538e9bfb371a6c6f80c91a940a1a583e" title="Найти суммарное значение объектов социальной инфраструктуры в файле" alt="" coords="309,184,506,224"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_map_model.html#a90e279bcfc5374aff4790ca6228be3bd" title="Найти суммарное значение населения в файле" alt="" coords="309,248,506,288"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_map_view.html#a0354d862685b8803d065ecca0e64252b" title="Проверка принадлежности точки полигонам" alt="" coords="304,312,511,352"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_map_model.html#a2c8ff1f3a8f324eccee7165788fd31a5" title="Вычисление для каждого полигона у слоя sublayerNormaFacility количества вошедших в него критериев" alt="" coords="306,376,509,416"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_map_view.html#aef88bfc7e40d7c49f6304e0d19608c93" title="Отрисовка буферных зон кандидатов нормы" alt="" coords="306,440,509,480"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_map_view.html#a7884e629e922d547cb15a051f2a18cbb" title="Отрисовка буферных зон оптимумов нормы" alt="" coords="306,504,509,544"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_math_optimum_model_auto.html#ae360fd4bbdbf52b3e5413e34ffaa2b44" title="Получение оптимальной точки" alt="" coords="309,989,505,1029"/>
+<area shape="rect" id="node35" href="$class_optimum_1_1_search_norm_per_capita.html#a074de53348a7fad576625d4f802f9493" title="Очистить карту от нормы" alt="" coords="301,1288,513,1328"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d" title="Создание таблицы из полигонов" alt="" coords="587,280,799,320"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_map_model.html#ab5378a26d6b01e2724179d3730a99190" title="Вернуть слой полигонов" alt="" coords="585,344,800,384"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_norma.html#a89c64de92bf1981f308f3582f89737ab" title="Инициализация точек на карте" alt="" coords="577,424,808,464"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_render_norma.html#a45599de56346b26d5b2288013c735f39" title="Установка маркеров на карте" alt="" coords="906,421,1069,461"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_render_norma.html#af2b3a0348f37e3de059204c408edb5cb" title="Инициализация буферной зоны" alt="" coords="1151,453,1313,493"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_render_norma.html#ad9597f1226de047475458c330a17db29" title="Отрисовка окружности" alt="" coords="1361,453,1524,493"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_render_norma.html#a03b7db9ec605b27fbe1fdbb3bda9da78" title="Вычисление каждой точки окружности" alt="" coords="1572,453,1751,493"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_render_norma.html#a248224c00210ad03a761969fda08744f" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="872,485,1103,525"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_math_optimum_model_auto.html#a262ecab3f016e27423e9d7805e91a24e" title="Свертка агрегирования" alt="" coords="595,541,791,581"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_math_optimum_model_auto.html#a37b3f73ba4f84a4eb24a16ad7fb5681c" title="Проверка использования метода главного критерия" alt="" coords="595,605,791,645"/>
+<area shape="rect" id="node22" href="$class_optimum_1_1_math_optimum_model_auto.html#a7d2d7da7076191237e183f2829c4a9a1" title="Клонирование буферных зон" alt="" coords="561,670,824,725"/>
+<area shape="rect" id="node23" href="$class_optimum_1_1_math_optimum_model_auto.html#a27a011ce8d0f275df5f20cbc4aefb032" title="Создать идеальную точку" alt="" coords="595,749,791,789"/>
+<area shape="rect" id="node24" href="$class_optimum_1_1_math_optimum_model_auto.html#a5db17cd61547ea56384ec8d01040924e" title="Сортировка всех буферных зон по рейтингу" alt="" coords="595,813,791,853"/>
+<area shape="rect" id="node25" href="$class_optimum_1_1_math_optimum_model_auto.html#a5ae8c3d6c1f22afbe9f9416d50afa4f0" title="Свертка Гермейера" alt="" coords="595,877,791,917"/>
+<area shape="rect" id="node26" href="$class_optimum_1_1_math_optimum_model_auto.html#a535b092a2dd7011060aef167419e70b9" title="Свертка на основе идеальной точки по метрике Чебышева" alt="" coords="585,942,801,997"/>
+<area shape="rect" id="node27" href="$class_optimum_1_1_math_optimum_model_auto.html#a912b4905cc6cda175ff06f5c6ab82e01" title="Свертка на основе идеальной точки по метрике Евклида" alt="" coords="587,1021,798,1075"/>
+<area shape="rect" id="node28" href="$class_optimum_1_1_math_optimum_model_auto.html#ae6566b83232eab08e2b36b514aa1660b" title="Свертка на основе идеальной точки по метрике Хемминг" alt="" coords="589,1099,797,1154"/>
+<area shape="rect" id="node29" href="$class_optimum_1_1_math_optimum_model_auto.html#ae24f0b78e17ef0e506144b4df51c5939" title="Линейная свертка" alt="" coords="595,1179,791,1219"/>
+<area shape="rect" id="node30" href="$class_optimum_1_1_math_optimum_model_auto.html#a6fced727ffd1e9dc283f98eba6489275" title="Метод главного критерия" alt="" coords="595,1243,791,1283"/>
+<area shape="rect" id="node31" href="$class_optimum_1_1_math_optimum_model_auto.html#ac159e347fcb67df6b85e36ba0d3a0326" title="Максимизация всех параметров" alt="" coords="593,1307,792,1347"/>
+<area shape="rect" id="node32" href="$class_optimum_1_1_math_optimum_model_auto.html#a450fac6c3c9b64bc4bfa3f7007102136" title="Мультипликативная свертка" alt="" coords="593,1371,793,1411"/>
+<area shape="rect" id="node33" href="$class_optimum_1_1_math_optimum_model_auto.html#a5942c4ad2e9a38df399849665ac47513" title="Нормализация всех критериев" alt="" coords="595,1435,791,1475"/>
+<area shape="rect" id="node34" href="$class_optimum_1_1_math_optimum_model_auto.html#ae13416047cac055a046ae2caab64f40c" title="Поиск максимума и минимума для каждого критерия" alt="" coords="571,1499,815,1539"/>
+<area shape="rect" id="node36" href="$class_optimum_1_1_map_view.html#ac18d989ad64c442b4a2e44f73ea30788" title="Очистка карты от нормы" alt="" coords="591,1563,795,1603"/>
+</map>

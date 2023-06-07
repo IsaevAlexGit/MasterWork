@@ -1,0 +1,10 @@
+<map id="Optimum.Settings._CheckWeightCriterion" name="Optimum.Settings._CheckWeightCriterion">
+<area shape="rect" id="node1" title="Проверка корректности весового коэффициента" alt="" coords="1251,95,1467,135"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_settings.html#a8796cdb3ba8f82b80b695fef0d93483f" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="980,95,1203,135"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_settings.html#aecd11cf9e23129621c10df4ae2a26ed9" title="Проверить, подходит ли файл с полигонами на новое измененное количеств критериев" alt="" coords="731,63,918,103"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_settings.html#a56c2ad06afb4c88c6c52de47bd998833" title="Кнопка &quot;Сохранить&quot;." alt="" coords="717,127,932,167"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_settings.html#ad62908e596dc104b25e95bab5cae071a" title="Загрузка файла с границами" alt="" coords="467,5,661,45"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_settings.html#affb72bdbcd80d0fff38155449bba3bf1" title="Обработка выбранного числа в выпадающем списке количества критериев" alt="" coords="459,69,669,109"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_settings.html#ac362023f2dffb5862ff98af65fa66a17" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="232,69,411,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_settings.html#a69c1eff3c5f0ee74a1876a89d42b482a" title="Создание формы" alt="" coords="5,77,184,102"/>
+</map>

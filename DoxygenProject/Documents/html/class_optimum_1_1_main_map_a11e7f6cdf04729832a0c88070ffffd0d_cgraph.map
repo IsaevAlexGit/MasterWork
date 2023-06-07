@@ -1,0 +1,32 @@
+<map id="Optimum.MainMap.SearchOptimumToolStripMenuItem_Click" name="Optimum.MainMap.SearchOptimumToolStripMenuItem_Click">
+<area shape="rect" id="node1" title="Поиск оптимальных точек" alt="" coords="5,101,236,141"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_model.html#a806d6493027f5c74f07a19b7a222d18b" title="Вычисление для каждого полигона у слоя sublayerUserPoints количества вошедших в него критериев" alt="" coords="284,5,487,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_view.html#a0da028c2a83375bed6dec781650ac938" title="Отрисовка оптимальных зон авто&#45;оптимумов" alt="" coords="289,69,481,109"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_map_view.html#ad5bf24fdb0af958a7fa446e61d648a03" title="Отрисовка буферной зоны около точки&#45;кандидата и оптимальных точек" alt="" coords="288,133,483,173"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_math_optimum_model.html#acb57e10bd4ac9bea230ca27e9b6b9e87" title="Получение оптимальной точки" alt="" coords="285,629,485,669"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_auto_points.html#a95feaa1777a3b8f407d414ccad4727d6" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="566,69,754,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_render_user_marker.html#a0cc2eead2c65b35689f894956dee684f" title="Инициализация точек на карте" alt="" coords="565,133,755,173"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_render_user_marker.html#abcb8ce8339cc1a94b58fa93e272ca864" title="Инициализация маркеров" alt="" coords="833,133,1024,173"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_render_user_marker.html#a054f1162380e8fa1e1d4d8301cd4d5d4" title="Инициализация самой оптимальной буферной зоны" alt="" coords="1072,69,1277,109"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_render_user_marker.html#a4f0b3b027276dcae897c650e4f2d3442" title="Инициализация буферной зоны" alt="" coords="1079,133,1270,173"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_render_user_marker.html#a14b702406e7dbb14622485d825ba923d" title="Инициализация оптимальной буферной зоны" alt="" coords="1079,197,1270,237"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_render_user_marker.html#af1cf9510eca60f8331ca71a87abc774c" title="Отрисовка окружности самых оптимальных точек" alt="" coords="1325,69,1516,109"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_user_marker.html#a45088fec0a28d25206a65cb8a1c65a9e" title="Вычисление каждой точки окружности" alt="" coords="1564,133,1755,173"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_render_user_marker.html#ae376832310e232295909aaafa189ca16" title="Отрисовка окружности" alt="" coords="1325,133,1516,173"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_render_user_marker.html#af91b105e52de261864a9c68575fbd0eb" title="Отрисовка окружности оптимальной точки" alt="" coords="1325,197,1516,237"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_math_optimum_model.html#a1de922b18d4bbc474dcc1c3e482259aa" title="Свертка агрегирования" alt="" coords="560,197,760,237"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_math_optimum_model.html#a149243ecc0aecf0d5771bff83559be17" title="Проверка использования метода главного критерия" alt="" coords="560,261,760,301"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_math_optimum_model.html#ae48c5d649e7cee20e8833748a607f3d9" title="Клонирование буферных зон" alt="" coords="544,326,776,381"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_math_optimum_model.html#aa26d6e747309da49dab4d285e88728e9" title="Создать идеальную точку" alt="" coords="560,405,760,445"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_math_optimum_model.html#ac375dcd4f3becb6685a3c0c22354a8f2" title="Вернуть список оптимальных точек" alt="" coords="556,469,764,509"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_math_optimum_model.html#ad031b393cb589562b6c8cae381318f36" title="Свертка Гермейера" alt="" coords="560,533,760,573"/>
+<area shape="rect" id="node22" href="$class_optimum_1_1_math_optimum_model.html#a864ba41f67c28cf7e81bff0f0f7b29ff" title="Свертка на основе идеальной точки по метрике Чебышева" alt="" coords="535,597,785,637"/>
+<area shape="rect" id="node23" href="$class_optimum_1_1_math_optimum_model.html#a4a692b62493f2b7226ebe315e87b4d81" title="Свертка на основе идеальной точки по метрике Евклида" alt="" coords="537,661,783,701"/>
+<area shape="rect" id="node24" href="$class_optimum_1_1_math_optimum_model.html#a6032287ad644bbb5dda7e6e79413440a" title="Свертка на основе идеальной точки по метрике Хемминг" alt="" coords="539,725,781,765"/>
+<area shape="rect" id="node25" href="$class_optimum_1_1_math_optimum_model.html#a1588f560e1ed68193ad513b27f8f2bff" title="Линейная свертка" alt="" coords="560,789,760,829"/>
+<area shape="rect" id="node26" href="$class_optimum_1_1_math_optimum_model.html#a9a42665dc76a20c292631621a6ea8c34" title="Метод главного критерия" alt="" coords="560,853,760,893"/>
+<area shape="rect" id="node27" href="$class_optimum_1_1_math_optimum_model.html#ad1884ca72ec946d388676dd376326fe3" title="Максимизация всех параметров" alt="" coords="560,917,760,957"/>
+<area shape="rect" id="node28" href="$class_optimum_1_1_math_optimum_model.html#a01903b3b22625b22165c2b874e6ba786" title="Мультипликативная свертка" alt="" coords="560,981,760,1021"/>
+<area shape="rect" id="node29" href="$class_optimum_1_1_math_optimum_model.html#af7a1621d7101a5df10e0776368fde1e8" title="Нормализация всех критериев" alt="" coords="560,1045,760,1085"/>
+<area shape="rect" id="node30" href="$class_optimum_1_1_math_optimum_model.html#ad17221d456e3de43a36c64fe2d67e35b" title="Поиск максимума и минимума для каждого критерия" alt="" coords="553,1109,767,1149"/>
+</map>

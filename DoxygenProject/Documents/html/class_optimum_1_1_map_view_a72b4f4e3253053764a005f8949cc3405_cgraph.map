@@ -1,0 +1,4 @@
+<map id="Optimum.MapView.DrawTerritory" name="Optimum.MapView.DrawTerritory">
+<area shape="rect" id="node1" title="Отобразить зону анализа" alt="" coords="5,13,217,38"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_territory.html#af9e78964322f58fbd3f1011deb3276b4" title="Отображение зоны анализа" alt="" coords="265,5,436,45"/>
+</map>

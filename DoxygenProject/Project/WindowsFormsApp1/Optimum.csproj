@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8FAF0CD-63AC-4169-AF04-E2D059AA6DD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Optimum</RootNamespace>
+    <AssemblyName>Optimum</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>maps_128x128_32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\..\..\..\..\..\..\Reference\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\..\..\..\..\..\..\Reference\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimatedBottomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnimatedLeftPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BufferZone.cs" />
+    <Compile Include="Criterion.cs" />
+    <Compile Include="Facility.cs" />
+    <Compile Include="FileValidator.cs" />
+    <Compile Include="Internet.cs" />
+    <Compile Include="MathOptimumModel.cs" />
+    <Compile Include="MathOptimumModelAuto.cs" />
+    <Compile Include="OptimalZone.cs" />
+    <Compile Include="PaintGroupBoxBorder.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon.cs" />
+    <Compile Include="RenderAutoPoints.cs" />
+    <Compile Include="RenderPolygon.cs" />
+    <Compile Include="RenderTerritory.cs" />
+    <Compile Include="RenderFacility.cs" />
+    <Compile Include="RenderNorma.cs" />
+    <Compile Include="RenderUserMarker.cs" />
+    <Compile Include="SearchNormPerCapita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchNormPerCapita.Designer.cs">
+      <DependentUpon>SearchNormPerCapita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingRadius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingRadius.Designer.cs">
+      <DependentUpon>SettingRadius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location.cs" />
+    <Compile Include="MainMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMap.Designer.cs">
+      <DependentUpon>MainMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapModel.cs" />
+    <Compile Include="MapView.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartSettings.Designer.cs">
+      <DependentUpon>StartSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FacilityInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacilityInfo.Designer.cs">
+      <DependentUpon>FacilityInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sublayers.cs" />
+    <EmbeddedResource Include="SearchNormPerCapita.resx">
+      <DependentUpon>SearchNormPerCapita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingRadius.resx">
+      <DependentUpon>SettingRadius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMap.resx">
+      <DependentUpon>MainMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacilityInfo.resx">
+      <DependentUpon>FacilityInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartSettings.resx">
+      <DependentUpon>StartSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagramOptimum.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\Icon\iconApplication.png" />
+    <None Include="bin\Release\Icon\iconInputData.png" />
+    <None Include="bin\Release\Icon\iconInputParametrs.png" />
+    <None Include="bin\Release\Icon\iconInputTime.png" />
+    <None Include="bin\Release\Icon\iconLoadDataArea.png" />
+    <None Include="bin\Release\Icon\iconLoadDataIconUser.png" />
+    <None Include="bin\Release\Icon\iconLoadDataPharmacy.png" />
+    <None Include="bin\Release\Icon\iconSaveMap.png" />
+    <None Include="bin\Release\Icon\iconSearchOptimal.png" />
+    <None Include="bin\Release\Icon\iconViewOptimal.png" />
+    <None Include="bin\Release\Icon\iconViewPharmacy.png" />
+    <None Include="bin\Release\Icon\iconMapMarker.png" />
+    <None Include="bin\Release\Icon\iconPriority.png" />
+    <None Include="bin\Release\Icon\iconSearch.png" />
+    <None Include="bin\Release\Icon\iconSavePoint.png" />
+    <None Include="bin\Release\Icon\iconOld.png" />
+    <None Include="bin\Release\Icon\iconPeople.png" />
+    <None Include="bin\Release\Icon\iconPharmacyOptions.png" />
+    <None Include="bin\Release\Icon\iconTimeBack.png" />
+    <None Include="bin\Release\Icon\iconLoadRadius.png" />
+    <None Include="bin\Release\Icon\iconRadiusBack.png" />
+    <None Include="bin\Release\Icon\iconPDF.png" />
+    <None Include="bin\Release\Icon\iconPDF_v2.png" />
+    <None Include="bin\Release\Icon\iconPharmacy.png" />
+    <None Include="bin\Release\Icon\icon_few.png" />
+    <None Include="bin\Release\Icon\icon_lot.png" />
+    <None Include="bin\Release\Icon\icon_middle.png" />
+    <None Include="bin\Release\Icon\iconPharmacy_v3.png" />
+    <None Include="bin\Release\Icon\iconSaveOptimum.png" />
+    <None Include="bin\Release\Icon\iconUserPharma.png" />
+    <None Include="bin\Release\Icon\iconOptimumOpenFile.png" />
+    <None Include="bin\Release\Icon\iconOptimumSaveFile.png" />
+    <None Include="bin\Release\Icon\iconSaveAllParam.png" />
+    <None Include="bin\Release\Icon\iconUserPharma_v2.png" />
+    <None Include="bin\Release\Icon\no.png" />
+    <None Include="bin\Release\Icon\iconBestOptimum.png" />
+    <None Include="bin\Release\Icon\iconWifiFalse.png" />
+    <None Include="bin\Release\Icon\iconWifiTrue.png" />
+    <None Include="bin\Release\Icon\iconNoIcon.png" />
+    <None Include="bin\Release\Icon\iconUserFacility.png" />
+    <None Include="bin\Release\Icon\octagon.png" />
+    <Content Include="maps_128x128_32.ico" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\imgonline-com-ua-Resize-mgsWnnvUhW.png" />
+    <None Include="Resources\32-3.png" />
+    <None Include="Resources\32-2.png" />
+    <None Include="Resources\32-1.png" />
+    <None Include="Resources\50 50 6.png" />
+    <None Include="Resources\50-50 5.png" />
+    <None Include="Resources\50-50 4.png" />
+    <None Include="Resources\50-50 3.png" />
+    <None Include="Resources\50-50 2.png" />
+    <None Include="Resources\50-50 1.png" />
+    <None Include="Resources\50-50.png" />
+    <None Include="Resources\imgonline-com-ua-Resize-e9RrqawWiS8Lu.png" />
+    <None Include="Resources\imgonline-com-ua-Resize-wIP4wnvrko2Rqr0.png" />
+    <None Include="Resources\icons8-map-editing-64.png" />
+    <None Include="Resources\Karta_Tag_s_Izb_okr.jpg" />
+    <None Include="Resources\icons8-pill-64.png" />
+    <None Include="Resources\icons8-microsoft-excel-256.png" />
+    <None Include="Resources\icons8-doctors-folder-64.png" />
+    <None Include="Resources\icons8-add-time-40.png" />
+    <None Include="Resources\icons8-world-map-64.png" />
+    <None Include="Resources\icons8-save-64.png" />
+    <None Include="Resources\icons8-radar-64.png" />
+    <None Include="Resources\icons8-mind-map-100.png" />
+    <None Include="Resources\icons8-google-maps-64.png" />
+    <None Include="Resources\icons8-add-time-80.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

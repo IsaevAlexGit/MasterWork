@@ -1,0 +1,5 @@
+<map id="Optimum.Settings._ValidateNewFilePolygon" name="Optimum.Settings._ValidateNewFilePolygon">
+<area shape="rect" id="node1" title="Проверить, подходит ли файл с полигонами на неизменяющееся количество критериев" alt="" coords="5,37,191,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="239,5,441,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="239,69,441,109"/>
+</map>

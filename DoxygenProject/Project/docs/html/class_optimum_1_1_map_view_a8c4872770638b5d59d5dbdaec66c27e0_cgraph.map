@@ -1,0 +1,4 @@
+<map id="Optimum.MapView.SetHoverTextForFacility" name="Optimum.MapView.SetHoverTextForFacility">
+<area shape="rect" id="node1" title="Обработка выводящейся информации при наведении на объект социальной инфраструктуры" alt="" coords="5,5,193,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_render_facility.html#a323722574bff6213196b811ad27ea92f" title="Установка режима выводящейся информации об объекте социальной инфраструктуры" alt="" coords="241,13,460,38"/>
+</map>

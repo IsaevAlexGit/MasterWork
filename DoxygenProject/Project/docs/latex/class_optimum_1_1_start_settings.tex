@@ -1,0 +1,1146 @@
+\doxysection{Класс Optimum.\+Start\+Settings}
+\label{class_optimum_1_1_start_settings}\index{Optimum.StartSettings@{Optimum.StartSettings}}
+
+
+Класс для окна с начальной загрузкой данных  
+
+
+
+
+Граф наследования\+:Optimum.\+Start\+Settings\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_optimum_1_1_start_settings__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Optimum.\+Start\+Settings\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Start\+Settings} (Language\+Type language, Color color\+For\+Interface, Color color\+For\+Elements)
+\begin{DoxyCompactList}\small\item\em Создание формы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+override void \textbf{ Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Settings\+\_\+\+Load} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка формы \end{DoxyCompactList}\item 
+void \textbf{ button\+Load\+Icon\+Facility\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка значка \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Check\+Vadidate\+Name\+Faicility} ()
+\begin{DoxyCompactList}\small\item\em Проверка корректности названия объекта социальной инфраструктуры \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+\+Check\+Name\+Criterion} (string name\+Criterion)
+\begin{DoxyCompactList}\small\item\em Проверка корректности названия критериея \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+\+Check\+Direction\+Criterion} (string direction\+Criterion)
+\begin{DoxyCompactList}\small\item\em Проверка корректности направления \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+\+Check\+Weight\+Criterion} (string weihgt)
+\begin{DoxyCompactList}\small\item\em Проверка корректности весового коэффициента \end{DoxyCompactList}\item 
+string \textbf{ \+\_\+\+Check\+Validate\+Criterion} ()
+\begin{DoxyCompactList}\small\item\em Проверка заполненности критериев-\/направлений-\/весов \end{DoxyCompactList}\item 
+void \textbf{ button\+Load\+Border\+Territory\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка файла с зоной анализа \end{DoxyCompactList}\item 
+void \textbf{ button\+Load\+Facilities\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка файла с объектами социальной инфраструктуры \end{DoxyCompactList}\item 
+void \textbf{ button\+Load\+Polygons\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Загрузка файла с полигонами \end{DoxyCompactList}\item 
+void \textbf{ button\+Validate\+And\+Save\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Кнопка \char`\"{}Сохранить\char`\"{}. \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+\+Check\+Same\+Name\+Criterion} ()
+\begin{DoxyCompactList}\small\item\em Проверка уникальности названия критериев \end{DoxyCompactList}\item 
+\textbf{ Location} \textbf{ \+\_\+\+Find\+Center\+Point} ()
+\begin{DoxyCompactList}\small\item\em Поиск точки центрирования карты \end{DoxyCompactList}\item 
+void \textbf{ Settings\+\_\+\+Key\+Down} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Закрытие формы на ESC. \end{DoxyCompactList}\item 
+void \textbf{ combo\+Count\+Criterion\+\_\+\+Selected\+Index\+Changed} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Обработка выбранного числа в выпадающем списке количества критериев \end{DoxyCompactList}\item 
+void \textbf{ Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ File\+Validator} \textbf{ \+\_\+file\+Validator}
+\begin{DoxyCompactList}\small\item\em Работа с файлом \end{DoxyCompactList}\item 
+\textbf{ Paint\+Group\+Box\+Border} \textbf{ \+\_\+paint\+Group\+Box\+Border} = new \textbf{ Paint\+Group\+Box\+Border}()
+\begin{DoxyCompactList}\small\item\em Отрисовка границ groupbox. \end{DoxyCompactList}\item 
+readonly Culture\+Info \textbf{ \+\_\+culture\+Info} = new Culture\+Info(\char`\"{}ru-\/RU\char`\"{})
+\begin{DoxyCompactList}\small\item\em Настройка для того, чтобы программа работала на английской версии Windows. \end{DoxyCompactList}\item 
+Language\+Type \textbf{ \+\_\+language\+Of\+Map}
+\begin{DoxyCompactList}\small\item\em Локализация карты \end{DoxyCompactList}\item 
+Color \textbf{ \+\_\+main\+Color}
+\begin{DoxyCompactList}\small\item\em Цвет интерфейса \end{DoxyCompactList}\item 
+Color \textbf{ \+\_\+secondary\+Color}
+\item 
+string \textbf{ \+\_\+path\+To\+Icon\+Facility} = Application.\+Startup\+Path + @\char`\"{}\textbackslash{}Icon\textbackslash{}octagon.\+png\char`\"{}
+\begin{DoxyCompactList}\small\item\em Значок объекта социальной инфраструктуры \end{DoxyCompactList}\item 
+string \textbf{ \+\_\+name\+Facility}
+\begin{DoxyCompactList}\small\item\em Название объекта социальной инфраструктуры \end{DoxyCompactList}\item 
+List$<$ \textbf{ Criterion} $>$ \textbf{ \+\_\+list\+Criteria\+For\+Search}
+\begin{DoxyCompactList}\small\item\em Список критериев оптимальности \end{DoxyCompactList}\item 
+List$<$ \textbf{ Criterion} $>$ \textbf{ \+\_\+criterion} = new List$<$\textbf{ Criterion}$>$()
+\begin{DoxyCompactList}\small\item\em Список критериев для модификации \end{DoxyCompactList}\item 
+List$<$ \textbf{ Location} $>$ \textbf{ \+\_\+list\+Points\+Border\+Territory}
+\begin{DoxyCompactList}\small\item\em Список граничных точек зоны анализа \end{DoxyCompactList}\item 
+List$<$ \textbf{ Polygon} $>$ \textbf{ \+\_\+list\+Polygons\+From\+File}
+\begin{DoxyCompactList}\small\item\em Список полигонов \end{DoxyCompactList}\item 
+List$<$ \textbf{ Facility} $>$ \textbf{ \+\_\+list\+Facilities\+From\+File}
+\begin{DoxyCompactList}\small\item\em Список объектов социальной инфраструктуры \end{DoxyCompactList}\item 
+\textbf{ Location} \textbf{ \+\_\+location\+Center\+Map} = new \textbf{ Location}()
+\begin{DoxyCompactList}\small\item\em Точка центрирования карты \end{DoxyCompactList}\item 
+Bitmap \textbf{ \+\_\+bitmap\+For\+Load\+Icon\+Facility}
+\begin{DoxyCompactList}\small\item\em Загруженный пользователем значок для отображения объекта социальной инфраструктуры на карте \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+is\+Load\+Name} = false
+\begin{DoxyCompactList}\small\item\em Флаг введенного названия объекта социальной инфраструктуры \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+is\+Load\+Criterion} = false
+\begin{DoxyCompactList}\small\item\em Флаг загрузки критериев \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+count\+Criterion\+On\+Combo\+Box} = 0
+\begin{DoxyCompactList}\small\item\em Количество критериев из выпадающего списка \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+is\+Load\+File\+Border\+Territory} = false
+\begin{DoxyCompactList}\small\item\em Флаг загрузки файла с границами зоны анализа \end{DoxyCompactList}\item 
+List$<$ string $>$ \textbf{ \+\_\+info\+Facility} = new List$<$string$>$()
+\begin{DoxyCompactList}\small\item\em Список строк с информацией о каждом объекте социальной инфраструктуры \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+is\+Load\+File\+Facilities} = false
+\begin{DoxyCompactList}\small\item\em Флаг загрузки объектов социальной инфраструктуры \end{DoxyCompactList}\item 
+bool \textbf{ \+\_\+is\+Load\+File\+Polygons} = false
+\begin{DoxyCompactList}\small\item\em Флаг загрузки полигонов \end{DoxyCompactList}\item 
+string \textbf{ \+\_\+path\+To\+File\+Polygons} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Путь к файлу с полигонами \end{DoxyCompactList}\item 
+System.\+Component\+Model.\+IContainer \textbf{ components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Group\+Box \textbf{ group\+Box\+Load\+Files}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Load\+Polygons}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \textbf{ group\+Box\+Criterion}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box2}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Count\+Criterion}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Count\+Criterion}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Weight}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box1}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box6}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Name\+Criterion}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box5}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box2}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box4}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box3}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \textbf{ group\+Box\+Name\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Name\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box\+Name\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Group\+Box \textbf{ group\+Box\+Icon\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Load\+Icon}
+\item 
+System.\+Windows.\+Forms.\+Picture\+Box \textbf{ picture\+Icon\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Load\+Icon\+Facility}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Load\+Border\+Territory}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Load\+Facilities}
+\item 
+System.\+Windows.\+Forms.\+Button \textbf{ button\+Validate\+And\+Save}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+About\+Weights}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box13}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box14}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box7}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box8}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box9}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box10}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box11}
+\item 
+System.\+Windows.\+Forms.\+Text\+Box \textbf{ text\+Box12}
+\item 
+System.\+Windows.\+Forms.\+Label \textbf{ label\+Direction}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box8}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box7}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box6}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box5}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box4}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \textbf{ combo\+Box3}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Tip \textbf{ tool\+Tip}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для окна с начальной загрузкой данных 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_start_settings_ad107ea0d3181efd6ad97be3c50667bea}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!StartSettings@{StartSettings}}
+\index{StartSettings@{StartSettings}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{StartSettings()}
+{\footnotesize\ttfamily Optimum.\+Start\+Settings.\+Start\+Settings (\begin{DoxyParamCaption}\item[{Language\+Type}]{language,  }\item[{Color}]{color\+For\+Interface,  }\item[{Color}]{color\+For\+Elements }\end{DoxyParamCaption})}
+
+
+
+Создание формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em language} & Локализация карты\\
+\hline
+{\em color\+For\+Interface} & Основной цвет интерфейса\\
+\hline
+{\em color\+For\+Elements} & Второстепенный цвет интерфейса\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ad107ea0d3181efd6ad97be3c50667bea_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_start_settings_a0848ccd90d9f1a79a88ab6e7335a1106}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_CheckDirectionCriterion@{\_CheckDirectionCriterion}}
+\index{\_CheckDirectionCriterion@{\_CheckDirectionCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_CheckDirectionCriterion()}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+\+Check\+Direction\+Criterion (\begin{DoxyParamCaption}\item[{string}]{direction\+Criterion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка корректности направления 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em direction\+Criterion} & Направление критерия\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Флаг корректности
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a0848ccd90d9f1a79a88ab6e7335a1106_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_ac39a8c0979b7f2167d40580eb9565fd1}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_CheckNameCriterion@{\_CheckNameCriterion}}
+\index{\_CheckNameCriterion@{\_CheckNameCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_CheckNameCriterion()}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+\+Check\+Name\+Criterion (\begin{DoxyParamCaption}\item[{string}]{name\+Criterion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка корректности названия критериея 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em name\+Criterion} & Название критерия\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Флаг корректности
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ac39a8c0979b7f2167d40580eb9565fd1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_aed0752e868365ce8f11418a4f4f05fb2}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_CheckSameNameCriterion@{\_CheckSameNameCriterion}}
+\index{\_CheckSameNameCriterion@{\_CheckSameNameCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_CheckSameNameCriterion()}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+\+Check\+Same\+Name\+Criterion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка уникальности названия критериев 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Флаг уникальны или нет названия
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_aed0752e868365ce8f11418a4f4f05fb2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a80aef5d9e0e6ca26318735ffcf959c2b}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_CheckVadidateNameFaicility@{\_CheckVadidateNameFaicility}}
+\index{\_CheckVadidateNameFaicility@{\_CheckVadidateNameFaicility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_CheckVadidateNameFaicility()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+\_\+\+Check\+Vadidate\+Name\+Faicility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка корректности названия объекта социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a80aef5d9e0e6ca26318735ffcf959c2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_CheckValidateCriterion@{\_CheckValidateCriterion}}
+\index{\_CheckValidateCriterion@{\_CheckValidateCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_CheckValidateCriterion()}
+{\footnotesize\ttfamily string Optimum.\+Start\+Settings.\+\_\+\+Check\+Validate\+Criterion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка заполненности критериев-\/направлений-\/весов 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Статус загрузки данных
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a391d212eca750d6567a6a6b08fe4a315_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a72ff88543811f68581a4e59de3faf0c0}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_CheckWeightCriterion@{\_CheckWeightCriterion}}
+\index{\_CheckWeightCriterion@{\_CheckWeightCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_CheckWeightCriterion()}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+\+Check\+Weight\+Criterion (\begin{DoxyParamCaption}\item[{string}]{weihgt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка корректности весового коэффициента 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em weihgt} & Весовой коэффициент\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Флаг корректности
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a72ff88543811f68581a4e59de3faf0c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a460be301f996fd4673890addb6fb1298}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_FindCenterPoint@{\_FindCenterPoint}}
+\index{\_FindCenterPoint@{\_FindCenterPoint}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_FindCenterPoint()}
+{\footnotesize\ttfamily \textbf{ Location} Optimum.\+Start\+Settings.\+\_\+\+Find\+Center\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Поиск точки центрирования карты 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private \begin{DoxyReturn}{Возвращает}
+Координата для отцентрирования карты
+\end{DoxyReturn}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a460be301f996fd4673890addb6fb1298_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadBorderTerritory\_Click@{buttonLoadBorderTerritory\_Click}}
+\index{buttonLoadBorderTerritory\_Click@{buttonLoadBorderTerritory\_Click}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadBorderTerritory\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+button\+Load\+Border\+Territory\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка файла с зоной анализа 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_af0bbf1840b51a356cfa77e9e232dab33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadFacilities\_Click@{buttonLoadFacilities\_Click}}
+\index{buttonLoadFacilities\_Click@{buttonLoadFacilities\_Click}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadFacilities\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+button\+Load\+Facilities\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка файла с объектами социальной инфраструктуры 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a87faa48a0179a649a551131487308c39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_ab1a3cc4990246becebad89d46f5b052b}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadIconFacility\_Click@{buttonLoadIconFacility\_Click}}
+\index{buttonLoadIconFacility\_Click@{buttonLoadIconFacility\_Click}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadIconFacility\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+button\+Load\+Icon\+Facility\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка значка 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ab1a3cc4990246becebad89d46f5b052b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadPolygons\_Click@{buttonLoadPolygons\_Click}}
+\index{buttonLoadPolygons\_Click@{buttonLoadPolygons\_Click}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadPolygons\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+button\+Load\+Polygons\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка файла с полигонами 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a7542f0b4780d830f04ec0b95fb83009f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonValidateAndSave\_Click@{buttonValidateAndSave\_Click}}
+\index{buttonValidateAndSave\_Click@{buttonValidateAndSave\_Click}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonValidateAndSave\_Click()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+button\+Validate\+And\+Save\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Кнопка \char`\"{}Сохранить\char`\"{}. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a65476c3a6fc9037534d31f19a1ad4971_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_ac9c49886c1cd543afc14dc81ab77e3e0}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboCountCriterion\_SelectedIndexChanged@{comboCountCriterion\_SelectedIndexChanged}}
+\index{comboCountCriterion\_SelectedIndexChanged@{comboCountCriterion\_SelectedIndexChanged}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboCountCriterion\_SelectedIndexChanged()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+combo\+Count\+Criterion\+\_\+\+Selected\+Index\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Обработка выбранного числа в выпадающем списке количества критериев 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ac9c49886c1cd543afc14dc81ab77e3e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a8e4ed30b94bba61ba6db01e5e881e49f}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{Dispose()}
+{\footnotesize\ttfamily override void Optimum.\+Start\+Settings.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{InitializeComponent()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ab0a076c0b123440e004d374c0463dd57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_a4c99d504e0120cdc2f52f528ac741a6f}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!Settings\_KeyDown@{Settings\_KeyDown}}
+\index{Settings\_KeyDown@{Settings\_KeyDown}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{Settings\_KeyDown()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+Settings\+\_\+\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Закрытие формы на ESC. 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_a4c99d504e0120cdc2f52f528ac741a6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!Settings\_Load@{Settings\_Load}}
+\index{Settings\_Load@{Settings\_Load}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{Settings\_Load()}
+{\footnotesize\ttfamily void Optimum.\+Start\+Settings.\+Settings\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загрузка формы 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_start_settings_ae905bc0684c508efc25da6da4cd6b5a8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_start_settings_a1aefc6a0183b4eef789a00622d307207}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_bitmapForLoadIconFacility@{\_bitmapForLoadIconFacility}}
+\index{\_bitmapForLoadIconFacility@{\_bitmapForLoadIconFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_bitmapForLoadIconFacility}
+{\footnotesize\ttfamily Bitmap Optimum.\+Start\+Settings.\+\_\+bitmap\+For\+Load\+Icon\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Загруженный пользователем значок для отображения объекта социальной инфраструктуры на карте 
+
+\mbox{\label{class_optimum_1_1_start_settings_ac839fa5609d8a7edd7893415e5fddcc9}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_countCriterionOnComboBox@{\_countCriterionOnComboBox}}
+\index{\_countCriterionOnComboBox@{\_countCriterionOnComboBox}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_countCriterionOnComboBox}
+{\footnotesize\ttfamily int Optimum.\+Start\+Settings.\+\_\+count\+Criterion\+On\+Combo\+Box = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество критериев из выпадающего списка 
+
+\mbox{\label{class_optimum_1_1_start_settings_a24eecfaab3b7b2650d51336fb5d5c2fc}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_criterion@{\_criterion}}
+\index{\_criterion@{\_criterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_criterion}
+{\footnotesize\ttfamily List$<$\textbf{ Criterion}$>$ Optimum.\+Start\+Settings.\+\_\+criterion = new List$<$\textbf{ Criterion}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список критериев для модификации 
+
+\mbox{\label{class_optimum_1_1_start_settings_a0830a9fbc10c3132dcaa205836a4dfdf}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_cultureInfo@{\_cultureInfo}}
+\index{\_cultureInfo@{\_cultureInfo}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_cultureInfo}
+{\footnotesize\ttfamily readonly Culture\+Info Optimum.\+Start\+Settings.\+\_\+culture\+Info = new Culture\+Info(\char`\"{}ru-\/RU\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Настройка для того, чтобы программа работала на английской версии Windows. 
+
+\mbox{\label{class_optimum_1_1_start_settings_a5af680959c7f1ddd85dbc563c8c023b6}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_fileValidator@{\_fileValidator}}
+\index{\_fileValidator@{\_fileValidator}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_fileValidator}
+{\footnotesize\ttfamily \textbf{ File\+Validator} Optimum.\+Start\+Settings.\+\_\+file\+Validator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Работа с файлом 
+
+\mbox{\label{class_optimum_1_1_start_settings_ad74a59bd85a006b8ce24bb172b125d42}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_infoFacility@{\_infoFacility}}
+\index{\_infoFacility@{\_infoFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_infoFacility}
+{\footnotesize\ttfamily List$<$string$>$ Optimum.\+Start\+Settings.\+\_\+info\+Facility = new List$<$string$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список строк с информацией о каждом объекте социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_start_settings_a7245f76c51900b09e15ea68907f7c646}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_isLoadCriterion@{\_isLoadCriterion}}
+\index{\_isLoadCriterion@{\_isLoadCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_isLoadCriterion}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+is\+Load\+Criterion = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг загрузки критериев 
+
+\mbox{\label{class_optimum_1_1_start_settings_afb97b27d2ade547a33a8bd28c63a0d12}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_isLoadFileBorderTerritory@{\_isLoadFileBorderTerritory}}
+\index{\_isLoadFileBorderTerritory@{\_isLoadFileBorderTerritory}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_isLoadFileBorderTerritory}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+is\+Load\+File\+Border\+Territory = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг загрузки файла с границами зоны анализа 
+
+\mbox{\label{class_optimum_1_1_start_settings_a3e659c0a4a52f4ffc17078cdd048867f}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_isLoadFileFacilities@{\_isLoadFileFacilities}}
+\index{\_isLoadFileFacilities@{\_isLoadFileFacilities}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_isLoadFileFacilities}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+is\+Load\+File\+Facilities = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг загрузки объектов социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_start_settings_a387c563e345ea4c09a98e53519e41b14}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_isLoadFilePolygons@{\_isLoadFilePolygons}}
+\index{\_isLoadFilePolygons@{\_isLoadFilePolygons}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_isLoadFilePolygons}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+is\+Load\+File\+Polygons = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг загрузки полигонов 
+
+\mbox{\label{class_optimum_1_1_start_settings_a24d061e83d817534e6765b9f4b10f8d3}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_isLoadName@{\_isLoadName}}
+\index{\_isLoadName@{\_isLoadName}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_isLoadName}
+{\footnotesize\ttfamily bool Optimum.\+Start\+Settings.\+\_\+is\+Load\+Name = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Флаг введенного названия объекта социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_start_settings_a15da2cedb79aae59a02c1ea17aad5944}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_languageOfMap@{\_languageOfMap}}
+\index{\_languageOfMap@{\_languageOfMap}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_languageOfMap}
+{\footnotesize\ttfamily Language\+Type Optimum.\+Start\+Settings.\+\_\+language\+Of\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Локализация карты 
+
+\mbox{\label{class_optimum_1_1_start_settings_a8000d256f85f710c1a113dd6a3d8bd9b}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_listCriteriaForSearch@{\_listCriteriaForSearch}}
+\index{\_listCriteriaForSearch@{\_listCriteriaForSearch}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_listCriteriaForSearch}
+{\footnotesize\ttfamily List$<$\textbf{ Criterion}$>$ Optimum.\+Start\+Settings.\+\_\+list\+Criteria\+For\+Search\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список критериев оптимальности 
+
+\mbox{\label{class_optimum_1_1_start_settings_abafcf635b90629b02d5425fc178b4e76}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_listFacilitiesFromFile@{\_listFacilitiesFromFile}}
+\index{\_listFacilitiesFromFile@{\_listFacilitiesFromFile}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_listFacilitiesFromFile}
+{\footnotesize\ttfamily List$<$\textbf{ Facility}$>$ Optimum.\+Start\+Settings.\+\_\+list\+Facilities\+From\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список объектов социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_start_settings_a6c5a7fb3a7abebba8e0ae2d3f5de8c07}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_listPointsBorderTerritory@{\_listPointsBorderTerritory}}
+\index{\_listPointsBorderTerritory@{\_listPointsBorderTerritory}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_listPointsBorderTerritory}
+{\footnotesize\ttfamily List$<$\textbf{ Location}$>$ Optimum.\+Start\+Settings.\+\_\+list\+Points\+Border\+Territory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список граничных точек зоны анализа 
+
+\mbox{\label{class_optimum_1_1_start_settings_a70608c3efce9fe48497121bcfa8a2fd1}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_listPolygonsFromFile@{\_listPolygonsFromFile}}
+\index{\_listPolygonsFromFile@{\_listPolygonsFromFile}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_listPolygonsFromFile}
+{\footnotesize\ttfamily List$<$\textbf{ Polygon}$>$ Optimum.\+Start\+Settings.\+\_\+list\+Polygons\+From\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Список полигонов 
+
+\mbox{\label{class_optimum_1_1_start_settings_acb94a8344044a13d6a94e75a8e8f565b}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_locationCenterMap@{\_locationCenterMap}}
+\index{\_locationCenterMap@{\_locationCenterMap}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_locationCenterMap}
+{\footnotesize\ttfamily \textbf{ Location} Optimum.\+Start\+Settings.\+\_\+location\+Center\+Map = new \textbf{ Location}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Точка центрирования карты 
+
+\mbox{\label{class_optimum_1_1_start_settings_a9141e750d2bde9c3d586380d1c9bbddc}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_mainColor@{\_mainColor}}
+\index{\_mainColor@{\_mainColor}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_mainColor}
+{\footnotesize\ttfamily Color Optimum.\+Start\+Settings.\+\_\+main\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Цвет интерфейса 
+
+\mbox{\label{class_optimum_1_1_start_settings_ad0d2222f926887be68ffd989e1abaf58}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_nameFacility@{\_nameFacility}}
+\index{\_nameFacility@{\_nameFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_nameFacility}
+{\footnotesize\ttfamily string Optimum.\+Start\+Settings.\+\_\+name\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Название объекта социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_start_settings_a045b320a6608a9714d8bc53b3a297f68}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_paintGroupBoxBorder@{\_paintGroupBoxBorder}}
+\index{\_paintGroupBoxBorder@{\_paintGroupBoxBorder}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_paintGroupBoxBorder}
+{\footnotesize\ttfamily \textbf{ Paint\+Group\+Box\+Border} Optimum.\+Start\+Settings.\+\_\+paint\+Group\+Box\+Border = new \textbf{ Paint\+Group\+Box\+Border}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Отрисовка границ groupbox. 
+
+\mbox{\label{class_optimum_1_1_start_settings_a8710ec6238068959ec2e71e9954e471c}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_pathToFilePolygons@{\_pathToFilePolygons}}
+\index{\_pathToFilePolygons@{\_pathToFilePolygons}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_pathToFilePolygons}
+{\footnotesize\ttfamily string Optimum.\+Start\+Settings.\+\_\+path\+To\+File\+Polygons = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Путь к файлу с полигонами 
+
+\mbox{\label{class_optimum_1_1_start_settings_a001f3569da8f22984f9691d0ec9eff7f}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_pathToIconFacility@{\_pathToIconFacility}}
+\index{\_pathToIconFacility@{\_pathToIconFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_pathToIconFacility}
+{\footnotesize\ttfamily string Optimum.\+Start\+Settings.\+\_\+path\+To\+Icon\+Facility = Application.\+Startup\+Path + @\char`\"{}\textbackslash{}Icon\textbackslash{}octagon.\+png\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Значок объекта социальной инфраструктуры 
+
+\mbox{\label{class_optimum_1_1_start_settings_acc4318047a9be0ced75c37403acd802e}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!\_secondaryColor@{\_secondaryColor}}
+\index{\_secondaryColor@{\_secondaryColor}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{\_secondaryColor}
+{\footnotesize\ttfamily Color Optimum.\+Start\+Settings.\+\_\+secondary\+Color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a4e830c188303ae9a2d94397eb68f03fe}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadBorderTerritory@{buttonLoadBorderTerritory}}
+\index{buttonLoadBorderTerritory@{buttonLoadBorderTerritory}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadBorderTerritory}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Settings.\+button\+Load\+Border\+Territory\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_adef1f260399c9d12ec379b3c476fd735}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadFacilities@{buttonLoadFacilities}}
+\index{buttonLoadFacilities@{buttonLoadFacilities}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadFacilities}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Settings.\+button\+Load\+Facilities\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a6a3406ee215b0748b20de7e789fd1645}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadIconFacility@{buttonLoadIconFacility}}
+\index{buttonLoadIconFacility@{buttonLoadIconFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadIconFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Settings.\+button\+Load\+Icon\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a5d6a96c8a6dfce0eb6221a2628038510}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonLoadPolygons@{buttonLoadPolygons}}
+\index{buttonLoadPolygons@{buttonLoadPolygons}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonLoadPolygons}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Settings.\+button\+Load\+Polygons\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_ad41b923784521e1a4378b83d86550d96}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!buttonValidateAndSave@{buttonValidateAndSave}}
+\index{buttonValidateAndSave@{buttonValidateAndSave}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{buttonValidateAndSave}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Optimum.\+Start\+Settings.\+button\+Validate\+And\+Save\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a31a278dd8829305a5addd13848fa6070}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboBox2@{comboBox2}}
+\index{comboBox2@{comboBox2}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboBox2}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Box2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a550e658a87f9e3ab5a86e2c21d1852c7}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboBox3@{comboBox3}}
+\index{comboBox3@{comboBox3}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboBox3}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Box3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a65a7c7651fd0d779b8f5a2b46331b219}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboBox4@{comboBox4}}
+\index{comboBox4@{comboBox4}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboBox4}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Box4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_ade0602e453fd5c4c27fe423813ffd2c8}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboBox5@{comboBox5}}
+\index{comboBox5@{comboBox5}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboBox5}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Box5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a1aea7c9dd9a22cdc93b5237db71ea3c4}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboBox6@{comboBox6}}
+\index{comboBox6@{comboBox6}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboBox6}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Box6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a09a49896d545f0b4ebdcbf9f059d696c}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboBox7@{comboBox7}}
+\index{comboBox7@{comboBox7}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboBox7}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Box7\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_ab7fd4ec6b217282766bdefe1a81e5e54}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboBox8@{comboBox8}}
+\index{comboBox8@{comboBox8}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboBox8}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Box8\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_aa52d986156aafe040478753b1eb0f4cb}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!comboCountCriterion@{comboCountCriterion}}
+\index{comboCountCriterion@{comboCountCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{comboCountCriterion}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box Optimum.\+Start\+Settings.\+combo\+Count\+Criterion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a4c1ef8281cdcfcf9c2fe644642b632fa}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!components@{components}}
+\index{components@{components}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{components}
+{\footnotesize\ttfamily System.\+Component\+Model.\+IContainer Optimum.\+Start\+Settings.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\label{class_optimum_1_1_start_settings_a088608cdba69b8146e71dc77eb5f43eb}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!groupBoxCriterion@{groupBoxCriterion}}
+\index{groupBoxCriterion@{groupBoxCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{groupBoxCriterion}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Optimum.\+Start\+Settings.\+group\+Box\+Criterion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a839346ce1f76d86648a3faf2767172d1}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!groupBoxIconFacility@{groupBoxIconFacility}}
+\index{groupBoxIconFacility@{groupBoxIconFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{groupBoxIconFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Optimum.\+Start\+Settings.\+group\+Box\+Icon\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a580c3517fb7669832c02a117519e76a9}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!groupBoxLoadFiles@{groupBoxLoadFiles}}
+\index{groupBoxLoadFiles@{groupBoxLoadFiles}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{groupBoxLoadFiles}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Optimum.\+Start\+Settings.\+group\+Box\+Load\+Files\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a543bb1e33d1fdced97ae256f836c7556}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!groupBoxNameFacility@{groupBoxNameFacility}}
+\index{groupBoxNameFacility@{groupBoxNameFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{groupBoxNameFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Group\+Box Optimum.\+Start\+Settings.\+group\+Box\+Name\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_ac1d78616d184f92dd0cf06a6078198d5}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!labelAboutWeights@{labelAboutWeights}}
+\index{labelAboutWeights@{labelAboutWeights}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{labelAboutWeights}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Settings.\+label\+About\+Weights\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a4415fc515de218d4038be672889504d9}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!labelCountCriterion@{labelCountCriterion}}
+\index{labelCountCriterion@{labelCountCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{labelCountCriterion}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Settings.\+label\+Count\+Criterion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a9619fef5e311a9910e203197567a3ebc}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!labelDirection@{labelDirection}}
+\index{labelDirection@{labelDirection}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{labelDirection}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Settings.\+label\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_ac901c0409c1cab16fc09fc1cf3809258}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!labelLoadIcon@{labelLoadIcon}}
+\index{labelLoadIcon@{labelLoadIcon}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{labelLoadIcon}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Settings.\+label\+Load\+Icon\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a11990efbc755eff6f3312fdc9f9e9254}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!labelNameCriterion@{labelNameCriterion}}
+\index{labelNameCriterion@{labelNameCriterion}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{labelNameCriterion}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Settings.\+label\+Name\+Criterion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_affccdfe5c6fbdbf57a33e2e59dedbb29}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!labelNameFacility@{labelNameFacility}}
+\index{labelNameFacility@{labelNameFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{labelNameFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Settings.\+label\+Name\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a27ae5cbab68effdaaa950d80a77455dd}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!labelWeight@{labelWeight}}
+\index{labelWeight@{labelWeight}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{labelWeight}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Optimum.\+Start\+Settings.\+label\+Weight\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a72ac4051705749ad78101c5fc9f521e6}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!pictureIconFacility@{pictureIconFacility}}
+\index{pictureIconFacility@{pictureIconFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{pictureIconFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Picture\+Box Optimum.\+Start\+Settings.\+picture\+Icon\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a42a0a1d35ca223e23595a24969874a38}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox1@{textBox1}}
+\index{textBox1@{textBox1}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox1}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a709c13d831f7c620b355572a6305e870}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox10@{textBox10}}
+\index{textBox10@{textBox10}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox10}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_ab6f6542b89d644e62d6c7afab959fd1c}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox11@{textBox11}}
+\index{textBox11@{textBox11}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox11}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box11\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a0a63af33ae3be356c77b8cb61964a233}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox12@{textBox12}}
+\index{textBox12@{textBox12}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox12}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box12\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a29072077a361b55bfe6c146fa1f36e96}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox13@{textBox13}}
+\index{textBox13@{textBox13}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox13}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box13\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a20e69b2370b4b11cbf80700cb5183b38}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox14@{textBox14}}
+\index{textBox14@{textBox14}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox14}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box14\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a26d981cd55e5c47129779c727398409e}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox2@{textBox2}}
+\index{textBox2@{textBox2}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox2}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a39bc7ef9570b37cd6fbdcb057f4a8eaf}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox3@{textBox3}}
+\index{textBox3@{textBox3}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox3}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a14c72197eecfaf438bf2ffd6157a0f3e}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox4@{textBox4}}
+\index{textBox4@{textBox4}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox4}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a2068ad3c228cc5ab36e1935bff34aec6}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox5@{textBox5}}
+\index{textBox5@{textBox5}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox5}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a36a3f6b8ee01861775f0950671c4148e}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox6@{textBox6}}
+\index{textBox6@{textBox6}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox6}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_aeef3324b6ebaeffab3bc3fdeec7a9683}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox7@{textBox7}}
+\index{textBox7@{textBox7}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox7}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box7\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a42cc82281690a3eccba637cbecdb62ca}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox8@{textBox8}}
+\index{textBox8@{textBox8}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox8}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box8\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a85edb7aee66797d1a2dbfd3913d5c7f6}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBox9@{textBox9}}
+\index{textBox9@{textBox9}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBox9}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box9\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a66b9aa09af3e2c566d50162a02796bc1}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!textBoxNameFacility@{textBoxNameFacility}}
+\index{textBoxNameFacility@{textBoxNameFacility}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{textBoxNameFacility}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Text\+Box Optimum.\+Start\+Settings.\+text\+Box\+Name\+Facility\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{class_optimum_1_1_start_settings_a08ca0e61d4ed7d4f8d0710d8fac32420}} 
+\index{Optimum.StartSettings@{Optimum.StartSettings}!toolTip@{toolTip}}
+\index{toolTip@{toolTip}!Optimum.StartSettings@{Optimum.StartSettings}}
+\doxysubsubsection{toolTip}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Tip Optimum.\+Start\+Settings.\+tool\+Tip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Start\+Settings.\+cs}\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Start\+Settings.\+Designer.\+cs}\end{DoxyCompactItemize}

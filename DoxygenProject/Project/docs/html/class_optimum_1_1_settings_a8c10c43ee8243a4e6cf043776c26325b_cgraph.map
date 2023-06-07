@@ -1,0 +1,5 @@
+<map id="Optimum.Settings.buttonLoadFacilities_Click" name="Optimum.Settings.buttonLoadFacilities_Click">
+<area shape="rect" id="node1" title="Загрузка файла с объектами социальной инфраструктуры" alt="" coords="5,37,200,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="248,5,451,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_file_validator.html#a6f550a9c2633358e90f1a13a3868216c" title="Проверка корректности файла с объектами социальной инфраструктуры на целостность данных" alt="" coords="248,69,451,109"/>
+</map>

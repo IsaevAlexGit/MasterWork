@@ -1,0 +1,12 @@
+<map id="Optimum.SearchNormPerCapita.radioButtonShowFacility_Click" name="Optimum.SearchNormPerCapita.radioButtonShowFacility_Click">
+<area shape="rect" id="node1" title="Отобразить объекты социальной инфраструктуры" alt="" coords="5,37,245,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_view.html#ac4d080061783d40d8bcacb1586c5e09a" title="Отобразить все объекты социальной инфраструктуры" alt="" coords="293,15,500,41"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_map_view.html#a7884e629e922d547cb15a051f2a18cbb" title="Отрисовка буферных зон оптимумов нормы" alt="" coords="295,67,498,107"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_render_facility.html#ad3d23761623bb01e47cf86e59c770a47" title="Отображение всех объектов социальной инфраструктуры" alt="" coords="566,5,761,45"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_render_facility.html#a08d4dde0aefbaa71e6f0811649001196" title="Инициализация маркеров объектов социальной инфраструктуры" alt="" coords="827,5,1013,45"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_render_facility.html#abd1fc541205dee429c529f103e30b116" title="Изменение выводимой информации об объекте социальной инфраструктуры" alt="" coords="1061,5,1228,45"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_render_norma.html#a248224c00210ad03a761969fda08744f" title="Отрисовать звездочками идеальные оптимумы (1&#45;10)" alt="" coords="548,69,779,109"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_render_norma.html#af2b3a0348f37e3de059204c408edb5cb" title="Инициализация буферной зоны" alt="" coords="839,69,1001,109"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_render_norma.html#ad9597f1226de047475458c330a17db29" title="Отрисовка окружности" alt="" coords="1063,69,1226,109"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_render_norma.html#a03b7db9ec605b27fbe1fdbb3bda9da78" title="Вычисление каждой точки окружности" alt="" coords="1276,69,1455,109"/>
+</map>

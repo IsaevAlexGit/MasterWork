@@ -1,0 +1,5 @@
+<map id="Optimum.MapView.CheckInsidePointPolygon" name="Optimum.MapView.CheckInsidePointPolygon">
+<area shape="rect" id="node1" title="Проверка принадлежности точки полигонам" alt="" coords="5,37,212,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_map_model.html#abf60594b0d6b87d2cc03d5b65d9e8f3d" title="Создание таблицы из полигонов" alt="" coords="261,5,473,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html#ab5378a26d6b01e2724179d3730a99190" title="Вернуть слой полигонов" alt="" coords="260,69,475,109"/>
+</map>

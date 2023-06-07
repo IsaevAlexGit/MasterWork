@@ -1,0 +1,6 @@
+<map id="Optimum.StartSettings._CheckValidateCriterion" name="Optimum.StartSettings._CheckValidateCriterion">
+<area shape="rect" id="node1" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="5,69,167,109"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="215,5,380,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="218,69,377,109"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="218,133,377,173"/>
+</map>

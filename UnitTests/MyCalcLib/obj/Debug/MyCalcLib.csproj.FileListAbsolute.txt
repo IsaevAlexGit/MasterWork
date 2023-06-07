@@ -1,0 +1,12 @@
+C:\Users\PC\Desktop\MyCalcLib\MyCalcLib\bin\Debug\MyCalcLib.dll
+C:\Users\PC\Desktop\MyCalcLib\MyCalcLib\bin\Debug\MyCalcLib.pdb
+C:\Users\PC\Desktop\MyCalcLib\MyCalcLib\obj\Debug\MyCalcLib.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\MyCalcLib\MyCalcLib\obj\Debug\MyCalcLib.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\MyCalcLib\MyCalcLib\obj\Debug\MyCalcLib.dll
+C:\Users\PC\Desktop\MyCalcLib\MyCalcLib\obj\Debug\MyCalcLib.pdb
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\bin\Debug\MyCalcLib.dll
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\bin\Debug\MyCalcLib.pdb
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Debug\MyCalcLib.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Debug\MyCalcLib.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Debug\MyCalcLib.dll
+C:\Users\PC\Desktop\UnitTest\MyCalcLib\obj\Debug\MyCalcLib.pdb

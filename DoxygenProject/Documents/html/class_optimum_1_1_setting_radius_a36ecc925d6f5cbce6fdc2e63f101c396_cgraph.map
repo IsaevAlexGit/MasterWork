@@ -1,0 +1,5 @@
+<map id="Optimum.SettingRadius.SettingRadius_Load" name="Optimum.SettingRadius.SettingRadius_Load">
+<area shape="rect" id="node1" title="Загрузка формы" alt="" coords="5,5,211,45"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_setting_radius.html#a44542fc4de95c83cc3b633ac02a9c24c" title="Найти динамиечески максимальную длину для радиуса" alt="" coords="259,5,423,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_map_model.html#ab406b19494b665762817dd7a80bd0b8d" title="Вернуть слой граничных точек зоны анализа" alt="" coords="471,5,685,45"/>
+</map>

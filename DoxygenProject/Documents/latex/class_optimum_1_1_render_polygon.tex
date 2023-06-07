@@ -1,0 +1,284 @@
+\doxysection{Класс Optimum.\+Render\+Polygon}
+\label{class_optimum_1_1_render_polygon}\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+
+
+Класс \char`\"{}Отрисовщик точечной раскраски\char`\"{}.  
+
+
+
+
+Граф связей класса Optimum.\+Render\+Polygon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{class_optimum_1_1_render_polygon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Render\+Polygon} (\textbf{ Sublayer\+Polygon} sublayer\+Polygon)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+void \textbf{ Show\+Icon\+Criterion} (GMap\+Control gmap, double max\+Criterion, double min\+Criterion, int shades, int index\+Criterion, List$<$ Image $>$ icons\+For\+Coloring, string name\+Criterion)
+\begin{DoxyCompactList}\small\item\em Точечная раскраска \end{DoxyCompactList}\item 
+void \textbf{ Clear\+Icon\+Polygon} (GMap\+Control gmap)
+\begin{DoxyCompactList}\small\item\em Скрыть точечную раскраску \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ \+\_\+\+Initialization\+Markers} (\textbf{ Sublayer\+Polygon} sublayer\+Polygon, List$<$ Image $>$ icons\+For\+Colorng)
+\begin{DoxyCompactList}\small\item\em Инициализация маркеров \end{DoxyCompactList}\item 
+void \textbf{ \+\_\+\+Get\+Icons\+For\+Selected\+Count\+Shades} (List$<$ Image $>$ icons)
+\begin{DoxyCompactList}\small\item\em Получить значки для выбранного количества оттенков \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Sublayer\+Polygon} \textbf{ \+\_\+sublayer\+Polygon\+Icon} = new \textbf{ Sublayer\+Polygon}()
+\begin{DoxyCompactList}\small\item\em Слой для отображения точечной раскраски \end{DoxyCompactList}\item 
+double \textbf{ \+\_\+max\+Selected\+Criterion} = 0
+\begin{DoxyCompactList}\small\item\em Максимум критерия \end{DoxyCompactList}\item 
+double \textbf{ \+\_\+min\+Selected\+Criterion} = 0
+\begin{DoxyCompactList}\small\item\em Минимум критерия \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+shades\+Color} = 0
+\begin{DoxyCompactList}\small\item\em Количество оттенков \end{DoxyCompactList}\item 
+int \textbf{ \+\_\+index\+Selected\+Criterion} = 0
+\begin{DoxyCompactList}\small\item\em Индекс выбранного критерия \end{DoxyCompactList}\item 
+string \textbf{ \+\_\+name\+Selected\+Criterion} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Название критерия \end{DoxyCompactList}\item 
+List$<$ Image $>$ \textbf{ \+\_\+using\+Array\+Icons} = new List$<$Image$>$()
+\begin{DoxyCompactList}\small\item\em Массив используемых значков для точечной раскраски \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \char`\"{}Отрисовщик точечной раскраски\char`\"{}. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\label{class_optimum_1_1_render_polygon_abefde37e3247c61c3c6e443546be5ddf}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!RenderPolygon@{RenderPolygon}}
+\index{RenderPolygon@{RenderPolygon}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{RenderPolygon()}
+{\footnotesize\ttfamily Optimum.\+Render\+Polygon.\+Render\+Polygon (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Polygon}}]{sublayer\+Polygon }\end{DoxyParamCaption})}
+
+
+
+Конструктор 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em sublayer\+Polygon} & Слой с полигонами\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public 
+
+\doxysubsection{Методы}
+\mbox{\label{class_optimum_1_1_render_polygon_a729793e673cf72f03bb7357144d92f6d}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_GetIconsForSelectedCountShades@{\_GetIconsForSelectedCountShades}}
+\index{\_GetIconsForSelectedCountShades@{\_GetIconsForSelectedCountShades}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_GetIconsForSelectedCountShades()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Polygon.\+\_\+\+Get\+Icons\+For\+Selected\+Count\+Shades (\begin{DoxyParamCaption}\item[{List$<$ Image $>$}]{icons }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Получить значки для выбранного количества оттенков 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em icons} & Массив значков\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_polygon_a729793e673cf72f03bb7357144d92f6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_polygon_ae1ee05378916fba310e7186068ab532d}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_InitializationMarkers@{\_InitializationMarkers}}
+\index{\_InitializationMarkers@{\_InitializationMarkers}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_InitializationMarkers()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Polygon.\+\_\+\+Initialization\+Markers (\begin{DoxyParamCaption}\item[{\textbf{ Sublayer\+Polygon}}]{sublayer\+Polygon,  }\item[{List$<$ Image $>$}]{icons\+For\+Colorng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Инициализация маркеров 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em sublayer\+Polygon} & Слой\\
+\hline
+{\em icons\+For\+Colorng} & Массив значков\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: private Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_polygon_ae1ee05378916fba310e7186068ab532d_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_polygon_ae1ee05378916fba310e7186068ab532d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_polygon_a64e92656e895c71b0fca77ea5ceb306f}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!ClearIconPolygon@{ClearIconPolygon}}
+\index{ClearIconPolygon@{ClearIconPolygon}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{ClearIconPolygon()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Polygon.\+Clear\+Icon\+Polygon (\begin{DoxyParamCaption}\item[{GMap\+Control}]{gmap }\end{DoxyParamCaption})}
+
+
+
+Скрыть точечную раскраску 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & \\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_polygon_a64e92656e895c71b0fca77ea5ceb306f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{class_optimum_1_1_render_polygon_a4f78de8179e729fe70ffd793669a03ea}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!ShowIconCriterion@{ShowIconCriterion}}
+\index{ShowIconCriterion@{ShowIconCriterion}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{ShowIconCriterion()}
+{\footnotesize\ttfamily void Optimum.\+Render\+Polygon.\+Show\+Icon\+Criterion (\begin{DoxyParamCaption}\item[{GMap\+Control}]{gmap,  }\item[{double}]{max\+Criterion,  }\item[{double}]{min\+Criterion,  }\item[{int}]{shades,  }\item[{int}]{index\+Criterion,  }\item[{List$<$ Image $>$}]{icons\+For\+Coloring,  }\item[{string}]{name\+Criterion }\end{DoxyParamCaption})}
+
+
+
+Точечная раскраска 
+
+\begin{DoxyVersion}{Версия}
+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Аргументы}
+{\em gmap} & Карта\\
+\hline
+{\em max\+Criterion} & Максимум критерия\\
+\hline
+{\em min\+Criterion} & Минимум критерия\\
+\hline
+{\em shades} & Количество оттенков\\
+\hline
+{\em index\+Criterion} & Индекс выбранного критерия\\
+\hline
+{\em icons\+For\+Coloring} & Массив значков для точечной раскраски\\
+\hline
+{\em name\+Criterion} & Название критерия\\
+\hline
+\end{DoxyParams}
+Доступ к функции\+: public Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_polygon_a4f78de8179e729fe70ffd793669a03ea_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_optimum_1_1_render_polygon_a4f78de8179e729fe70ffd793669a03ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\label{class_optimum_1_1_render_polygon_aafe4c940144e036c15c221fd46f9febc}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_indexSelectedCriterion@{\_indexSelectedCriterion}}
+\index{\_indexSelectedCriterion@{\_indexSelectedCriterion}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_indexSelectedCriterion}
+{\footnotesize\ttfamily int Optimum.\+Render\+Polygon.\+\_\+index\+Selected\+Criterion = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Индекс выбранного критерия 
+
+\mbox{\label{class_optimum_1_1_render_polygon_ac53297432085d22544965eff737a5c18}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_maxSelectedCriterion@{\_maxSelectedCriterion}}
+\index{\_maxSelectedCriterion@{\_maxSelectedCriterion}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_maxSelectedCriterion}
+{\footnotesize\ttfamily double Optimum.\+Render\+Polygon.\+\_\+max\+Selected\+Criterion = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Максимум критерия 
+
+\mbox{\label{class_optimum_1_1_render_polygon_acf4c857f2f3ddc60ee5efd2b7a18e957}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_minSelectedCriterion@{\_minSelectedCriterion}}
+\index{\_minSelectedCriterion@{\_minSelectedCriterion}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_minSelectedCriterion}
+{\footnotesize\ttfamily double Optimum.\+Render\+Polygon.\+\_\+min\+Selected\+Criterion = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Минимум критерия 
+
+\mbox{\label{class_optimum_1_1_render_polygon_a8d6772aeb786774d3fb4423b1a096508}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_nameSelectedCriterion@{\_nameSelectedCriterion}}
+\index{\_nameSelectedCriterion@{\_nameSelectedCriterion}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_nameSelectedCriterion}
+{\footnotesize\ttfamily string Optimum.\+Render\+Polygon.\+\_\+name\+Selected\+Criterion = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Название критерия 
+
+\mbox{\label{class_optimum_1_1_render_polygon_a7a19e9f489f94e32559fa0aa94f2f9c4}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_shadesColor@{\_shadesColor}}
+\index{\_shadesColor@{\_shadesColor}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_shadesColor}
+{\footnotesize\ttfamily int Optimum.\+Render\+Polygon.\+\_\+shades\+Color = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Количество оттенков 
+
+\mbox{\label{class_optimum_1_1_render_polygon_a28dbfa0a425da646f3c1b37a58fb5922}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_sublayerPolygonIcon@{\_sublayerPolygonIcon}}
+\index{\_sublayerPolygonIcon@{\_sublayerPolygonIcon}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_sublayerPolygonIcon}
+{\footnotesize\ttfamily \textbf{ Sublayer\+Polygon} Optimum.\+Render\+Polygon.\+\_\+sublayer\+Polygon\+Icon = new \textbf{ Sublayer\+Polygon}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Слой для отображения точечной раскраски 
+
+\mbox{\label{class_optimum_1_1_render_polygon_a6aaab8d94a58d936bc5b45c6caab87ea}} 
+\index{Optimum.RenderPolygon@{Optimum.RenderPolygon}!\_usingArrayIcons@{\_usingArrayIcons}}
+\index{\_usingArrayIcons@{\_usingArrayIcons}!Optimum.RenderPolygon@{Optimum.RenderPolygon}}
+\doxysubsubsection{\_usingArrayIcons}
+{\footnotesize\ttfamily List$<$Image$>$ Optimum.\+Render\+Polygon.\+\_\+using\+Array\+Icons = new List$<$Image$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Массив используемых значков для точечной раскраски 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+PC/\+Desktop/doxxygen/\+Windows\+Forms\+App1/\textbf{ Render\+Polygon.\+cs}\end{DoxyCompactItemize}

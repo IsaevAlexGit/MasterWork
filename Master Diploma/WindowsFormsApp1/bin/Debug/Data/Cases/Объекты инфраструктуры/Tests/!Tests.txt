@@ -1,0 +1,15 @@
+.csv - пустое имя
+CSV_AllFacilityWithoutID - у всех объектов инфраструктуры удален столбец с ID
+CSV_BigMemoryFile - файл весит более 1 Мб
+CSV_CoordinateIsWord - вместо координаты в ячейке символы
+CSV_FacilityWithOneCell - объект инфраструктуры имеет 1 столбец с информацией
+CSV_FacilityWithTwoSites - у объектов инфраструктуры по два сайта в данных
+CSV_HasEmptyRow - одна из строк пустая полностью
+CSV_IDisWord - вместо ID в ячейке символы
+CSV_OneFacility - в файле один объект инфраструктуры
+CSV_OnlyCoordinatesWithoutData - объекты инфраструктуры не имеют информации, кроме координат
+CSV_PointNoInsideTerritory - одна из координат вне территории
+CSV_RowHaveOnlyID - в строке только ID
+CSV_SameCellEmpty - некоторые ячейки пустые
+CSV_SecondaryCell - добавлен новый столбец
+CSV_SwapCoordinates - у одной из точек координаты поменялись местами

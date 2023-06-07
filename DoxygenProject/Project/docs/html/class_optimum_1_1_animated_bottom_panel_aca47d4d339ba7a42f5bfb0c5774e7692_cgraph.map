@@ -1,0 +1,5 @@
+<map id="Optimum.AnimatedBottomPanel.AnimatedBottomPanel" name="Optimum.AnimatedBottomPanel.AnimatedBottomPanel">
+<area shape="rect" id="node1" title="Конструктор панели" alt="" coords="5,37,219,77"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_animated_bottom_panel.html#ae03a14bbc6c641324d48d2bcc095021b" title="Обработка клика по кнопке" alt="" coords="267,5,480,45"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_animated_bottom_panel.html#a56e831e373cbcfa3d9541526b8d48477" title="Обработка тика таймера" alt="" coords="267,69,480,109"/>
+</map>

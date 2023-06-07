@@ -1,0 +1,24 @@
+<map id="Optimum.StartSettings.InitializeComponent" name="Optimum.StartSettings.InitializeComponent">
+<area shape="rect" id="node1" title="Required method for Designer support &#45; do not modify the contents of this method with the code editor..." alt="" coords="5,296,212,336"/>
+<area shape="rect" id="node2" href="$class_optimum_1_1_start_settings.html#af0bbf1840b51a356cfa77e9e232dab33" title="Загрузка файла с зоной анализа" alt="" coords="285,135,479,175"/>
+<area shape="rect" id="node5" href="$class_optimum_1_1_start_settings.html#a87faa48a0179a649a551131487308c39" title="Загрузка файла с объектами социальной инфраструктуры" alt="" coords="285,71,479,111"/>
+<area shape="rect" id="node7" href="$class_optimum_1_1_start_settings.html#ab1a3cc4990246becebad89d46f5b052b" title="Загрузка значка" alt="" coords="285,328,479,368"/>
+<area shape="rect" id="node8" href="$class_optimum_1_1_start_settings.html#a7542f0b4780d830f04ec0b95fb83009f" title="Загрузка файла с полигонами" alt="" coords="285,199,479,239"/>
+<area shape="rect" id="node14" href="$class_optimum_1_1_start_settings.html#a65476c3a6fc9037534d31f19a1ad4971" title="Кнопка &quot;Сохранить&quot;." alt="" coords="285,264,479,304"/>
+<area shape="rect" id="node18" href="$class_optimum_1_1_start_settings.html#ac9c49886c1cd543afc14dc81ab77e3e0" title="Обработка выбранного числа в выпадающем списке количества критериев" alt="" coords="260,392,504,432"/>
+<area shape="rect" id="node19" href="$class_optimum_1_1_start_settings.html#a4c99d504e0120cdc2f52f528ac741a6f" title="Закрытие формы на ESC." alt="" coords="279,456,485,496"/>
+<area shape="rect" id="node20" href="$class_optimum_1_1_start_settings.html#ae905bc0684c508efc25da6da4cd6b5a8" title="Загрузка формы" alt="" coords="261,522,503,547"/>
+<area shape="rect" id="node3" href="$class_optimum_1_1_file_validator.html#a8dd7862063cf94253112932b6bea6d82" title="Проверка CSV&#45;файла, из которого загружаются данные" alt="" coords="571,133,774,173"/>
+<area shape="rect" id="node4" href="$class_optimum_1_1_file_validator.html#aa616dbd607869ba5f43c0067e99ce345" title="Проверка корректности файла с граничными точками зоны анализа" alt="" coords="571,69,774,109"/>
+<area shape="rect" id="node6" href="$class_optimum_1_1_file_validator.html#a6f550a9c2633358e90f1a13a3868216c" title="Проверка корректности файла с объектами социальной инфраструктуры на целостность данных" alt="" coords="571,5,774,45"/>
+<area shape="rect" id="node9" href="$class_optimum_1_1_start_settings.html#a391d212eca750d6567a6a6b08fe4a315" title="Проверка заполненности критериев&#45;направлений&#45;весов" alt="" coords="592,261,753,301"/>
+<area shape="rect" id="node13" href="$class_optimum_1_1_file_validator.html#aa322bbc4dc0f18a25168a79a42c80c5d" title="Проверка корректности файла с полигонами на целостность данных" alt="" coords="571,197,774,237"/>
+<area shape="rect" id="node10" href="$class_optimum_1_1_start_settings.html#a0848ccd90d9f1a79a88ab6e7335a1106" title="Проверка корректности направления" alt="" coords="863,197,1029,237"/>
+<area shape="rect" id="node11" href="$class_optimum_1_1_start_settings.html#ac39a8c0979b7f2167d40580eb9565fd1" title="Проверка корректности названия критериея" alt="" coords="867,261,1025,301"/>
+<area shape="rect" id="node12" href="$class_optimum_1_1_start_settings.html#a72ff88543811f68581a4e59de3faf0c0" title="Проверка корректности весового коэффициента" alt="" coords="867,325,1025,365"/>
+<area shape="rect" id="node15" href="$class_optimum_1_1_start_settings.html#aed0752e868365ce8f11418a4f4f05fb2" title="Проверка уникальности названия критериев" alt="" coords="581,325,764,365"/>
+<area shape="rect" id="node16" href="$class_optimum_1_1_start_settings.html#a80aef5d9e0e6ca26318735ffcf959c2b" title="Проверка корректности названия объекта социальной инфраструктуры" alt="" coords="575,389,771,429"/>
+<area shape="rect" id="node17" href="$class_optimum_1_1_start_settings.html#a460be301f996fd4673890addb6fb1298" title="Поиск точки центрирования карты" alt="" coords="593,453,752,493"/>
+<area shape="rect" id="node21" href="$class_optimum_1_1_paint_group_box_border.html#a724be38caf875218d9b06678091e7b9f" title="Отрисовка границ для GroupBox." alt="" coords="552,517,793,557"/>
+<area shape="rect" id="node22" href="$class_optimum_1_1_paint_group_box_border.html#aaa131d33b1e3cd7180374aef09c6904a" title="Установка параметров для GroupBox." alt="" coords="841,517,1051,557"/>
+</map>

@@ -1,0 +1,7 @@
+.csv - пустое имя
+CSV_BigMemoryFile - файл более 1 Мб
+CSV_EmptyString - одна из строк в файле пустая
+CSV_EmptyValue - одна из ячеек в файле пустая
+CSV_NegativeValue - значение отрицательное у координаты
+CSV_SymbolsInValue - в одной из ячеек символы (буквы)
+CSV_TwoPoints - в файле меньше трех граничных точек
